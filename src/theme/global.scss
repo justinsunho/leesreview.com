@@ -1,0 +1,26 @@
+@import "./variables";
+@import "../../static/fonts/fonts.css";
+@import "./bootstrap_variables";
+@import "~bootstrap-4-grid/scss/grid.scss";
+@import "~rfs/scss";
+@import "./bootstrap_override.scss";
+@import "./typography";
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-attachment: fixed;
+    color: $black;
+    font-family: "Source Sans Pro", "Helvetica";
+    font-size: 16px;
+    height: 100%;
+    margin: 0;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+}

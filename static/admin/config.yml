@@ -1,0 +1,20 @@
+backend:
+    name: git-gateway
+    branch: master
+
+media_folder: /static/images
+public_folder: /images/
+
+collections:
+    - name: blog
+      label: Blog
+      folder: /content/blog
+      create: true
+      fields:
+          - { name: title, label: Title, required: true }
+          - { name: date, label: Date, widget: date, required: true }
+          - { name: author, label: Author, required: true }
+          - { name: description, label: Description, required: true }
+          - { name: img, label: img, widget: image, required: true }
+          - { name: tags, label: tags, widget: list, required: true }
+          - { name: body, label: Body, widget: markdown, required: true }
