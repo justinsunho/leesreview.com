@@ -3,7 +3,7 @@ module.exports = {
         title: `Lees Review`,
         author: `Justin Sunho Kim`,
         description: `Lees Review Tutoring Center`,
-        siteUrl: `https://leesreview.com`,
+        siteUrl: `http://localhost:8000`,
     },
     plugins: [
         "gatsby-plugin-netlify-cms",
