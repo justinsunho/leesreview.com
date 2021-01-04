@@ -15,13 +15,13 @@ module.exports = {
         "gatsby-plugin-mdx",
         "gatsby-transformer-sharp",
         `gatsby-plugin-resolve-src`,
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                path: `${__dirname}/static/images`,
-                name: `assets`,
-            },
-        },
+        // {
+        //     resolve: `gatsby-source-filesystem`,
+        //     options: {
+        //         path: `${__dirname}/static/images`,
+        //         name: `assets`,
+        //     },
+        // },
         {
             resolve: `gatsby-source-filesystem`,
             options: {
