@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
+import { Hero } from "components/organisms";
 import { MainLayout } from "components/layouts";
 
 const Index = ({ data }) => {
@@ -11,7 +12,19 @@ const Index = ({ data }) => {
         node: { title, hero },
     } = edges[0];
 
-    return <MainLayout>{title}</MainLayout>;
+    return (
+        <MainLayout>
+            <Hero
+                className={"section"}
+                headingText={hero.title}
+                description={hero.description}
+                linkText={hero.buttonText}
+                linkHref={hero.buttonLink}
+                image={"/images/pages/dsc02671.jpg"}
+                button
+            />
+        </MainLayout>
+    );
 };
 
 export default Index;
@@ -23,7 +36,7 @@ export const pageQuery = graphql`
                 node {
                     id
                     hero {
-                        staff
+                        title
                         description
                         buttonText
                         buttonLink
