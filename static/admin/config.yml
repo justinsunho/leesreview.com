@@ -53,4 +53,70 @@ collections:
                  collection: staff
                  value_field: title
                  search_fields: [title]
-
+          - label: Programs & classes
+            name: classes
+            widget: object
+            summary: '{{fields.name}}'
+            fields:
+              - {label: "Title", name: title, widget: string}
+              - label: Class List
+                name: classList
+                widget: list
+                summary: '{{fields.title}}'
+                fields:
+                  - {label: Title, name: title, widget: string}
+                  - {label: Image, name: image, widget: image, media_folder: /static/images/pages}
+                  - {label: Image, name: icon, widget: code}
+                  - {label: Description, name: descrtipion, widget: string}
+                  - {label: Link Text, name: linkText, widget: string}
+                  - {label: Link Href, name: linkHref, widget: string}
+              - {label: "Class Schedule Link Text", name: linkText, widget: string}
+              - {label: "Class Schedule Link Href", name: linkHref, widget: string}
+          - label: About Us
+            name: about
+            widget: object
+            summary: '{{fields.name}}'
+            fields:
+              - {label: "Image", name: image, widget: image, media_folder: /static/images/pages}
+              - {label: "subtitle", name: subtitle, widget: string}
+              - {label: "title", name: title, widget: string}
+              - {label: "description", name: description, widget: string}
+              - {label: "Link Text", name: linkText, widget: string}
+              - {label: "Link Href", name: linkHref, widget: string}
+          - label: Testimonies
+            name: testimonies
+            widget: object
+            summary: '{{fields.name}}'
+            fields:
+              - {label: "Testimony Link Text", name: linkText, widget: string}
+              - {label: "Testimony Link Href", name: linkHref, widget: string}
+              - label: Testimony List
+                name: classList
+                widget: list
+                summary: '{{fields.title}}'
+                fields:
+                  - {label: Title, name: title, widget: string}
+                  - {label: Image, name: image, widget: image, media_folder: /static/images/pages}
+                  - {label: Description, name: descrtipion, widget: string}
+                  - {label: Quote, name: Quote, widget: string}
+          - label: Location
+            name: location
+            widget: object
+            summary: '{{fields.name}}'
+            fields:
+              - {label: "subtitle", name: subtitle, widget: string}
+              - {label: "title", name: title, widget: string}
+              - label: Location List
+                name: locationList
+                widget: list
+                summary: '{{fields.title}}'
+                fields:
+                  - {label: Title, name: title, widget: string}
+                  - {label: Descrtipion, name: description, widget: string}
+                  - {label: "Link Text", name: linkText, widget: string}
+                  - {label: "Link Href", name: linkHref, widget: string}
+       - name: contact
+         label: Contact Us
+         file: /content/pages/contact.json
+         fields:
+          - {label: Title, name: title, widget: string}
