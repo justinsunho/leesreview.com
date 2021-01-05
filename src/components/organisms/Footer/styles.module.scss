@@ -1,0 +1,19 @@
+@import "theme/variables";
+
+.footer {
+    background-color: $neutral-900;
+
+    .footerContent {
+        display: flex;
+        align-items: flex-start;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        justify-content: space-between;
+    }
+}
+
+.smallCaps {
+    color: #fff;
+    font-size: 12px;
+    padding-bottom: 0.5rem;
+}

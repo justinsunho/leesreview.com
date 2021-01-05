@@ -1,0 +1,9 @@
+@import "theme/variables";
+
+.smallCaps {
+    font-family: Source Code Pro;
+    color: $neutral-600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 10px;
+}

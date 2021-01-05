@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
+import { MainLayout } from "components/layouts";
 
 const Index = ({ data }) => {
     const {
@@ -10,7 +11,7 @@ const Index = ({ data }) => {
         node: { title, hero },
     } = edges[0];
 
-    return <div>{title}</div>;
+    return <MainLayout>{title}</MainLayout>;
 };
 
 export default Index;

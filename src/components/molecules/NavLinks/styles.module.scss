@@ -1,0 +1,27 @@
+@import "theme/variables";
+
+.navLinkWrapper {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        padding: 0 1rem;
+    }
+
+    .navLink {
+        a {
+            color: $black;
+
+            &:hover {
+                color: $action-default;
+            }
+        }
+
+        .activeLink {
+            color: $action-default;
+        }
+    }
+}
