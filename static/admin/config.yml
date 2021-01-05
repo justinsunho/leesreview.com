@@ -6,15 +6,51 @@ media_folder: /static/images
 public_folder: /images/
 
 collections:
-    - name: blog
-      label: Blog
-      folder: /content/blog
+    - name: staff
+      label: Staff
+      folder: /content/staff
       create: true
       fields:
-          - { name: title, label: Title, required: true }
-          - { name: date, label: Date, widget: date, required: true }
-          - { name: author, label: Author, required: true }
+          - { name: title, label: title, required: true }
+          - { name: position, label: position, required: true }
           - { name: description, label: Description, required: true }
-          - { name: img, label: img, widget: image, required: true }
-          - { name: tags, label: tags, widget: list, required: true }
-          - { name: body, label: Body, widget: markdown, required: true }
+          - { name: img, label: img, widget: image, media_folder: /static/images/staff, required: true }
+          - { name: tags, label: classes, widget: list, required: true }
+          - { name: color, label: color, widget: select, options: ["red", "orange", "green", "blue"], required: true }
+          - { name: body, label: body, widget: markdown, required: true }
+    - name: testimonies
+      label: Testimonies
+      folder: /content/testimonies
+      create: true
+      fields:
+          - { name: title, label: title, required: true }
+          - { name: college, label: college, required: false }
+          - { name: img, label: img, widget: image, media_folder: /static/images/testimonies, required: true }
+          - { name: color, label: color, widget: select, options: ["red", "orange", "green", "blue"], required: true }
+          - { name: tags, label: classes, widget: list, required: true }
+          - { name: body, label: body, widget: markdown, required: true }
+    - name: pages
+      label: Pages
+      files:
+       - name: home
+         label: Home
+         file: /content/pages/home.json
+         fields:
+          - {label: Title, name: title, widget: string}
+          - label: Hero
+            name: hero
+            widget: object
+            summary: '{{fields.name}}'
+            fields:
+               - {label: "Title", name: title, widget: string}
+               - {label: "Description", name: description, widget: string}
+               - {label: "Button Text", name: buttonText, widget: string}
+               - {label: "Button Link", name: buttonLink, widget: string}
+               - {label: "Image", name: image, widget: image, media_folder: /static/images/pages}
+               - label: "Staff"
+                 name: staff
+                 widget: relation
+                 collection: staff
+                 value_field: title
+                 search_fields: [title]
+

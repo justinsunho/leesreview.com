@@ -15,6 +15,7 @@ module.exports = {
         "gatsby-plugin-mdx",
         "gatsby-transformer-sharp",
         `gatsby-plugin-resolve-src`,
+        "gatsby-transformer-json",
         // {
         //     resolve: `gatsby-source-filesystem`,
         //     options: {
@@ -34,6 +35,13 @@ module.exports = {
             options: {
                 path: `${__dirname}/content/testimonies`,
                 name: `testimonies`,
+            },
+        },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                path: `${__dirname}/content/pages`,
+                name: `json`,
             },
         },
         {
