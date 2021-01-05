@@ -1,1 +1,11 @@
-{}
+{
+  "hero": {
+    "staff": "A Dodgers Playoff Primer",
+    "title": "Summer SAT Enrollment Open Now!",
+    "description": "Don't miss out on our Summer SAT enrollment. It is awesome. We love summer Math, Reading, and Writing!",
+    "buttonText": "Enroll Now",
+    "buttonLink": "#",
+    "image": "/static/images/pages/dsc02671.jpg"
+  },
+  "title": "Home"
+}
