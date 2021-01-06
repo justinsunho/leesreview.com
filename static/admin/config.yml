@@ -88,6 +88,7 @@ collections:
             widget: object
             summary: '{{fields.name}}'
             fields:
+              - {label: "subtitle", name: subtitle, widget: string}
               - {label: "Testimony Link Text", name: linkText, widget: string}
               - {label: "Testimony Link Href", name: linkHref, widget: string}
               - label: Testimony List
