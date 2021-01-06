@@ -46,7 +46,7 @@ collections:
                - {label: "Description", name: description, widget: string}
                - {label: "Button Text", name: buttonText, widget: string}
                - {label: "Button Link", name: buttonLink, widget: string}
-               - {label: "Image", name: image, widget: image, media_folder: /images/pages/home}
+               - {label: "Image", name: image, widget: image, media_folder: /static/images/pages/home}
                - label: "Staff"
                  name: staff
                  widget: relation
