@@ -92,14 +92,15 @@ collections:
               - {label: "Testimony Link Text", name: linkText, widget: string}
               - {label: "Testimony Link Href", name: linkHref, widget: string}
               - label: Testimony List
-                name: classList
+                name: testimonyList
                 widget: list
                 summary: '{{fields.title}}'
                 fields:
                   - {label: Title, name: title, widget: string}
                   - {label: Image, name: image, widget: image, media_folder: /static/images/pages/home}
+                  - {label: Classes, name: tags, widget: list }
                   - {label: Description, name: descrtipion, widget: string}
-                  - {label: Quote, name: Quote, widget: string}
+                  - {label: Quote, name: quote, widget: string}
           - label: Location
             name: location
             widget: object
@@ -113,6 +114,7 @@ collections:
                 summary: '{{fields.title}}'
                 fields:
                   - {label: Title, name: title, widget: string}
+                  - {label: Image, name: image, widget: image, media_folder: /static/images/pages/home}
                   - {label: Descrtipion, name: description, widget: string}
                   - {label: "Link Text", name: linkText, widget: string}
                   - {label: "Link Href", name: linkHref, widget: string}
