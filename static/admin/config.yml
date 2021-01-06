@@ -35,6 +35,8 @@ collections:
        - name: home
          label: Home
          file: /content/pages/home.md
+         media_folder: '/static/images/pages/home'
+         public_folder: '/images/pages/home'
          fields:
           - {label: Title, name: title, widget: string}
           - label: Hero
