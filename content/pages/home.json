@@ -7,5 +7,102 @@
     "buttonLink": "#",
     "image": "/static/images/pages/dsc02671.jpg"
   },
-  "title": "Home"
+  "title": "Home",
+  "classes": {
+    "title": "Programs & Classes",
+    "classList": [
+      {
+        "title": "SAT I",
+        "descrtipion": "Reading, Writing, and Math",
+        "linkText": "Learn More",
+        "linkHref": "#",
+        "image": "/static/images/pages/home/dsc02671.jpg",
+        "icon": {
+          "code": "<svg viewBox=\"0 0 64 64\">\n  <circle cx=\"32\" cy=\"32\" r=\"32\" />\n</svg>"
+        }
+      },
+      {
+        "icon": {
+          "code": "<svg viewBox=\"0 0 64 64\">\n  <circle cx=\"32\" cy=\"32\" r=\"32\" />\n</svg>"
+        },
+        "title": "SAT II",
+        "image": "/static/images/pages/home/dsc02713.jpg",
+        "descrtipion": "Get an 800 on SAT II Math!",
+        "linkText": "Learn More",
+        "linkHref": "#"
+      },
+      {
+        "icon": {
+          "code": "<svg viewBox=\"0 0 64 64\">\n  <circle cx=\"32\" cy=\"32\" r=\"32\" />\n</svg>"
+        },
+        "title": "College Consulting",
+        "image": "/static/images/pages/home/dsc02754.jpg",
+        "descrtipion": "Getting you into a good College!",
+        "linkText": "Learn More",
+        "linkHref": "#"
+      },
+      {
+        "icon": {
+          "code": "<svg viewBox=\"0 0 64 64\">\n  <circle cx=\"32\" cy=\"32\" r=\"32\" />\n</svg>"
+        },
+        "title": "AP & General Class Prep",
+        "image": "/static/images/pages/home/dsc02778.jpg",
+        "descrtipion": "Getting you into a Good college!",
+        "linkText": "Learn More",
+        "linkHref": "#"
+      }
+    ],
+    "linkText": "See our Class Schedules",
+    "linkHref": "#"
+  },
+  "about": {
+    "image": "/static/images/pages/home/dsc02834.jpg",
+    "subtitle": "About Us",
+    "title": "Lifelong Lesson's from Lee's",
+    "description": "At Lee’s Review, our goal is to educate and inspire students so that they are prepared for classes and tests, but we also place emphasis on personal growth through providing high quality support.",
+    "linkText": "Learn More",
+    "linkHref": "#"
+  },
+  "testimonies": {
+    "linkText": "Read More Testimonies",
+    "linkHref": "#",
+    "classList": [
+      {
+        "title": "Mrs. Decambra",
+        "image": "/static/images/pages/home/screen-shot-2016-09-01-at-6.46.33-pm.png",
+        "descrtipion": "College Consulting Client that went to USC",
+        "Quote": "\"“As a parent of children who attended Lee’s Review, I can personally say that I wouldn’t have trusted anyone else with the guidance and instruction of my children.”"
+      },
+      {
+        "title": "Mr. & Mrs. Honda",
+        "image": "/static/images/pages/home/screen-shot-2016-09-07-at-2.16.47-pm.png",
+        "descrtipion": "SAT and College Consulting Clients",
+        "Quote": "\"Lee’s Review has been part of our lives for the past three or four years. Our older daughter Katy started with SAT Prep and continued with College Consulting services. Our son William continued our relationship with Lee’s with SAT Prep and College Consulting service as well. Throughout this time at Lee’s we observed the great value and care that Mr. and Mrs. Lee and their staff provided to our children.\""
+      },
+      {
+        "title": "Kevin Lee",
+        "image": "/static/images/pages/home/img_3058.jpeg",
+        "descrtipion": "DBHS Studdnt and College consulting student.",
+        "Quote": "\"“Through their SAT Winter Boot camp, I improved my SAT score by almost 800 points! I was a College Consulting student the summer of 2015 through the end of second semester.\""
+      }
+    ]
+  },
+  "location": {
+    "subtitle": "Location",
+    "title": "Online or Diamond Bar",
+    "locationList": [
+      {
+        "title": "Check out our Online Class Demo!",
+        "description": "After the COVID-19 pandemic, we’ve been able to succesfully host online classes!",
+        "linkText": "Learn More",
+        "linkHref": "#"
+      },
+      {
+        "title": "Advanced Classrooms and Supplies",
+        "description": "We pride ourselves on providing the best learning environment for our students. Snacks, computers, and whiteboards!",
+        "linkText": "Learn More",
+        "linkHref": "#"
+      }
+    ]
+  }
 }
