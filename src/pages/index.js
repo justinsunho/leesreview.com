@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
+import { Card } from "components/molecules";
 import { Hero } from "components/organisms";
 import { MainLayout } from "components/layouts";
 
@@ -9,7 +10,7 @@ const Index = ({ data }) => {
     } = data;
 
     const {
-        node: { title, hero },
+        node: { hero, classes },
     } = edges[0];
 
     return (
@@ -23,6 +24,21 @@ const Index = ({ data }) => {
                 image={"/images/pages/dsc02671.jpg"}
                 button
             />
+            <div className="container">
+                <h2 className={"row"}>{classes.title}</h2>
+                <div className={"row"}>
+                    {classes.classList.map((item) => (
+                        <Card
+                            title={item.title}
+                            image={item.image}
+                            icon={item.icon}
+                            description={item.description}
+                            linkText={item.linkText}
+                            linkHref={item.linkHref}
+                        />
+                    ))}
+                </div>
+            </div>
         </MainLayout>
     );
 };
@@ -34,6 +50,7 @@ export const pageQuery = graphql`
         allPagesJson(filter: { title: { eq: "Home" } }) {
             edges {
                 node {
+                    title
                     id
                     hero {
                         title
@@ -42,7 +59,18 @@ export const pageQuery = graphql`
                         buttonLink
                         image
                     }
-                    title
+                    classes {
+                        title
+                        linkText
+                        linkHref
+                        classList {
+                            title
+                            description
+                            linkText
+                            linkHref
+                            image
+                        }
+                    }
                 }
             }
         }

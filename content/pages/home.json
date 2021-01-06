@@ -13,7 +13,7 @@
     "classList": [
       {
         "title": "SAT I",
-        "descrtipion": "Reading, Writing, and Math",
+        "description": "Reading, Writing, and Math",
         "linkText": "Learn More",
         "linkHref": "#",
         "image": "/static/images/pages/home/dsc02671.jpg",
@@ -27,7 +27,7 @@
         },
         "title": "SAT II",
         "image": "/static/images/pages/home/dsc02713.jpg",
-        "descrtipion": "Get an 800 on SAT II Math!",
+        "description": "Get an 800 on SAT II Math!",
         "linkText": "Learn More",
         "linkHref": "#"
       },
@@ -37,7 +37,7 @@
         },
         "title": "College Consulting",
         "image": "/static/images/pages/home/dsc02754.jpg",
-        "descrtipion": "Getting you into a good College!",
+        "description": "Getting you into a good College!",
         "linkText": "Learn More",
         "linkHref": "#"
       },
@@ -47,7 +47,7 @@
         },
         "title": "AP & General Class Prep",
         "image": "/static/images/pages/home/dsc02778.jpg",
-        "descrtipion": "Getting you into a Good college!",
+        "description": "Getting you into a Good college!",
         "linkText": "Learn More",
         "linkHref": "#"
       }
@@ -78,7 +78,7 @@
           "fjfjfj",
           "fjfj"
         ],
-        "descrtipion": "College Consulting Client that went to USC",
+        "description": "College Consulting Client that went to USC",
         "quote": "\"“As a parent of children who attended Lee’s Review, I can personally say that I wouldn’t have trusted anyone else with the guidance and instruction of my children.”"
       },
       {
@@ -88,7 +88,7 @@
           "SAT I",
           "College Consulting"
         ],
-        "descrtipion": "SAT and College Consulting Clients,fjfjfjfewaoifewa",
+        "description": "SAT and College Consulting Clients,fjfjfjfewaoifewa",
         "quote": "\"Lee’s Review has been part of our lives for the past three or four years. Our older daughter Katy started with SAT Prep and continued with College Consulting services. Our son William continued our relationship with Lee’s with SAT Prep and College Consulting service as well. Throughout this time at Lee’s we observed the great value and care that Mr. and Mrs. Lee and their staff provided to our children.\""
       },
       {
@@ -102,7 +102,7 @@
           "fj fjfdjaiofewa",
           ""
         ],
-        "descrtipion": "DBHS Studdnt and College consulting student.",
+        "description": "DBHS Studdnt and College consulting student.",
         "quote": "\"“Through their SAT Winter Boot camp, I improved my SAT score by almost 800 points! I was a College Consulting student the summer of 2015 through the end of second semester.\""
       }
     ],
