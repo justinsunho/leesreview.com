@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "gatsby";
-import { Button, SmallCaps } from "components/atoms";
+import { Button, CTALink, SmallCaps } from "components/atoms";
 import styles from "./styles.module.scss";
 
 const TextBlock = ({ subtitle, headingTag, headingText, description, linkText, linkHref, button, className }) => {
@@ -14,7 +13,7 @@ const TextBlock = ({ subtitle, headingTag, headingText, description, linkText, l
             {linkHref && linkText && button ? (
                 <Button to={linkHref}>{linkText}</Button>
             ) : (
-                <Link to={linkHref}>{linkText}</Link>
+                <CTALink linkHref={linkHref}>{linkText}</CTALink>
             )}
         </div>
     );
