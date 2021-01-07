@@ -1,78 +1,132 @@
 import React from "react";
 import { graphql } from "gatsby";
+import { CTALink } from "components/atoms";
 import { Card } from "components/molecules";
-import { Hero } from "components/organisms";
+import { Hero, MediaSection } from "components/organisms";
 import { MainLayout } from "components/layouts";
+import utilities from "theme/utilities.module.scss";
 
 const Index = ({ data }) => {
-    // const {
-    //     allMarkdownRemark: { edges },
-    // } = data;
+    const {
+        allMarkdownRemark: { edges },
+    } = data;
 
-    // const {
-    //     node: { hero, classes },
-    // } = edges[0];
+    const {
+        node: {
+            frontmatter: { hero, classes, about },
+        },
+    } = edges[0];
 
     return (
         <MainLayout>
-            {/* <Hero
-                className={"section"}
-                headingText={hero.title}
-                description={hero.description}
-                linkText={hero.buttonText}
-                linkHref={hero.buttonLink}
-                image={"/images/pages/dsc02671.jpg"}
-                button
-            />
-            <div className="container">
-                <h2 className={"row"}>{classes.title}</h2>
+            <div className={`section`}>
+                <Hero
+                    headingText={hero.title}
+                    description={hero.description}
+                    linkText={hero.buttonText}
+                    linkHref={hero.buttonLink}
+                    image={hero.image.childImageSharp.fluid}
+                    button
+                />
+            </div>
+            <div className={`section`}>
+                <div className={"row"}>
+                    <h2 className={`col ${utilities.textCenter}`}>{classes.title}</h2>
+                </div>
                 <div className={"row"}>
                     {classes.classList.map((item) => (
-                        <Card
-                            title={item.title}
-                            image={item.image}
-                            icon={item.icon}
-                            description={item.description}
-                            linkText={item.linkText}
-                            linkHref={item.linkHref}
-                        />
+                        <div className={"col-md-3"}>
+                            <Card
+                                title={item.title}
+                                image={item.image.childImageSharp.fluid}
+                                icon={item.icon.code}
+                                description={item.description}
+                                linkText={item.linkText}
+                                linkHref={item.linkHref}
+                            />
+                        </div>
                     ))}
                 </div>
-            </div> */}
+                <div className={"row"}>
+                    <CTALink linkHref={classes.linkHref} className={`${utilities.textCenter} col`}>
+                        {classes.linkText}
+                    </CTALink>
+                </div>
+            </div>
+            <div className={`section`}>
+                <MediaSection
+                    image={about.image.childImageSharp.fluid}
+                    subtitle={about.subtitle}
+                    headingText={about.title}
+                    description={about.description}
+                    linkText={about.linkText}
+                    linkHref={about.linkHref}
+                />
+            </div>
         </MainLayout>
     );
 };
 
 export default Index;
 
-// export const pageQuery = graphql`
-//     query {
-//         allMarkdownRemark(filter: { title: { eq: "Home" } }) {
-//             edges {
-//                 node {
-//                     title
-//                     id
-//                     hero {
-//                         title
-//                         description
-//                         buttonText
-//                         buttonLink
-//                         image
-//                     }
-//                     classes {
-//                         title
-//                         linkText
-//                         linkHref
-//                         classList {
-//                             title
-//                             description
-//                             linkText
-//                             linkHref
-//                             image
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// `;
+export const pageQuery = graphql`
+    query {
+        allMarkdownRemark(filter: { frontmatter: { title: { eq: "Home" } } }) {
+            edges {
+                node {
+                    frontmatter {
+                        hero {
+                            title
+                            description
+                            buttonText
+                            buttonLink
+                            staff
+                            image {
+                                childImageSharp {
+                                    fluid {
+                                        ...GatsbyImageSharpFluid
+                                    }
+                                }
+                            }
+                        }
+                        classes {
+                            title
+                            linkText
+                            linkHref
+                            classList {
+                                title
+                                image {
+                                    childImageSharp {
+                                        fluid {
+                                            ...GatsbyImageSharpFluid
+                                        }
+                                    }
+                                }
+                                icon {
+                                    code
+                                }
+                                description
+                                linkText
+                                linkHref
+                            }
+                        }
+                        about {
+                            image {
+                                childImageSharp {
+                                    fluid {
+                                        ...GatsbyImageSharpFluid
+                                    }
+                                }
+                            }
+                            subtitle
+                            title
+                            description
+                            linkText
+                            linkHref
+                        }
+                    }
+                }
+            }
+        }
+    }
+`;

@@ -1,0 +1,13 @@
+@import "theme/variables";
+
+a {
+    .arrow {
+        transform: translateX(0);
+        transition: 0.2s ease-in-out;
+    }
+
+    &:hover .arrow {
+        transform: translateX(10px);
+        transition: 0.2s ease-in-out;
+    }
+}

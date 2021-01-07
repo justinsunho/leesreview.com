@@ -1,7 +1,8 @@
 import React from "react";
+import Img from "gatsby-image";
 
 const Image = ({ image, className }) => {
-    return <img className={className} src={image} />;
+    return <Img alt="test" className={className} fluid={image} />;
 };
 
 export default Image;

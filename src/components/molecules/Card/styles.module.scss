@@ -1,2 +1,37 @@
+@import "theme/variables";
+
 .card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: $elevation1;
+    transform: translateY(0);
+    transition: 0.3s all ease-in-out;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid $black;
+
+    &:hover {
+        box-shadow: $elevation3;
+        transform: translateY(-10px);
+        transition: 0.3s all ease-in-out;
+    }
+
+    .image {
+        max-height: 16.75rem;
+    }
+
+    .content {
+        position: relative;
+        padding: 1rem;
+
+        .heading {
+            color: $black;
+        }
+
+        .icon {
+            position: absolute;
+            top: -2rem;
+            right: 1rem;
+        }
+    }
 }
