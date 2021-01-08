@@ -2,7 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import { CTALink } from "components/atoms";
 import { Card } from "components/molecules";
-import { Hero, MediaSection } from "components/organisms";
+import { Hero, MediaSection, TestimonySection } from "components/organisms";
 import { MainLayout } from "components/layouts";
 import utilities from "theme/utilities.module.scss";
 
@@ -13,7 +13,7 @@ const Index = ({ data }) => {
 
     const {
         node: {
-            frontmatter: { hero, classes, about },
+            frontmatter: { hero, classes, about, testimonies },
         },
     } = edges[0];
 
@@ -61,6 +61,14 @@ const Index = ({ data }) => {
                     description={about.description}
                     linkText={about.linkText}
                     linkHref={about.linkHref}
+                />
+            </div>
+            <div className={`section`}>
+                <TestimonySection
+                    subtitle={testimonies.subtitle}
+                    linkHref={testimonies.linkHref}
+                    linkText={testimonies.linkText}
+                    testimonyList={testimonies.testimonyList}
                 />
             </div>
         </MainLayout>
@@ -123,6 +131,31 @@ export const pageQuery = graphql`
                             description
                             linkText
                             linkHref
+                        }
+                        testimonies {
+                            subtitle
+                            linkText
+                            linkHref
+                            testimonyList {
+                                title
+                                description
+                                quote
+                                tags
+                                image {
+                                    childImageSharp {
+                                        fluid(maxHeight: 240) {
+                                            ...GatsbyImageSharpFluid
+                                        }
+                                    }
+                                }
+                                icon {
+                                    childImageSharp {
+                                        fixed(height: 32) {
+                                            ...GatsbyImageSharpFixed
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }

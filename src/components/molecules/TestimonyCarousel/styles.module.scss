@@ -1,0 +1,63 @@
+@import "theme/variables";
+
+.testimonyCarousel {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    max-width: 21.75rem;
+    margin: 0 auto;
+    box-shadow: $elevation1;
+    padding: 1rem;
+    color: $black;
+
+    &:hover {
+        box-shadow: $elevation3;
+    }
+
+    .image {
+        width: 100%;
+        max-width: 15rem;
+        max-height: 15rem;
+        border-radius: 15rem;
+        top: -8rem;
+    }
+
+    .content {
+        padding-top: 8rem;
+
+        .tagContainer {
+            padding-bottom: 0.5rem;
+
+            .tag {
+                padding: 0 0.5rem;
+            }
+        }
+    }
+
+    .controls {
+        display: flex;
+        align-items: center;
+        color: $neutral-600;
+
+        .current {
+            color: $primary-1;
+        }
+
+        svg {
+            &:hover {
+                color: $primary-2;
+            }
+
+            &.disabled {
+                color: $neutral-200;
+                pointer-events: none;
+            }
+        }
+
+        .dot {
+            margin: 0.5rem;
+        }
+    }
+}
