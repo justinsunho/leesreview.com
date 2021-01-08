@@ -76,6 +76,7 @@ testimonies:
         years. Our older daughter Katy started with SAT Prep and continued with
         College Consulting services. Our son William continued our relationship
         with Lee’s with SAT Prep and College Consulting service as well."
+      icon: /images/pages/home/block-s-2color.png
     - title: Kevin Lee
       image: /images/pages/home/img_3058.jpeg
       tags:
@@ -93,6 +94,7 @@ testimonies:
         supplements), application building, college choice based upon major, and
         literally anything else a student can or will need throughout their
         application process."'
+      icon: /images/pages/home/download.png
     - title: Mrs. Decambra
       image: /images/pages/home/screen-shot-2016-09-01-at-6.46.33-pm.png
       tags:
@@ -106,6 +108,7 @@ testimonies:
         the material. "
       description: Mrs. Decambra, a local teacher, sees how much care Lee's Review
         places into their work.
+      icon: /images/pages/home/usc-icon.png
 location:
   subtitle: Location
   title: Online or Diamond Bar
