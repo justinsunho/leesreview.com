@@ -6,7 +6,11 @@ import styles from "./styles.module.scss";
 const TestimonySection = ({ subtitle, linkText, linkHref, testimonyList }) => {
     const [testimonyIndex, setTestimonyIndex] = useState(0);
 
-    console.log(testimonyIndex);
+    const transitions = useTransition(testimonyIndex, null, {
+        from: { opacity: 0 },
+        enter: { opacity: 1 },
+        leave: { opacity: 0 },
+    });
 
     return (
         <div className={`row align-items-center`}>

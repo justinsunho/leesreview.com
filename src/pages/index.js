@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { CTALink } from "components/atoms";
+import { CTALink, SmallCaps } from "components/atoms";
 import { Card } from "components/molecules";
 import { Hero, MediaSection, TestimonySection } from "components/organisms";
 import { MainLayout } from "components/layouts";
@@ -13,7 +13,7 @@ const Index = ({ data }) => {
 
     const {
         node: {
-            frontmatter: { hero, classes, about, testimonies },
+            frontmatter: { hero, classes, about, testimonies, location },
         },
     } = edges[0];
 
@@ -70,6 +70,32 @@ const Index = ({ data }) => {
                     linkText={testimonies.linkText}
                     testimonyList={testimonies.testimonyList}
                 />
+            </div>
+            <div className={`section`}>
+                <div className={`row`}>
+                    <div className={`col ${utilities.textCenter}`}>
+                        <SmallCaps>{location.subtitle}</SmallCaps>
+                    </div>
+                </div>
+                <div className={`row`}>
+                    <div className={`col ${utilities.textCenter}`}>
+                        <h2>{location.title}</h2>
+                    </div>
+                </div>
+                <div className={`row`}>
+                    {location.locationList.map((item) => (
+                        <div className={`col-md-6`}>
+                            <Card
+                                title={item.title}
+                                className={``}
+                                image={item.image.childImageSharp.fluid}
+                                description={item.description}
+                                linkText={item.linkText}
+                                linkHref={item.linkHref}
+                            />
+                        </div>
+                    ))}
+                </div>
             </div>
         </MainLayout>
     );
@@ -152,6 +178,23 @@ export const pageQuery = graphql`
                                     childImageSharp {
                                         fixed(height: 32) {
                                             ...GatsbyImageSharpFixed
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        location {
+                            subtitle
+                            title
+                            locationList {
+                                title
+                                description
+                                linkText
+                                linkHref
+                                image {
+                                    childImageSharp {
+                                        fluid {
+                                            ...GatsbyImageSharpFluid
                                         }
                                     }
                                 }
