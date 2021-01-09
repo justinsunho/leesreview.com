@@ -4,6 +4,7 @@ import SocialLinks from "./SocialLinks";
 import TextBlock from "./TextBlock";
 import Card from "./Card";
 import BigQuote from "./BigQuote";
-import TestimonyCarousel from "./TestimonyCarousel";
+import CarouselContainer from "./CarouselContainer";
+import TestimonyItem from "./TestimonyItem";
 
-export { Card, NavLinks, Info, SocialLinks, TextBlock, BigQuote, TestimonyCarousel };
+export { Card, NavLinks, Info, SocialLinks, TextBlock, BigQuote, CarouselContainer, TestimonyItem };

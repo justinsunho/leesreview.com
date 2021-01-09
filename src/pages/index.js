@@ -35,7 +35,7 @@ const Index = ({ data }) => {
                 </div>
                 <div className={"row"}>
                     {classes.classList.map((item) => (
-                        <div className={"col-md-3"}>
+                        <div className={"col-md-3"} key={item.title}>
                             <Card
                                 title={item.title}
                                 image={item.image.childImageSharp.fluid}
@@ -84,7 +84,7 @@ const Index = ({ data }) => {
                 </div>
                 <div className={`row`}>
                     {location.locationList.map((item) => (
-                        <div className={`col-md-6`}>
+                        <div className={`col-md-6`} key={item.title}>
                             <Card
                                 title={item.title}
                                 className={``}

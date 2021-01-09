@@ -1,0 +1,30 @@
+@import "theme/variables";
+
+.image {
+    width: 100%;
+    max-width: 15rem;
+    max-height: 15rem;
+    border-radius: 15rem;
+    top: -8rem;
+}
+
+.content {
+    padding-top: 8rem;
+
+    .tagContainer {
+        padding-bottom: 0.5rem;
+
+        .tag {
+            padding: 0 0.5rem;
+        }
+    }
+}
+
+.testimonyItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    color: $black;
+}
