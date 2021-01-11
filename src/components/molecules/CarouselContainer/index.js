@@ -21,6 +21,7 @@ const CarouselContainer = ({ children, currentIndex, setIndex, itemCount }) => {
 
                 {[...Array(itemCount)].map((x, i) => (
                     <svg
+                        key={i}
                         height="8"
                         width="8"
                         fill="currentColor"

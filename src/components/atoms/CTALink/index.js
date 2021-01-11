@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "./styles.module.scss";
 
-const CTALink = ({ children, className, linkHref }) => {
+const CTALink = ({ children, className, linkHref, style }) => {
     const Tag = linkHref ? "a" : "div";
 
     return (
-        <Tag href={linkHref} className={`${className} ${styles.link}`}>
+        <Tag href={linkHref} className={`${className} ${styles.link}`} style={style}>
             {children}
             <svg
                 className={styles.arrow}

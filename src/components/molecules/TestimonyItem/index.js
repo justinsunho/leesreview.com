@@ -14,7 +14,9 @@ const TestimonyItem = ({ image, tags, title, description, icon }) => {
             <div className={styles.content}>
                 <div className={styles.tagContainer}>
                     {tags.map((tag) => (
-                        <SmallCaps className={styles.tag}>{tag}</SmallCaps>
+                        <SmallCaps className={styles.tag} key={tag}>
+                            {tag}
+                        </SmallCaps>
                     ))}
                 </div>
                 <h4 className={styles.heading}>{title}</h4>

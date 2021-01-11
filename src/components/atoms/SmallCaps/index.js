@@ -1,8 +1,12 @@
 import React from "react";
 import styles from "./styles.module.scss";
 
-const SmallCaps = ({ className, children }) => {
-    return <span className={`${styles.smallCaps} ${className && className}`}>{children}</span>;
+const SmallCaps = ({ className, children, style }) => {
+    return (
+        <span className={`${styles.smallCaps} ${className && className}`} style={style}>
+            {children}
+        </span>
+    );
 };
 
 export default SmallCaps;
