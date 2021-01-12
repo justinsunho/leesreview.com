@@ -27,6 +27,8 @@ const CardContainer = ({ subtitle, title, items, linkText, linkHref }) => {
         ref: cardRef,
     });
 
+    const color = ["#eb5757", "#f2994a", "#f2c94c", "#219653", "#9b51e0"];
+
     useChain(inView ? [textRef, cardRef] : []);
 
     return (
@@ -45,6 +47,7 @@ const CardContainer = ({ subtitle, title, items, linkText, linkHref }) => {
                 {items.map((item, i) => (
                     <a.div className={`col-md-${12 / items.length}`} key={item.title} style={cardTrail[i]}>
                         <Card
+                            color={color[i]}
                             title={item.title}
                             image={item.image.childImageSharp.fluid}
                             icon={item.icon && item.icon.code}

@@ -4,10 +4,11 @@ import { a, useSpring } from "react-spring";
 import { Image } from "components/atoms";
 import { TextBlock } from "components/molecules";
 import { enterRight } from "utilities/springConfigs";
+import styles from "./styles.module.scss";
 
-const MediaSection = ({ image, subtitle, headingText, description, linkText, linkHref }) => {
+const MediaSection = ({ image, subtitle, headingText, description, linkText, linkHref, ribbon }) => {
     const { ref, inView } = useInView({
-        threshold: 0.5,
+        threshold: 0.8,
         triggerOnce: true,
     });
 
@@ -17,8 +18,18 @@ const MediaSection = ({ image, subtitle, headingText, description, linkText, lin
         ...enterRight(inView),
     });
 
+    const ribbonSpring = useSpring({
+        from: {
+            width: "0%",
+        },
+        to: {
+            width: inView ? "100%" : "0%",
+        },
+    });
+
     return (
-        <div className={`section`}>
+        <div className={`section ${styles.mediaSection}`}>
+            {ribbon && <a.div className={styles.ribbon} style={ribbonSpring} />}
             <div className={`row align-items-center`} ref={ref}>
                 <div className={`col-md-6`}>
                     <AnimatedImg image={image} style={imageSpring} />
@@ -32,6 +43,7 @@ const MediaSection = ({ image, subtitle, headingText, description, linkText, lin
                         linkText={linkText}
                         linkHref={linkHref}
                         inView={inView}
+                        darkMode={ribbon && true}
                     />
                 </div>
             </div>

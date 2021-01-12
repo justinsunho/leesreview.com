@@ -40,6 +40,7 @@ const Index = ({ data }) => {
                 description={about.description}
                 linkText={about.linkText}
                 linkHref={about.linkHref}
+                ribbon={true}
             />
             <TestimonySection
                 subtitle={testimonies.subtitle}

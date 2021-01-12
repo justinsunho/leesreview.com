@@ -14,6 +14,7 @@ const TextBlock = ({
     button,
     className,
     inView,
+    darkMode,
 }) => {
     const Heading = a(headingTag);
     const AnimatedSmallCaps = a(SmallCaps);
@@ -27,11 +28,11 @@ const TextBlock = ({
 
     return (
         <a.div className={`${className} ${styles.textBlock}`}>
-            <AnimatedSmallCaps style={trail[0]}>{subtitle}</AnimatedSmallCaps>
-            <Heading className={styles.heading} style={trail[1]}>
+            <AnimatedSmallCaps style={{ ...trail[0], color: darkMode ? "#FFF" : "" }}>{subtitle}</AnimatedSmallCaps>
+            <Heading className={styles.heading} style={{ ...trail[1], color: darkMode ? "#FFF" : "" }}>
                 {headingText}
             </Heading>
-            <a.p className={styles.paragraph} style={trail[2]}>
+            <a.p className={styles.paragraph} style={{ ...trail[2], color: darkMode ? "#FFF" : "" }}>
                 {description}
             </a.p>
             {linkHref && linkText && button ? (
@@ -39,7 +40,7 @@ const TextBlock = ({
                     {linkText}
                 </AnimatedButton>
             ) : (
-                <AnimatedCTALink linkHref={linkHref} style={trail[3]}>
+                <AnimatedCTALink linkHref={linkHref} style={{ ...trail[3], color: darkMode ? "#FFF" : "" }}>
                     {linkText}
                 </AnimatedCTALink>
             )}

@@ -4,16 +4,12 @@
     display: flex;
     flex-direction: column;
     box-shadow: $elevation1;
-    transform: translateY(0);
-    transition: 0.3s all ease-in-out;
     border: 1px solid $black;
     height: 100%;
     background-color: $white;
 
     &:hover {
         box-shadow: $elevation3;
-        transform: translateY(-10px);
-        transition: 0.3s all ease-in-out;
     }
 
     .image {

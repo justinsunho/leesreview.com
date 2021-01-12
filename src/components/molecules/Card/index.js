@@ -3,9 +3,9 @@ import { CTALink, ImageBackground } from "components/atoms";
 import Img from "gatsby-image";
 import styles from "./styles.module.scss";
 
-const Card = ({ title, className, image, icon, description, linkText, linkHref, style }) => {
+const Card = ({ title, className, image, icon, description, linkText, linkHref, style, color }) => {
     return (
-        <ImageBackground>
+        <ImageBackground color={color}>
             <a href={linkHref} className={`${styles.card} ${className}`} style={style}>
                 <Img className={`${styles.image}`} fluid={{ ...image, aspectRatio: 1 }} />
 

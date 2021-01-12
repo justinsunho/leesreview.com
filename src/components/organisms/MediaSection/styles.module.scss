@@ -1,0 +1,17 @@
+@import "theme/variables";
+
+.mediaSection {
+    z-index: 1;
+
+    .ribbon {
+        content: "";
+        position: absolute;
+        top: 20%;
+        left: 2rem;
+        display: block;
+        background-color: $primary-1;
+        width: 100%;
+        height: 75%;
+        z-index: -1;
+    }
+}
