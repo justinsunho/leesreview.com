@@ -9,7 +9,7 @@ import styles from "./styles.module.scss";
 
 const CardContainer = ({ subtitle, title, items, linkText, linkHref }) => {
     const { ref, inView } = useInView({
-        threshold: 0.5,
+        threshold: 0.2,
         triggerOnce: true,
     });
 

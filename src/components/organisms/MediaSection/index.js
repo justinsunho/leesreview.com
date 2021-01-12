@@ -21,15 +21,21 @@ const MediaSection = ({ image, subtitle, headingText, description, linkText, lin
     const ribbonSpring = useSpring({
         from: {
             width: "0%",
+            padding: "0rem 0rem",
         },
         to: {
             width: inView ? "100%" : "0%",
+            padding: inView ? "0rem 100rem" : "0rem 0rem",
         },
     });
 
     return (
         <div className={`section ${styles.mediaSection}`}>
-            {ribbon && <a.div className={styles.ribbon} style={ribbonSpring} />}
+            {ribbon && (
+                <a.div className={styles.ribbonContainer}>
+                    <a.div className={styles.ribbon} style={ribbonSpring} />
+                </a.div>
+            )}
             <div className={`row align-items-center`} ref={ref}>
                 <div className={`col-md-6`}>
                     <AnimatedImg image={image} style={imageSpring} />

@@ -3,15 +3,18 @@
 .mediaSection {
     z-index: 1;
 
-    .ribbon {
-        content: "";
-        position: absolute;
-        top: 20%;
-        left: 2rem;
-        display: block;
-        background-color: $primary-1;
+    .ribbonContainer {
+        transform: rotate(-10deg);
+        height: 100%;
         width: 100%;
-        height: 75%;
         z-index: -1;
+        position: absolute;
+        top: 10%;
+    }
+
+    .ribbon {
+        margin: 0 -100rem;
+        background-color: $primary-1;
+        height: 75%;
     }
 }
