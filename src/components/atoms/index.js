@@ -3,5 +3,6 @@ import Button from "./Button";
 import SmallCaps from "./SmallCaps";
 import Image from "./Image";
 import CTALink from "./CTALink";
+import ImageBackground from "./ImageBackground";
 
-export { Button, Logo, SmallCaps, Image, CTALink };
+export { Button, Logo, SmallCaps, Image, CTALink, ImageBackground };

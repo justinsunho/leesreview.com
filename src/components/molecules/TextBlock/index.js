@@ -1,6 +1,7 @@
 import React from "react";
 import { a, useTrail } from "react-spring";
 import { Button, CTALink, SmallCaps } from "components/atoms";
+import { enterAbove } from "utilities/springConfigs";
 import styles from "./styles.module.scss";
 
 const TextBlock = ({
@@ -20,8 +21,7 @@ const TextBlock = ({
     const AnimatedCTALink = a(CTALink);
 
     const trail = useTrail(4, {
-        to: inView ? { opacity: 1, transform: "translateY(0)" } : { opacity: 0, transform: "translateY(-20px)" },
-        from: { opacity: 0, transform: "translateY(-20px)" },
+        ...enterAbove(inView),
         config: { mass: 15, tension: 2000, friction: 200 },
     });
 
