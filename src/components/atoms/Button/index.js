@@ -1,12 +1,11 @@
 import React from "react";
-import { Link } from "gatsby";
 import styles from "./styles.module.scss";
 
-const Button = ({ to, children, style }) => {
+const Button = ({ to, className, children, style, onClick }) => {
     return (
-        <Link className={styles.button} to={to} style={style}>
+        <a className={`${styles.button} ${className}`} href={to} style={style} onClick={onClick}>
             {children}
-        </Link>
+        </a>
     );
 };
 

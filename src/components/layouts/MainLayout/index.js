@@ -6,7 +6,9 @@ const MainLayout = ({ children }) => {
     return (
         <div className={styles.layout}>
             <Header />
-            <main className={`${styles.contentWrapper} container`}>{children}</main>
+            <div className={`${styles.contentWrapper}`}>
+                <main className={`container`}>{children}</main>
+            </div>
             <Footer />
         </div>
     );

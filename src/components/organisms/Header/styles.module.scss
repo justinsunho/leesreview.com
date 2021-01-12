@@ -1,7 +1,40 @@
+@import "theme/variables";
+
+.headerContainer {
+    position: relative;
+    top: 0;
+    z-index: 1000;
+    background-color: $white;
+    width: 100%;
+
+    &.sticky {
+        position: sticky;
+        box-shadow: $elevation1;
+    }
+
+    @media (max-width: $breakpoint-medium) {
+        box-shadow: $elevation1;
+    }
+}
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
+
+    @media (max-width: $breakpoint-medium) {
+        flex-wrap: wrap;
+
+        .logo {
+            flex-basis: 50%;
+        }
+
+        .infoContainer {
+            text-align: right;
+            flex-basis: 100%;
+            padding-top: 1rem;
+        }
+    }
 }

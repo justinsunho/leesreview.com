@@ -24,4 +24,64 @@
             color: $action-default;
         }
     }
+
+    @media (max-width: $breakpoint-medium) {
+        flex-direction: column;
+        flex-basis: 100%;
+        display: none;
+        text-align: center;
+        padding-top: 1rem;
+
+        &.open {
+            display: flex;
+        }
+
+        .navLink {
+            border-top: 1px solid $neutral-300;
+            width: 100%;
+
+            a {
+                width: 100%;
+                height: 100%;
+                display: inline-block;
+                padding: 0.5rem 0;
+
+                &:hover {
+                    background-color: $neutral-400;
+                }
+
+                .activeLink {
+                    background-color: $neutral-400;
+                }
+            }
+        }
+
+        .contactButton {
+            width: 100%;
+            padding-top: 1rem;
+
+            a {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.menuButtonContainer {
+    display: none;
+    flex-basis: 50%;
+    justify-content: flex-end;
+
+    svg {
+        border-radius: 2px;
+
+        &:hover,
+        &:active {
+            background-color: $neutral-400;
+        }
+    }
+
+    @media (max-width: $breakpoint-medium) {
+        display: flex;
+    }
 }
