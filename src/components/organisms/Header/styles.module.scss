@@ -12,7 +12,7 @@
         box-shadow: $elevation1;
     }
 
-    @media (max-width: $breakpoint-medium) {
+    @media (max-width: $breakpoint-large) {
         box-shadow: $elevation1;
     }
 }
@@ -24,7 +24,7 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
 
-    @media (max-width: $breakpoint-medium) {
+    @media (max-width: $breakpoint-large) {
         flex-wrap: wrap;
 
         .logo {

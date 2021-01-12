@@ -44,4 +44,16 @@
             margin-top: auto;
         }
     }
+
+    @media (max-width: $breakpoint-medium) {
+        flex-direction: row;
+
+        .image {
+            flex-basis: 35%;
+        }
+
+        .icon {
+            display: none;
+        }
+    }
 }
