@@ -10,7 +10,7 @@ const Card = ({ title, className, image, icon, description, linkText, linkHref, 
                 <Img className={`${styles.image}`} fluid={{ ...image, aspectRatio: 1 }} />
 
                 <div className={styles.content}>
-                    <span className={styles.icon} dangerouslySetInnerHTML={{ __html: icon }} />
+                    {/* <span className={styles.icon} dangerouslySetInnerHTML={{ __html: icon }} /> */}
                     <h3 className={styles.heading}>{title}</h3>
                     <p className={styles.description}>{description}</p>
                     <CTALink className={styles.ctaLink}>{linkText}</CTALink>

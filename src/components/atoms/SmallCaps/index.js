@@ -3,7 +3,7 @@ import styles from "./styles.module.scss";
 
 const SmallCaps = ({ className, children, style }) => {
     return (
-        <span className={`${styles.smallCaps} ${className && className}`} style={style}>
+        <span className={`${styles.smallCaps} ${className}`} style={style}>
             {children}
         </span>
     );

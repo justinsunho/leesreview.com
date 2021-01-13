@@ -9,6 +9,8 @@ collections:
     - name: staff
       label: Staff
       folder: /content/staff
+      media_folder: '/static/images/pages/home'
+      public_folder: '/images/pages/home'
       create: true
       fields:
           - { name: title, label: title, required: true }

@@ -1,0 +1,44 @@
+@import "theme/variables";
+
+.infoWrapper {
+    position: relative;
+    margin-bottom: -4rem;
+
+    .imageWrapper {
+        background-color: $black;
+        margin: 0 -1000rem;
+        padding: 0 1000rem;
+        position: relative;
+
+        &:after {
+            z-index: 1;
+            background: linear-gradient(180deg, rgba(51, 51, 51, 0) 50%, #333333 100%);
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .image {
+            margin: 0 auto;
+            max-width: 900px;
+        }
+    }
+
+    .titleWrapper {
+        position: relative;
+        bottom: 6rem;
+        z-index: 2;
+
+        .smallCaps {
+            color: $white;
+        }
+
+        .title {
+            color: $white;
+        }
+    }
+}

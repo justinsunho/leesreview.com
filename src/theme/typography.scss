@@ -35,9 +35,14 @@ p {
     margin-bottom: 1.5em;
     margin-top: 0;
     line-height: 1.75;
+}
 
-    &.longform {
-        font-family: "Source Serif Pro";
+.longform {
+    font-family: "Source Serif Pro";
+    font-size: 1.25rem;
+
+    strong {
+        color: $black;
     }
 }
 
