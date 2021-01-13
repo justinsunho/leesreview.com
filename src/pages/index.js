@@ -1,10 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { SmallCaps } from "components/atoms";
-import { Card } from "components/molecules";
 import { Hero, MediaSection, TestimonySection, CardContainer } from "components/organisms";
 import { MainLayout } from "components/layouts";
-import utilities from "theme/utilities.module.scss";
 
 const Index = ({ data }) => {
     const {
