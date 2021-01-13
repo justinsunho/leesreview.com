@@ -9,6 +9,8 @@ tags:
     - AP Bio
     - AP Chem
 color: orange
+linkHref: /staff/mrs-lee
+linkText: Learn More
 ---
 
 **How Long Have you been tutoring?**

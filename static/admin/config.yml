@@ -16,9 +16,10 @@ collections:
           - { name: title, label: title, required: true }
           - { name: position, label: position, required: true }
           - { name: description, label: Description, required: true }
-          - { name: img, label: img, widget: image, required: true }
+          - { name: image, label: img, widget: image, required: true }
           - { name: tags, label: classes, widget: list, required: true }
           - { name: color, label: color, widget: select, options: ["red", "orange", "green", "blue"], required: true }
+          - { name: link, label: link, widget: string, required: true }
           - { name: body, label: body, widget: markdown, required: true }
     - name: testimonies
       label: Testimonies
@@ -27,7 +28,7 @@ collections:
       fields:
           - { name: title, label: title, required: true }
           - { name: college, label: college, required: false }
-          - { name: img, label: img, widget: image, required: true }
+          - { name: image, label: img, widget: image, required: true }
           - { name: color, label: color, widget: select, options: ["red", "orange", "green", "blue"], required: true }
           - { name: tags, label: classes, widget: list, required: true }
           - { name: body, label: body, widget: markdown, required: true }
@@ -51,12 +52,6 @@ collections:
                - {label: "Button Text", name: buttonText, widget: string}
                - {label: "Button Link", name: buttonLink, widget: string}
                - {label: "Image", name: image, widget: image}
-               - label: "Staff"
-                 name: staff
-                 widget: relation
-                 collection: staff
-                 value_field: title
-                 search_fields: [title]
           - label: Programs & classes
             name: classes
             widget: object
@@ -206,11 +201,13 @@ collections:
                 widget: list
                 summary: '{{fields.title}}'
                 fields:
-                  - {label: "name", name: staff, widget: relation, collection: staff, value_field: title, search_fields: [title]}
+                  - {label: "name", name: title, widget: relation, collection: staff, value_field: title, search_fields: [title]}
                   - {label: "position", name: position, widget: relation, collection: staff, value_field: position, search_fields: [title]}
-                  - {label: "image", name: img, widget: relation, collection: staff, value_field: img, search_fields: [title]}
+                  - {label: "image", name: image, widget: relation, collection: staff, value_field: image, search_fields: [title]}
                   - {label: "classes", name: tags, widget: relation, collection: staff, value_field: tags, search_fields: [title]}
                   - {label: "description", name: description, widget: relation, collection: staff, value_field: description, search_fields: [title]}
+                  - {label: "linkHref", name: linkHref, widget: relation, collection: staff, value_field: linkHref, search_fields: [title]}
+                  - {label: "linkText", name: linkText, widget: relation, collection: staff, value_field: linkText, search_fields: [title]}
           - label: Our History
             name: history
             widget: object

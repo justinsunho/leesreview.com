@@ -4,14 +4,17 @@ position: Owner/Founder
 description: UCI c/o ___
 img: /images/mrlee.jpg
 tags:
-  - SAT Math
-  - College Consulting
-  - AP Bio
-  - AP Chem
+    - SAT Math
+    - College Consulting
+    - AP Bio
+    - AP Chem
 color: orange
+linkHref: /staff/mr-lee
+linkText: Learn More
 ---
+
 **How Long Have you been tutoring?**
-*50 years!*
+_50 years!_
 
 **What was your favorite subject in high school?**
-*I loved ____ in high school*
+_I loved \_\_\_\_ in high school_

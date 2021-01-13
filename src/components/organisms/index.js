@@ -6,5 +6,16 @@ import MediaSection from "./MediaSection";
 import TestimonySection from "./TestimonySection";
 import CardContainer from "./CardContainer";
 import TextBlockSection from "./TextBlockSection";
+import MediaSelectSection from "./MediaSelectSection";
 
-export { Header, Footer, Hero, MediaHero, MediaSection, TestimonySection, CardContainer, TextBlockSection };
+export {
+    Header,
+    Footer,
+    Hero,
+    MediaHero,
+    MediaSection,
+    TestimonySection,
+    CardContainer,
+    TextBlockSection,
+    MediaSelectSection,
+};

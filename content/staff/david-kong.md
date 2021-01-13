@@ -4,18 +4,21 @@ position: Tutor, College Consulting
 description: jfidoas;fjldksafdsja
 img: /images/david.jpg
 tags:
-  - College Consulting
-  - SAT
+    - College Consulting
+    - SAT
 color: orange
+linkHref: /staff/david-kong
+linkText: Learn More
 ---
+
 **How Long Have you been tutoring?**
-*50 years!*
+_50 years!_
 
 **What was your favorite subject in high scool?**
-*I loved ____ in high school*
+_I loved \_\_\_\_ in high school_
 
 **How Long Have you been tutoring?**
-*This will have been my 3rd school year tutoring*
+_This will have been my 3rd school year tutoring_
 
 **How Long Have you been tutoring?**
-*This will have been my 3rd school year tutoring*
+_This will have been my 3rd school year tutoring_
