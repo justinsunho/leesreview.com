@@ -1,18 +1,24 @@
 ---
-title: Mrs. Lee
-position: Front Desk
-description: fjeiowab;klsvneasdvfdsa
-img: /images/dscf3673.jpg
-color: green
+title: Mr. Lee
+position: Owner/Founder
+description: UCI c/o ___
+img: /images/mrlee.jpg
+tags:
+    - SAT Math
+    - College Consulting
+    - AP Bio
+    - AP Chem
+color: orange
 ---
+
 **How Long Have you been tutoring?**
-*50 years!*
+_50 years!_
 
 **What was your favorite subject in high scool?**
-*I loved ____ in high school*
+_I loved \_\_\_\_ in high school_
 
 **How Long Have you been tutoring?**
-*This will have been my 3rd school year tutoring*
+_This will have been my 3rd school year tutoring_
 
 **How Long Have you been tutoring?**
-*This will have been my 3rd school year tutoring*
+_This will have been my 3rd school year tutoring_

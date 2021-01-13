@@ -32,7 +32,7 @@ exports.createPages = async ({ graphql, actions }) => {
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
         createPage({
             path: node.fields.slug,
-            component: path.resolve(`./src/components/templates/staff/index.js`),
+            component: path.resolve(`./src/components/templates/Staff/index.js`),
             context: {
                 // Data passed to context is available
                 // in page queries as GraphQL variables.
