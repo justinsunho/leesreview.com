@@ -15,9 +15,9 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 
 exports.createPages = async ({ graphql, actions }) => {
     const { createPage } = actions;
-    const result = await graphql(`
+    const staff = await graphql(`
         query {
-            allMarkdownRemark {
+            allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/(staff)/" } }) {
                 edges {
                     node {
                         fields {
@@ -29,7 +29,7 @@ exports.createPages = async ({ graphql, actions }) => {
         }
     `);
 
-    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    staff.data.allMarkdownRemark.edges.forEach(({ node }) => {
         createPage({
             path: node.fields.slug,
             component: path.resolve(`./src/components/templates/Staff/index.js`),
