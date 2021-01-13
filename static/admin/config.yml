@@ -153,3 +153,67 @@ collections:
                   - {label: Title, name: title, widget: string}
                   - {label: Image, name: image, widget: image}
                   - {label: Description, name: description, widget: string}
+       - name: about
+         label: About
+         file: /content/pages/about.md
+         media_folder: '/static/images/pages/about'
+         public_folder: '/images/pages/about'
+         fields:
+          - {label: "Title", name: title, widget: string}
+          - label: Hero
+            name: hero
+            widget: object
+            summary: '{{fields.name}}'
+            fields:
+              - {label: "Title", name: title, widget: string}
+              - {label: "Description", name: description, widget: string}
+              - {label: "Button Text", name: buttonText, widget: string}
+              - {label: "Button Link", name: buttonLink, widget: string}
+              - {label: "Image", name: image, widget: image}
+          - label: Why Lee's Review?
+            name: reason
+            widget: object
+            summary: '{{fields.name}}'
+            fields:
+              - {label: "Title", name: title, widget: string}
+              - label: Reasons Why
+                name: reasonsList
+                widget: list
+                summary: '{{fields.title}}'
+                fields:
+                  - {label: Title, name: title, widget: string}
+                  - {label: Image, name: image, widget: image}
+                  - {label: Description, name: description, widget: string}
+          - label: Our Students
+            name: students
+            widget: object
+            summary: '{{fields.name}}'
+            fields:
+              - {label: "Image", name: image, widget: image}
+              - {label: "Title", name: title, widget: string}
+              - {label: "subtitle", name: subtitle, widget: string}
+              - {label: "description", name: description, widget: string}
+              - {label: "Link Text", name: linkText, widget: string}
+              - {label: "Link Href", name: linkHref, widget: string}
+          - label: Our Staff
+            name: staff
+            widget: object
+            summary: '{{fields.name}}'
+            fields:
+              - {label: "Title", name: title, widget: string}
+              - label: Staff List
+                name: staffList
+                widget: list
+                summary: '{{fields.title}}'
+                fields:
+                  - {label: "name", name: staff, widget: relation, collection: staff, value_field: title, search_fields: [title]}
+                  - {label: "position", name: position, widget: relation, collection: staff, value_field: position, search_fields: [title]}
+                  - {label: "image", name: img, widget: relation, collection: staff, value_field: img, search_fields: [title]}
+                  - {label: "classes", name: tags, widget: relation, collection: staff, value_field: tags, search_fields: [title]}
+                  - {label: "description", name: description, widget: relation, collection: staff, value_field: description, search_fields: [title]}
+          - label: Our History
+            name: history
+            widget: object
+            summary: '{{fields.name}}'
+            fields:
+              - {label: "Title", name: title, widget: string}
