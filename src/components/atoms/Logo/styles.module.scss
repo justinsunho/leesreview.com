@@ -1,0 +1,7 @@
+@import "theme/variables";
+
+.logo {
+    @media (max-width: $breakpoint-medium) {
+        max-width: 180px;
+    }
+}

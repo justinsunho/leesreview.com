@@ -18,7 +18,9 @@ const TextBlockSection = ({ title, textBlocks }) => {
                 {textBlocks.map((item, i) => (
                     <TextBlock
                         key={item.title}
-                        className={`col-lg-${12 / textBlocks.length} col-md-${24 / textBlocks.length}`}
+                        className={`col-lg-${12 / textBlocks.length} col-md-${24 / textBlocks.length} ${
+                            utilities.textCenter
+                        } justify-content-stretch`}
                         headingText={item.title}
                         headingTag={"h3"}
                         description={item.description}

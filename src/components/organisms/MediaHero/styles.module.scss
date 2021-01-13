@@ -1,14 +1,22 @@
 @import "theme/variables";
 
-.textBlock {
-    padding-top: 6rem;
-}
+.heroContainer {
+    min-height: 400px;
 
-.info {
-    font-size: 1rem;
-    color: $white;
-}
+    .textBlock {
+        padding-top: 6rem;
 
-.form {
-    margin: 0 auto;
+        // @media(max-width: $breakpoint-medium) {
+        //     padding-top: 0;
+        // }
+    }
+
+    .info {
+        font-size: 1rem;
+        color: $white;
+    }
+
+    .form {
+        margin: 0 auto;
+    }
 }

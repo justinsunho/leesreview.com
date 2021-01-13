@@ -22,7 +22,7 @@ const Hero = ({ headingText, description, linkText, linkHref, button, image, cla
         <div className={`section`} ref={ref}>
             <div className={`${styles.hero} row align-items-center ${className}`}>
                 <TextBlock
-                    className="col-md-6"
+                    className="col-md-6 align-items-start"
                     headingTag={"h1"}
                     headingText={headingText}
                     description={description}
