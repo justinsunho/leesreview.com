@@ -11,7 +11,7 @@ const Card = ({ title, className, image, icon, description, linkText, linkHref, 
 
                 <div className={styles.content}>
                     <span className={styles.icon} dangerouslySetInnerHTML={{ __html: icon }} />
-                    <h4 className={styles.heading}>{title}</h4>
+                    <h3 className={styles.heading}>{title}</h3>
                     <p className={styles.description}>{description}</p>
                     <CTALink className={styles.ctaLink}>{linkText}</CTALink>
                 </div>

@@ -123,6 +123,31 @@ collections:
                   - {label: "Link Href", name: linkHref, widget: string}
        - name: contact
          label: Contact Us
-         file: /content/pages/contact.json
+         file: /content/pages/contact.md
+         media_folder: '/static/images/pages/contact'
+         public_folder: '/images/pages/contact'
          fields:
           - {label: Title, name: title, widget: string}
+          - label: Hero
+            name: hero
+            widget: object
+            summary: '{{fields.name}}'
+            fields: 
+              - {label: "Title", name: title, widget: string}
+              - {label: "Subtitle", name: subtitle, widget: string}
+              - {label: "Description", name: description, widget: string}
+              - {label: Form, name: form, widget: code}
+          - label: Business Info
+            name: business
+            widget: object
+            summary: '{{fields.name}}'
+            fields:
+              - {label: "Title", name: title, widget: string}
+              - label: Business Information
+                name: businessInfoList
+                widget: list
+                summary: '{{fields.title}}'
+                fields:
+                  - {label: Title, name: title, widget: string}
+                  - {label: Image, name: image, widget: image}
+                  - {label: Description, name: description, widget: string}

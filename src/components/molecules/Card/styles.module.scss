@@ -17,7 +17,7 @@
     }
 
     .image {
-        max-height: 16.75rem;
+        max-height: 10rem;
     }
 
     .content {
@@ -31,7 +31,7 @@
 
         .heading {
             color: $black;
-            max-width: 9rem;
+            max-width: 75%;
         }
 
         .icon {
@@ -50,6 +50,7 @@
 
         .image {
             flex-basis: 35%;
+            max-height: none;
         }
 
         .icon {
