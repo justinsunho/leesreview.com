@@ -23,15 +23,23 @@ collections:
           - { name: body, label: body, widget: markdown, required: true }
     - name: testimonies
       label: Testimonies
-      folder: /content/testimonies
-      create: true
-      fields:
-          - { name: title, label: title, required: true }
-          - { name: college, label: college, required: false }
-          - { name: image, label: img, widget: image, required: true }
-          - { name: color, label: color, widget: select, options: ["red", "orange", "green", "blue"], required: true }
-          - { name: tags, label: classes, widget: list, required: true }
-          - { name: body, label: body, widget: markdown, required: true }
+      files:
+        - name: testimonies
+          label: Testimonies
+          file: /content/pages/testimonies.md
+          media_folder: '/static/images/pages/home'
+          public_folder: '/images/pages/home'
+          fields:
+            - label: Testimony
+              name: testimonyList
+              widget: object
+              summary: '{{fields.name}}'
+              fields:
+                - { name: title, label: title, required: true }
+                - { name: college, label: college, required: false }
+                - { name: image, label: img, widget: image, required: true }
+                - { name: tags, label: classes, widget: list, required: true }
+                - { name: body, label: body, widget: markdown, required: true }
     - name: pages
       label: Pages
       files:
