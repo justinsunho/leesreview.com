@@ -1,6 +1,6 @@
 ---
 title: Justin Kim
-position: AP Tutor
+subtitle: AP Tutor
 description: UCLA c/o 2017. DBHS c/o 2013
 img: /images/profile.jpg
 tags:

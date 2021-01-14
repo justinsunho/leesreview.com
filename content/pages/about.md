@@ -51,7 +51,7 @@ staff:
     title: Our Staff
     staffList:
         - title: Mr. Lee
-          position: Owner/Founder
+          subtitle: Owner/Founder
           image: /images/mrlee.jpg
           tags:
               - SAT Math
@@ -62,7 +62,7 @@ staff:
           linkHref: /staff/mr-lee
           linkText: Learn More
         - title: David Kong
-          position: Tutor, College Consulting
+          subtitle: Tutor, College Consulting
           image: /images/david.jpg
           tags:
               - College Consulting
@@ -71,7 +71,7 @@ staff:
           linkHref: /staff/david-kong
           linkText: Learn More
         - title: Justin Kim
-          position: AP Tutor
+          subtitle: AP Tutor
           image: /images/profile.jpg
           tags:
               - AP Calc AB

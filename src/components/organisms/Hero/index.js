@@ -22,7 +22,7 @@ const Hero = ({ headingText, description, linkText, linkHref, button, image, cla
         <div className={`section`} ref={ref}>
             <div className={`${styles.hero} row align-items-center ${className}`}>
                 <TextBlock
-                    className="col-md-6 align-items-start"
+                    className="col-md-4 align-items-start"
                     headingTag={"h1"}
                     headingText={headingText}
                     description={description}
@@ -31,7 +31,7 @@ const Hero = ({ headingText, description, linkText, linkHref, button, image, cla
                     button={button}
                     inView={inView}
                 />
-                <div className={"col-md-6"}>
+                <div className={"col-md-8"}>
                     <AnimatedImage image={image} style={imageSpring} />
                 </div>
             </div>

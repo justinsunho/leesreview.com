@@ -1,6 +1,6 @@
 ---
 title: Mr. Lee
-position: Owner/Founder
+subtitle: Owner/Founder
 description: UCI c/o ___
 img: /images/mrlee.jpg
 tags:

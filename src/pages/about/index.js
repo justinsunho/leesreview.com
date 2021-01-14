@@ -94,7 +94,7 @@ export const pageQuery = graphql`
                             title
                             staffList {
                                 title
-                                position
+                                subtitle
                                 tags
                                 description
                                 linkText

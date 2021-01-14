@@ -1,6 +1,6 @@
 ---
 title: David Kong
-position: Tutor, College Consulting
+subtitle: Tutor, College Consulting
 description: jfidoas;fjldksafdsja
 img: /images/david.jpg
 tags:

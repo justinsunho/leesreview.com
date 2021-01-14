@@ -3,9 +3,9 @@ import Img from "gatsby-image";
 import { ImageBackground } from "components/atoms";
 import styles from "./styles.module.scss";
 
-const Image = ({ image, className, style }) => {
+const Image = ({ image, className, color, style }) => {
     return (
-        <ImageBackground className={style.container}>
+        <ImageBackground color={color}>
             <Img alt="test" className={`${className} ${styles.image}`} fluid={image} />
         </ImageBackground>
     );

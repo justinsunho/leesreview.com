@@ -1,24 +1,27 @@
 @import "theme/variables";
 
-.selectItem {
-    padding: 0.5rem 1rem;
-    box-shadow: $elevation1;
-    border: 1px solid $black;
-    margin-bottom: 1rem;
-    position: relative;
-
-    &:after {
-        content: "";
-        display: block;
-        position: absolute;
-        background-color: $accent-1;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 1rem;
-    }
+.selectItemWrapper {
+    border-radius: 8px;
+    transform: translateX(0);
+    transition: 0.2s ease-in-out;
 
     &:hover {
-        box-shadow: $elevation3;
+        transform: translateX(-10px);
+        transition: 0.2s ease-in-out;
+    }
+
+    .selectItem {
+        border-radius: 8px;
+
+        padding: 0.5rem 1rem;
+        box-shadow: $elevation1;
+        margin-bottom: 1rem;
+        position: relative;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+            box-shadow: $elevation3;
+            transition: 0.3s ease-in-out;
+        }
     }
 }

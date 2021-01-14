@@ -10,7 +10,7 @@ const Staff = ({ data }) => {
     const {
         markdownRemark: {
             html,
-            frontmatter: { title, position, description, tags, color, img },
+            frontmatter: { title, subtitle, description, tags, color, img },
         },
     } = data;
 
@@ -24,7 +24,7 @@ const Staff = ({ data }) => {
                 </div>
                 <div className={`${styles.titleWrapper} row`}>
                     <div className={`col-lg-10 ${utilities.marginAutoCenter}`}>
-                        <SmallCaps className={styles.smallCaps}>{position}</SmallCaps>
+                        <SmallCaps className={styles.smallCaps}>{subtitle}</SmallCaps>
                         <h1 className={styles.title}>{title}</h1>
                         <div>{tags.map((tag) => tag + ", ")}</div>
                     </div>
@@ -49,7 +49,7 @@ export const query = graphql`
             html
             frontmatter {
                 title
-                position
+                subtitle
                 description
                 tags
                 color
