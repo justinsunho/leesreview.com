@@ -32,7 +32,7 @@ collections:
           fields:
             - label: Testimony
               name: testimonyList
-              widget: object
+              widget: list
               summary: '{{fields.name}}'
               fields:
                 - { name: title, label: title, required: true }
