@@ -6,5 +6,6 @@ import Card from "./Card";
 import BigQuote from "./BigQuote";
 import CarouselContainer from "./CarouselContainer";
 import TestimonyItem from "./TestimonyItem";
+import TestimonyCard from "./TestimonyCard";
 
-export { Card, NavLinks, Info, SocialLinks, TextBlock, BigQuote, CarouselContainer, TestimonyItem };
+export { Card, NavLinks, Info, SocialLinks, TextBlock, BigQuote, CarouselContainer, TestimonyItem, TestimonyCard };

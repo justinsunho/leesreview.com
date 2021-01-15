@@ -7,6 +7,7 @@ import TestimonySection from "./TestimonySection";
 import CardContainer from "./CardContainer";
 import TextBlockSection from "./TextBlockSection";
 import MediaSelectSection from "./MediaSelectSection";
+import TestimonyCardContainer from "./TestimonyCardContainer";
 
 export {
     Header,
@@ -18,4 +19,5 @@ export {
     CardContainer,
     TextBlockSection,
     MediaSelectSection,
+    TestimonyCardContainer,
 };

@@ -39,7 +39,7 @@ collections:
                 - { name: title, label: title, required: true }
                 - { name: college, label: college, required: false }
                 - { name: image, label: img, widget: image, required: true }
-                - { name: tags, label: classes, widget: select, multiple: true, options: ["SAT I", "SAT II", "College Consulting", "Classroom Prep"], required: true }
+                - { name: tags, label: classes, widget: select, multiple: true, options: ["SAT I", "SAT II", "College Consulting", "Classroom Prep", "ACT"], required: true }
                 - { name: body, label: body, widget: markdown, required: true }
     - name: pages
       label: Pages
