@@ -52,7 +52,7 @@ staff:
     staffList:
         - title: Mr. Lee
           subtitle: Owner/Founder
-          image: /images/mrlee.jpg
+          image: /images/staff/mrlee.jpg
           tags:
               - SAT Math
               - College Consulting
@@ -63,7 +63,7 @@ staff:
           linkText: Learn More
         - title: David Kong
           subtitle: Tutor, College Consulting
-          image: /images/david.jpg
+          image: /images/staff/david.jpg
           tags:
               - College Consulting
               - SAT
@@ -72,7 +72,7 @@ staff:
           linkText: Learn More
         - title: Justin Kim
           subtitle: AP Tutor
-          image: /images/profile.jpg
+          image: /images/staff/profile.jpg
           tags:
               - AP Calc AB
               - AP Chemistry
