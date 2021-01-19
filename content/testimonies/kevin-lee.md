@@ -8,6 +8,7 @@ tags:
 featured:
   - Home
   - About Us
+  - College Consulting
 ---
 “Through their SAT Winter Boot camp, I improved my SAT score by almost 800
 
