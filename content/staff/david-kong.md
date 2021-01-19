@@ -2,7 +2,7 @@
 title: David Kong
 subtitle: Tutor, College Consulting
 description: jfidoas;fjldksafdsja
-img: /images/david.jpg
+img: /images/staff/david.jpg
 tags:
     - College Consulting
     - SAT

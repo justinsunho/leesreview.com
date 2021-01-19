@@ -2,7 +2,7 @@
 title: Justin Kim
 subtitle: AP Tutor
 description: UCLA c/o 2017. DBHS c/o 2013
-img: /images/profile.jpg
+img: /images/staff/profile.jpg
 tags:
     - AP Calc AB
     - AP Chemistry

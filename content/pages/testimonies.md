@@ -19,7 +19,7 @@ testimonyList:
           their staff, family friends. Our kids were accepted at Stanford and USC in
           large part due to the preparation and guidance that was provided by Mr. &
           Mrs. Lee and their staff. Our family is forever grateful.”
-      image: /images/pages/home/1.png
+      image: /images/pages/testimonies/1.png
     - tags:
           - SAT I
           - College Consulting
@@ -44,7 +44,7 @@ testimonyList:
           settings and the readiness for the brightest future each student can
           grasp.”
 
-      image: /images/pages/home/2.jpg
+      image: /images/pages/testimonies/2.jpg
     - tags:
           - SAT I
           - College Consulting
@@ -59,7 +59,7 @@ testimonyList:
 
       title: Tiffany Chiang
       college: UC Davis
-      image: /images/pages/home/3.png
+      image: /images/pages/testimonies/3.png
     - tags:
           - SAT I
           - College Consulting
@@ -68,14 +68,14 @@ testimonyList:
       body: >+
           “At Lee’s Review I not only raised my SAT scores by 500 points but also
           was accepted into my dream college, Rice University. Lee’s Review was and
-          still remains my second home. To say that the staff goes above and beyond
+          still remains my second testimonies. To say that the staff goes above and beyond
           is an understatement. I would have been lost throughout the college
           application process without the helpful advice and guidance from Lee’s
           Review. After college consulting, the staff still lends an extremely
           helpful hand to me. It is not a goodbye when a session ends, but rather
           until next time.”
 
-      image: /images/pages/home/4.png
+      image: /images/pages/testimonies/4.png
     - tags:
           - SAT I
       title: Nathan Yee
@@ -88,7 +88,7 @@ testimonyList:
           that you’re willing to work for those results.”
 
       college: Eisenhower High School (Yakima, WA)
-      image: /images/pages/home/5.png
+      image: /images/pages/testimonies/5.png
     - tags:
           - SAT I
           - College Consulting
@@ -105,7 +105,7 @@ testimonyList:
           games, jokes/stories, and just a genuine compassion for each and every one
           of their students.”
 
-      image: /images/pages/home/6.png
+      image: /images/pages/testimonies/6.png
     - tags:
           - SAT I
           - College Consulting
@@ -122,7 +122,7 @@ testimonyList:
           not just my score on a test.”
 
       college: USC
-      image: /images/pages/home/7.jpg
+      image: /images/pages/testimonies/7.jpg
     - tags:
           - College Consulting
       body: >+
@@ -135,7 +135,7 @@ testimonyList:
 
       title: Emily Leung
       college: UC Irvine
-      image: /images/pages/home/8.png
+      image: /images/pages/testimonies/8.png
     - tags:
           - College Consulting
       title: Nicole Chen
@@ -150,7 +150,7 @@ testimonyList:
           engineer. I will always contribute a huge part of my success to the Lee’s
           Review family.”
 
-      image: /images/pages/home/9.png
+      image: /images/pages/testimonies/9.png
     - tags:
           - SAT I
           - College Consulting
@@ -163,7 +163,7 @@ testimonyList:
           learning to navigate the real world. I owe both my academy accomplishments
           and positive outlook on education to my Lee’s Review family.”
 
-      image: /images/pages/home/10.png
+      image: /images/pages/testimonies/10.png
     - tags:
           - College Consulting
       body: >+
@@ -177,7 +177,7 @@ testimonyList:
 
       title: Rochelle Sun
       college: University of Rochester
-      image: /images/pages/home/11.png
+      image: /images/pages/testimonies/11.png
     - tags:
           - College Consulting
       title: Kimberly Yang
@@ -188,7 +188,7 @@ testimonyList:
           my friends. They are not only awesome college counselors, they are awesome
           people.”
 
-      image: /images/pages/home/12.jpg
+      image: /images/pages/testimonies/12.jpg
     - tags:
           - SAT I
           - College Consulting
@@ -205,7 +205,7 @@ testimonyList:
 
       title: "Gregory Gunadi "
       college: UC Berkeley
-      image: /images/pages/home/13.png
+      image: /images/pages/testimonies/13.png
     - tags:
           - SAT I
       title: Shani Chen
@@ -215,9 +215,9 @@ testimonyList:
           passionate about what they teach and truly care for their student’s
           understanding of materials instead of just their scores. Mr. Lee, Mrs.
           Lee, and the staff have made this education center feel like a second
-          home.”
+          testimonies.”
 
-      image: /images/pages/home/14.png
+      image: /images/pages/testimonies/14.png
     - tags:
           - College Consulting
           - SAT I
@@ -233,7 +233,7 @@ testimonyList:
           who decides to join the Lee’s Review family will not regret it and will
           definitely grow from the experience.”
 
-      image: /images/pages/home/15.png
+      image: /images/pages/testimonies/15.png
     - tags:
           - SAT I
           - College Consulting
@@ -249,7 +249,7 @@ testimonyList:
           side of the country, I’m able to apply what I’ve learned throughout my 5
           years experience with Lee’s Review.”
 
-      image: /images/pages/home/16.png
+      image: /images/pages/testimonies/16.png
     - tags:
           - SAT I
       title: " Michelle Wong"
@@ -262,7 +262,7 @@ testimonyList:
           years after that. Lee’s Review provided me with a positive and supportive
           learning environment that can’t be beat.”
 
-      image: /images/pages/home/17.jpeg
+      image: /images/pages/testimonies/17.jpeg
     - tags:
           - SAT I
       body: >+
@@ -279,7 +279,7 @@ testimonyList:
 
       title: Nathan Shin
       college: UC Berkeley
-      image: /images/pages/home/18.png
+      image: /images/pages/testimonies/18.png
     - tags:
           - SAT I
       title: Alvin Ma
@@ -291,7 +291,7 @@ testimonyList:
           tremendous experience but it has helped me grow into a more focused and
           determined individual for college.”
 
-      image: /images/pages/home/19.jpeg
+      image: /images/pages/testimonies/19.jpeg
     - tags:
           - SAT I
       title: James Xing
@@ -303,7 +303,7 @@ testimonyList:
           Furthermore, I was able to integrate the knowledge I gained from there
           into many other aspects of life.”
 
-      image: /images/pages/home/20.png
+      image: /images/pages/testimonies/20.png
     - tags:
           - SAT I
       body: >+
@@ -314,7 +314,7 @@ testimonyList:
 
       title: Cherub Kim
       college: UC Berkeley
-      image: /images/pages/home/21.jpg
+      image: /images/pages/testimonies/21.jpg
     - tags:
           - SAT I
       body: >+
@@ -327,7 +327,7 @@ testimonyList:
 
       college: Harvard University
       title: Claudine Cho
-      image: /images/pages/home/22.jpg
+      image: /images/pages/testimonies/22.jpg
     - tags:
           - SAT I
       title: Lindsey Whang
@@ -337,7 +337,7 @@ testimonyList:
           strong and rigorous program. Even after I stopped attending Lee’s, I felt
           help was available anytime I needed it.”
 
-      image: /images/pages/home/23.jpg
+      image: /images/pages/testimonies/23.jpg
     - tags:
           - SAT I
       title: Christine Choi
@@ -347,7 +347,7 @@ testimonyList:
           most important aspect of the center is that the entire staff truly cares
           for the welfare of its students.”
 
-      image: /images/pages/home/24.jpg
+      image: /images/pages/testimonies/24.jpg
     - tags:
           - SAT I
       title: Jackie Shin
@@ -358,7 +358,7 @@ testimonyList:
           toward ensuring each and every student’s success is outstanding and always
           has me coming back every chance I can get.”
 
-      image: /images/pages/home/25.jpg
+      image: /images/pages/testimonies/25.jpg
     - tags:
           - SAT I
       title: Steve Kim
@@ -369,7 +369,7 @@ testimonyList:
           immediately see that the quality of instruction here was on a higher
           level.”
 
-      image: /images/pages/home/26.jpg
+      image: /images/pages/testimonies/26.jpg
     - tags:
           - SAT I
       title: Chris Nazaroff
@@ -381,7 +381,7 @@ testimonyList:
           skilled instructors teach in a way that you can understand. Lee’s Review
           didn’t just help me on my SAT’s they helped me achieve my goal.”
 
-      image: /images/pages/home/27.jpg
+      image: /images/pages/testimonies/27.jpg
     - tags:
           - SAT I
       title: Jennifer Kim
@@ -392,7 +392,7 @@ testimonyList:
           like Lee’s Review because there are no other mentors like Mr. Lee and his
           staff.”
 
-      image: /images/pages/home/28.jpg
+      image: /images/pages/testimonies/28.jpg
     - tags:
           - SAT I
       body: >+
@@ -403,7 +403,7 @@ testimonyList:
 
       title: Diana Lim
       college: Dartmouth College
-      image: /images/pages/home/29.jpg
+      image: /images/pages/testimonies/29.jpg
     - tags:
           - SAT I
       body: >+
@@ -413,11 +413,11 @@ testimonyList:
 
       title: John Pyun
       college: UC Berkeley
-      image: /images/pages/home/30.jpg
+      image: /images/pages/testimonies/30.jpg
     - tags:
           - SAT I
       body: >+
-          “Lee’s Review is more than a mere SAT center: it was my second home, and
+          “Lee’s Review is more than a mere SAT center: it was my second testimonies, and
           the teachers and students became part of my extended family. Being a part
           of the Lee’s Review family gave me much more than what I asked
           for–cracking the SAT’s! Learn, Laugh, and Love–my experience at Lee’s
@@ -425,7 +425,7 @@ testimonyList:
 
       title: Krysti Kim
       college: Brown University
-      image: /images/pages/home/31.jpg
+      image: /images/pages/testimonies/31.jpg
     - tags:
           - SAT I
           - College Consulting
@@ -440,7 +440,7 @@ testimonyList:
           create well written and thoughtful college applications and ensuring that
           each student’s voice and personality is reflected.”
 
-      image: /images/pages/home/32.jpg
+      image: /images/pages/testimonies/32.jpg
     - tags:
           - SAT I
       body: >+
@@ -452,5 +452,5 @@ testimonyList:
 
       title: Chris Cho
       college: Yale University
-      image: /images/pages/home/33.jpg
+      image: /images/pages/testimonies/33.jpg
 ---
