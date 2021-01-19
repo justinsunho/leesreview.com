@@ -25,7 +25,7 @@ collections:
       label: Classes
       folder: /content/classes
       media_folder: '/static/images/classes'
-      public_folder: '/images/pages/classes'
+      public_folder: '/images/classes'
       create: true
       fields:
         - {label: "Title", name: title, widget: string}
@@ -36,6 +36,18 @@ collections:
         - { label: "Category", name: tags, widget: select, options: ["SAT I", "SAT II", "College Consulting", "AP Prep", "Math/Science", "English", "Individual Tutor"], required: true }
         - {label: "Teacher Name", name: teacherName, widget: relation, collection: staff, value_field: title, search_fields: [title]}
         - {label: "Teacher Link", name: teacherLink, widget: relation, collection: staff, value_field: linkHref, search_fields: [title]}
+    - name: testimony
+      label: Testimony
+      folder: /content/pages/testimonies
+      media_folder: '/static/images/testimonies'
+      public_folder: '/images/testimonies'
+      create: true
+      fields:
+        - { name: title, label: title, required: true }
+        - { name: college, label: college, required: false }
+        - { name: image, label: img, widget: image, required: true }
+        - { name: tags, label: classes, widget: select, multiple: true, options: ["SAT I", "SAT II", "College Consulting", "Classroom Prep", "ACT"], required: true }
+        - { name: body, label: body, widget: markdown, required: true }
     - name: pages
       label: Pages
       files:
@@ -225,16 +237,16 @@ collections:
          public_folder: '/images/pages/testimonies'
          fields:
           - {label: Title, name: title, widget: string}
-          - label: Testimony
-            name: testimonyList
-            widget: list
+          - label: Hero
+            name: hero
+            widget: object
             summary: '{{fields.name}}'
             fields:
-              - { name: title, label: title, required: true }
-              - { name: college, label: college, required: false }
-              - { name: image, label: img, widget: image, required: true }
-              - { name: tags, label: classes, widget: select, multiple: true, options: ["SAT I", "SAT II", "College Consulting", "Classroom Prep", "ACT"], required: true }
-              - { name: body, label: body, widget: markdown, required: true }
+              - {label: "Title", name: title, widget: string}
+              - {label: "Description", name: description, widget: string}
+              - {label: "Button Text", name: buttonText, widget: string}
+              - {label: "Button Link", name: buttonLink, widget: string}
+              - {label: "Image", name: image, widget: image}
        - name: sat
          label: SAT
          file: /content/pages/sat.md
