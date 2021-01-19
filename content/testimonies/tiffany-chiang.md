@@ -7,7 +7,7 @@ tags:
   - College Consulting
 featured:
   - Home
-  - Classroom Prep
+  - SAT
 ---
 “At Lee’s Review, I felt the staff were my second family, and still
           continue to be. I struggled with my SATs and my college application, but
