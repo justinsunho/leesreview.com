@@ -48,7 +48,7 @@ collections:
         - { name: image, label: img, widget: image, required: true }
         - { name: tags, label: classes, widget: select, multiple: true, options: ["SAT I", "SAT II", "College Consulting", "Classroom Prep", "ACT"], required: true }
         - { name: body, label: body, widget: markdown, required: true }
-        - { name: featured, label: featured pages, widget: select, multiple: true, options: ["Home", "About Us", "Classroom Prep", "SAT", "College Consulting"], required: true }
+        - { name: featured, label: featured pages, widget: select, multiple: true, options: ["Home", "About Us", "Classroom Prep", "SAT", "College Consulting"], required: false }
     - name: pages
       label: Pages
       files:
