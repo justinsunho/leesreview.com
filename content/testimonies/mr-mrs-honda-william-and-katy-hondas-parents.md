@@ -5,6 +5,9 @@ image: /images/testimonies/1.png
 tags:
   - SAT I
   - College Consulting
+featured:
+  - Home
+  - College Consulting
 ---
 “Lee’s Review has been part of our lives for the past three or four years.
 
