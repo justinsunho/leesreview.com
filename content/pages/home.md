@@ -21,16 +21,6 @@ classes:
           description: jfkdla;s
           linkText: Learn More
           linkHref: "#"
-        - title: SAT II
-          image: /images/pages/home/dsc02778.jpg
-          icon:
-              code: |-
-                  <svg viewBox="0 0 64 64" width="64" height="64">
-                    <circle cx="32" cy="32" r="32" />
-                  </svg>
-          description: jfkdals;fjkdla;
-          linkText: Learn More
-          linkHref: "#"
         - title: College Consulting
           image: /images/pages/home/dsc02713.jpg
           icon:

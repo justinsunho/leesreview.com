@@ -33,7 +33,7 @@ const TestimonyItem = ({ image, college, tags, title, inView }) => {
                 </a.h4>
 
                 <a.p className={styles.description} style={trail[3]}>
-                    test
+                    {college}
                 </a.p>
             </div>
         </div>
