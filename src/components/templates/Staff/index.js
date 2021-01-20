@@ -10,7 +10,7 @@ const Staff = ({ data }) => {
     const {
         markdownRemark: {
             html,
-            frontmatter: { title, subtitle, description, tags, color, img },
+            frontmatter: { title, subtitle, description, tags, color, image },
         },
     } = data;
 
@@ -19,7 +19,7 @@ const Staff = ({ data }) => {
             <div className={`${styles.infoWrapper}`}>
                 <div className={`row ${styles.imageWrapper}`}>
                     <div className={`col`}>
-                        <Img alt="test" className={styles.image} fluid={img.childImageSharp.fluid} />
+                        <Img alt="test" className={styles.image} fluid={image.childImageSharp.fluid} />
                     </div>
                 </div>
                 <div className={`${styles.titleWrapper} row`}>
@@ -53,7 +53,7 @@ export const query = graphql`
                 description
                 tags
                 color
-                img {
+                image {
                     childImageSharp {
                         fluid(maxWidth: 900) {
                             ...GatsbyImageSharpFluid

@@ -21,7 +21,7 @@ export const pageQuery = graphql`
         testimonies: allMarkdownRemark(filter: { frontmatter: { featured: { eq: "College Consulting" } } }) {
             edges {
                 node {
-                    fronmatter {
+                    frontmatter {
                         title
                     }
                 }

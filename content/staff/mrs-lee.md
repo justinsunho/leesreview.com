@@ -2,7 +2,7 @@
 title: Mr. Lee
 subtitle: Owner/Founder
 description: UCI c/o ___
-img: /images/staff/mrlee.jpg
+image: /images/staff/mrlee.jpg
 tags:
     - SAT Math
     - College Consulting
