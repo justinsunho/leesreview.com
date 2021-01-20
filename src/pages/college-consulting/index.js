@@ -1,8 +1,41 @@
 import React from "react";
 import { graphql } from "gatsby";
+import { Hero, CardContainer, MethodsContainer, TestimonySection, PriceSection } from "components/organisms";
+import { MainLayout } from "components/layouts";
 
 const CollegeConsulting = ({ data }) => {
-    return <div>test</div>;
+    const {
+        page: { edges: pageEdges },
+        testimonies: { edges: testimonyList },
+    } = data;
+
+    const {
+        node: {
+            frontmatter: { hero, servicesList, methodsList, priceList },
+        },
+    } = pageEdges[0];
+
+    return (
+        <MainLayout>
+            <Hero
+                headingText={hero.title}
+                description={hero.description}
+                linkText={hero.buttonText}
+                linkHref={hero.buttonLink}
+                image={hero.image.childImageSharp.fluid}
+            />
+            <CardContainer title={`Our College Consulting`} items={servicesList} />
+            <MethodsContainer title={`Our Methods`} items={methodsList} />
+            <TestimonySection
+                subtitle={`SAT Stories`}
+                linkHref={`/testimonies`}
+                linkText={`See more stories`}
+                testimonyList={testimonyList}
+            />
+            <PriceSection title={`Our Prices`} items={priceList} />
+            <div>Sign Up</div>
+        </MainLayout>
+    );
 };
 
 export default CollegeConsulting;
@@ -14,6 +47,46 @@ export const pageQuery = graphql`
                 node {
                     frontmatter {
                         title
+                        hero {
+                            title
+                            description
+                            buttonText
+                            buttonLink
+                            image {
+                                childImageSharp {
+                                    fluid {
+                                        ...GatsbyImageSharpFluid
+                                    }
+                                }
+                            }
+                        }
+                        servicesList {
+                            title
+                            description
+                            image {
+                                childImageSharp {
+                                    fluid {
+                                        ...GatsbyImageSharpFluid
+                                    }
+                                }
+                            }
+                        }
+                        methodsList {
+                            title
+                            description
+                            image {
+                                childImageSharp {
+                                    fluid {
+                                        ...GatsbyImageSharpFluid
+                                    }
+                                }
+                            }
+                        }
+                        priceList {
+                            title
+                            price
+                            description
+                        }
                     }
                 }
             }
@@ -23,7 +96,17 @@ export const pageQuery = graphql`
                 node {
                     frontmatter {
                         title
+                        college
+                        tags
+                        image {
+                            childImageSharp {
+                                fluid {
+                                    ...GatsbyImageSharpFluid
+                                }
+                            }
+                        }
                     }
+                    rawMarkdownBody
                 }
             }
         }

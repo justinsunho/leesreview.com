@@ -1,8 +1,39 @@
 import React from "react";
 import { graphql } from "gatsby";
+import { Hero, CardContainer } from "components/organisms";
+import { MainLayout } from "components/layouts";
 
 const ClassroomPrep = ({ data }) => {
-    return <div>test</div>;
+    const {
+        page: { edges: pageEdges },
+        testimonies: { edges: testimonyList },
+        classes: { edges: classEdges },
+    } = data;
+
+    const {
+        node: {
+            frontmatter: { hero, servicesList },
+        },
+    } = pageEdges[0];
+
+    const test = classEdges.map((classEdge) => {
+        return { ...classEdge.node.frontmatter };
+    });
+
+    return (
+        <MainLayout>
+            <Hero
+                headingText={hero.title}
+                description={hero.description}
+                linkHref={hero.buttonLink}
+                linkText={hero.buttonText}
+                image={hero.image.childImageSharp.fluid}
+            />
+            <CardContainer title={`services`} items={servicesList} />
+            <CardContainer title={`classes`} items={test} linkText={`all classes`} linkHref={"#"} />
+            <div>Sign Up Now</div>
+        </MainLayout>
+    );
 };
 
 export default ClassroomPrep;
@@ -14,6 +45,46 @@ export const pageQuery = graphql`
                 node {
                     frontmatter {
                         title
+                        hero {
+                            title
+                            description
+                            buttonText
+                            buttonLink
+                            image {
+                                childImageSharp {
+                                    fluid {
+                                        ...GatsbyImageSharpFluid
+                                    }
+                                }
+                            }
+                        }
+                        servicesList {
+                            title
+                            body
+                            image {
+                                childImageSharp {
+                                    fluid {
+                                        ...GatsbyImageSharpFluid
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        classes: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/content/classes/" } }) {
+            edges {
+                node {
+                    frontmatter {
+                        title
+                        date
+                        time
+                        description
+                        price
+                        tag
+                        teacherName
+                        teacherLink
                     }
                 }
             }

@@ -261,7 +261,7 @@ collections:
              fields:
                - { name: title, label: title, required: true }
                - { name: image, label: img, widget: image, required: true }
-               - { name: body, label: body, widget: markdown, required: true }
+               - { name: description, label: description, widget: markdown, required: true }
            - label: methods
              name: methodsList
              widget: list
@@ -269,7 +269,7 @@ collections:
              fields:
                - { name: title, label: title, required: true }
                - { name: image, label: img, widget: image, required: true }
-               - { name: body, label: body, widget: markdown, required: true }
+               - { name: description, label: description, widget: markdown, required: true }
            - label: Testimonies
              name: testimonies
              widget: object
@@ -295,7 +295,7 @@ collections:
              fields:
                - { name: title, label: title, required: true }
                - { name: price, label: price, widget: string, required: true }
-               - { name: body, label: body, widget: markdown, required: true }
+               - { name: description, label: description, widget: markdown, required: true }
        - name: collegeConsulting
          label: College Consulting
          file: /content/pages/college-consulting.md
@@ -375,6 +375,31 @@ collections:
                - {label: "Image", name: image, widget: image}
            - label: Additional Services
              name: servicesList
+             widget: list
+             summary: '{{fields.name}}'
+             fields:
+               - { name: title, label: title, required: true }
+               - { name: image, label: img, widget: image, required: true }
+               - { name: body, label: body, widget: markdown, required: true }
+       - name: schedule
+         label: Schedule
+         file: /content/pages/schedule.md
+         media_folder: '/static/images/pages/schedule'
+         public_folder: '/images/pages/schedule'
+         fields:
+           - {label: Title, name: title, widget: string}
+           - label: Hero
+             name: hero
+             widget: object
+             summary: '{{fields.name}}'
+             fields:
+               - {label: "Title", name: title, widget: string}
+               - {label: "Description", name: description, widget: string}
+               - {label: "Button Text", name: buttonText, widget: string}
+               - {label: "Button Link", name: buttonLink, widget: string}
+               - {label: "Image", name: image, widget: image}
+           - label: Schedules
+             name: scheduleList
              widget: list
              summary: '{{fields.name}}'
              fields:

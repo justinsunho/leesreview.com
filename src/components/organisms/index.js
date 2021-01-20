@@ -8,11 +8,15 @@ import CardContainer from "./CardContainer";
 import TextBlockSection from "./TextBlockSection";
 import MediaSelectSection from "./MediaSelectSection";
 import TestimonyCardContainer from "./TestimonyCardContainer";
+import MethodsContainer from "./MethodsContainer";
+import PriceSection from "./PriceSection";
 
 export {
     Header,
+    PriceSection,
     Footer,
     Hero,
+    MethodsContainer,
     MediaHero,
     MediaSection,
     TestimonySection,

@@ -54,7 +54,7 @@ const CardContainer = ({ subtitle, title, items, linkText, linkHref }) => {
                             color={color[i]}
                             title={item.title}
                             subtitle={item.subtitle}
-                            image={item.image.childImageSharp.fluid}
+                            image={item.image && item.image.childImageSharp.fluid}
                             description={item.description}
                             linkText={item.linkText}
                             linkHref={item.linkHref}

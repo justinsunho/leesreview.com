@@ -4,7 +4,6 @@ import { Hero, MediaSection, TestimonySection, CardContainer } from "components/
 import { MainLayout } from "components/layouts";
 
 const Index = ({ data }) => {
-    console.log(data);
     const {
         page: { edges: pageEdges },
         testimonies: { edges: testimonyList },
