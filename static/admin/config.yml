@@ -33,7 +33,7 @@ collections:
         - {label: "Time", name: time, widget: string}
         - {label: "Description", name: description, widget: markdown}
         - {label: "Price", name: price, widget: string}
-        - { label: "Category", name: tags, widget: select, options: ["SAT I", "SAT II", "College Consulting", "AP Prep", "Math/Science", "English", "Individual Tutor"], required: true }
+        - { label: "Category", name: tag, widget: select, options: ["SAT I", "SAT II", "College Consulting", "AP Prep", "Math/Science", "English", "Individual Tutor"], required: true }
         - {label: "Teacher Name", name: teacherName, widget: relation, collection: staff, value_field: title, search_fields: [title]}
         - {label: "Teacher Link", name: teacherLink, widget: relation, collection: staff, value_field: linkHref, search_fields: [title]}
     - name: testimony
@@ -107,17 +107,6 @@ collections:
               - {label: "subtitle", name: subtitle, widget: string}
               - {label: "Testimony Link Text", name: linkText, widget: string}
               - {label: "Testimony Link Href", name: linkHref, widget: string}
-              - label: Testimony List
-                name: testimonyList
-                widget: list
-                summary: '{{fields.title}}'
-                fields:
-                  - {label: Title, name: title, widget: string}
-                  - {label: College Icon, name: icon, widget: image}
-                  - {label: Image, name: image, widget: image}
-                  - {label: Classes, name: tags, widget: list }
-                  - {label: Description, name: description, widget: string}
-                  - {label: Quote, name: quote, widget: string}
           - label: Location
             name: location
             widget: object

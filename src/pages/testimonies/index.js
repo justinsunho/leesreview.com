@@ -5,19 +5,24 @@ import { MainLayout } from "components/layouts";
 
 const Testimonies = ({ data }) => {
     const {
-        allMarkdownRemark: { edges },
+        page: { edges: pageEdges },
+        testimonies: { edges: testimonyEdges },
     } = data;
 
     const {
         node: {
-            frontmatter: { title, testimonyList },
+            frontmatter: { title },
         },
-    } = edges[0];
+    } = pageEdges[0];
+
+    const test = testimonyEdges.map((testimonyEdge) => {
+        return { ...testimonyEdge.node.frontmatter, body: testimonyEdge.node.rawMarkdownBody };
+    });
 
     return (
         <MainLayout>
             <Hero headingText={title} />
-            <TestimonyCardContainer items={testimonyList} />
+            <TestimonyCardContainer items={test} />
         </MainLayout>
     );
 };
@@ -26,25 +31,37 @@ export default Testimonies;
 
 export const pageQuery = graphql`
     query {
-        allMarkdownRemark(filter: { frontmatter: { title: { eq: "Testimonies" } } }) {
+        page: allMarkdownRemark(filter: { frontmatter: { title: { eq: "Testimonies" } } }) {
             edges {
                 node {
                     frontmatter {
                         title
-                        testimonyList {
+                        hero {
                             title
-                            college
-                            tags
-                            body
-                            image {
-                                childImageSharp {
-                                    fluid {
-                                        ...GatsbyImageSharpFluid
-                                    }
+                            description
+                            buttonText
+                            buttonLink
+                        }
+                    }
+                }
+            }
+        }
+        testimonies: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/content/testimonies/" } }) {
+            edges {
+                node {
+                    frontmatter {
+                        title
+                        college
+                        tags
+                        image {
+                            childImageSharp {
+                                fluid {
+                                    ...GatsbyImageSharpFluid
                                 }
                             }
                         }
                     }
+                    rawMarkdownBody
                 }
             }
         }

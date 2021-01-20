@@ -4,15 +4,17 @@ import { Hero, MediaSection, TestimonySection, CardContainer } from "components/
 import { MainLayout } from "components/layouts";
 
 const Index = ({ data }) => {
+    console.log(data);
     const {
-        allMarkdownRemark: { edges },
+        page: { edges: pageEdges },
+        testimonies: { edges: testimonyList },
     } = data;
 
     const {
         node: {
             frontmatter: { hero, classes, about, testimonies, location },
         },
-    } = edges[0];
+    } = pageEdges[0];
 
     return (
         <MainLayout>
@@ -43,7 +45,7 @@ const Index = ({ data }) => {
                 subtitle={testimonies.subtitle}
                 linkHref={testimonies.linkHref}
                 linkText={testimonies.linkText}
-                testimonyList={testimonies.testimonyList}
+                testimonyList={testimonyList}
             />
             <CardContainer subtitle={location.subtitle} title={location.title} items={location.locationList} />
         </MainLayout>
@@ -54,7 +56,7 @@ export default Index;
 
 export const pageQuery = graphql`
     query {
-        allMarkdownRemark(filter: { frontmatter: { title: { eq: "Home" } } }) {
+        page: allMarkdownRemark(filter: { frontmatter: { title: { eq: "Home" } } }) {
             edges {
                 node {
                     frontmatter {
@@ -111,26 +113,6 @@ export const pageQuery = graphql`
                             subtitle
                             linkText
                             linkHref
-                            testimonyList {
-                                title
-                                description
-                                quote
-                                tags
-                                image {
-                                    childImageSharp {
-                                        fluid(maxHeight: 240) {
-                                            ...GatsbyImageSharpFluid
-                                        }
-                                    }
-                                }
-                                icon {
-                                    childImageSharp {
-                                        fixed(height: 32) {
-                                            ...GatsbyImageSharpFixed
-                                        }
-                                    }
-                                }
-                            }
                         }
                         location {
                             subtitle
@@ -150,6 +132,26 @@ export const pageQuery = graphql`
                             }
                         }
                     }
+                }
+            }
+        }
+        testimonies: allMarkdownRemark(filter: { frontmatter: { featured: { eq: "Home" } } }) {
+            edges {
+                node {
+                    id
+                    frontmatter {
+                        title
+                        college
+                        tags
+                        image {
+                            childImageSharp {
+                                fluid {
+                                    ...GatsbyImageSharpFluid
+                                }
+                            }
+                        }
+                    }
+                    rawMarkdownBody
                 }
             }
         }

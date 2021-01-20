@@ -12,7 +12,7 @@ const TestimonySection = ({ subtitle, linkText, linkHref, testimonyList }) => {
         triggerOnce: true,
     });
 
-    const transitions = useTransition(testimonyList[testimonyIndex], (testimonyList) => testimonyList.title, {
+    const transitions = useTransition(testimonyList[testimonyIndex], (testimonyList) => testimonyList.node.id, {
         from: { opacity: 0, transform: "translateX(-10px)", visibility: "hidden", height: 0 },
         enter: { opacity: 1, transform: "translateX(0)", visibility: "visible", height: "auto" },
         leave: { opacity: 0, transform: "translateX(-10px)", visibility: "hidden", height: 0 },
@@ -34,7 +34,7 @@ const TestimonySection = ({ subtitle, linkText, linkHref, testimonyList }) => {
                     <AnimatedSmallCaps style={trail[0]}>{subtitle}</AnimatedSmallCaps>
                     {transitions.map(({ item, props, key }) => (
                         <animated.div key={key} style={{ ...props }}>
-                            <BigQuote quote={item.quote} />
+                            <BigQuote quote={item.node.rawMarkdownBody} />
                         </animated.div>
                     ))}
                     <AnimatedCTALink linkHref={linkHref} style={trail[1]}>
@@ -49,7 +49,7 @@ const TestimonySection = ({ subtitle, linkText, linkHref, testimonyList }) => {
                         setIndex={setTestimonyIndex}
                     >
                         {transitions.map(({ item, props, key }) => {
-                            const { title, tags, description, icon, image } = item;
+                            const { title, tags, college, image } = item.node.frontmatter;
 
                             return (
                                 <animated.div style={{ ...props }} key={key}>
@@ -57,8 +57,7 @@ const TestimonySection = ({ subtitle, linkText, linkHref, testimonyList }) => {
                                         image={image}
                                         tags={tags}
                                         title={title}
-                                        description={description}
-                                        icon={icon}
+                                        college={college}
                                         inView={inView}
                                     />
                                 </animated.div>

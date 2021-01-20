@@ -5,7 +5,7 @@ import { SmallCaps } from "components/atoms";
 import styles from "./styles.module.scss";
 import { enterAbove } from "utilities/springConfigs";
 
-const TestimonyItem = ({ image, tags, title, description, icon, inView }) => {
+const TestimonyItem = ({ image, college, tags, title, inView }) => {
     const AnimatedImg = a(Img);
 
     const trail = useTrail(5, {
@@ -33,9 +33,8 @@ const TestimonyItem = ({ image, tags, title, description, icon, inView }) => {
                 </a.h4>
 
                 <a.p className={styles.description} style={trail[3]}>
-                    {description}
+                    test
                 </a.p>
-                <AnimatedImg className={`${styles.icon}`} fixed={{ ...icon.childImageSharp.fixed }} style={trail[4]} />
             </div>
         </div>
     );
