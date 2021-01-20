@@ -1,6 +1,13 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { Hero, CardContainer, MethodsContainer, TestimonySection, PriceSection } from "components/organisms";
+import {
+    Hero,
+    CardContainer,
+    TextBlockSection,
+    MethodsContainer,
+    TestimonySection,
+    PriceSection,
+} from "components/organisms";
 import { MainLayout } from "components/layouts";
 
 const SAT = ({ data }) => {
@@ -24,7 +31,7 @@ const SAT = ({ data }) => {
                 linkHref={hero.buttonLink}
                 image={hero.image.childImageSharp.fluid}
             />
-            <CardContainer title={`Our SAT Services`} items={servicesList} />
+            <TextBlockSection title={`Our SAT Services`} textBlocks={servicesList} />
             <MethodsContainer title={`Our Methods`} items={methodsList} />
             <TestimonySection
                 subtitle={`SAT Stories`}

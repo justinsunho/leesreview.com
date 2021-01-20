@@ -7,5 +7,19 @@ import BigQuote from "./BigQuote";
 import CarouselContainer from "./CarouselContainer";
 import TestimonyItem from "./TestimonyItem";
 import TestimonyCard from "./TestimonyCard";
+import MethodItem from "./MethodItem";
+import PriceCard from "./PriceCard";
 
-export { Card, NavLinks, Info, SocialLinks, TextBlock, BigQuote, CarouselContainer, TestimonyItem, TestimonyCard };
+export {
+    Card,
+    NavLinks,
+    Info,
+    SocialLinks,
+    TextBlock,
+    BigQuote,
+    CarouselContainer,
+    TestimonyItem,
+    TestimonyCard,
+    MethodItem,
+    PriceCard,
+};

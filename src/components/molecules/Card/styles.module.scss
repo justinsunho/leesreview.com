@@ -4,11 +4,11 @@
     display: flex;
     flex-direction: column;
     box-shadow: $elevation1;
-    border: 1px solid $black;
     height: 100%;
     background-color: $white;
     transform: translateY(0px);
     transition: 0.3s ease-in-out;
+    border-radius: 0 0 0.25rem 0.25rem;
 
     &:hover {
         box-shadow: $elevation3;
@@ -16,33 +16,44 @@
         transition: 0.3s ease-in-out;
     }
 
-    .image {
-        max-height: 10rem;
+    .mainInfo {
+        position: relative;
+
+        .image {
+            max-height: 10rem;
+            border-bottom: 0.5rem solid $accent-1;
+        }
+
+        .heading {
+            background-color: #fff;
+            color: $black;
+            position: absolute;
+            padding: 0.5rem;
+            bottom: -2.25rem;
+            box-shadow: $elevation2;
+            text-align: center;
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
 
     .content {
         position: relative;
         padding: 1rem;
+        padding-top: 2rem;
         flex: 1;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
         justify-content: start;
+    }
 
-        .heading {
-            color: $black;
-            max-width: 75%;
-        }
-
-        .icon {
-            position: absolute;
-            top: -2rem;
-            right: 1rem;
-        }
-
-        .ctaLink {
-            margin-top: auto;
-        }
+    .ctaLink {
+        // margin-top: auto;
+        // width: 100%;
+        // background-color: $accent-1;
+        // color: #fff;
+        border-radius: 0 0 0.25rem 0.25rem;
+        padding: 0.5rem 1rem;
     }
 
     @media (max-width: $breakpoint-medium) {
@@ -51,10 +62,6 @@
         .image {
             flex-basis: 35%;
             max-height: none;
-        }
-
-        .icon {
-            display: none;
         }
     }
 }

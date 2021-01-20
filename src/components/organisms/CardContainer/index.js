@@ -7,9 +7,9 @@ import { enterAbove } from "utilities/springConfigs";
 import utilities from "theme/utilities.module.scss";
 import styles from "./styles.module.scss";
 
-const CardContainer = ({ subtitle, title, items, linkText, linkHref }) => {
+const CardContainer = ({ subtitle, title, items, linkText, linkHref, backgroundColor }) => {
     const { ref, inView } = useInView({
-        threshold: 0.2,
+        threshold: 0,
         triggerOnce: true,
     });
 
@@ -32,7 +32,11 @@ const CardContainer = ({ subtitle, title, items, linkText, linkHref }) => {
     useChain(inView ? [textRef, cardRef] : []);
 
     return (
-        <div className={`section`} ref={ref}>
+        <div
+            className={`section ${backgroundColor && styles.expandBackground}`}
+            ref={ref}
+            style={{ backgroundColor: backgroundColor }}
+        >
             {subtitle && (
                 <a.div className={`row`} style={textTrail[0]}>
                     <div className={`col ${utilities.textCenter}`}>

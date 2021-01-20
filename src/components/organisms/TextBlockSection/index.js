@@ -1,7 +1,9 @@
 import React from "react";
+import Img from "gatsby-image";
 import { useInView } from "react-intersection-observer";
 import { TextBlock } from "components/molecules";
 import utilities from "theme/utilities.module.scss";
+import styles from "./styles.module.scss";
 
 const TextBlockSection = ({ title, textBlocks }) => {
     const { ref, inView } = useInView({
@@ -10,22 +12,33 @@ const TextBlockSection = ({ title, textBlocks }) => {
     });
 
     return (
-        <div className={`section`} ref={ref}>
+        <div className={`section ${styles.textBlockSectionContainer}`} ref={ref}>
             <div className={`row`}>
                 <h2 className={`col ${utilities.textCenter}`}>{title}</h2>
             </div>
             <div className={`row`}>
                 {textBlocks.map((item, i) => (
-                    <TextBlock
-                        key={item.title}
+                    <div
                         className={`col-lg-${12 / textBlocks.length} col-md-${24 / textBlocks.length} ${
-                            utilities.textCenter
-                        } justify-content-stretch`}
-                        headingText={item.title}
-                        headingTag={"h3"}
-                        description={item.description}
-                        inView={inView}
-                    />
+                            styles.container
+                        }`}
+                    >
+                        {item.image && (
+                            <Img
+                                className={styles.image}
+                                style={{ position: "absolute" }}
+                                fluid={item.image.childImageSharp.fluid}
+                            />
+                        )}
+                        <TextBlock
+                            key={item.title}
+                            className={`${utilities.textCenter} justify-content-stretch  ${styles.textBlockContainer}`}
+                            headingText={item.title}
+                            headingTag={"h3"}
+                            description={item.description}
+                            inView={inView}
+                        />
+                    </div>
                 ))}
             </div>
         </div>

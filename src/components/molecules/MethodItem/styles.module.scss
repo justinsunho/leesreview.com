@@ -1,0 +1,45 @@
+@import "theme/variables";
+
+.methodItem {
+    padding-bottom: 5rem;
+    display: flex;
+
+    .container {
+        position: relative;
+        text-align: left;
+
+        .indexNumber {
+            font-size: 6rem;
+            position: absolute;
+            z-index: 0;
+            font-weight: 600;
+            top: -2rem;
+            left: -0.25rem;
+            color: $primary-3;
+            opacity: 0.2;
+            line-height: 1;
+        }
+
+        .title,
+        .description {
+            z-index: 1;
+        }
+    }
+
+    .marginShift {
+        margin-left: auto;
+    }
+
+    .imageContainer {
+        position: relative;
+
+        .dottedLine {
+            position: absolute;
+            left: 33%;
+
+            @media (max-width: $breakpoint-medium) {
+                display: none;
+            }
+        }
+    }
+}

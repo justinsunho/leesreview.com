@@ -30,6 +30,7 @@ const Index = ({ data }) => {
                 items={classes.classList}
                 linkText={classes.linkText}
                 linkHref={classes.linkHref}
+                backgroundColor={`#fafafa`}
             />
             <MediaSection
                 image={about.image.childImageSharp.fluid}
@@ -85,9 +86,6 @@ export const pageQuery = graphql`
                                             ...GatsbyImageSharpFluid
                                         }
                                     }
-                                }
-                                icon {
-                                    code
                                 }
                                 description
                                 linkText

@@ -13,32 +13,17 @@ classes:
     classList:
         - title: SAT I
           image: /images/pages/home/dscf3673.jpg
-          icon:
-              code: |-
-                  <svg viewBox="0 0 64 64" width="64" height="64">
-                    <circle cx="32" cy="32" r="32" />
-                  </svg>
-          description: jfkdla;s
+          description: Join our tried and true Summer SAT program to help improve your SAT scores!
           linkText: Learn More
           linkHref: "#"
         - title: College Consulting
           image: /images/pages/home/dsc02713.jpg
-          icon:
-              code: |-
-                  <svg viewBox="0 0 64 64" width="64" height="64">
-                    <circle cx="32" cy="32" r="32" />
-                  </svg>
-          description: fjdaso;fj
+          description: The college application process can be extremely difficult and filled with a lot of noise. We provide mentorship and guidance to make sure our students find the perfect college fit.
           linkText: Learn More
           linkHref: "#"
         - title: AP Classes
           image: /images/pages/home/dsc02778.jpg
-          icon:
-              code: |-
-                  <svg viewBox="0 0 64 64" width="64" height="64">
-                    <circle cx="32" cy="32" r="32" />
-                  </svg>
-          description: jjkdsal;fdsjkl;sdfjasl;
+          description: We've been equipping our students with top-rate methods and studying tips to get them through their normal school classes and AP exams!
           linkText: Learn More
           linkHref: "#"
     linkText: See our Class Schedules
