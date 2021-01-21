@@ -22,7 +22,7 @@ const MediaSelectSection = ({ title, items }) => {
                 <h2 className={`col ${utilities.textCenter}`}>{title}</h2>
             </div>
             <div className={`row`}>
-                <div className={`col-lg-8`}>
+                <div className={`col-lg-7`}>
                     {transitions.map(({ item, props, key }, i) => (
                         <a.div className={styles.mediaContainer} style={props} key={key}>
                             <Image color={color[currentIndex]} image={item.image.childImageSharp.fluid} />
@@ -33,7 +33,7 @@ const MediaSelectSection = ({ title, items }) => {
                         </a.div>
                     ))}
                 </div>
-                <div className={`col-lg-4`}>
+                <div className={`col-lg-5`}>
                     {items.map((item, i) => (
                         <SelectItem
                             onClick={() => {

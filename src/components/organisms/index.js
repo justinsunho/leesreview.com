@@ -10,10 +10,12 @@ import MediaSelectSection from "./MediaSelectSection";
 import TestimonyCardContainer from "./TestimonyCardContainer";
 import MethodsContainer from "./MethodsContainer";
 import PriceSection from "./PriceSection";
+import ClassCardContainer from "./ClassCardContainer";
 
 export {
     Header,
     PriceSection,
+    ClassCardContainer,
     Footer,
     Hero,
     MethodsContainer,

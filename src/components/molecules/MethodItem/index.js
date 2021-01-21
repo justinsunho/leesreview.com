@@ -11,15 +11,15 @@ const MethodItem = ({ index, description, title, image, itemLength, color }) => 
     });
 
     return (
-        <div className={`${styles.methodItem} row`} ref={ref}>
-            <div className={`${styles.container} col-lg-6`}>
+        <div className={`${styles.methodItem} row `} ref={ref}>
+            <div className={`${styles.container} col-lg-5`}>
                 <div className={styles.indexNumber}>{index}</div>
                 <h3 className={styles.title}>{title}</h3>
                 <p className={styles.description}>{description}</p>
             </div>
             <div
                 className={`col-lg-5 ${inView && styles.inView} ${styles.imageContainer} ${
-                    (index + 1) % 2 === 1 && styles.marginShift
+                    (index + 1) % 2 === 1 && styles.marginLeft
                 }`}
             >
                 <ImageBackground color={color}>

@@ -9,9 +9,11 @@ import TestimonyItem from "./TestimonyItem";
 import TestimonyCard from "./TestimonyCard";
 import MethodItem from "./MethodItem";
 import PriceCard from "./PriceCard";
+import ClassCard from "./ClassCard";
 
 export {
     Card,
+    ClassCard,
     NavLinks,
     Info,
     SocialLinks,
