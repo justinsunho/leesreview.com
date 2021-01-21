@@ -49,11 +49,7 @@ const CardContainer = ({ subtitle, title, items, linkText, linkHref, backgroundC
             </a.div>
             <div className={`row ${styles.cardRow}`}>
                 {items.map((item, i) => (
-                    <a.div
-                        className={`col-lg-${12 / items.length} col-md-${24 / items.length}`}
-                        key={item.title}
-                        style={cardTrail[i]}
-                    >
+                    <a.div className={`col-lg-${12 / items.length} col-md-6`} key={item.title} style={cardTrail[i]}>
                         <Card
                             color={color[i]}
                             title={item.title}

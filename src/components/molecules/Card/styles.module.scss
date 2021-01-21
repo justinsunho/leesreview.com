@@ -6,41 +6,26 @@
     box-shadow: $elevation1;
     height: 100%;
     background-color: $white;
-    transform: translateY(0px);
-    transition: 0.3s ease-in-out;
-    border-radius: 0 0 0.25rem 0.25rem;
+    transition: box-shadow 0.3s ease-in-out;
+    border-radius: 1rem;
 
     &:hover {
         box-shadow: $elevation3;
-        transform: translateY(-10px);
-        transition: 0.3s ease-in-out;
+        transition: box-shadow 0.3s ease-in-out;
     }
 
-    .mainInfo {
-        position: relative;
+    .image {
+        max-height: 10rem;
+        border-radius: 1rem 1rem 0 0;
+    }
 
-        .image {
-            max-height: 10rem;
-            border-bottom: 0.5rem solid $accent-1;
-        }
-
-        .heading {
-            background-color: #fff;
-            color: $black;
-            position: absolute;
-            padding: 0.5rem;
-            bottom: -2.25rem;
-            box-shadow: $elevation2;
-            text-align: center;
-            left: 50%;
-            transform: translateX(-50%);
-        }
+    .heading {
+        color: $black;
     }
 
     .content {
         position: relative;
         padding: 1rem;
-        padding-top: 2rem;
         flex: 1;
         display: flex;
         flex-direction: column;
@@ -48,12 +33,11 @@
     }
 
     .ctaLink {
-        // margin-top: auto;
-        // width: 100%;
-        // background-color: $accent-1;
-        // color: #fff;
-        border-radius: 0 0 0.25rem 0.25rem;
-        padding: 0.5rem 1rem;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0 0 1rem 1rem;
     }
 
     @media (max-width: $breakpoint-medium) {
@@ -62,6 +46,11 @@
         .image {
             flex-basis: 35%;
             max-height: none;
+            border-radius: 1rem 0 0 1rem;
+        }
+
+        .ctaLink {
+            border-radius: 0 1rem 1rem 0;
         }
     }
 }

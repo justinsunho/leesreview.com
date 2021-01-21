@@ -31,7 +31,7 @@ const SAT = ({ data }) => {
                 linkHref={hero.buttonLink}
                 image={hero.image.childImageSharp.fluid}
             />
-            <TextBlockSection title={`Our SAT Services`} textBlocks={servicesList} />
+            <TextBlockSection title={`Our SAT Services`} items={servicesList} />
             <MethodsContainer title={`Our Methods`} items={methodsList} />
             <TestimonySection
                 subtitle={`SAT Stories`}

@@ -29,7 +29,7 @@ const TestimonySection = ({ subtitle, linkText, linkHref, testimonyList }) => {
 
     return (
         <div className={`section`} ref={ref}>
-            <div className={`row align-items-center flex-column-reverse flex-md-row`}>
+            <div className={`row align-items-start flex-column-reverse flex-md-row`}>
                 <div className={`col-md-6`}>
                     <AnimatedSmallCaps style={trail[0]}>{subtitle}</AnimatedSmallCaps>
                     {transitions.map(({ item, props, key }) => (

@@ -5,12 +5,12 @@ $grid-breakpoints: (
     sm: $breakpoint-small,
     md: $breakpoint-medium,
     lg: $breakpoint-large,
-    xl: $breakpoint-extra-large,
+    xl: $breakpoint-extra-large + 1,
 );
 
 $container-max-widths: (
     sm: $breakpoint-medium,
     mg: $breakpoint-large,
     lg: $breakpoint-extra-large,
-    xl: $breakpoint-extra-large,
+    xl: $breakpoint-extra-large + 1,
 );

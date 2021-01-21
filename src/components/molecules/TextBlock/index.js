@@ -30,6 +30,7 @@ const TextBlock = ({
     return (
         <a.div className={`${className} ${styles.textBlock}`}>
             <AnimatedSmallCaps style={{ ...trail[0], color: darkMode ? "#FFF" : "" }}>{subtitle}</AnimatedSmallCaps>
+
             <Heading className={styles.heading} style={{ ...trail[1], color: darkMode ? "#FFF" : "" }}>
                 {headingText}
             </Heading>

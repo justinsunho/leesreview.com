@@ -9,7 +9,7 @@ hero:
         academic support so that our students can be in an environment that fosters
         a true appreciation of learning.
     buttonText: Sign Up
-    buttonLink: "#"
+    buttonLink: "/contact"
     image: /images/pages/about/dsc02834.jpg
 reason:
     title: Why Lee's Review?
@@ -46,7 +46,7 @@ students:
         commit to working diligently in and out of the classroom.
     subtitle: Our Students
     linkText: Testimonies
-    linkHref: "#"
+    linkHref: "/testimonies"
 staff:
     title: Our Staff
     staffList:

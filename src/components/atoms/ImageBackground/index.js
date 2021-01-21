@@ -18,6 +18,10 @@ const ImageBackground = ({ className, color, children }) => {
             onMouseOut={() => {
                 set({ xy: [0, 0] });
             }}
+            onBlur={() => {
+                set({ xy: [0, 0] });
+            }}
+            role={`region`}
         >
             <a.div className={styles.child} style={{ transform: props.xy.interpolate(trans1) }}>
                 {children}

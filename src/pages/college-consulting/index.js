@@ -11,7 +11,7 @@ const CollegeConsulting = ({ data }) => {
 
     const {
         node: {
-            frontmatter: { hero, servicesList, methodsList, priceList },
+            frontmatter: { hero, servicesList, methodsList, priceList, testimonies },
         },
     } = pageEdges[0];
 
@@ -27,9 +27,9 @@ const CollegeConsulting = ({ data }) => {
             <CardContainer title={`Our College Consulting`} items={servicesList} />
             <MethodsContainer title={`Our Methods`} items={methodsList} />
             <TestimonySection
-                subtitle={`SAT Stories`}
-                linkHref={`/testimonies`}
-                linkText={`See more stories`}
+                subtitle={testimonies.subtitle}
+                linkHref={testimonies.linkHref}
+                linkText={testimonies.linkText}
                 testimonyList={testimonyList}
             />
             <PriceSection title={`Our Prices`} items={priceList} />
@@ -81,6 +81,11 @@ export const pageQuery = graphql`
                                     }
                                 }
                             }
+                        }
+                        testimonies {
+                            subtitle
+                            linkText
+                            linkHref
                         }
                         priceList {
                             title

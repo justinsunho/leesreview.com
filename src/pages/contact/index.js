@@ -19,7 +19,7 @@ const Contact = ({ data }) => {
             <MediaHero headingText={hero.title} description={hero.description} ribbon>
                 <div dangerouslySetInnerHTML={{ __html: hero.form.code }} />
             </MediaHero>
-            <TextBlockSection title={business.title} textBlocks={business.businessInfoList} />
+            <TextBlockSection title={business.title} items={business.businessInfoList} />
         </MainLayout>
     );
 };

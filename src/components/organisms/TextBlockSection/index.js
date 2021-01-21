@@ -5,7 +5,7 @@ import { TextBlock } from "components/molecules";
 import utilities from "theme/utilities.module.scss";
 import styles from "./styles.module.scss";
 
-const TextBlockSection = ({ title, textBlocks }) => {
+const TextBlockSection = ({ title, items }) => {
     const { ref, inView } = useInView({
         threshold: 0,
         triggerOnce: true,
@@ -17,12 +17,8 @@ const TextBlockSection = ({ title, textBlocks }) => {
                 <h2 className={`col ${utilities.textCenter}`}>{title}</h2>
             </div>
             <div className={`row`}>
-                {textBlocks.map((item, i) => (
-                    <div
-                        className={`col-lg-${12 / textBlocks.length} col-md-${24 / textBlocks.length} ${
-                            styles.container
-                        }`}
-                    >
+                {items.map((item, i) => (
+                    <div className={`col-lg-${12 / items.length} col-md-${24 / items.length} ${styles.container}`}>
                         {item.image && (
                             <Img
                                 className={styles.image}
