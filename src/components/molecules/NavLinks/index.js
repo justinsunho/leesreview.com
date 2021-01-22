@@ -33,6 +33,11 @@ const NavLinks = () => {
                     </Link>
                 </li>
                 <li className={styles.navLink}>
+                    <Link activeClassName={styles.activeLink} to="/classroom-prep">
+                        Classroom Prep
+                    </Link>
+                </li>
+                <li className={styles.navLink}>
                     <Link activeClassName={styles.activeLink} to="/about">
                         About Us
                     </Link>
