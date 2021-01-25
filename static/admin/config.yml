@@ -274,6 +274,17 @@ collections:
                - { name: title, label: title, required: true }
                - { name: image, label: img, widget: image, required: true }
                - { name: description, label: description, widget: markdown, required: true }
+           - label: Media Section
+             name: mediaSection
+             widget: object
+             summary: '{{fields.name}}'
+             fields:
+              - {label: "Image", name: image, widget: image}
+              - {label: "subtitle", name: subtitle, widget: string}
+              - {label: "title", name: title, widget: string}
+              - {label: "description", name: description, widget: string}
+              - {label: "Link Text", name: linkText, widget: string}
+              - {label: "Link Href", name: linkHref, widget: string}
            - label: methods
              name: methodsList
              widget: list
@@ -332,6 +343,17 @@ collections:
                - { name: title, label: title, required: true }
                - { name: image, label: img, widget: image, required: true }
                - { name: body, label: body, widget: markdown, required: true }
+           - label: Media Section
+             name: mediaSection
+             widget: object
+             summary: '{{fields.name}}'
+             fields:
+              - {label: "Image", name: image, widget: image}
+              - {label: "subtitle", name: subtitle, widget: string}
+              - {label: "title", name: title, widget: string}
+              - {label: "description", name: description, widget: string}
+              - {label: "Link Text", name: linkText, widget: string}
+              - {label: "Link Href", name: linkHref, widget: string}
            - label: methods
              name: methodsList
              widget: list
