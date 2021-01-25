@@ -12,7 +12,6 @@ module.exports = {
         "gatsby-plugin-react-helmet",
         "gatsby-plugin-sitemap",
         "gatsby-plugin-offline",
-        "gatsby-plugin-mdx",
         "gatsby-transformer-sharp",
         `gatsby-plugin-resolve-src`,
         "gatsby-transformer-json",
@@ -35,6 +34,13 @@ module.exports = {
             options: {
                 path: `${__dirname}/content/testimonies`,
                 name: `testimonies`,
+            },
+        },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                path: `${__dirname}/content/schedules`,
+                name: `schedules`,
             },
         },
         {

@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { Hero, ClassCardContainer, TextBlockSection } from "components/organisms";
+import { Hero, ClassCardContainer, MediaSection, TextBlockSection } from "components/organisms";
 import { MainLayout } from "components/layouts";
 
 const ClassroomPrep = ({ data }) => {
@@ -12,7 +12,7 @@ const ClassroomPrep = ({ data }) => {
 
     const {
         node: {
-            frontmatter: { hero, servicesList },
+            frontmatter: { hero, servicesList, mediaSection },
         },
     } = pageEdges[0];
 
@@ -30,7 +30,17 @@ const ClassroomPrep = ({ data }) => {
                 image={hero.image.childImageSharp.fluid}
             />
             <TextBlockSection title={`services`} items={servicesList} />
+            <MediaSection
+                image={mediaSection.image.childImageSharp.fluid}
+                subtitle={mediaSection.subtitle}
+                headingText={mediaSection.title}
+                description={mediaSection.description}
+                linkText={mediaSection.linkText}
+                linkHref={mediaSection.linkHref}
+                ribbon={true}
+            />
             <ClassCardContainer title={`classes`} items={test} />
+
             <div>Sign Up Now</div>
         </MainLayout>
     );
@@ -61,6 +71,20 @@ export const pageQuery = graphql`
                         servicesList {
                             title
                             body
+                            image {
+                                childImageSharp {
+                                    fluid {
+                                        ...GatsbyImageSharpFluid
+                                    }
+                                }
+                            }
+                        }
+                        mediaSection {
+                            title
+                            subtitle
+                            description
+                            linkText
+                            linkHref
                             image {
                                 childImageSharp {
                                     fluid {

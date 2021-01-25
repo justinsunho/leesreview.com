@@ -21,11 +21,11 @@ collections:
           - { name: color, label: color, widget: select, options: ["red", "orange", "green", "blue"], required: true }
           - { name: link, label: link, widget: string, required: true }
           - { name: body, label: body, widget: markdown, required: true }
-    - name: schedule
+    - name: schedules
       label: Schedules
-      folder: /content/schedule
-      media_folder: '/static/images/schedule'
-      public_folder: '/images/schedule'
+      folder: /content/schedules
+      media_folder: '/static/images/schedules'
+      public_folder: '/images/schedules'
       create: true
       fields:
           - { name: title, label: title, required: true }

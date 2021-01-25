@@ -19,4 +19,11 @@ servicesList:
       body: We provide office hours, tutoring, and quick answers outside of study
           sessions.
       image: /images/pages/classroom-prep/dsc02834.jpg
+mediaSection:
+    image: /images/pages/classroom-prep/dsc02834.jpg
+    subtitle: One on One
+    title: Can't find a suitable class? Sign up for individual tutoring
+    description: We offer one on one tutoring for any class listed above. We currently have one on one studnets enrolled from Geometry to Calculus and English to Physics.
+    linkText: Sign up
+    linkHref: #
 ---

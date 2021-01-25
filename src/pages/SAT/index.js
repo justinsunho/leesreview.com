@@ -2,7 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import {
     Hero,
-    CardContainer,
+    MediaSection,
     TextBlockSection,
     MethodsContainer,
     TestimonySection,
@@ -18,7 +18,7 @@ const SAT = ({ data }) => {
 
     const {
         node: {
-            frontmatter: { hero, servicesList, methodsList, priceList },
+            frontmatter: { hero, servicesList, mediaSection, methodsList, priceList },
         },
     } = pageEdges[0];
 
@@ -32,6 +32,15 @@ const SAT = ({ data }) => {
                 image={hero.image.childImageSharp.fluid}
             />
             <TextBlockSection title={`Our SAT Services`} items={servicesList} />
+            <MediaSection
+                image={mediaSection.image.childImageSharp.fluid}
+                subtitle={mediaSection.subtitle}
+                headingText={mediaSection.title}
+                description={mediaSection.description}
+                linkText={mediaSection.linkText}
+                linkHref={mediaSection.linkHref}
+                ribbon={true}
+            />
             <MethodsContainer title={`Our Methods`} items={methodsList} />
             <TestimonySection
                 subtitle={`SAT Stories`}
@@ -70,6 +79,20 @@ export const pageQuery = graphql`
                         servicesList {
                             title
                             description
+                            image {
+                                childImageSharp {
+                                    fluid {
+                                        ...GatsbyImageSharpFluid
+                                    }
+                                }
+                            }
+                        }
+                        mediaSection {
+                            subtitle
+                            title
+                            description
+                            linkText
+                            linkHref
                             image {
                                 childImageSharp {
                                     fluid {

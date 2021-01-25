@@ -1,6 +1,13 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { Hero, TextBlockSection, MethodsContainer, TestimonySection, PriceSection } from "components/organisms";
+import {
+    Hero,
+    TextBlockSection,
+    MediaSection,
+    MethodsContainer,
+    TestimonySection,
+    PriceSection,
+} from "components/organisms";
 import { MainLayout } from "components/layouts";
 
 const CollegeConsulting = ({ data }) => {
@@ -11,7 +18,7 @@ const CollegeConsulting = ({ data }) => {
 
     const {
         node: {
-            frontmatter: { hero, servicesList, methodsList, priceList, testimonies },
+            frontmatter: { hero, servicesList, mediaSection, methodsList, priceList, testimonies },
         },
     } = pageEdges[0];
 
@@ -25,6 +32,15 @@ const CollegeConsulting = ({ data }) => {
                 image={hero.image.childImageSharp.fluid}
             />
             <TextBlockSection title={`Our College Consulting`} items={servicesList} />
+            <MediaSection
+                image={mediaSection.image.childImageSharp.fluid}
+                subtitle={mediaSection.subtitle}
+                headingText={mediaSection.title}
+                description={mediaSection.description}
+                linkText={mediaSection.linkText}
+                linkHref={mediaSection.linkHref}
+                ribbon={true}
+            />
             <MethodsContainer title={`Our Methods`} items={methodsList} />
             <TestimonySection
                 subtitle={testimonies.subtitle}
@@ -63,6 +79,20 @@ export const pageQuery = graphql`
                         servicesList {
                             title
                             description
+                            image {
+                                childImageSharp {
+                                    fluid {
+                                        ...GatsbyImageSharpFluid
+                                    }
+                                }
+                            }
+                        }
+                        mediaSection {
+                            title
+                            subtitle
+                            description
+                            linkText
+                            linkHref
                             image {
                                 childImageSharp {
                                     fluid {
