@@ -11,10 +11,12 @@ import TestimonyCardContainer from "./TestimonyCardContainer";
 import MethodsContainer from "./MethodsContainer";
 import PriceSection from "./PriceSection";
 import ClassCardContainer from "./ClassCardContainer";
+import ScheduleSection from "./ScheduleSection";
 
 export {
     Header,
     PriceSection,
+    ScheduleSection,
     ClassCardContainer,
     Footer,
     Hero,

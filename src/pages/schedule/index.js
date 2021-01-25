@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { Hero, ClassCardContainer } from "components/organisms";
+import { Hero, ClassCardContainer, ScheduleSection } from "components/organisms";
 import { MainLayout } from "components/layouts";
 
 const Schedule = ({ data }) => {
@@ -20,8 +20,6 @@ const Schedule = ({ data }) => {
         return { ...classEdge.node.frontmatter };
     });
 
-    console.log(scheduleEdges);
-
     return (
         <MainLayout>
             <Hero
@@ -32,7 +30,14 @@ const Schedule = ({ data }) => {
             />
             <ClassCardContainer title={`classes`} items={classItems} />
             {scheduleEdges.map((edge) => (
-                <div dangerouslySetInnerHTML={{ __html: edge.node.html }} />
+                <ScheduleSection
+                    title={edge.node.frontmatter.title}
+                    subtitle={edge.node.frontmatter.subtitle}
+                    description={edge.node.frontmatter.description}
+                    linkText={edge.node.frontmatter.linkText}
+                    linkHref={edge.node.frontmatter.linkHref}
+                    table={edge.node.html}
+                />
             ))}
         </MainLayout>
     );
