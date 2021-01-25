@@ -1,5 +1,5 @@
 import React from "react";
-import { TextBlock } from "components/molecules";
+import { TextBlock, ClassCard } from "components/molecules";
 import utilities from "theme/utilities.module.scss";
 import styles from "./styles.module.scss";
 
@@ -12,14 +12,7 @@ const PriceSection = ({ items, title }) => {
             <div className={`row`}>
                 {items.map((item) => (
                     <div className={`col-md`}>
-                        <TextBlock
-                            headingTag={"h3"}
-                            headingText={item.price}
-                            subtitle={item.title}
-                            description={item.description}
-                            inView={true}
-                            className={`${styles.priceTextBlock}`}
-                        />
+                        <ClassCard title={item.title} date={``} description={item.description} price={item.price} />
                     </div>
                 ))}
             </div>
