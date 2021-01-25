@@ -7,6 +7,12 @@ const Schedule = ({ data }) => {
         page: { edges: pageEdges },
     } = data;
 
+    const {
+        node: {
+            frontmatter: { hero },
+        },
+    } = pageEdges[0];
+
     return <MainLayout>test</MainLayout>;
 };
 
@@ -19,7 +25,24 @@ export const pageQuery = graphql`
                 node {
                     frontmatter {
                         title
+                        hero {
+                            title
+                        }
                     }
+                }
+            }
+        }
+        schedules: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/content/schedules/" } }) {
+            edges {
+                node {
+                    frontmatter {
+                        title
+                        subtitle
+                        description
+                        linkText
+                        linkHref
+                    }
+                    rawMarkdownBody
                 }
             }
         }

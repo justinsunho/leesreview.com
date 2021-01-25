@@ -13,7 +13,7 @@ description: |-
 
     No class 4/30, 5/1, 5/7, 5/8
 price: $800
-tag: SAT I
+tag: SAT
 teacherName: Mr. Lee
 teacherLink: /staff/mr-lee
 ---

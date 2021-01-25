@@ -53,7 +53,7 @@ const ClassCardContainer = ({ items, title, subtitle }) => {
                 {items
                     .filter((item) => (tags[currentTag] === "All" ? true : item.tag === tags[currentTag]))
                     .map((item, i) => (
-                        <div className={`col-md-3 pb-5`}>
+                        <div className={`col-lg-3 col-md-6 col-sm-12 pb-5`}>
                             <ClassCard
                                 title={item.title}
                                 date={item.date}

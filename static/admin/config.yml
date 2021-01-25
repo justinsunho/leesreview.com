@@ -21,6 +21,19 @@ collections:
           - { name: color, label: color, widget: select, options: ["red", "orange", "green", "blue"], required: true }
           - { name: link, label: link, widget: string, required: true }
           - { name: body, label: body, widget: markdown, required: true }
+    - name: schedule
+      label: Schedules
+      folder: /content/schedule
+      media_folder: '/static/images/schedule'
+      public_folder: '/images/schedule'
+      create: true
+      fields:
+          - { name: title, label: title, required: true }
+          - { name: subtitle, label: subtitle, required: false }
+          - { name: description, label: Description, required: false }
+          - { name: linkText, label: Link Text, widget: string, required: false }
+          - { name: linkHref, label: Link Href, widget: string, required: false }
+          - { name: body, label: body, widget: markdown, required: true }
     - name: classes
       label: Classes
       folder: /content/classes
@@ -31,11 +44,11 @@ collections:
         - {label: "Title", name: title, widget: string}
         - {label: "Date", name: date, widget: string}
         - {label: "Time", name: time, widget: string}
-        - {label: "Description", name: description, widget: markdown}
         - {label: "Price", name: price, widget: string}
-        - { label: "Category", name: tag, widget: select, options: ["SAT I", "SAT II", "College Consulting", "AP Prep", "Math/Science", "English", "Individual Tutor"], required: true }
+        - { label: "Category", name: tag, widget: select, options: ["SAT", "College Consulting", "AP Prep", "Math/Science", "English", "Individual Tutor"], required: true }
         - {label: "Teacher Name", name: teacherName, widget: relation, collection: staff, value_field: title, search_fields: [title]}
         - {label: "Teacher Link", name: teacherLink, widget: relation, collection: staff, value_field: linkHref, search_fields: [title]}
+        - {label: "Description", name: description, widget: markdown}
     - name: testimony
       label: Testimony
       folder: /content/testimonies
@@ -378,6 +391,17 @@ collections:
                - { name: title, label: title, required: true }
                - { name: image, label: img, widget: image, required: true }
                - { name: body, label: body, widget: markdown, required: true }
+           - label: Media Section
+             name: mediaSection
+             widget: list
+             summary: '{{fields.name}}'
+             fields:
+               - {label: "Image", name: image, widget: image}
+               - {label: "subtitle", name: subtitle, widget: string}
+               - {label: "title", name: title, widget: string}
+               - {label: "description", name: description, widget: string}
+               - {label: "Link Text", name: linkText, widget: string}
+               - {label: "Link Href", name: linkHref, widget: string}
        - name: schedule
          label: Schedule
          file: /content/pages/schedule.md
@@ -394,12 +418,3 @@ collections:
                - {label: "Description", name: description, widget: string}
                - {label: "Button Text", name: buttonText, widget: string}
                - {label: "Button Link", name: buttonLink, widget: string}
-               - {label: "Image", name: image, widget: image}
-           - label: Schedules
-             name: scheduleList
-             widget: list
-             summary: '{{fields.name}}'
-             fields:
-               - { name: title, label: title, required: true }
-               - { name: image, label: img, widget: image, required: true }
-               - { name: body, label: body, widget: markdown, required: true }

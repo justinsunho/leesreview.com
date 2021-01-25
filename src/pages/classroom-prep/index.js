@@ -73,7 +73,9 @@ export const pageQuery = graphql`
                 }
             }
         }
-        classes: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/content/classes/" } }) {
+        classes: allMarkdownRemark(
+            filter: { fileAbsolutePath: { regex: "/content/classes/" }, frontmatter: { tag: { ne: "SAT" } } }
+        ) {
             edges {
                 node {
                     frontmatter {
