@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { Hero, ClassCardContainer, MediaSection, TextBlockSection } from "components/organisms";
+import { Hero, ClassCardContainer, MediaSection, TextBlockSection, BottomSection } from "components/organisms";
 import { MainLayout } from "components/layouts";
 
 const ClassroomPrep = ({ data }) => {
@@ -12,13 +12,9 @@ const ClassroomPrep = ({ data }) => {
 
     const {
         node: {
-            frontmatter: { hero, servicesList, mediaSection },
+            frontmatter: { hero, servicesList, mediaSection, signUp },
         },
     } = pageEdges[0];
-
-    const test = classEdges.map((classEdge) => {
-        return { ...classEdge.node.frontmatter };
-    });
 
     return (
         <MainLayout>
@@ -39,9 +35,14 @@ const ClassroomPrep = ({ data }) => {
                 linkHref={mediaSection.linkHref}
                 ribbon={true}
             />
-            <ClassCardContainer title={`classes`} items={test} />
-
-            <div>Sign Up Now</div>
+            <ClassCardContainer title={`classes`} items={classEdges} />
+            <BottomSection
+                title={signUp.title}
+                subtitle={signUp.subtitle}
+                description={signUp.description}
+                buttonText={signUp.buttonText}
+                buttonLink={signUp.buttonLink}
+            />
         </MainLayout>
     );
 };
@@ -93,6 +94,13 @@ export const pageQuery = graphql`
                                 }
                             }
                         }
+                        signUp {
+                            subtitle
+                            title
+                            description
+                            buttonText
+                            buttonLink
+                        }
                     }
                 }
             }
@@ -106,12 +114,12 @@ export const pageQuery = graphql`
                         title
                         date
                         time
-                        description
                         price
                         tag
                         teacherName
                         teacherLink
                     }
+                    html
                 }
             }
         }

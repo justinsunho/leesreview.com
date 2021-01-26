@@ -12,8 +12,10 @@ import MethodsContainer from "./MethodsContainer";
 import PriceSection from "./PriceSection";
 import ClassCardContainer from "./ClassCardContainer";
 import ScheduleSection from "./ScheduleSection";
+import BottomSection from "./BottomSection";
 
 export {
+    BottomSection,
     Header,
     PriceSection,
     ScheduleSection,

@@ -16,10 +16,6 @@ const Schedule = ({ data }) => {
         },
     } = pageEdges[0];
 
-    const classItems = classEdges.map((classEdge) => {
-        return { ...classEdge.node.frontmatter };
-    });
-
     return (
         <MainLayout>
             <Hero
@@ -28,7 +24,7 @@ const Schedule = ({ data }) => {
                 linkHref={hero.buttonLink}
                 linkText={hero.buttonText}
             />
-            <ClassCardContainer title={`classes`} items={classItems} />
+            <ClassCardContainer title={`classes`} items={classEdges} />
             {scheduleEdges.map((edge) => (
                 <ScheduleSection
                     title={edge.node.frontmatter.title}
@@ -90,12 +86,12 @@ export const pageQuery = graphql`
                         title
                         date
                         time
-                        description
                         price
                         tag
                         teacherName
                         teacherLink
                     }
+                    html
                 }
             }
         }

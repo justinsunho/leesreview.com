@@ -48,11 +48,11 @@ location:
           description: After the COVID-19 pandemic, we've been able to successfully
               transition to online instruction!
           linkText: Learn More
-          linkHref: "#"
+          linkHref: "/online"
         - title: Advanced Classrooms and Supplies
           image: /images/pages/home/screen-shot-2020-12-28-at-7.48.47-pm.png
           description: We pride ourselves in providing the best learning environemnt for
               students.
           linkText: Learn More
-          linkHref: "#"
+          linkHref: "/about"
 ---

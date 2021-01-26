@@ -7,7 +7,7 @@ import utilities from "theme/utilities.module.scss";
 import styles from "./styles.module.scss";
 
 const ClassCardContainer = ({ items, title, subtitle }) => {
-    const tags = [...new Set(items.map((item) => item.tag)), "All"];
+    const tags = [...new Set(items.map((item) => item.node.frontmatter.tag)), "All"];
 
     const [currentTag, setTag] = useState(tags.length - 1);
 
@@ -55,15 +55,15 @@ const ClassCardContainer = ({ items, title, subtitle }) => {
                     .map((item, i) => (
                         <div className={`col-lg-3 col-md-6 col-sm-12 pb-5`}>
                             <ClassCard
-                                title={item.title}
-                                date={item.date}
-                                time={item.time}
-                                description={item.description}
-                                price={item.price}
-                                tag={item.tag}
-                                teacherName={item.teacherName}
-                                teacherLink={item.teacherLink}
-                                backgroundColor={color[tags.indexOf(item.tag)]}
+                                title={item.node.frontmatter.title}
+                                date={item.node.frontmatterdate}
+                                time={item.node.frontmattertime}
+                                description={item.node.html}
+                                price={item.node.frontmatter.price}
+                                tag={item.node.frontmatter.tag}
+                                teacherName={item.node.frontmatter.teacherName}
+                                teacherLink={item.node.frontmatter.teacherLink}
+                                backgroundColor={color[tags.indexOf(item.node.frontmatter.tag)]}
                             />
                         </div>
                     ))}

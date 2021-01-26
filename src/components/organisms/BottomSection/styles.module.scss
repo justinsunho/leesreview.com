@@ -1,0 +1,30 @@
+@import "theme/variables";
+
+.bottomSectionWrapper {
+    background: linear-gradient(180deg, white 50%, $neutral-900 50%);
+    margin: 0 -100rem;
+    padding-left: 100rem;
+    padding-right: 100rem;
+
+    .bottomSection {
+        background: #fff;
+        border-radius: 0.5rem;
+        background-color: $primary-1;
+        box-shadow: $elevation3;
+    }
+
+    .textWrapper {
+        color: #fff;
+        padding: 1rem;
+
+        p,
+        .smallCaps {
+            color: #fff;
+        }
+    }
+
+    .buttonWrapper {
+        background-color: #fff;
+        border-radius: 0 0.5rem 0.5rem 0;
+    }
+}

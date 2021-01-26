@@ -7,6 +7,7 @@ import {
     MethodsContainer,
     TestimonySection,
     PriceSection,
+    BottomSection,
 } from "components/organisms";
 import { MainLayout } from "components/layouts";
 
@@ -18,7 +19,7 @@ const SAT = ({ data }) => {
 
     const {
         node: {
-            frontmatter: { hero, servicesList, mediaSection, methodsList, priceList },
+            frontmatter: { hero, servicesList, mediaSection, methodsList, priceList, signUp },
         },
     } = pageEdges[0];
 
@@ -49,7 +50,13 @@ const SAT = ({ data }) => {
                 testimonyList={testimonyList}
             />
             <PriceSection title={`Our Prices`} items={priceList} />
-            <div>Sign Up</div>
+            <BottomSection
+                title={signUp.title}
+                subtitle={signUp.subtitle}
+                description={signUp.description}
+                buttonText={signUp.buttonText}
+                buttonLink={signUp.buttonLink}
+            />
         </MainLayout>
     );
 };
@@ -116,6 +123,13 @@ export const pageQuery = graphql`
                             title
                             price
                             description
+                        }
+                        signUp {
+                            subtitle
+                            title
+                            description
+                            buttonText
+                            buttonLink
                         }
                     }
                 }
