@@ -43,21 +43,24 @@ const ClassCardContainer = ({ items, title, subtitle }) => {
                     <b>
                         Total Classes:{" "}
                         {
-                            items.filter((item) => (tags[currentTag] === "All" ? true : item.tag === tags[currentTag]))
-                                .length
+                            items.filter((item) =>
+                                tags[currentTag] === "All" ? true : item.node.frontmatter.tag === tags[currentTag]
+                            ).length
                         }
                     </b>
                 </div>
             </div>
             <div className={`row align-content-stretch`}>
                 {items
-                    .filter((item) => (tags[currentTag] === "All" ? true : item.tag === tags[currentTag]))
+                    .filter((item) =>
+                        tags[currentTag] === "All" ? true : item.node.frontmatter.tag === tags[currentTag]
+                    )
                     .map((item, i) => (
-                        <div className={`col-lg-3 col-md-6 col-sm-12 pb-5`}>
+                        <div className={`col-lg-3 col-md-6 col-sm-12 pb-5`} key={item.node.frontmatter.title}>
                             <ClassCard
                                 title={item.node.frontmatter.title}
-                                date={item.node.frontmatterdate}
-                                time={item.node.frontmattertime}
+                                date={item.node.frontmatter.date}
+                                time={item.node.frontmatter.time}
                                 description={item.node.html}
                                 price={item.node.frontmatter.price}
                                 tag={item.node.frontmatter.tag}
