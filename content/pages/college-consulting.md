@@ -58,4 +58,10 @@ priceList:
   - title: Senior Package
     price: $u94032
     body: dsafdsafdsa
+signUp:
+  subtitle: Reserve your spot
+  title: Reserve your spot for college consulting now!
+  description: Due to a high volume of requests, we have been keeping a wait list
+  buttonText: Reserve
+  buttonLink: /contact
 ---
