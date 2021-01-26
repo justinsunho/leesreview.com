@@ -6,6 +6,7 @@ price: $50/hr
 tag: Math/Science
 teacherName: Justin Kim
 teacherLink: /staff/justin-kim
+description: test test
 ---
 
 DBHS Curriculum and AP Calc AB Test Prep.
