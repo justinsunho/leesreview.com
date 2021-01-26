@@ -1,5 +1,5 @@
 ---
-title: Classroom Prep
+title: Cfdskla Prep
 hero:
     title: AP and Classroom Prep
     description: We offer tutoring for any and all school subjects, building our
@@ -20,10 +20,10 @@ servicesList:
           sessions.
       image: /images/pages/classroom-prep/dsc02834.jpg
 mediaSection:
+    title: Can't find a suitable class? Sign up for individual tutoring
     image: /images/pages/classroom-prep/dsc02834.jpg
     subtitle: One on One
-    title: Can't find a suitable class? Sign up for individual tutoring
     description: We offer one on one tutoring for any class listed above. We currently have one on one studnets enrolled from Geometry to Calculus and English to Physics.
     linkText: Sign up
-    linkHref: #
+    linkHref: /tests
 ---
