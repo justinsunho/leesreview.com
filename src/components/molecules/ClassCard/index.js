@@ -6,11 +6,11 @@ const ClassCard = ({ title, date, time, description, price, tag, teacherName, te
         <div className={`${styles.classCardContainer}`}>
             <div className={`${styles.classCardWrapper}`}>
                 <h4 className={`${styles.heading}`}>{title}</h4>
-                {tag && (
+                {/* {tag && (
                     <div className={`${styles.tag}`} style={{ backgroundColor: backgroundColor }}>
                         {tag}
                     </div>
-                )}
+                )} */}
                 {date && (
                     <div className={`${styles.dateContainer}`}>
                         <div>{date}</div>

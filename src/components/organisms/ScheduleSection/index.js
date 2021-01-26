@@ -1,6 +1,7 @@
 import React from "react";
 import { SmallCaps } from "components/atoms";
 import styles from "./styles.module.scss";
+import "./style.scss";
 
 const ScheduleSection = ({ title, subtitle, description, linkText, linkHref, table }) => {
     return (

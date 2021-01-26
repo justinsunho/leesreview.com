@@ -1,7 +1,38 @@
 @import "theme/variables";
 
+$colors: $accent-1, $accent-2, $accent-3, $accent-4;
+
 .tableContainer {
+    overflow-x: auto;
+
     table {
         padding-bottom: 2rem;
+
+        & tr:nth-child(odd) {
+            @for $i from 1 through length($colors) {
+                td:nth-child(#{length($colors)}n + #{$i}) {
+                    background-color: rgba(nth($colors, $i), 0.2);
+                }
+            }
+        }
+    }
+
+    td {
+        padding: 1rem 2rem;
+    }
+
+    .testing {
+        color: $accent-1;
+    }
+
+    th {
+        color: $white;
+        padding: 0.5rem 1rem;
+
+        @for $i from 1 through length($colors) {
+            &:nth-child(#{length($colors)}n + #{$i}) {
+                background-color: nth($colors, $i);
+            }
+        }
     }
 }
