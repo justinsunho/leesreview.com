@@ -77,4 +77,10 @@ priceList:
     description: Our most common package You receive * Intensive Math, Reading, and
       Writing courses * Weekly testing * SAT Registration help * TA office
       hourst * **4 additional weeks of instruction during the school year**
+signUp:
+  subtitle: Enroll in SAT
+  title: Enroll in Summer or Spring SAT!
+  description: WE're still taking spots for our SAT classes for the coming year.
+  buttonText: Sign up
+  buttonLink: /contact
 ---
