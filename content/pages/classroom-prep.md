@@ -1,5 +1,5 @@
 ---
-title: Cfdskla Prep
+title: Classroom Prep
 hero:
     title: AP and Classroom Prep
     description: We offer tutoring for any and all school subjects, building our
