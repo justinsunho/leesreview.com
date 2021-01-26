@@ -11,7 +11,7 @@ const PriceSection = ({ items, title }) => {
             </div>
             <div className={`row`}>
                 {items.map((item) => (
-                    <div className={`col-md`}>
+                    <div className={`col-md pb-5`}>
                         <ClassCard title={item.title} date={``} description={item.description} price={item.price} />
                     </div>
                 ))}

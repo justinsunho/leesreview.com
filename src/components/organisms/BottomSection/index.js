@@ -7,7 +7,7 @@ const BottomSection = ({ title, subtitle, description, buttonText, buttonLink })
         <div className={`section ${styles.bottomSectionWrapper}`}>
             <div className={`${styles.bottomSection}`}>
                 <div className={`row`}>
-                    <div className={`col-lg-10 col-md-6`}>
+                    <div className={`col-lg-10 col-8`}>
                         <div className={`${styles.textWrapper}`}>
                             <SmallCaps className={`${styles.smallCaps}`}>{subtitle}</SmallCaps>
                             <h2>{title}</h2>
@@ -15,7 +15,7 @@ const BottomSection = ({ title, subtitle, description, buttonText, buttonLink })
                         </div>
                     </div>
                     <div
-                        className={`col-lg-2 col-md-6 d-flex align-items-center justify-content-center ${styles.buttonWrapper}`}
+                        className={`col-lg-2 col-4 d-flex align-items-center justify-content-center ${styles.buttonWrapper}`}
                     >
                         <a href={buttonLink}>{buttonText}</a>
                     </div>
