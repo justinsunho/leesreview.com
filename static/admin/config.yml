@@ -318,6 +318,16 @@ collections:
                - { name: title, label: title, required: true }
                - { name: price, label: price, widget: string, required: true }
                - { name: description, label: description, widget: markdown, required: true }
+           - label: Sign Up
+             name: signUp
+             widget: object
+             summary: '{{fields.name}}'
+             fields:
+              - {label: "Subtitle", name: subtitle, widget: string}
+              - {label: "Title", name: title, widget: string}
+              - {label: "Description", name: description, widget: string}
+              - {label: "Button Text", name: buttonText, widget: string}
+              - {label: "Button Link", name: buttonLink, widget: string}
        - name: collegeConsulting
          label: College Consulting
          file: /content/pages/college-consulting.md
@@ -388,6 +398,16 @@ collections:
                - { name: title, label: title, required: true }
                - { name: price, label: price, widget: string, required: true }
                - { name: body, label: body, widget: markdown, required: true }
+           - label: Sign Up
+             name: signUp
+             widget: object
+             summary: '{{fields.name}}'
+             fields:
+             - {label: "Subtitle", name: subtitle, widget: string}
+             - {label: "Title", name: title, widget: string}
+             - {label: "Description", name: description, widget: string}
+             - {label: "Button Text", name: buttonText, widget: string}               
+             - {label: "Button Link", name: buttonLink, widget: string}
        - name: classroomPrep
          label: Classroom Prep
          file: /content/pages/classroomprep.md
@@ -424,6 +444,16 @@ collections:
                - {label: "description", name: description, widget: string}
                - {label: "Link Text", name: linkText, widget: string}
                - {label: "Link Href", name: linkHref, widget: string}
+           - label: Sign Up
+             name: signUp
+             widget: object
+             summary: '{{fields.name}}'
+             fields:
+              - {label: "Subtitle", name: subtitle, widget: string}
+              - {label: "Title", name: title, widget: string}
+              - {label: "Description", name: description, widget: string}
+              - {label: "Button Text", name: buttonText, widget: string}
+              - {label: "Button Link", name: buttonLink, widget: string}
        - name: schedule
          label: Schedule
          file: /content/pages/schedule.md
@@ -440,3 +470,38 @@ collections:
                - {label: "Description", name: description, widget: string}
                - {label: "Button Text", name: buttonText, widget: string}
                - {label: "Button Link", name: buttonLink, widget: string}
+       - name: online
+         label: Online
+         file: /content/pages/online.md
+         media_folder: '/static/images/pages/online'
+         public_folder: '/images/pages/online'
+         fields:
+          - {label: Title, name: title, widget: string}
+          - label: Hero
+            name: hero
+            widget: object
+            summary: '{{fields.name}}'
+            fields:
+               - {label: "Title", name: title, widget: string}
+               - {label: "Description", name: description, widget: string}
+               - {label: "Button Text", name: buttonText, widget: string}
+               - {label: "Button Link", name: buttonLink, widget: string}
+               - {label: Video, name: video, widget: code}
+          - label: services
+            name: servicesList
+            widget: list
+            summary: '{{fields.name}}'
+            fields:
+              - { name: title, label: title, required: true }
+              - { name: image, label: img, widget: image, required: true }
+              - { name: description, label: description, widget: markdown, required: true }
+          - label: Sign Up
+            name: signUp
+            widget: object
+            summary: '{{fields.name}}'
+            fields:
+              - {label: "Subtitle", name: subtitle, widget: string}
+              - {label: "Title", name: title, widget: string}
+              - {label: "Description", name: description, widget: string}
+              - {label: "Button Text", name: buttonText, widget: string}
+              - {label: "Button Link", name: buttonLink, widget: string}
