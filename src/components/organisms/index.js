@@ -5,7 +5,7 @@ import MediaHero from "./MediaHero";
 import MediaSection from "./MediaSection";
 import TestimonySection from "./TestimonySection";
 import CardContainer from "./CardContainer";
-import TextBlockSection from "./TextBlockSection";
+import TileBlockSection from "./TileBlockSection";
 import MediaSelectSection from "./MediaSelectSection";
 import TestimonyCardContainer from "./TestimonyCardContainer";
 import MethodsContainer from "./MethodsContainer";
@@ -27,7 +27,7 @@ export {
     MediaSection,
     TestimonySection,
     CardContainer,
-    TextBlockSection,
+    TileBlockSection,
     MediaSelectSection,
     TestimonyCardContainer,
 };

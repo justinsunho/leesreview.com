@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { Hero, ClassCardContainer, MediaSection, TextBlockSection, BottomSection } from "components/organisms";
+import { Hero, ClassCardContainer, MediaSection, TileBlockSection, BottomSection } from "components/organisms";
 import { MainLayout } from "components/layouts";
 
 const ClassroomPrep = ({ data }) => {
@@ -25,7 +25,7 @@ const ClassroomPrep = ({ data }) => {
                 linkText={hero.buttonText}
                 image={hero.image.childImageSharp.fluid}
             />
-            <TextBlockSection title={`services`} items={servicesList} />
+            <TileBlockSection title={`services`} items={servicesList} />
             <MediaSection
                 image={mediaSection.image.childImageSharp.fluid}
                 subtitle={mediaSection.subtitle}

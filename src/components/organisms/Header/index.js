@@ -1,11 +1,12 @@
 import React, { useEffect, useState, useRef } from "react";
 import { Link } from "gatsby";
 import { Logo } from "components/atoms";
-import { NavLinks, Info } from "components/molecules";
+import { Info } from "components/molecules";
+import NavLinks from "./NavLinks";
 import styles from "./styles.module.scss";
 
 const Header = () => {
-    const [isSticky, setSticky] = useState(0);
+    const [isSticky, setSticky] = useState(1);
 
     const ref = useRef(null);
 

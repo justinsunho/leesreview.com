@@ -1,5 +1,6 @@
 import React from "react";
-import { Info, SocialLinks } from "components/molecules";
+import { Info } from "components/molecules";
+import SocialLinks from "./SocialLinks";
 import styles from "./styles.module.scss";
 
 const Footer = () => {

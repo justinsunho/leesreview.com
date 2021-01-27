@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { MediaHero, TextBlockSection } from "components/organisms";
+import { MediaHero, TileBlockSection } from "components/organisms";
 import { MainLayout } from "components/layouts";
 
 const Contact = ({ data }) => {
@@ -19,7 +19,7 @@ const Contact = ({ data }) => {
             <MediaHero headingText={hero.title} description={hero.description} ribbon>
                 <div dangerouslySetInnerHTML={{ __html: hero.form.code }} />
             </MediaHero>
-            <TextBlockSection title={business.title} items={business.businessInfoList} />
+            <TileBlockSection title={business.title} items={business.businessInfoList} />
         </MainLayout>
     );
 };

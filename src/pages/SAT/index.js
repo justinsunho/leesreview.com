@@ -3,7 +3,7 @@ import { graphql } from "gatsby";
 import {
     Hero,
     MediaSection,
-    TextBlockSection,
+    TileBlockSection,
     MethodsContainer,
     TestimonySection,
     PriceSection,
@@ -32,7 +32,7 @@ const SAT = ({ data }) => {
                 linkHref={hero.buttonLink}
                 image={hero.image.childImageSharp.fluid}
             />
-            <TextBlockSection title={`Our SAT Services`} items={servicesList} />
+            <TileBlockSection title={`Our SAT Services`} items={servicesList} />
             <MediaSection
                 image={mediaSection.image.childImageSharp.fluid}
                 subtitle={mediaSection.subtitle}

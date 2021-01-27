@@ -2,7 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import {
     Hero,
-    TextBlockSection,
+    TileBlockSection,
     MediaSection,
     MethodsContainer,
     TestimonySection,
@@ -32,7 +32,7 @@ const CollegeConsulting = ({ data }) => {
                 linkHref={hero.buttonLink}
                 image={hero.image.childImageSharp.fluid}
             />
-            <TextBlockSection title={`Our College Consulting`} items={servicesList} />
+            <TileBlockSection title={`Our College Consulting`} items={servicesList} />
             <MediaSection
                 image={mediaSection.image.childImageSharp.fluid}
                 subtitle={mediaSection.subtitle}

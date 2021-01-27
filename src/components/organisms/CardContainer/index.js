@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { useInView } from "react-intersection-observer";
 import { a, useTrail, useChain } from "react-spring";
 import { SmallCaps, CTALink } from "components/atoms";
-import { Card } from "components/molecules";
+import { LinkCard } from "components/molecules";
 import { enterAbove } from "utilities/springConfigs";
 import utilities from "theme/utilities.module.scss";
 import styles from "./styles.module.scss";
@@ -50,7 +50,7 @@ const CardContainer = ({ subtitle, title, items, linkText, linkHref, backgroundC
             <div className={`row ${styles.cardRow}`}>
                 {items.map((item, i) => (
                     <a.div className={`col-lg-${12 / items.length} col-md-6`} key={item.title} style={cardTrail[i]}>
-                        <Card
+                        <LinkCard
                             color={color[i]}
                             title={item.title}
                             subtitle={item.subtitle}

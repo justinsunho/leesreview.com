@@ -4,7 +4,7 @@ import { a, useSpring, config } from "react-spring";
 import { CTALink, SmallCaps } from "components/atoms";
 import styles from "./styles.module.scss";
 
-const Card = ({ title, className, image, subtitle, description, linkText, linkHref, style, color }) => {
+const LinkCard = ({ title, className, image, subtitle, description, linkText, linkHref, style, color }) => {
     const [spring, set] = useSpring(() => ({
         transform: "translateY(0px)",
         padding: "0.5rem 1rem",
@@ -45,4 +45,4 @@ const Card = ({ title, className, image, subtitle, description, linkText, linkHr
     );
 };
 
-export default Card;
+export default LinkCard;

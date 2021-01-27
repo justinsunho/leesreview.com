@@ -1,0 +1,23 @@
+@import "theme/variables";
+
+.tileContainer {
+    background: #fff;
+    box-shadow: $elevation1;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+
+    .image {
+        position: absolute;
+        top: -4rem;
+        height: 8rem;
+        width: 8rem;
+        border-radius: 8rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .container {
+        padding-top: 5rem;
+    }
+}
