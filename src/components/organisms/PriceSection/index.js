@@ -1,14 +1,11 @@
 import React from "react";
-import { TextBlock, ClassCard } from "components/molecules";
+import { SectionWrapper, ClassCard } from "components/molecules";
 import utilities from "theme/utilities.module.scss";
 import styles from "./styles.module.scss";
 
 const PriceSection = ({ items, title }) => {
     return (
-        <div className={`section ${styles.background}`}>
-            <div className={`row`}>
-                <h2 className={`col ${utilities.textCenter}`}>{title}</h2>
-            </div>
+        <SectionWrapper className={`${styles.background}`} title={title}>
             <div className={`row`}>
                 {items.map((item) => (
                     <div className={`col-md pb-5`}>
@@ -16,7 +13,7 @@ const PriceSection = ({ items, title }) => {
                     </div>
                 ))}
             </div>
-        </div>
+        </SectionWrapper>
     );
 };
 

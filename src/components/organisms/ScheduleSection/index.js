@@ -1,28 +1,20 @@
 import React from "react";
-import { Link } from "gatsby";
-import { SmallCaps } from "components/atoms";
+import { SectionWrapper } from "components/molecules";
 import styles from "./styles.module.scss";
 import "./style.scss";
 
 const ScheduleSection = ({ title, subtitle, description, linkText, linkHref, table }) => {
     return (
-        <div className={`section`}>
-            <div className={`row`}>
-                <SmallCaps className={`col`}>{subtitle}</SmallCaps>
-            </div>
-            <div className={`row`}>
-                <h2 className={`col`}>{title}</h2>
-            </div>
-            <div className={`row`}>
-                <p className={`col`}>{description}</p>
-            </div>
+        <SectionWrapper
+            title={title}
+            subtitle={subtitle}
+            description={description}
+            linkText={linkText}
+            linkHref={linkHref}
+            left={true}
+        >
             <div className={styles.tableContainer} dangerouslySetInnerHTML={{ __html: table }} />
-            <div className={`row`}>
-                <Link className={`col`} to={linkHref}>
-                    {linkText}
-                </Link>
-            </div>
-        </div>
+        </SectionWrapper>
     );
 };
 

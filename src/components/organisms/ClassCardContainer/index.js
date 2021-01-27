@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { a, useSpring } from "react-spring";
 import TitleSelector from "./TitleSelector";
 import { SmallCaps } from "components/atoms";
-import { ClassCard } from "components/molecules";
+import { ClassCard, SectionWrapper } from "components/molecules";
 import utilities from "theme/utilities.module.scss";
 import styles from "./styles.module.scss";
 
@@ -17,15 +17,7 @@ const ClassCardContainer = ({ items, title, subtitle }) => {
     }));
 
     return (
-        <div className={`section`}>
-            <div className={`row`}>
-                <div className={`col ${utilities.textCenter}`}>
-                    <SmallCaps>{subtitle}</SmallCaps>
-                </div>
-            </div>
-            <div className={`row`}>
-                <h2 className={`col ${utilities.textCenter}`}>{title}</h2>
-            </div>
+        <SectionWrapper subtitle={subtitle} title={title}>
             <div className={`row`}>
                 {tags.map((tag, i) => (
                     <TitleSelector
@@ -71,7 +63,7 @@ const ClassCardContainer = ({ items, title, subtitle }) => {
                         </div>
                     ))}
             </div>
-        </div>
+        </SectionWrapper>
     );
 };
 

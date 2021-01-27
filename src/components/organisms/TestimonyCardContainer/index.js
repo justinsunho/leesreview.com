@@ -1,12 +1,11 @@
 import React from "react";
-import { TestimonyCard } from "components/molecules";
-import styles from "./styles.module.scss";
+import { TestimonyCard, SectionWrapper } from "components/molecules";
 
 const TestimonyCardContainer = ({ items }) => {
     const color = ["#eb5757", "#f2994a", "#f2c94c", "#219653", "#9b51e0"];
 
     return (
-        <div className={`section`}>
+        <SectionWrapper>
             <div className={`row`}>
                 {items.map((item, i) => (
                     <div className={`col-md-4`} key={item.title}>
@@ -21,7 +20,7 @@ const TestimonyCardContainer = ({ items }) => {
                     </div>
                 ))}
             </div>
-        </div>
+        </SectionWrapper>
     );
 };
 

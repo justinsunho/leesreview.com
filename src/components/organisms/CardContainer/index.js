@@ -1,10 +1,8 @@
 import React, { useRef } from "react";
 import { useInView } from "react-intersection-observer";
 import { a, useTrail, useChain } from "react-spring";
-import { SmallCaps, CTALink } from "components/atoms";
-import { LinkCard } from "components/molecules";
+import { LinkCard, SectionWrapper } from "components/molecules";
 import { enterAbove } from "utilities/springConfigs";
-import utilities from "theme/utilities.module.scss";
 import styles from "./styles.module.scss";
 
 const CardContainer = ({ subtitle, title, items, linkText, linkHref, backgroundColor }) => {
@@ -32,21 +30,15 @@ const CardContainer = ({ subtitle, title, items, linkText, linkHref, backgroundC
     useChain(inView ? [textRef, cardRef] : []);
 
     return (
-        <div
-            className={`section ${backgroundColor && styles.expandBackground}`}
+        <SectionWrapper
+            subtitle={subtitle}
+            title={title}
+            linkText={linkText}
+            linkHref={linkHref}
+            className={`${backgroundColor && styles.expandBackground}`}
+            trailArray={textTrail}
             ref={ref}
-            // style={{ backgroundColor: backgroundColor }}
         >
-            {subtitle && (
-                <a.div className={`row`} style={textTrail[0]}>
-                    <div className={`col ${utilities.textCenter}`}>
-                        <SmallCaps>{subtitle}</SmallCaps>
-                    </div>
-                </a.div>
-            )}
-            <a.div className={`row ${styles.title}`} style={textTrail[1]}>
-                <h2 className={`col ${utilities.textCenter}`}>{title}</h2>
-            </a.div>
             <div className={`row ${styles.cardRow}`}>
                 {items.map((item, i) => (
                     <a.div className={`col-lg-${12 / items.length} col-md-6`} key={item.title} style={cardTrail[i]}>
@@ -62,14 +54,7 @@ const CardContainer = ({ subtitle, title, items, linkText, linkHref, backgroundC
                     </a.div>
                 ))}
             </div>
-            {linkText && (
-                <div className={`row ${styles.ctaRow}`}>
-                    <CTALink linkHref={linkHref} className={`${utilities.textCenter} col`}>
-                        {linkText}
-                    </CTALink>
-                </div>
-            )}
-        </div>
+        </SectionWrapper>
     );
 };
 

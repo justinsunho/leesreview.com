@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useTransition, a } from "react-spring";
 import { Image } from "components/atoms";
+import { SectionWrapper } from "components/molecules";
 import SelectItem from "./SelectItem";
-import utilities from "theme/utilities.module.scss";
 import styles from "./styles.module.scss";
 
 const MediaSelectSection = ({ title, items }) => {
@@ -17,10 +17,7 @@ const MediaSelectSection = ({ title, items }) => {
     });
 
     return (
-        <div className={`section`}>
-            <div className={`row`}>
-                <h2 className={`col ${utilities.textCenter}`}>{title}</h2>
-            </div>
+        <SectionWrapper title={title}>
             <div className={`row`}>
                 <div className={`col-lg-7`}>
                     {transitions.map(({ item, props, key }, i) => (
@@ -48,7 +45,7 @@ const MediaSelectSection = ({ title, items }) => {
                     ))}
                 </div>
             </div>
-        </div>
+        </SectionWrapper>
     );
 };
 
