@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { useTransition, animated, useTrail } from "react-spring";
 import { SmallCaps, CTALink } from "components/atoms";
-import { CarouselContainer, BigQuote, TestimonyItem } from "components/molecules";
+import BigQuote from "./BigQuote";
+import CarouselContainer from "./CarouselContainer";
+import TestimonyItem from "./TestimonyItem";
 
 const TestimonySection = ({ subtitle, linkText, linkHref, testimonyList }) => {
     const [testimonyIndex, setTestimonyIndex] = useState(0);
