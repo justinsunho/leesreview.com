@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 import styles from "./styles.module.scss";
 
 const ClassCard = ({ title, date, time, description, price, tag, teacherName, teacherLink, backgroundColor }) => {
@@ -19,9 +20,9 @@ const ClassCard = ({ title, date, time, description, price, tag, teacherName, te
                 )}
                 <p dangerouslySetInnerHTML={{ __html: description }} />
                 {teacherName && (
-                    <a className={`${styles.teacher}`} href={teacherLink}>
+                    <Link className={`${styles.teacher}`} to={teacherLink}>
                         Taught by: {teacherName}
-                    </a>
+                    </Link>
                 )}
             </div>
             <div className={`${styles.price}`} style={{ backgroundColor: backgroundColor }}>

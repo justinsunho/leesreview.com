@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 import { SmallCaps } from "components/atoms";
 import styles from "./styles.module.scss";
 
@@ -17,7 +18,7 @@ const BottomSection = ({ title, subtitle, description, buttonText, buttonLink })
                     <div
                         className={`col-lg-2 col-4 d-flex align-items-center justify-content-center ${styles.buttonWrapper}`}
                     >
-                        <a href={buttonLink}>{buttonText}</a>
+                        <Link to={buttonLink}>{buttonText}</Link>
                     </div>
                 </div>
             </div>

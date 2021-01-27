@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 import { SmallCaps } from "components/atoms";
 import styles from "./styles.module.scss";
 import "./style.scss";
@@ -17,9 +18,9 @@ const ScheduleSection = ({ title, subtitle, description, linkText, linkHref, tab
             </div>
             <div className={styles.tableContainer} dangerouslySetInnerHTML={{ __html: table }} />
             <div className={`row`}>
-                <a className={`col`} href={linkHref}>
+                <Link className={`col`} to={linkHref}>
                     {linkText}
-                </a>
+                </Link>
             </div>
         </div>
     );
