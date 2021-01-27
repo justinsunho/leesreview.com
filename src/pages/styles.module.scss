@@ -1,0 +1,5 @@
+@import "theme/variables";
+
+.gradient {
+    background: linear-gradient(180deg, $white 80%, rgba($primary-2, 0.2) 100%);
+}

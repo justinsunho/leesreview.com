@@ -1,19 +1,19 @@
 @import "theme/variables";
 
 .button {
+    background-color: $primary-1;
+    border-radius: 8px;
+    box-shadow: $elevation1;
+    color: #fff;
     display: inline-block;
     padding: 0.5rem 1rem;
-    border-radius: 8px;
-    background-color: $primary-1;
-    color: #fff;
-    box-shadow: $elevation1;
     transform: translateY(0);
     transition: all 0.2s ease-in-out;
 
     &:hover {
-        color: #fff;
         background-color: $primary-2;
         box-shadow: $elevation3;
+        color: #fff;
         transform: translateY(-$translateY);
         transition: all 0.2s ease-in-out;
     }

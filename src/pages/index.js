@@ -2,6 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import { Hero, MediaSection, TestimonySection, CardContainer } from "components/organisms";
 import { MainLayout } from "components/layouts";
+import styles from "./styles.module.scss";
 
 const Index = ({ data }) => {
     const {
@@ -16,7 +17,7 @@ const Index = ({ data }) => {
     } = pageEdges[0];
 
     return (
-        <MainLayout>
+        <MainLayout className={`${styles.gradient}`}>
             <Hero
                 headingText={hero.title}
                 description={hero.description}

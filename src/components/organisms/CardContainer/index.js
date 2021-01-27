@@ -35,7 +35,7 @@ const CardContainer = ({ subtitle, title, items, linkText, linkHref, backgroundC
         <div
             className={`section ${backgroundColor && styles.expandBackground}`}
             ref={ref}
-            style={{ backgroundColor: backgroundColor }}
+            // style={{ backgroundColor: backgroundColor }}
         >
             {subtitle && (
                 <a.div className={`row`} style={textTrail[0]}>
@@ -44,7 +44,7 @@ const CardContainer = ({ subtitle, title, items, linkText, linkHref, backgroundC
                     </div>
                 </a.div>
             )}
-            <a.div className={`row`} style={textTrail[1]}>
+            <a.div className={`row ${styles.title}`} style={textTrail[1]}>
                 <h2 className={`col ${utilities.textCenter}`}>{title}</h2>
             </a.div>
             <div className={`row ${styles.cardRow}`}>

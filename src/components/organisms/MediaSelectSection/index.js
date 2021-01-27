@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { useTransition, a, useSprings, useSpring } from "react-spring";
-import Img from "gatsby-image";
-import { SelectItem, ImageBackground, Image } from "components/atoms";
+import { useTransition, a } from "react-spring";
+import { Image } from "components/atoms";
+import SelectItem from "./SelectItem";
 import utilities from "theme/utilities.module.scss";
 import styles from "./styles.module.scss";
 

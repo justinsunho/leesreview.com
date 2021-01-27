@@ -39,7 +39,7 @@ const TextBlock = ({
             </a.p>
             {linkHref && linkText ? (
                 button ? (
-                    <AnimatedButton to={linkHref} style={trail[3]}>
+                    <AnimatedButton linkHref={linkHref} style={trail[3]}>
                         {linkText}
                     </AnimatedButton>
                 ) : (

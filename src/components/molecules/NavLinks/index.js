@@ -48,7 +48,7 @@ const NavLinks = () => {
                     </Link>
                 </li>
                 <li className={styles.contactButton}>
-                    <Button to="/contact">Contact</Button>
+                    <Button linkHref="/contact">Contact</Button>
                 </li>
             </ul>
         </>

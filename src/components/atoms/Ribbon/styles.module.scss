@@ -1,16 +1,16 @@
 @import "theme/variables";
 
 .ribbonContainer {
-    transform: rotate(-8deg);
     height: 100%;
-    width: 100%;
-    z-index: -1;
     position: absolute;
     top: 15%;
+    transform: rotate(-5deg);
+    width: 100%;
+    z-index: -1;
 }
 
 .ribbon {
-    margin: 0 -100rem;
     background-color: $primary-1;
     height: 75%;
+    margin: 0 -100rem;
 }

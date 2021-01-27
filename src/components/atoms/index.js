@@ -1,10 +1,9 @@
-import Logo from "./Logo";
 import Button from "./Button";
-import SmallCaps from "./SmallCaps";
-import Image from "./Image";
 import CTALink from "./CTALink";
+import Image from "./Image";
 import ImageBackground from "./ImageBackground";
+import Logo from "./Logo";
 import Ribbon from "./Ribbon";
-import SelectItem from "./SelectItem";
+import SmallCaps from "./SmallCaps";
 
-export { Button, Logo, SmallCaps, Image, CTALink, ImageBackground, Ribbon, SelectItem };
+export { CTALink, ImageBackground, Ribbon, Button, Image, Logo, SmallCaps };
