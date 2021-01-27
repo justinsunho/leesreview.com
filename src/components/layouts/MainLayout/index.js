@@ -1,5 +1,6 @@
 import React from "react";
-import { Header, Footer } from "components/organisms";
+import Header from "./Header";
+import Footer from "./Footer";
 import styles from "./styles.module.scss";
 
 const MainLayout = ({ children, className }) => {

@@ -10,7 +10,7 @@ const Staff = ({ data }) => {
     const {
         markdownRemark: {
             html,
-            frontmatter: { title, subtitle, description, tags, color, image },
+            frontmatter: { title, subtitle, description, tags, image },
         },
     } = data;
 
@@ -52,7 +52,6 @@ export const query = graphql`
                 subtitle
                 description
                 tags
-                color
                 image {
                     childImageSharp {
                         fluid(maxWidth: 900) {

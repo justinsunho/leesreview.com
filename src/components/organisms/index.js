@@ -1,5 +1,3 @@
-import Header from "./Header";
-import Footer from "./Footer";
 import Hero from "./Hero";
 import MediaHero from "./MediaHero";
 import MediaSection from "./MediaSection";
@@ -16,11 +14,9 @@ import BottomSection from "./BottomSection";
 
 export {
     BottomSection,
-    Header,
     PriceSection,
     ScheduleSection,
     ClassCardContainer,
-    Footer,
     Hero,
     MethodsContainer,
     MediaHero,
