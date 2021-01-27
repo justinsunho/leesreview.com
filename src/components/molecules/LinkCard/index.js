@@ -1,6 +1,6 @@
 import React from "react";
 import Img from "gatsby-image";
-import { a, useSpring, config } from "react-spring";
+import { a, useSpring } from "react-spring";
 import { CTALink, SmallCaps } from "components/atoms";
 import styles from "./styles.module.scss";
 

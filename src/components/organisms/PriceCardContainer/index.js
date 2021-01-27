@@ -1,9 +1,8 @@
 import React from "react";
 import { SectionWrapper, ClassCard } from "components/molecules";
-import utilities from "theme/utilities.module.scss";
 import styles from "./styles.module.scss";
 
-const PriceSection = ({ items, title }) => {
+const PriceCardContainer = ({ items, title }) => {
     return (
         <SectionWrapper className={`${styles.background}`} title={title}>
             <div className={`row`}>
@@ -17,4 +16,4 @@ const PriceSection = ({ items, title }) => {
     );
 };
 
-export default PriceSection;
+export default PriceCardContainer;

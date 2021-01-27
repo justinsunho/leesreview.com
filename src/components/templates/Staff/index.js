@@ -10,7 +10,7 @@ const Staff = ({ data }) => {
     const {
         markdownRemark: {
             html,
-            frontmatter: { title, subtitle, description, tags, image },
+            frontmatter: { title, subtitle, tags, image },
         },
     } = data;
 

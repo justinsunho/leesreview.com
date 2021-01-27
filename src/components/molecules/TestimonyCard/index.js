@@ -28,7 +28,7 @@ const TestimonyCard = ({ title, college, tags, body, image, className, color }) 
         return () => {
             document.removeEventListener("mousedown", handleClick);
         };
-    }, []);
+    });
 
     return (
         <div className={`${className} ${styles.container} ${clicked && styles.clicked}`} ref={node}>
@@ -47,6 +47,7 @@ const TestimonyCard = ({ title, college, tags, body, image, className, color }) 
                             maxHeight: "25rem",
                         });
                     }}
+                    role={`dialog`}
                 >
                     <svg
                         width="24"

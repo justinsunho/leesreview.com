@@ -2,11 +2,11 @@ import React from "react";
 import { graphql } from "gatsby";
 import {
     Hero,
-    TileBlockSection,
+    TileContainer,
     MediaSection,
     MethodsContainer,
     TestimonySection,
-    PriceSection,
+    PriceCardContainer,
     BottomSection,
 } from "components/organisms";
 import { MainLayout } from "components/layouts";
@@ -32,7 +32,7 @@ const CollegeConsulting = ({ data }) => {
                 linkHref={hero.buttonLink}
                 image={hero.image.childImageSharp.fluid}
             />
-            <TileBlockSection title={`Our College Consulting`} items={servicesList} />
+            <TileContainer title={`Our College Consulting`} items={servicesList} />
             <MediaSection
                 image={mediaSection.image.childImageSharp.fluid}
                 subtitle={mediaSection.subtitle}
@@ -49,7 +49,7 @@ const CollegeConsulting = ({ data }) => {
                 linkText={testimonies.linkText}
                 testimonyList={testimonyList}
             />
-            <PriceSection title={`Our Prices`} items={priceList} />
+            <PriceCardContainer title={`Our Prices`} items={priceList} />
             <BottomSection
                 title={signUp.title}
                 subtitle={signUp.subtitle}

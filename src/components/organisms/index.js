@@ -3,18 +3,18 @@ import MediaHero from "./MediaHero";
 import MediaSection from "./MediaSection";
 import TestimonySection from "./TestimonySection";
 import CardContainer from "./CardContainer";
-import TileBlockSection from "./TileBlockSection";
+import TileContainer from "./TileContainer";
 import MediaSelectSection from "./MediaSelectSection";
 import TestimonyCardContainer from "./TestimonyCardContainer";
 import MethodsContainer from "./MethodsContainer";
-import PriceSection from "./PriceSection";
+import PriceCardContainer from "./PriceCardContainer";
 import ClassCardContainer from "./ClassCardContainer";
 import ScheduleSection from "./ScheduleSection";
 import BottomSection from "./BottomSection";
 
 export {
     BottomSection,
-    PriceSection,
+    PriceCardContainer,
     ScheduleSection,
     ClassCardContainer,
     Hero,
@@ -23,7 +23,7 @@ export {
     MediaSection,
     TestimonySection,
     CardContainer,
-    TileBlockSection,
+    TileContainer,
     MediaSelectSection,
     TestimonyCardContainer,
 };

@@ -1,15 +1,8 @@
 import React from "react";
-import { useInView } from "react-intersection-observer";
 import { Tile, SectionWrapper } from "components/molecules";
-import utilities from "theme/utilities.module.scss";
 import styles from "./styles.module.scss";
 
-const TileBlockSection = ({ title, items }) => {
-    const { ref, inView } = useInView({
-        threshold: 0,
-        triggerOnce: true,
-    });
-
+const TileContainer = ({ title, items }) => {
     return (
         <SectionWrapper title={title} className={`${styles.tileBlockSection}`}>
             <div className={`row`}>
@@ -27,4 +20,4 @@ const TileBlockSection = ({ title, items }) => {
     );
 };
 
-export default TileBlockSection;
+export default TileContainer;

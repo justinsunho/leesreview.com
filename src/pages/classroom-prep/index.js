@@ -1,12 +1,11 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { Hero, ClassCardContainer, MediaSection, TileBlockSection, BottomSection } from "components/organisms";
+import { Hero, ClassCardContainer, MediaSection, TileContainer, BottomSection } from "components/organisms";
 import { MainLayout } from "components/layouts";
 
 const ClassroomPrep = ({ data }) => {
     const {
         page: { edges: pageEdges },
-        testimonies: { edges: testimonyList },
         classes: { edges: classEdges },
     } = data;
 
@@ -25,7 +24,7 @@ const ClassroomPrep = ({ data }) => {
                 linkText={hero.buttonText}
                 image={hero.image.childImageSharp.fluid}
             />
-            <TileBlockSection title={`services`} items={servicesList} />
+            <TileContainer title={`services`} items={servicesList} />
             <MediaSection
                 image={mediaSection.image.childImageSharp.fluid}
                 subtitle={mediaSection.subtitle}
@@ -120,15 +119,6 @@ export const pageQuery = graphql`
                         teacherLink
                     }
                     html
-                }
-            }
-        }
-        testimonies: allMarkdownRemark(filter: { frontmatter: { featured: { eq: "Classroom Prep" } } }) {
-            edges {
-                node {
-                    frontmatter {
-                        title
-                    }
                 }
             }
         }

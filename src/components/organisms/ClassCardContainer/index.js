@@ -1,20 +1,13 @@
 import React, { useState } from "react";
-import { a, useSpring } from "react-spring";
 import TitleSelector from "./TitleSelector";
-import { SmallCaps } from "components/atoms";
 import { ClassCard, SectionWrapper } from "components/molecules";
+import { colorArray } from "utilities/colorArray";
 import utilities from "theme/utilities.module.scss";
-import styles from "./styles.module.scss";
 
 const ClassCardContainer = ({ items, title, subtitle }) => {
     const tags = [...new Set(items.map((item) => item.node.frontmatter.tag)), "All"];
 
     const [currentTag, setTag] = useState(tags.length - 1);
-
-    const color = ["#eb5757", "#f2994a", "#f2c94c", "#219653", "#2f80ed", "#9b51e0", "#333"];
-    const [spring, setSpring] = useSpring(() => ({
-        borderBottom: "1px solid #eaeaea",
-    }));
 
     return (
         <SectionWrapper subtitle={subtitle} title={title}>
@@ -23,7 +16,7 @@ const ClassCardContainer = ({ items, title, subtitle }) => {
                     <TitleSelector
                         className={`col ${utilities.textCenter}`}
                         title={tag}
-                        color={color[i]}
+                        color={colorArray[i]}
                         onClick={setTag}
                         index={i}
                         currentTag={currentTag}
@@ -58,7 +51,7 @@ const ClassCardContainer = ({ items, title, subtitle }) => {
                                 tag={item.node.frontmatter.tag}
                                 teacherName={item.node.frontmatter.teacherName}
                                 teacherLink={item.node.frontmatter.teacherLink}
-                                backgroundColor={color[tags.indexOf(item.node.frontmatter.tag)]}
+                                backgroundColor={colorArray[tags.indexOf(item.node.frontmatter.tag)]}
                             />
                         </div>
                     ))}

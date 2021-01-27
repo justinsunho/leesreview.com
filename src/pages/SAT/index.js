@@ -3,10 +3,10 @@ import { graphql } from "gatsby";
 import {
     Hero,
     MediaSection,
-    TileBlockSection,
+    TileContainer,
     MethodsContainer,
     TestimonySection,
-    PriceSection,
+    PriceCardContainer,
     BottomSection,
 } from "components/organisms";
 import { MainLayout } from "components/layouts";
@@ -32,7 +32,7 @@ const SAT = ({ data }) => {
                 linkHref={hero.buttonLink}
                 image={hero.image.childImageSharp.fluid}
             />
-            <TileBlockSection title={`Our SAT Services`} items={servicesList} />
+            <TileContainer title={`Our SAT Services`} items={servicesList} />
             <MediaSection
                 image={mediaSection.image.childImageSharp.fluid}
                 subtitle={mediaSection.subtitle}
@@ -49,7 +49,7 @@ const SAT = ({ data }) => {
                 linkText={`See more stories`}
                 testimonyList={testimonyList}
             />
-            <PriceSection title={`Our Prices`} items={priceList} />
+            <PriceCardContainer title={`Our Prices`} items={priceList} />
             <BottomSection
                 title={signUp.title}
                 subtitle={signUp.subtitle}

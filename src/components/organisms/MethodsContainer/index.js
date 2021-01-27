@@ -1,11 +1,9 @@
 import React from "react";
 import MethodItem from "./MethodItem";
 import { SectionWrapper } from "components/molecules";
-import utilities from "theme/utilities.module.scss";
+import { colorArray } from "utilities/colorArray";
 
 const MethodsContainer = ({ items, title }) => {
-    const color = ["#eb5757", "#f2994a", "#f2c94c", "#219653", "#9b51e0"];
-
     return (
         <SectionWrapper title={title}>
             {items.map((item, i) => (
@@ -15,7 +13,7 @@ const MethodsContainer = ({ items, title }) => {
                     image={item.image.childImageSharp.fluid}
                     description={item.description}
                     itemLength={items.length}
-                    color={color[i]}
+                    color={colorArray[i]}
                 />
             ))}
         </SectionWrapper>

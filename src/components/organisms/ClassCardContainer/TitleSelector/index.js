@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { a, useSpring } from "react-spring";
 import styles from "./styles.module.scss";
 

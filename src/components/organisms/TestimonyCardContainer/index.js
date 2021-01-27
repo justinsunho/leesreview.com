@@ -1,9 +1,8 @@
 import React from "react";
 import { TestimonyCard, SectionWrapper } from "components/molecules";
+import { colorArray } from "utilities/colorArray";
 
 const TestimonyCardContainer = ({ items }) => {
-    const color = ["#eb5757", "#f2994a", "#f2c94c", "#219653", "#9b51e0"];
-
     return (
         <SectionWrapper>
             <div className={`row`}>
@@ -15,7 +14,7 @@ const TestimonyCardContainer = ({ items }) => {
                             tags={item.tags}
                             body={item.body}
                             image={item.image.childImageSharp.fluid}
-                            color={color[i % 5]}
+                            color={colorArray[i % 5]}
                         />
                     </div>
                 ))}

@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { MediaHero, TileBlockSection, BottomSection } from "components/organisms";
+import { MediaHero, TileContainer, BottomSection } from "components/organisms";
 import { MainLayout } from "components/layouts";
 
 const Online = ({ data }) => {
@@ -19,7 +19,7 @@ const Online = ({ data }) => {
             <MediaHero headingText={hero.title} description={hero.description}>
                 <div dangerouslySetInnerHTML={{ __html: hero.video.code }} />
             </MediaHero>
-            <TileBlockSection title={`Online Services`} items={servicesList} />
+            <TileContainer title={`Online Services`} items={servicesList} />
             <BottomSection
                 title={signUp.title}
                 subtitle={signUp.subtitle}
