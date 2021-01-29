@@ -8,17 +8,14 @@
 .expandBackground {
     position: relative;
 
-    .title {
-    }
-
     &:before {
         content: "";
         display: block;
         background-color: $neutral-300;
         position: absolute;
         top: 0;
-        left: 1rem;
-        width: calc(100% - 2rem);
+        left: 4rem;
+        width: calc(100% - 8rem);
         height: 100%;
         z-index: 0;
         border-radius: 2rem;

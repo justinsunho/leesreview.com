@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { Hero, MediaSelectSection, MediaSection, CardContainer } from "components/organisms";
+import { Hero, MediaSelectSection, MediaSection, LinkCardContainer } from "components/organisms";
 import { MainLayout } from "components/layouts";
 
 const About = ({ data }) => {
@@ -34,8 +34,8 @@ const About = ({ data }) => {
                 linkHref={students.linkHref}
                 ribbon
             />
-            <CardContainer title={staff.title} items={staff.staffList} />
-            <div>{history.title}</div>
+            <LinkCardContainer title={staff.title} items={staff.staffList} />
+            {/* <div>{history.title}</div> */}
         </MainLayout>
     );
 };

@@ -1,8 +1,9 @@
 import Hero from "./Hero";
+import HomeHeroSection from "./HomeHeroSection";
 import MediaHero from "./MediaHero";
 import MediaSection from "./MediaSection";
 import TestimonySection from "./TestimonySection";
-import CardContainer from "./CardContainer";
+import LinkCardContainer from "./LinkCardContainer";
 import TileContainer from "./TileContainer";
 import MediaSelectSection from "./MediaSelectSection";
 import TestimonyCardContainer from "./TestimonyCardContainer";
@@ -18,11 +19,12 @@ export {
     ScheduleSection,
     ClassCardContainer,
     Hero,
+    HomeHeroSection,
     MethodsContainer,
     MediaHero,
     MediaSection,
     TestimonySection,
-    CardContainer,
+    LinkCardContainer,
     TileContainer,
     MediaSelectSection,
     TestimonyCardContainer,

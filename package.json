@@ -19,7 +19,7 @@
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
     "bootstrap-4-grid": "^3.4.0",
-    "gatsby": "^2.26.1",
+    "gatsby": "^2.31.1",
     "gatsby-image": "^2.8.0",
     "gatsby-plugin-mdx": "^1.7.1",
     "gatsby-plugin-netlify-cms": "^4.7.0",
@@ -41,7 +41,7 @@
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
     "react-intersection-observer": "^8.31.0",
-    "react-spring": "^8.0.27",
+    "react-spring": "^9.0.0-rc.3",
     "rfs": "^9.0.3",
     "typography": "^0.16.19"
   }

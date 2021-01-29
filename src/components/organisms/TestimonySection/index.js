@@ -14,10 +14,29 @@ const TestimonySection = ({ subtitle, linkText, linkHref, testimonyList }) => {
         triggerOnce: true,
     });
 
-    const transitions = useTransition(testimonyList[testimonyIndex], (testimonyList) => testimonyList.node.id, {
+    const transitions = useTransition(testimonyList[testimonyIndex], {
+        key: (testimonyList) => testimonyList.node.id,
         from: { opacity: 0, transform: "translateX(-10px)", visibility: "hidden", height: 0 },
         enter: { opacity: 1, transform: "translateX(0)", visibility: "visible", height: "auto" },
         leave: { opacity: 0, transform: "translateX(-10px)", visibility: "hidden", height: 0 },
+    });
+
+    const elems = transitions((style, item, key) => {
+        return (
+            <animated.div style={{ ...style }} key={key}>
+                <BigQuote quote={item.node.rawMarkdownBody} />
+            </animated.div>
+        );
+    });
+
+    const elems2 = transitions((style, item, key) => {
+        const { title, tags, college, image } = item.node.frontmatter;
+
+        return (
+            <animated.div style={{ ...style }} key={key}>
+                <TestimonyItem image={image} tags={tags} title={title} college={college} inView={inView} />
+            </animated.div>
+        );
     });
 
     const trail = useTrail(2, {
@@ -34,11 +53,7 @@ const TestimonySection = ({ subtitle, linkText, linkHref, testimonyList }) => {
             <div className={`row align-items-start flex-column-reverse flex-md-row`}>
                 <div className={`col-md-6`}>
                     <AnimatedSmallCaps style={trail[0]}>{subtitle}</AnimatedSmallCaps>
-                    {transitions.map(({ item, props, key }) => (
-                        <animated.div key={key} style={{ ...props }}>
-                            <BigQuote quote={item.node.rawMarkdownBody} />
-                        </animated.div>
-                    ))}
+                    {elems}
                     <AnimatedCTALink linkHref={linkHref} style={trail[1]}>
                         {linkText}
                     </AnimatedCTALink>
@@ -50,21 +65,7 @@ const TestimonySection = ({ subtitle, linkText, linkHref, testimonyList }) => {
                         currentIndex={testimonyIndex}
                         setIndex={setTestimonyIndex}
                     >
-                        {transitions.map(({ item, props, key }) => {
-                            const { title, tags, college, image } = item.node.frontmatter;
-
-                            return (
-                                <animated.div style={{ ...props }} key={key}>
-                                    <TestimonyItem
-                                        image={image}
-                                        tags={tags}
-                                        title={title}
-                                        college={college}
-                                        inView={inView}
-                                    />
-                                </animated.div>
-                            );
-                        })}
+                        {elems2}
                     </CarouselContainer>
                 </div>
             </div>

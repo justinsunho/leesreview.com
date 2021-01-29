@@ -6,7 +6,7 @@ import { enterAbove } from "utilities/springConfigs";
 import { colorArray } from "utilities/colorArray";
 import styles from "./styles.module.scss";
 
-const CardContainer = ({ subtitle, title, items, linkText, linkHref, backgroundColor }) => {
+const LinkCardContainer = ({ subtitle, title, items, linkText, linkHref, backgroundColor }) => {
     const { ref, inView } = useInView({
         threshold: 0,
         triggerOnce: true,
@@ -57,4 +57,4 @@ const CardContainer = ({ subtitle, title, items, linkText, linkHref, backgroundC
     );
 };
 
-export default CardContainer;
+export default LinkCardContainer;

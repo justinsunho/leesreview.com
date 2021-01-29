@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { Hero, MediaSection, TestimonySection, CardContainer } from "components/organisms";
+import { HomeHeroSection, MediaSection, TestimonySection, LinkCardContainer } from "components/organisms";
 import { MainLayout } from "components/layouts";
 import styles from "./styles.module.scss";
 
@@ -18,7 +18,7 @@ const Index = ({ data }) => {
 
     return (
         <MainLayout className={`${styles.gradient}`}>
-            <Hero
+            <HomeHeroSection
                 headingText={hero.title}
                 description={hero.description}
                 linkText={hero.buttonText}
@@ -26,7 +26,7 @@ const Index = ({ data }) => {
                 image={hero.image.childImageSharp.fluid}
                 button
             />
-            <CardContainer
+            <LinkCardContainer
                 title={classes.title}
                 items={classes.classList}
                 linkText={classes.linkText}
@@ -48,7 +48,7 @@ const Index = ({ data }) => {
                 linkText={testimonies.linkText}
                 testimonyList={testimonyList}
             />
-            <CardContainer subtitle={location.subtitle} title={location.title} items={location.locationList} />
+            <LinkCardContainer subtitle={location.subtitle} title={location.title} items={location.locationList} />
         </MainLayout>
     );
 };
