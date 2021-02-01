@@ -67,7 +67,6 @@ const HomeHeroSection = ({ headingText, description, linkText, linkHref, button,
                 <TextBlock
                     className={`col-md-7 align-items-center justify-content-center ${utilities.textCenter}`}
                     headingTag={"h1"}
-                    subtitle={"hero subtitle"}
                     headingText={headingText}
                     description={description}
                     linkText={linkText}

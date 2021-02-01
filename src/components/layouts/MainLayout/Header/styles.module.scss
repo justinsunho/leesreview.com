@@ -29,6 +29,8 @@
 
     @media (max-width: $breakpoint-large) {
         flex-wrap: wrap;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
 
         .logo {
             flex-basis: 50%;
@@ -37,7 +39,7 @@
         .infoContainer {
             text-align: right;
             flex-basis: 100%;
-            padding-top: 1rem;
+            padding-top: 0.25rem;
         }
     }
 }
