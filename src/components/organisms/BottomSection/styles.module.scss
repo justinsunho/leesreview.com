@@ -3,8 +3,8 @@
 .bottomSectionWrapper {
     background: linear-gradient(180deg, white 50%, $neutral-900 50%);
     margin: 0 -100rem;
-    padding-left: 100rem;
-    padding-right: 100rem;
+    padding-left: 101rem;
+    padding-right: 101rem;
 
     .bottomSection {
         background: #fff;
@@ -17,14 +17,26 @@
         color: #fff;
         padding: 1rem;
 
-        p,
+        .description,
         .smallCaps {
             color: #fff;
         }
     }
 
+    .heading {
+        margin-bottom: 0.5rem;
+    }
+
+    .description {
+        margin-bottom: 0.5rem;
+    }
+
     .buttonWrapper {
         background-color: #fff;
         border-radius: 0 0.5rem 0.5rem 0;
+
+        @media (max-width: $breakpoint-medium) {
+            border-radius: 0 0 0.5rem 0.5rem;
+        }
     }
 }

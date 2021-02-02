@@ -7,5 +7,9 @@
 
     .tileWrapper {
         padding-top: 5rem;
+
+        @media (max-width: $breakpoint-medium) {
+            padding-top: 0;
+        }
     }
 }

@@ -4,7 +4,6 @@
     background: #fff;
     box-shadow: $elevation1;
     padding: 1rem;
-    text-align: center;
     position: relative;
 
     .image {
@@ -15,9 +14,34 @@
         border-radius: 8rem;
         left: 50%;
         transform: translateX(-50%);
+
+        @media (max-width: $breakpoint-medium) {
+            top: 50%;
+            transform: translate(0, -50%);
+            left: -4rem;
+        }
+    }
+
+    @media (max-width: $breakpoint-medium) {
+        margin-left: 4rem;
     }
 
     .container {
-        padding-top: 5rem;
+        padding-top: 4rem;
+        text-align: center;
+
+        .heading {
+            margin-bottom: 0.5rem;
+        }
+
+        .description {
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: $breakpoint-medium) {
+            padding-top: 0;
+            padding-left: 4rem;
+            text-align: left;
+        }
     }
 }

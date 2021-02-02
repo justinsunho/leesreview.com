@@ -7,8 +7,8 @@ const Tile = ({ image, title, description, style, className }) => {
         <div className={`${className} ${styles.tileContainer}`} style={style}>
             <Img className={styles.image} style={{ position: "absolute" }} fluid={image} />
             <div className={styles.container}>
-                <h4>{title}</h4>
-                <p>{description}</p>
+                <h4 className={styles.heading}>{title}</h4>
+                <p className={styles.description}>{description}</p>
             </div>
         </div>
     );

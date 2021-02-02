@@ -14,7 +14,11 @@
         color: $white;
         z-index: 2;
 
-        p {
+        .title {
+            font-size: 1rem;
+        }
+
+        .description {
             color: $white;
         }
     }

@@ -6,7 +6,7 @@ hero:
     form:
         code: <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSe8ZGOIG3XdhcNWZIIe4Pa31mej0rqZmoVFyeB8un-xkGaKCA/viewform?embedded=true"
-            width="375" height="600" frameborder="0" marginheight="0"
+            width="100%" height="600" frameborder="0" marginheight="0"
             marginwidth="0">Loading…</iframe>
     subtitle: Sign up
 business:

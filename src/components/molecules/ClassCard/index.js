@@ -18,7 +18,7 @@ const ClassCard = ({ title, date, time, description, price, tag, teacherName, te
                         <div>{time}</div>
                     </div>
                 )}
-                <p dangerouslySetInnerHTML={{ __html: description }} />
+                <p className={styles.description} dangerouslySetInnerHTML={{ __html: description }} />
                 {teacherName && (
                     <Link className={`${styles.teacher}`} to={teacherLink}>
                         Taught by: {teacherName}

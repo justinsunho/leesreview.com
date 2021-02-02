@@ -8,7 +8,7 @@ import styles from "./styles.module.scss";
 
 const MediaSection = ({ image, subtitle, headingText, description, linkText, linkHref, ribbon }) => {
     const { ref, inView } = useInView({
-        threshold: 0.8,
+        threshold: 0.4,
         triggerOnce: true,
     });
 

@@ -12,7 +12,6 @@
 
     .selectItem {
         border-radius: 8px;
-
         padding: 0.5rem 1rem;
         box-shadow: $elevation1;
         margin-bottom: 1rem;
@@ -22,6 +21,10 @@
         &:hover {
             box-shadow: $elevation3;
             transition: 0.3s ease-in-out;
+        }
+
+        @media (max-width: $breakpoint-medium) {
+            font-size: 1rem;
         }
     }
 }

@@ -21,8 +21,8 @@ const MediaSelectSection = ({ title, items }) => {
             <a.div className={styles.mediaContainer} style={style} key={key}>
                 <Image color={colorArray[currentIndex]} image={item.image.childImageSharp.fluid} />
                 <div className={styles.content}>
-                    <h3>{item.title}</h3>
-                    <p>{item.description}</p>
+                    <h4 className={styles.title}>{item.title}</h4>
+                    <p className={styles.description}>{item.description}</p>
                 </div>
             </a.div>
         );

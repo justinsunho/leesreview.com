@@ -20,7 +20,7 @@ const Hero = ({ headingText, description, linkText, linkHref, button, image, cla
 
     return (
         <div className={`section`} ref={ref}>
-            <div className={`${styles.hero} row align-items-center ${className}`}>
+            <div className={`${styles.hero} row align-items-center flex-md-row flex-column-reverse  ${className}`}>
                 <TextBlock
                     className="col-md-6 col-lg-4 align-items-start"
                     headingTag={"h1"}

@@ -42,6 +42,7 @@
     "react-helmet": "^6.1.0",
     "react-intersection-observer": "^8.31.0",
     "react-spring": "^9.0.0-rc.3",
+    "resize-observer-polyfill": "^1.5.1",
     "rfs": "^9.0.3",
     "typography": "^0.16.19"
   }

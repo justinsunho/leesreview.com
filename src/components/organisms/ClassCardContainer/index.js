@@ -3,11 +3,13 @@ import TitleSelector from "./TitleSelector";
 import { ClassCard, SectionWrapper } from "components/molecules";
 import { colorArray } from "utilities/colorArray";
 import utilities from "theme/utilities.module.scss";
+import styles from "./styles.module.scss";
 
 const ClassCardContainer = ({ items, title, subtitle }) => {
     const tags = [...new Set(items.map((item) => item.node.frontmatter.tag)), "All"];
 
     const [currentTag, setTag] = useState(tags.length - 1);
+    const [expanded, setExpanded] = useState(0);
 
     return (
         <SectionWrapper subtitle={subtitle} title={title}>
@@ -35,13 +37,17 @@ const ClassCardContainer = ({ items, title, subtitle }) => {
                     </b>
                 </div>
             </div>
-            <div className={`row align-content-stretch`}>
+            <div
+                className={`row align-content-stretch ${styles.cardContainer} ${
+                    expanded ? styles.expanded : styles.collapsed
+                }`}
+            >
                 {items
                     .filter((item) =>
                         tags[currentTag] === "All" ? true : item.node.frontmatter.tag === tags[currentTag]
                     )
                     .map((item, i) => (
-                        <div className={`col-lg-3 col-md-6 col-sm-12 pb-5`} key={item.node.frontmatter.title}>
+                        <div className={`col-lg-3 col-md-6 col-sm-12 pb-md-5`} key={item.node.frontmatter.title}>
                             <ClassCard
                                 title={item.node.frontmatter.title}
                                 date={item.node.frontmatter.date}
@@ -55,6 +61,19 @@ const ClassCardContainer = ({ items, title, subtitle }) => {
                             />
                         </div>
                     ))}
+            </div>
+            <div className={`row d-md-none d-flex`}>
+                <div className={`col`}>
+                    <div
+                        className={`${styles.expandButton}`}
+                        onClick={() => {
+                            console.log(expanded);
+                            setExpanded(!expanded);
+                        }}
+                    >
+                        {expanded ? "Collapse" : "Show More"}
+                    </div>
+                </div>
             </div>
         </SectionWrapper>
     );

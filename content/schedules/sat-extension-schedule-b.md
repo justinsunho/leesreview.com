@@ -3,7 +3,7 @@ title: Fall SAT I (Extension Schedule B and C)
 subtitle: Plan B (August 13 -21), Plan C (September 3 - 25)
 description: Plan B is a 2 week extension of Plan A and Plan C is an additional 4 weeks from plan A and B
 linkText: Download A PDF of this schedule here
-linkHref: #
+linkHref: "/test.pdf"
 ---
 
 |                     Morning Class 1                     |                     Morning Class 2                     |                    Morning Class 3                     |

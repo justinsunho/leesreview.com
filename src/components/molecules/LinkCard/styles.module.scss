@@ -21,6 +21,11 @@
 
     .heading {
         color: $black;
+        margin-bottom: 0.5rem;
+    }
+
+    .description {
+        margin-bottom: 0.5rem;
     }
 
     .content {
@@ -41,16 +46,8 @@
     }
 
     @media (max-width: $breakpoint-medium) {
-        flex-direction: row;
-
         .image {
-            flex-basis: 35%;
-            max-height: none;
-            border-radius: 1rem 0 0 1rem;
-        }
-
-        .ctaLink {
-            border-radius: 0 1rem 1rem 0;
+            max-height: 10rem;
         }
     }
 }
