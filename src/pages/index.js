@@ -17,7 +17,7 @@ const Index = ({ data }) => {
     } = pageEdges[0];
 
     return (
-        <MainLayout className={`${styles.gradient}`}>
+        <MainLayout>
             <HomeHeroSection
                 headingText={hero.title}
                 description={hero.description}

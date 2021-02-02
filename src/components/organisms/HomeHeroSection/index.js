@@ -28,11 +28,11 @@ const HomeHeroSection = ({ headingText, description, linkText, linkHref, button,
             from: {
                 top: 0,
                 left: `${-2000 + i * 30}px`,
-                width: `6rem`,
-                height: `6rem`,
+                width: `${4 * i}rem`,
+                height: `${4 * i}rem`,
             },
             to: {
-                left: `${window.innerWidth + 200}px`,
+                left: `${window.innerWidth + 2000}px`,
                 top: 1,
             },
             config: {
