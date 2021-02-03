@@ -8,7 +8,7 @@ import styles from "./styles.module.scss";
 
 const LinkCardContainer = ({ subtitle, title, items, linkText, linkHref, backgroundClassName }) => {
     const { ref, inView } = useInView({
-        threshold: 0,
+        threshold: 0.5,
         triggerOnce: true,
     });
 

@@ -45,7 +45,7 @@ const HomeHeroSection = ({ headingText, description, linkText, linkHref, button,
     return (
         <div className={`section ${styles.homeHeroWrapper}`} ref={ref}>
             <div className={`${styles.hero} row justify-content-center ${className}`}>
-                {springs.map((props) => (
+                {/* {springs.map((props) => (
                     <AnimatedImage
                         className={`${styles.image}`}
                         fluid={image}
@@ -62,7 +62,7 @@ const HomeHeroSection = ({ headingText, description, linkText, linkHref, button,
                             height: props.height,
                         }}
                     />
-                ))}
+                ))} */}
 
                 <TextBlock
                     className={`col-md-7 align-items-center justify-content-center ${utilities.textCenter}`}
@@ -74,8 +74,6 @@ const HomeHeroSection = ({ headingText, description, linkText, linkHref, button,
                     button={button}
                     inView={inView}
                 />
-
-                {/* <AnimatedImage className={} image={image} style={imageSpring} /> */}
             </div>
         </div>
     );

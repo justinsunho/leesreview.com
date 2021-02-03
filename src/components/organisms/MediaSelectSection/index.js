@@ -16,22 +16,22 @@ const MediaSelectSection = ({ title, items }) => {
         leave: { opacity: 0, transform: "translateX(-10px)", visibility: "hidden", height: 0 },
     });
 
-    const elems = transitions((style, item, key) => {
-        return (
-            <a.div className={styles.mediaContainer} style={style} key={key}>
-                <Image color={colorArray[currentIndex]} image={item.image.childImageSharp.fluid} />
-                <div className={styles.content}>
-                    <h4 className={styles.title}>{item.title}</h4>
-                    <p className={styles.description}>{item.description}</p>
-                </div>
-            </a.div>
-        );
-    });
-
     return (
         <SectionWrapper title={title}>
             <div className={`row`}>
-                <div className={`col-lg-7`}>{elems}</div>
+                <div className={`col-lg-7`}>
+                    {transitions.map(({ item, key, props }) => {
+                        return (
+                            <a.div className={styles.mediaContainer} style={props} key={key}>
+                                <Image color={colorArray[currentIndex]} image={item.image.childImageSharp.fluid} />
+                                <div className={styles.content}>
+                                    <h4 className={styles.title}>{item.title}</h4>
+                                    <p className={styles.description}>{item.description}</p>
+                                </div>
+                            </a.div>
+                        );
+                    })}
+                </div>
                 <div className={`col-lg-5`}>
                     {items.map((item, i) => (
                         <SelectItem
