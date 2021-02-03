@@ -1,7 +1,11 @@
 @import "theme/variables";
 
+.section {
+    padding-bottom: 0;
+}
+
 .bottomSectionWrapper {
-    background: linear-gradient(180deg, white 50%, $neutral-900 50%);
+    background: linear-gradient(180deg, transparent 50%, $neutral-900 50%);
     margin: 0 -100rem;
     padding-left: 101rem;
     padding-right: 101rem;

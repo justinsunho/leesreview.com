@@ -32,6 +32,10 @@
     .imageContainer {
         position: relative;
 
+        .image {
+            border-radius: 1rem;
+        }
+
         .dottedLine {
             position: absolute;
             left: 33%;

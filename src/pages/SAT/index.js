@@ -10,6 +10,7 @@ import {
     BottomSection,
 } from "components/organisms";
 import { MainLayout } from "components/layouts";
+import styles from "./styles.module.scss";
 
 const SAT = ({ data }) => {
     const {
@@ -32,7 +33,11 @@ const SAT = ({ data }) => {
                 linkHref={hero.buttonLink}
                 image={hero.image.childImageSharp.fluid}
             />
-            <TileContainer title={`Our SAT Services`} items={servicesList} />
+            <TileContainer
+                backgroundStyles={styles.tileContainerBackground}
+                title={`Our SAT Services`}
+                items={servicesList}
+            />
             <MediaSection
                 image={mediaSection.image.childImageSharp.fluid}
                 subtitle={mediaSection.subtitle}

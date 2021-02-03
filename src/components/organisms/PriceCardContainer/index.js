@@ -4,7 +4,7 @@ import styles from "./styles.module.scss";
 
 const PriceCardContainer = ({ items, title }) => {
     return (
-        <SectionWrapper className={`${styles.background}`} title={title}>
+        <SectionWrapper title={title} backgroundStyles={styles.background}>
             <div className={`row`}>
                 {items.map((item) => (
                     <div className={`col-md pb-5`}>

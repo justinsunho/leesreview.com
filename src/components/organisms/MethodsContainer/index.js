@@ -2,10 +2,11 @@ import React from "react";
 import MethodItem from "./MethodItem";
 import { SectionWrapper } from "components/molecules";
 import { colorArray } from "utilities/colorArray";
+import styles from "./styles.module.scss";
 
 const MethodsContainer = ({ items, title }) => {
     return (
-        <SectionWrapper title={title}>
+        <SectionWrapper className={styles.methodWrapper} title={title}>
             {items.map((item, i) => (
                 <MethodItem
                     title={item.title}

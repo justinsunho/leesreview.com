@@ -1,0 +1,9 @@
+@import "theme/variables";
+
+.tileContainerBackground {
+    border-radius: 2rem;
+    margin-left: -1000rem;
+    padding-left: 1000rem;
+    padding-right: 1rem;
+    background: linear-gradient(rgba($primary-1, 0.1) 25%, rgba($primary-1, 0.1) 75%, $white 5%);
+}
