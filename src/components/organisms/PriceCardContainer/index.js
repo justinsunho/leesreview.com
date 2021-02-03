@@ -2,9 +2,9 @@ import React from "react";
 import { SectionWrapper, ClassCard } from "components/molecules";
 import styles from "./styles.module.scss";
 
-const PriceCardContainer = ({ items, title }) => {
+const PriceCardContainer = ({ backgroundClassName, items, title }) => {
     return (
-        <SectionWrapper title={title} backgroundStyles={styles.background}>
+        <SectionWrapper title={title} backgroundClassName={backgroundClassName}>
             <div className={`row`}>
                 {items.map((item) => (
                     <div className={`col-md pb-5`}>

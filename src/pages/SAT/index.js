@@ -25,7 +25,7 @@ const SAT = ({ data }) => {
     } = pageEdges[0];
 
     return (
-        <MainLayout className={styles.gradient}>
+        <MainLayout className={styles.pageGradient}>
             <Hero
                 headingText={hero.title}
                 description={hero.description}
@@ -34,7 +34,7 @@ const SAT = ({ data }) => {
                 image={hero.image.childImageSharp.fluid}
             />
             <TileContainer
-                backgroundStyles={styles.tileContainerBackground}
+                backgroundClassName={styles.tileContainerBackground}
                 title={`Our SAT Services`}
                 items={servicesList}
             />
@@ -47,7 +47,11 @@ const SAT = ({ data }) => {
                 linkHref={mediaSection.linkHref}
                 ribbon={true}
             />
-            <MethodsContainer title={`Our Methods`} items={methodsList} />
+            <MethodsContainer
+                backgroundClassName={styles.methodBackgroundClassName}
+                title={`Our Methods`}
+                items={methodsList}
+            />
             <TestimonySection
                 subtitle={`SAT Stories`}
                 linkHref={`/testimonies`}
@@ -55,7 +59,11 @@ const SAT = ({ data }) => {
                 testimonyList={testimonyList}
                 curve
             />
-            <PriceCardContainer title={`Our Prices`} items={priceList} />
+            <PriceCardContainer
+                backgroundClassName={styles.priceCardBackgroundClassName}
+                title={`Our Prices`}
+                items={priceList}
+            />
             <BottomSection
                 title={signUp.title}
                 subtitle={signUp.subtitle}

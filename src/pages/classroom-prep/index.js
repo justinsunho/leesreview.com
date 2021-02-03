@@ -37,7 +37,7 @@ const ClassroomPrep = ({ data }) => {
             />
             <ClassCardContainer
                 title={`classes`}
-                backgroundStyles={styles.backgroundClassCardContainer}
+                backgroundClassName={styles.backgroundClassCardContainer}
                 items={classEdges}
             />
             <BottomSection

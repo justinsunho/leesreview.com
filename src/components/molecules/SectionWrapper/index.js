@@ -16,14 +16,14 @@ const SectionWrapper = React.forwardRef(
             linkHref,
             description,
             left,
-            backgroundStyles,
+            backgroundClassName,
             id,
         },
         ref
     ) => {
         return (
             <div className={`section ${className}`} ref={ref} id={id}>
-                <div className={backgroundStyles}>
+                <div className={backgroundClassName}>
                     {subtitle && (
                         <a.div className={`row`} style={trailArray && trailArray[0]}>
                             <div className={`col ${!left && utilities.textCenter}`}>

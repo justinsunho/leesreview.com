@@ -4,9 +4,9 @@ import { SectionWrapper } from "components/molecules";
 import { colorArray } from "utilities/colorArray";
 import styles from "./styles.module.scss";
 
-const MethodsContainer = ({ items, title }) => {
+const MethodsContainer = ({ backgroundClassName, items, title }) => {
     return (
-        <SectionWrapper backgroundStyles={styles.methodWrapper} title={title}>
+        <SectionWrapper backgroundClassName={backgroundClassName} title={title}>
             {items.map((item, i) => (
                 <MethodItem
                     title={item.title}

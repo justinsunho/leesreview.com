@@ -17,7 +17,7 @@ const Index = ({ data }) => {
     } = pageEdges[0];
 
     return (
-        <MainLayout className={styles.gradient}>
+        <MainLayout className={styles.pageGradient}>
             <HomeHeroSection
                 headingText={hero.title}
                 description={hero.description}
@@ -31,7 +31,7 @@ const Index = ({ data }) => {
                 items={classes.classList}
                 linkText={classes.linkText}
                 linkHref={classes.linkHref}
-                backgroundColor={`#fafafa`}
+                backgroundClassName={styles.linkCardBackground}
             />
             <MediaSection
                 image={about.image.childImageSharp.fluid}

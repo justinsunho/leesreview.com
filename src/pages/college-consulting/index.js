@@ -10,6 +10,7 @@ import {
     BottomSection,
 } from "components/organisms";
 import { MainLayout } from "components/layouts";
+import styles from "./styles.module.scss";
 
 const CollegeConsulting = ({ data }) => {
     const {
@@ -42,7 +43,11 @@ const CollegeConsulting = ({ data }) => {
                 linkHref={mediaSection.linkHref}
                 ribbon={true}
             />
-            <MethodsContainer title={`Our Methods`} items={methodsList} />
+            <MethodsContainer
+                backgroundClassName={styles.methodBackgroundClassName}
+                title={`Our Methods`}
+                items={methodsList}
+            />
             <TestimonySection
                 subtitle={testimonies.subtitle}
                 linkHref={testimonies.linkHref}
@@ -50,7 +55,11 @@ const CollegeConsulting = ({ data }) => {
                 testimonyList={testimonyList}
                 curve
             />
-            <PriceCardContainer title={`Our Prices`} items={priceList} />
+            <PriceCardContainer
+                backgroundClassName={styles.priceCardBackgroundClassName}
+                title={`Our Prices`}
+                items={priceList}
+            />
             <BottomSection
                 title={signUp.title}
                 subtitle={signUp.subtitle}

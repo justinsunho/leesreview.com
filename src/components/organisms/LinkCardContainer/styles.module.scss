@@ -4,25 +4,3 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
-
-.expandBackground {
-    position: relative;
-
-    &:before {
-        content: "";
-        display: block;
-        background-color: $neutral-300;
-        position: absolute;
-        top: 0;
-        left: 4rem;
-        width: calc(100% - 8rem);
-        height: 100%;
-        z-index: 0;
-        border-radius: 2rem;
-
-        @media (max-width: $breakpoint-medium) {
-            width: calc(100% - 2rem);
-            left: 1rem;
-        }
-    }
-}

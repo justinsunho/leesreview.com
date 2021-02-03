@@ -3,9 +3,13 @@ import { Tile, SectionWrapper } from "components/molecules";
 import { colorArray } from "utilities/colorArray";
 import styles from "./styles.module.scss";
 
-const TileContainer = ({ backgroundStyles, className, title, items }) => {
+const TileContainer = ({ backgroundClassName, className, title, items }) => {
     return (
-        <SectionWrapper title={title} className={` ${styles.tileBlockSection}`} backgroundStyles={backgroundStyles}>
+        <SectionWrapper
+            title={title}
+            className={` ${styles.tileBlockSection}`}
+            backgroundClassName={`${backgroundClassName} ${className}`}
+        >
             <div className={`row`}>
                 {items.map((item, i) => (
                     <div className={`col-lg col-md-6 ${styles.tileWrapper}`} key={i}>

@@ -1,5 +1,27 @@
 @import "theme/variables";
 
-.gradient {
+.pageGradient {
     background: linear-gradient(180deg, rgba($primary-1, 0.1), $white 4%, $white 80%, rgba($primary-2, 0.2) 100%);
+}
+
+.linkCardBackground {
+    position: relative;
+
+    &:before {
+        content: "";
+        display: block;
+        background-color: $neutral-300;
+        position: absolute;
+        top: 0;
+        left: 4rem;
+        width: calc(100% - 8rem);
+        height: 100%;
+        z-index: 0;
+        border-radius: 2rem;
+
+        @media (max-width: $breakpoint-medium) {
+            width: calc(100% - 2rem);
+            left: 1rem;
+        }
+    }
 }

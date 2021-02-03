@@ -6,7 +6,7 @@ import { enterAbove } from "utilities/springConfigs";
 import { colorArray } from "utilities/colorArray";
 import styles from "./styles.module.scss";
 
-const LinkCardContainer = ({ subtitle, title, items, linkText, linkHref, backgroundColor }) => {
+const LinkCardContainer = ({ subtitle, title, items, linkText, linkHref, backgroundClassName }) => {
     const { ref, inView } = useInView({
         threshold: 0,
         triggerOnce: true,
@@ -34,7 +34,7 @@ const LinkCardContainer = ({ subtitle, title, items, linkText, linkHref, backgro
             title={title}
             linkText={linkText}
             linkHref={linkHref}
-            className={`${backgroundColor && styles.expandBackground}`}
+            className={`${backgroundClassName}`}
             trailArray={textTrail}
             ref={ref}
         >

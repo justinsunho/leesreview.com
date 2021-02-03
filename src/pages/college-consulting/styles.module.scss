@@ -1,0 +1,16 @@
+@import "theme/variables";
+
+.methodBackgroundClassName {
+    margin: -20rem -1000rem;
+    padding: 20rem 1000rem;
+    background: linear-gradient(transparent 20%, rgba($primary-1, 0.1) 50%, transparent 80%);
+}
+
+.priceCardBackgroundClassName {
+    // background-color: $neutral-200;
+    background: linear-gradient(rgba($primary-3, 0.1), $white);
+    margin: -5rem -1000rem;
+    padding-top: 5rem;
+    padding-right: 1000rem;
+    padding-left: 1000rem;
+}

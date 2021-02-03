@@ -5,14 +5,14 @@ import { colorArray } from "utilities/colorArray";
 import utilities from "theme/utilities.module.scss";
 import styles from "./styles.module.scss";
 
-const ClassCardContainer = ({ items, title, subtitle, backgroundStyles }) => {
+const ClassCardContainer = ({ items, title, subtitle, backgroundClassName }) => {
     const tags = [...new Set(items.map((item) => item.node.frontmatter.tag)), "All"];
 
     const [currentTag, setTag] = useState(tags.length - 1);
     const [expanded, setExpanded] = useState(0);
 
     return (
-        <SectionWrapper subtitle={subtitle} title={title} backgroundStyles={backgroundStyles}>
+        <SectionWrapper subtitle={subtitle} title={title} backgroundClassName={backgroundClassName}>
             <div className={`row`}>
                 {tags.map((tag, i) => (
                     <TitleSelector
