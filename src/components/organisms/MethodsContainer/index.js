@@ -6,7 +6,7 @@ import styles from "./styles.module.scss";
 
 const MethodsContainer = ({ items, title }) => {
     return (
-        <SectionWrapper className={styles.methodWrapper} title={title}>
+        <SectionWrapper backgroundStyles={styles.methodWrapper} title={title}>
             {items.map((item, i) => (
                 <MethodItem
                     title={item.title}

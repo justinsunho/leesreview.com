@@ -48,6 +48,7 @@ const CollegeConsulting = ({ data }) => {
                 linkHref={testimonies.linkHref}
                 linkText={testimonies.linkText}
                 testimonyList={testimonyList}
+                curve
             />
             <PriceCardContainer title={`Our Prices`} items={priceList} />
             <BottomSection
