@@ -7,7 +7,7 @@ import CarouselContainer from "./CarouselContainer";
 import TestimonyItem from "./TestimonyItem";
 import styles from "./styles.module.scss";
 
-const TestimonySection = ({ subtitle, linkText, linkHref, testimonyList }) => {
+const TestimonySection = ({ subtitle, linkText, linkHref, testimonyList, curve }) => {
     const [testimonyIndex, setTestimonyIndex] = useState(0);
 
     const { ref, inView } = useInView({
@@ -51,7 +51,7 @@ const TestimonySection = ({ subtitle, linkText, linkHref, testimonyList }) => {
 
     return (
         <div className={` ${styles.container}`} ref={ref}>
-            <Curve />
+            {curve && <Curve />}
             <div className={`section`}>
                 <div className={`row align-items-start flex-column-reverse flex-md-row`}>
                     <div className={`col-md-6`}>
@@ -81,19 +81,8 @@ export default TestimonySection;
 
 const Curve = () => (
     <div className={styles.curve}>
-        <svg fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 270">
             <path opacity="0.1" d="M1211 205.999C938 -319.001 389 348 0.5 174.5V303.5H1211V205.999Z" fill="#56CCF2" />
-            <path
-                opacity="0.2"
-                d="M1201.5 256.5C848.542 -385.66 326 415.997 5 181.5V301H1201.5V256.5Z"
-                fill="url(#paint0_linear)"
-            />
-            <defs>
-                <linearGradient id="paint0_linear" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#2F80ED" stop-opacity="0" />
-                    <stop offset="0.0001" stop-color="#2F80ED" />
-                </linearGradient>
-            </defs>
         </svg>
     </div>
 );

@@ -25,7 +25,7 @@ const SAT = ({ data }) => {
     } = pageEdges[0];
 
     return (
-        <MainLayout>
+        <MainLayout className={styles.gradient}>
             <Hero
                 headingText={hero.title}
                 description={hero.description}
@@ -53,6 +53,7 @@ const SAT = ({ data }) => {
                 linkHref={`/testimonies`}
                 linkText={`See more stories`}
                 testimonyList={testimonyList}
+                curve
             />
             <PriceCardContainer title={`Our Prices`} items={priceList} />
             <BottomSection

@@ -1,9 +1,15 @@
 @import "theme/variables";
 
+.gradient {
+    background: linear-gradient(180deg, rgba($primary-1, 0.1), $white 4%, $white 80%);
+}
+
 .tileContainerBackground {
-    border-radius: 2rem;
-    margin-left: -1000rem;
-    padding-left: 1000rem;
-    padding-right: 1rem;
-    background: linear-gradient(rgba($primary-1, 0.1) 25%, rgba($primary-1, 0.1) 75%, $white 5%);
+    // border-radius: 2rem;
+    // margin-left: -1000rem;
+    // padding-left: 1000rem;
+    // padding-right: 1rem;
+    // padding-top: 4rem;
+    // margin-right: auto;
+    // background: linear-gradient(rgba($primary-1, 0.1) 25%, rgba($primary-1, 0.1) 75%, $white 5%);
 }

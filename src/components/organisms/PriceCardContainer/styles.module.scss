@@ -1,8 +1,10 @@
 @import "theme/variables";
 
 .background {
-    background-color: $neutral-200;
-    margin: 0 -1000rem;
+    // background-color: $neutral-200;
+    background: linear-gradient(rgba($primary-3, 0.1), $white);
+    margin: -5rem -1000rem;
+    padding-top: 5rem;
     padding-right: 1000rem;
     padding-left: 1000rem;
 }
