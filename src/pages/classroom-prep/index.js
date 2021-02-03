@@ -2,6 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import { Hero, ClassCardContainer, MediaSection, TileContainer, BottomSection } from "components/organisms";
 import { MainLayout } from "components/layouts";
+import styles from "./styles.module.scss";
 
 const ClassroomPrep = ({ data }) => {
     const {
@@ -34,7 +35,11 @@ const ClassroomPrep = ({ data }) => {
                 linkHref={mediaSection.linkHref}
                 ribbon={true}
             />
-            <ClassCardContainer title={`classes`} items={classEdges} />
+            <ClassCardContainer
+                title={`classes`}
+                backgroundStyles={styles.backgroundClassCardContainer}
+                items={classEdges}
+            />
             <BottomSection
                 title={signUp.title}
                 subtitle={signUp.subtitle}

@@ -12,6 +12,7 @@ const ScheduleSection = ({ title, subtitle, description, linkText, linkHref, tab
             linkText={linkText}
             linkHref={linkHref}
             left={true}
+            id={title}
         >
             <div className={styles.tableContainer} dangerouslySetInnerHTML={{ __html: table }} />
         </SectionWrapper>

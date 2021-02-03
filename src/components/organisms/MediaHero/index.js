@@ -16,6 +16,7 @@ const MediaHero = ({ headingText, description, subtitle, ribbon, children }) => 
             <div className={` row align-items-start`}>
                 <TextBlock
                     className={`col-md-6 ${styles.textBlock}`}
+                    subtitle={subtitle}
                     headingTag={"h1"}
                     headingText={headingText}
                     description={description}
@@ -24,7 +25,7 @@ const MediaHero = ({ headingText, description, subtitle, ribbon, children }) => 
                 >
                     <Info smallCapsClass={styles.info} />
                 </TextBlock>
-                <div className={`col-md-6 ${styles.form}`}>{children}</div>
+                <div className={`col-md-6 ${styles.rightSection}`}>{children}</div>
             </div>
         </div>
     );

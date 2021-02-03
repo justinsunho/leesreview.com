@@ -6,11 +6,23 @@ import styles from "./styles.module.scss";
 
 const SectionWrapper = React.forwardRef(
     (
-        { title, subtitle, children, className, trailArray, linkText, linkHref, description, left, backgroundStyles },
+        {
+            title,
+            subtitle,
+            children,
+            className,
+            trailArray,
+            linkText,
+            linkHref,
+            description,
+            left,
+            backgroundStyles,
+            id,
+        },
         ref
     ) => {
         return (
-            <div className={`section ${className}`} ref={ref}>
+            <div className={`section ${className}`} ref={ref} id={id}>
                 <div className={backgroundStyles}>
                     {subtitle && (
                         <a.div className={`row`} style={trailArray && trailArray[0]}>
