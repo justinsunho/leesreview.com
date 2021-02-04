@@ -3,7 +3,7 @@ title: Summer SAT I (Afternoon)
 subtitle: Plan A - June 7 - July 29 (8 Week)
 description: Each class is selected based on our interview + diagnostic testing process
 linkText: Download A PDF of this schedule here
-linkHref: "/test.pdf"
+linkHref: ./images/schedules/Summer-2021-Schedule-added-classes.pdf
 ---
 
 |                                Afternoon 101                                |                                Afternoon 102                                 |                               Afternoon 103                                |                               Afternoon 104                               |

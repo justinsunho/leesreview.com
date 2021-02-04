@@ -14,33 +14,33 @@ const HomeHeroSection = ({ headingText, description, linkText, linkHref, button,
         triggerOnce: true,
     });
 
-    const AnimatedImage = a(Img);
+    // const AnimatedImage = a(Img);
 
-    const imageSpring = useSpring({
-        ...enterLeft(inView),
-    });
+    // const imageSpring = useSpring({
+    //     ...enterLeft(inView),
+    // });
 
-    const blah = [0, 1, 2, 3];
+    // const blah = [0, 1, 2, 3];
 
-    const springs = useSprings(
-        blah.length,
-        blah.map((item, i) => ({
-            from: {
-                top: 0,
-                left: `${-2000 + i * 30}px`,
-                width: `${4 * i}rem`,
-                height: `${4 * i}rem`,
-            },
-            to: {
-                left: `${window.innerWidth + 2000}px`,
-                top: 1,
-            },
-            config: {
-                duration: `${i * 10000}`,
-            },
-            loop: true,
-        }))
-    );
+    // const springs = useSprings(
+    //     blah.length,
+    //     blah.map((item, i) => ({
+    //         from: {
+    //             top: 0,
+    //             left: `${-2000 + i * 30}px`,
+    //             width: `${4 * i}rem`,
+    //             height: `${4 * i}rem`,
+    //         },
+    //         to: {
+    //             left: `${window.innerWidth + 2000}px`,
+    //             top: 1,
+    //         },
+    //         config: {
+    //             duration: `${i * 10000}`,
+    //         },
+    //         loop: true,
+    //     }))
+    // );
 
     return (
         <div className={`section ${styles.homeHeroWrapper}`} ref={ref}>
