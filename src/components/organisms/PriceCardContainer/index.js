@@ -7,7 +7,7 @@ import styles from "./styles.module.scss";
 
 const PriceCardContainer = ({ backgroundClassName, items, title }) => {
     const { ref, inView } = useInView({
-        threshold: 0.5,
+        threshold: 0.2,
         triggerOnce: true,
     });
 

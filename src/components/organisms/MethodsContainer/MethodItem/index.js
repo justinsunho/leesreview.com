@@ -1,6 +1,6 @@
 import React from "react";
 import Img from "gatsby-image";
-import { a, useTrail, useChain, useSpring } from "react-spring";
+import { a, useTrail, useSpring } from "react-spring";
 import { ImageBackground } from "components/atoms";
 import { enterRight } from "utilities/springConfigs";
 import styles from "./styles.module.scss";

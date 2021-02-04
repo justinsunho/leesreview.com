@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useInView } from "react-intersection-observer";
-import { a, useTrail, useChain, useTransition } from "react-spring";
-import { enterAbove } from "utilities/springConfigs";
+import { a, useTransition } from "react-spring";
 import TitleSelector from "./TitleSelector";
 import { ClassCard, SectionWrapper } from "components/molecules";
 import { colorArray } from "utilities/colorArray";

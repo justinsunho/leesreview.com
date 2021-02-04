@@ -26,6 +26,7 @@
     }
 
     &:after {
+        border-radius: 1rem;
         z-index: 1;
         background: linear-gradient(180deg, rgba(51, 51, 51, 0) 50%, #333333 100%);
         content: "";

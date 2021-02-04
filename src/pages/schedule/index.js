@@ -2,6 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import { MediaHero, ClassCardContainer, ScheduleSection } from "components/organisms";
 import { MainLayout } from "components/layouts";
+import styles from "./styles.module.scss";
 
 const Schedule = ({ data }) => {
     const {
@@ -24,13 +25,19 @@ const Schedule = ({ data }) => {
                 linkHref={hero.buttonLink}
                 linkText={hero.buttonText}
             >
-                <ul>
-                    {scheduleEdges.map((edge) => (
-                        <li>
-                            <a href={`${edge.node.frontmatter.title}`}>{edge.node.frontmatter.title}</a>
-                        </li>
-                    ))}
-                </ul>
+                <div className={styles.list}>
+                    <h3>Available Schedules</h3>
+                    <p>Click to navigate to these schedules</p>
+                    <ul>
+                        {scheduleEdges.map((edge) => (
+                            <li className={styles.listItem}>
+                                <a className={styles.linkItem} href={`#${edge.node.frontmatter.title}`}>
+                                    {edge.node.frontmatter.title}
+                                </a>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
             </MediaHero>
             <ClassCardContainer title={`classes`} items={classEdges} />
             {scheduleEdges.map((edge) => (

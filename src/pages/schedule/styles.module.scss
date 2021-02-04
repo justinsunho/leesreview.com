@@ -1,0 +1,15 @@
+@import "theme/variables";
+
+.list {
+    box-shadow: $elevation1;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    list-style: none;
+
+    .listItem {
+        padding-bottom: 1rem;
+
+        .linkItem {
+        }
+    }
+}

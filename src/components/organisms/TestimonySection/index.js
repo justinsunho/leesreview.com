@@ -11,7 +11,7 @@ const TestimonySection = ({ subtitle, linkText, linkHref, testimonyList, curve }
     const [testimonyIndex, setTestimonyIndex] = useState(0);
 
     const { ref, inView } = useInView({
-        threshold: 0.5,
+        threshold: 0.2,
         triggerOnce: true,
     });
 

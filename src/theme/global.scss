@@ -12,6 +12,7 @@
 
 html,
 body {
+    scroll-behavior: smooth;
     background-attachment: fixed;
     color: $black;
     font-family: "Source Sans Pro", "Helvetica";

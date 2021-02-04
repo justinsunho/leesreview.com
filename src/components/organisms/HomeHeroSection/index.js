@@ -10,7 +10,7 @@ import styles from "./styles.module.scss";
 
 const HomeHeroSection = ({ headingText, description, linkText, linkHref, button, image, className }) => {
     const { ref, inView } = useInView({
-        threshold: 0.5,
+        threshold: 0.2,
         triggerOnce: true,
     });
 

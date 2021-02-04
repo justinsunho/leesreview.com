@@ -8,7 +8,7 @@ import styles from "./styles.module.scss";
 
 const TileContainer = ({ backgroundClassName, className, title, items }) => {
     const { ref, inView } = useInView({
-        threshold: 0.5,
+        threshold: 0.2,
         triggerOnce: true,
     });
 

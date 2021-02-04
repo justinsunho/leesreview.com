@@ -8,7 +8,7 @@ import styles from "./styles.module.scss";
 
 const MediaSection = ({ image, subtitle, headingText, description, linkText, linkHref, ribbon }) => {
     const { ref, inView } = useInView({
-        threshold: 0.4,
+        threshold: 0.2,
         triggerOnce: true,
     });
 
@@ -23,7 +23,7 @@ const MediaSection = ({ image, subtitle, headingText, description, linkText, lin
             {ribbon && <Ribbon inView={inView} />}
             <div className={`row align-items-center`} ref={ref}>
                 <div className={`col-md-6`}>
-                    <AnimatedImg image={image} style={imageSpring} />
+                    <AnimatedImg image={image} style={imageSpring} color={"#eb5757"} />
                 </div>
                 <div className={`col-md-6`}>
                     <TextBlock
