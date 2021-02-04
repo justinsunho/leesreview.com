@@ -36,6 +36,7 @@ const ClassCardContainer = ({ items, title, subtitle, backgroundClassName }) => 
             <div className={`row`}>
                 {tags.map((tag, i) => (
                     <TitleSelector
+                        key={i}
                         className={`col ${utilities.textCenter}`}
                         title={tag}
                         color={colorArray[i]}

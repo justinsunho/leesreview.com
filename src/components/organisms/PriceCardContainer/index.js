@@ -31,7 +31,7 @@ const PriceCardContainer = ({ backgroundClassName, items, title }) => {
         <SectionWrapper title={title} backgroundClassName={backgroundClassName} trailArray={textTrail} ref={ref}>
             <div className={`row`}>
                 {items.map((item, i) => (
-                    <a.div className={`col-md pb-5`} style={cardTrail[i]}>
+                    <a.div className={`col-md pb-5`} style={cardTrail[i]} key={item.title}>
                         <ClassCard title={item.title} date={``} description={item.description} price={item.price} />
                     </a.div>
                 ))}

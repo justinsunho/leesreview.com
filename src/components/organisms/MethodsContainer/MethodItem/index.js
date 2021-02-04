@@ -8,7 +8,7 @@ import { useInView } from "react-intersection-observer";
 
 const MethodItem = ({ index, description, title, image, itemLength, color }) => {
     const { ref, inView } = useInView({
-        threshold: 1,
+        threshold: 0.4,
         triggerOnce: true,
     });
 

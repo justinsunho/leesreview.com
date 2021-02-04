@@ -30,7 +30,7 @@ const Schedule = ({ data }) => {
                     <p>Click to navigate to these schedules</p>
                     <ul>
                         {scheduleEdges.map((edge) => (
-                            <li className={styles.listItem}>
+                            <li className={styles.listItem} key={edge.node.id}>
                                 <a className={styles.linkItem} href={`#${edge.node.frontmatter.title}`}>
                                     {edge.node.frontmatter.title}
                                 </a>
@@ -42,6 +42,7 @@ const Schedule = ({ data }) => {
             <ClassCardContainer title={`classes`} items={classEdges} />
             {scheduleEdges.map((edge) => (
                 <ScheduleSection
+                    key={edge.node.id}
                     title={edge.node.frontmatter.title}
                     subtitle={edge.node.frontmatter.subtitle}
                     description={edge.node.frontmatter.description}
@@ -83,6 +84,7 @@ export const pageQuery = graphql`
         schedules: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/content/schedules/" } }) {
             edges {
                 node {
+                    id
                     frontmatter {
                         title
                         subtitle

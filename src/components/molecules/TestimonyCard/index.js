@@ -28,7 +28,7 @@ const TestimonyCard = ({ title, college, tags, body, image, className, color }) 
         return () => {
             document.removeEventListener("mousedown", handleClick);
         };
-    });
+    }, []);
 
     return (
         <div className={`${className} ${styles.container} ${clicked && styles.clicked}`} ref={node}>
