@@ -90,6 +90,7 @@ export const pageQuery = graphql`
         classes: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/content/classes/" } }) {
             edges {
                 node {
+                    id
                     frontmatter {
                         title
                         date

@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import { useInView } from "react-intersection-observer";
+import { a, useTrail, useChain, useTransition } from "react-spring";
+import { enterAbove } from "utilities/springConfigs";
 import TitleSelector from "./TitleSelector";
 import { ClassCard, SectionWrapper } from "components/molecules";
 import { colorArray } from "utilities/colorArray";
@@ -10,6 +13,24 @@ const ClassCardContainer = ({ items, title, subtitle, backgroundClassName }) => 
 
     const [currentTag, setTag] = useState(tags.length - 1);
     const [expanded, setExpanded] = useState(0);
+
+    const { ref, inView } = useInView({
+        threshold: 0,
+        triggerOnce: true,
+    });
+
+    const transitions = useTransition(
+        items.filter((item) => (tags[currentTag] === "All" ? true : item.node.frontmatter.tag === tags[currentTag])),
+        (item) => item.node.id,
+        {
+            unique: false,
+            from: { opacity: 0, transform: "translateY(-10px)" },
+            enter: { opacity: 1, transform: "translateY(0px)" },
+            update: { opacity: 1, transform: "translateY(0px)" },
+            leave: { opacity: 0, transform: "translateY(-10px)" },
+            reset: true,
+        }
+    );
 
     return (
         <SectionWrapper subtitle={subtitle} title={title} backgroundClassName={backgroundClassName}>
@@ -42,25 +63,21 @@ const ClassCardContainer = ({ items, title, subtitle, backgroundClassName }) => 
                     expanded ? styles.expanded : styles.collapsed
                 }`}
             >
-                {items
-                    .filter((item) =>
-                        tags[currentTag] === "All" ? true : item.node.frontmatter.tag === tags[currentTag]
-                    )
-                    .map((item, i) => (
-                        <div className={`col-lg-3 col-md-6 col-sm-12 pb-md-5`} key={item.node.frontmatter.title}>
-                            <ClassCard
-                                title={item.node.frontmatter.title}
-                                date={item.node.frontmatter.date}
-                                time={item.node.frontmatter.time}
-                                description={item.node.html}
-                                price={item.node.frontmatter.price}
-                                tag={item.node.frontmatter.tag}
-                                teacherName={item.node.frontmatter.teacherName}
-                                teacherLink={item.node.frontmatter.teacherLink}
-                                backgroundColor={colorArray[tags.indexOf(item.node.frontmatter.tag)]}
-                            />
-                        </div>
-                    ))}
+                {transitions.map(({ item, key, props }) => (
+                    <a.div className={`col-lg-3 col-md-6 col-sm-12 pb-md-5`} key={key} style={props}>
+                        <ClassCard
+                            title={item.node.frontmatter.title}
+                            date={item.node.frontmatter.date}
+                            time={item.node.frontmatter.time}
+                            description={item.node.html}
+                            price={item.node.frontmatter.price}
+                            tag={item.node.frontmatter.tag}
+                            teacherName={item.node.frontmatter.teacherName}
+                            teacherLink={item.node.frontmatter.teacherLink}
+                            backgroundColor={colorArray[tags.indexOf(item.node.frontmatter.tag)]}
+                        />
+                    </a.div>
+                ))}
             </div>
             <div className={`row d-md-none d-flex`}>
                 <div className={`col`}>

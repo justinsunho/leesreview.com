@@ -1,21 +1,55 @@
 import React from "react";
 import Img from "gatsby-image";
+import { a, useTrail, useChain, useSpring } from "react-spring";
 import { ImageBackground } from "components/atoms";
+import { enterRight } from "utilities/springConfigs";
 import styles from "./styles.module.scss";
 import { useInView } from "react-intersection-observer";
 
 const MethodItem = ({ index, description, title, image, itemLength, color }) => {
     const { ref, inView } = useInView({
         threshold: 1,
-        rootMargin: "240px",
+        triggerOnce: true,
     });
+
+    const textTrail = useTrail(2, {
+        ...enterRight(inView),
+        config: { mass: 5, tension: 2000, friction: 200 },
+    });
+
+    const imageSpring = useSpring({
+        from: {
+            transform: "scale(0)",
+        },
+        to: {
+            transform: inView ? "scale(1)" : "scale(0.3)",
+        },
+    });
+
+    const pathSpring = useSpring({
+        from: {
+            opacity: 0,
+        },
+        to: {
+            opacity: inView ? 1 : 0,
+        },
+        config: { mass: 50, tension: 2000, friction: 200 },
+    });
+
+    const AnimatedImg = a(Img);
+    const AnimatedDashedRight = a(DashedRight);
+    const AnimatedDashedLeft = a(DashedLeft);
 
     return (
         <div className={`${styles.methodItem} row `} ref={ref}>
             <div className={`${styles.container} col-lg-5`}>
                 <div className={styles.indexNumber}>{index}</div>
-                <h3 className={styles.title}>{title}</h3>
-                <p className={styles.description}>{description}</p>
+                <a.h3 className={styles.title} style={textTrail[0]}>
+                    {title}
+                </a.h3>
+                <a.p className={styles.description} style={textTrail[1]}>
+                    {description}
+                </a.p>
             </div>
             <div
                 className={`col-lg-5 ${inView && styles.inView} ${styles.imageContainer} ${
@@ -23,12 +57,12 @@ const MethodItem = ({ index, description, title, image, itemLength, color }) => 
                 }`}
             >
                 <ImageBackground color={color}>
-                    <Img className={`${styles.image}`} fluid={image} />
+                    <AnimatedImg className={`${styles.image}`} fluid={image} style={imageSpring} />
                     {itemLength !== index &&
                         ((index + 1) % 2 === 1 ? (
-                            <DashedRight className={styles.dottedLine} fill={"#2f80ed"} />
+                            <AnimatedDashedRight className={styles.dottedLine} fill={"#2f80ed"} style={pathSpring} />
                         ) : (
-                            <DashedLeft className={styles.dottedLine} fill={"#2f80ed"} />
+                            <AnimatedDashedLeft className={styles.dottedLine} fill={"#2f80ed"} style={pathSpring} />
                         ))}
                 </ImageBackground>
             </div>
@@ -38,7 +72,7 @@ const MethodItem = ({ index, description, title, image, itemLength, color }) => 
 
 export default MethodItem;
 
-const DashedLeft = ({ fill, className }) => (
+const DashedLeft = ({ fill, className, style }) => (
     <svg
         className={className}
         width="125"
@@ -46,6 +80,7 @@ const DashedLeft = ({ fill, className }) => (
         viewBox="0 0 125 94"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        style={style}
     >
         <path
             fill={fill}
@@ -55,7 +90,7 @@ const DashedLeft = ({ fill, className }) => (
     </svg>
 );
 
-const DashedRight = ({ fill, className }) => (
+const DashedRight = ({ fill, className, style }) => (
     <svg
         className={className}
         width="125"
@@ -63,6 +98,7 @@ const DashedRight = ({ fill, className }) => (
         viewBox="0 0 125 94"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        style={style}
     >
         <path
             fill={fill}
