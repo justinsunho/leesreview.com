@@ -9,4 +9,8 @@
     left: 0;
     bottom: -6px;
     width: 100%;
+
+    @media (max-width: $breakpoint-medium) {
+        bottom: 42px;
+    }
 }
