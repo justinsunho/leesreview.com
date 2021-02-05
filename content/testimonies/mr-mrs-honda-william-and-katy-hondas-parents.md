@@ -3,12 +3,14 @@ title: Mr. & Mrs. Honda (William and Katy Honda's Parents)
 college: Stanford & USC
 image: /images/testimonies/1.png
 tags:
-  - SAT I
-  - College Consulting
+    - SAT I
+    - College Consulting
 featured:
-  - Home
-  - College Consulting
+    - Home
+    - College Consulting
+year: 2013
 ---
+
 “Lee’s Review has been part of our lives for the past three or four years.
 
 Our older daughter Katy started with SAT Prep and continued with College

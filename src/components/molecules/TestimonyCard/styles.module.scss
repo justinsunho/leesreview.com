@@ -69,13 +69,14 @@
         border-radius: 24rem;
 
         .college {
-            position: absolute;
             bottom: 1rem;
-            width: 100%;
-            color: $white;
+            color: #fff;
+            left: 0rem;
             margin: 0 auto;
-            max-width: 10rem;
-            left: 1rem;
+            max-width: 12rem;
+            padding: 0 2rem;
+            position: absolute;
+            width: 100%;
         }
 
         .image {

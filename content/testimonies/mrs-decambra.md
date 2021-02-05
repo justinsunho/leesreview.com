@@ -3,11 +3,13 @@ title: Mrs. Decambra
 college: DBHS Teacher
 image: /images/testimonies/6.png
 tags:
-  - SAT I
-  - College Consulting
+    - SAT I
+    - College Consulting
 featured:
-  - Home
+    - Home
+year: 2015
 ---
+
 “As a parent of children who attended Lee’s Review, I can personally say
 
 that I wouldn’t have trusted anyone else with the guidance and instruction

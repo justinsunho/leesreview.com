@@ -9,4 +9,8 @@
 .contentWrapper {
     padding-top: 3rem;
     overflow-x: hidden;
+
+    @media (max-width: $breakpoint-medium) {
+        padding-top: 5rem;
+    }
 }

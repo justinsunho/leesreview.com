@@ -3,8 +3,10 @@ title: Nathan Yee
 college: Eisenhower High School
 image: /images/testimonies/5.png
 tags:
-  - SAT I
+    - SAT I
+year: 2018
 ---
+
 “Being an Ivy League hopeful, I knew that I had to do some serious
 
 preparation for the SATs – I actually live in Washington state, but I

@@ -15,6 +15,7 @@ const TestimonyCardContainer = ({ items }) => {
                             body={item.body}
                             image={item.image.childImageSharp.fluid}
                             color={colorArray[i % 5]}
+                            year={item.year}
                         />
                     </div>
                 ))}

@@ -3,6 +3,8 @@
 .infoWrapper {
     position: relative;
     margin-bottom: -4rem;
+    padding-top: 1rem;
+    padding-bottom: 0rem;
 
     .imageWrapper {
         background-color: $black;
@@ -41,4 +43,9 @@
             color: $white;
         }
     }
+}
+
+.contentContainer {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
 }

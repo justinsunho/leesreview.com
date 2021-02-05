@@ -3,8 +3,10 @@ title: Chris Cho
 college: Yale University
 image: /images/testimonies/33.jpg
 tags:
-  - SAT I
+    - SAT I
+year: 2010
 ---
+
           “The Lee’s Review family shared with me the most uplifting love, care,
           passion, and intellectual prowess I’ve ever experienced. I learned a great
           deal about SATs but more importantly I understood who I was, what I was

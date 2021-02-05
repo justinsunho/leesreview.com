@@ -42,7 +42,7 @@ const MethodItem = ({ index, description, title, image, itemLength, color }) => 
 
     return (
         <div className={`${styles.methodItem} row `} ref={ref}>
-            <div className={`${styles.container} col-lg-5`}>
+            <div className={`${styles.container} col-md-5`}>
                 <div className={styles.indexNumber}>{index}</div>
                 <a.h3 className={styles.title} style={textTrail[0]}>
                     {title}
@@ -52,7 +52,7 @@ const MethodItem = ({ index, description, title, image, itemLength, color }) => 
                 </a.p>
             </div>
             <div
-                className={`col-lg-5 ${inView && styles.inView} ${styles.imageContainer} ${
+                className={`col-md-5 ${inView && styles.inView} ${styles.imageContainer} ${
                     (index + 1) % 2 === 1 && styles.marginLeft
                 }`}
             >

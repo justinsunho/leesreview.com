@@ -46,13 +46,17 @@ export const pageQuery = graphql`
                 }
             }
         }
-        testimonies: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/content/testimonies/" } }) {
+        testimonies: allMarkdownRemark(
+            filter: { fileAbsolutePath: { regex: "/content/testimonies/" } }
+            sort: { fields: frontmatter___year, order: DESC }
+        ) {
             edges {
                 node {
                     frontmatter {
                         title
                         college
                         tags
+                        year
                         image {
                             childImageSharp {
                                 fluid {

@@ -4,7 +4,7 @@ import Img from "gatsby-image";
 import { SmallCaps } from "components/atoms";
 import styles from "./styles.module.scss";
 
-const TestimonyCard = ({ title, college, tags, body, image, className, color }) => {
+const TestimonyCard = ({ title, college, tags, body, image, className, color, year }) => {
     const node = useRef();
     const [clicked, setClick] = useState(0);
 
@@ -72,6 +72,7 @@ const TestimonyCard = ({ title, college, tags, body, image, className, color }) 
                     ))}
                 </div>
                 <p className={`${styles.quote}`}>{body}</p>
+                <div>{year}</div>
             </a.div>
         </div>
     );

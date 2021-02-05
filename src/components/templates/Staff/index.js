@@ -16,14 +16,14 @@ const Staff = ({ data }) => {
 
     return (
         <MainLayout>
-            <div className={`${styles.infoWrapper}`}>
+            <div className={`section ${styles.infoWrapper}`}>
                 <div className={`row ${styles.imageWrapper}`}>
                     <div className={`col`}>
                         <Img alt="test" className={styles.image} fluid={image.childImageSharp.fluid} />
                     </div>
                 </div>
                 <div className={`${styles.titleWrapper} row`}>
-                    <div className={`col-lg-10 ${utilities.marginAutoCenter}`}>
+                    <div className={`col-md-10 ${utilities.marginAutoCenter}`}>
                         <SmallCaps className={styles.smallCaps}>{subtitle}</SmallCaps>
                         <h1 className={styles.title}>{title}</h1>
                         <div>{tags.map((tag) => tag + ", ")}</div>
@@ -31,11 +31,13 @@ const Staff = ({ data }) => {
                 </div>
             </div>
 
-            <div className={`row`}>
-                <div
-                    className={`longform col-lg-8 ${styles.content} ${utilities.marginAutoCenter}`}
-                    dangerouslySetInnerHTML={{ __html: html }}
-                />
+            <div className={`section ${styles.contentContainer}`}>
+                <div className={`row`}>
+                    <div
+                        className={`longform col-md-8 ${styles.content} ${utilities.marginAutoCenter}`}
+                        dangerouslySetInnerHTML={{ __html: html }}
+                    />
+                </div>
             </div>
         </MainLayout>
     );

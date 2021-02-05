@@ -7,7 +7,6 @@ import styles from "./styles.module.scss";
 const LinkCard = ({ title, className, image, subtitle, description, linkText, linkHref, style, color }) => {
     const [spring, set] = useSpring(() => ({
         transform: "translateY(0px)",
-        padding: "0.5rem 1rem",
         config: {
             tension: 200,
             mass: 1,
@@ -23,10 +22,10 @@ const LinkCard = ({ title, className, image, subtitle, description, linkText, li
             className={`${styles.card} ${className}`}
             style={{ ...style, transform: spring.transform }}
             onMouseEnter={() => {
-                set({ transform: "translateY(-8px)", padding: "1rem 1rem" });
+                set({ transform: "translateY(-8px)" });
             }}
             onMouseLeave={() => {
-                set({ transform: "translateY(0px)", padding: "0.5rem 1rem" });
+                set({ transform: "translateY(0px)" });
             }}
         >
             {image && <Img className={`${styles.image}`} fluid={{ ...image, aspectRatio: 1 }} />}
@@ -37,7 +36,7 @@ const LinkCard = ({ title, className, image, subtitle, description, linkText, li
                 <p className={styles.description}>{description}</p>
             </div>
             {linkHref && (
-                <AnimatedLink className={styles.ctaLink} style={{ backgroundColor: color, padding: spring.padding }}>
+                <AnimatedLink className={styles.ctaLink} style={{ backgroundColor: color }}>
                     {linkText}
                 </AnimatedLink>
             )}

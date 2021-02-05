@@ -3,13 +3,15 @@ title: Kevin Lee
 college: UCLA
 image: /images/testimonies/img_3058.jpeg
 tags:
-  - SAT I
-  - College Consulting
+    - SAT I
+    - College Consulting
 featured:
-  - Home
-  - About Us
-  - College Consulting
+    - Home
+    - About Us
+    - College Consulting
+year: 2015
 ---
+
 “Through their SAT Winter Boot camp, I improved my SAT score by almost 800
 
 points! I was a College Consulting student the summer of 2015 through the

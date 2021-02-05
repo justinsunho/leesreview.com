@@ -12,7 +12,7 @@ const MediaHero = ({ headingText, description, subtitle, ribbon, children }) => 
 
     return (
         <div className={`section ${styles.heroContainer}`} ref={ref}>
-            {ribbon && <Ribbon inView={inView} />}
+            {ribbon && <Ribbon inView={inView} className={styles.ribbon} />}
             <div className={` row align-items-start`}>
                 <TextBlock
                     className={`col-md-6 ${styles.textBlock}`}

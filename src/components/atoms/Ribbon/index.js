@@ -2,7 +2,7 @@ import React from "react";
 import { a, useSpring } from "react-spring";
 import styles from "./styles.module.scss";
 
-const Ribbon = ({ inView }) => {
+const Ribbon = ({ inView, className }) => {
     const ribbonSpring = useSpring({
         from: {
             width: "0%",
@@ -15,7 +15,7 @@ const Ribbon = ({ inView }) => {
     });
 
     return (
-        <a.div className={styles.ribbonContainer}>
+        <a.div className={`${styles.ribbonContainer} ${className}`}>
             <a.div className={styles.ribbon} style={ribbonSpring} />
         </a.div>
     );
