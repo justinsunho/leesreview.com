@@ -33,7 +33,7 @@ const ImageBackground = ({ className, color, children, backgroundStyle }) => {
         // </div>
 
         <div className={`${styles.container} ${className}`}>
-            <div className={styles.background} style={{ backgroundColor: color ? color : "#2f80ed" }} />
+            <div className={styles.background} style={{ backgroundColor: color ? color : "#3b7fa8" }} />
             <div className={styles.child} style={{ ...backgroundStyle }}>
                 {children}
             </div>

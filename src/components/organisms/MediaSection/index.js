@@ -23,7 +23,7 @@ const MediaSection = ({ image, subtitle, headingText, description, linkText, lin
             {ribbon && <Ribbon inView={inView} />}
             <div className={`row align-items-center`} ref={ref}>
                 <div className={`col-md-6`}>
-                    <AnimatedImg image={image} style={imageSpring} color={"#eb5757"} />
+                    <AnimatedImg image={image} style={imageSpring} color={"#3b7fa8"} />
                 </div>
                 <div className={`col-md-6`}>
                     <TextBlock

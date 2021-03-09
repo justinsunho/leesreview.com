@@ -92,7 +92,7 @@ export default TestimonySection;
 const Curve = ({ viewBoxHeight }) => (
     <div className={styles.curve}>
         <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox={`0 0 ${viewBoxHeight} 270`}>
-            <path opacity="0.1" d="M1211 205.999C938 -319.001 389 348 0.5 174.5V303.5H1211V205.999Z" fill="#56CCF2" />
+            <path opacity="0.1" d="M1211 205.999C938 -319.001 389 348 0.5 174.5V303.5H1211V205.999Z" fill="#265674" />
         </svg>
     </div>
 );
