@@ -41,7 +41,7 @@ const TileContainer = ({ backgroundClassName, className, title, items }) => {
                     <a.div className={`col-lg col-md-6 ${styles.tileWrapper}`} key={i} style={tileTrail[i]}>
                         <Tile
                             title={item.title}
-                            image={item.image.childImageSharp.fluid}
+                            icon={item.icon.code}
                             description={item.description}
                             color={colorArray[i]}
                         />

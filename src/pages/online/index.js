@@ -50,12 +50,8 @@ export const pageQuery = graphql`
                         }
                         servicesList {
                             title
-                            image {
-                                childImageSharp {
-                                    fluid {
-                                        ...GatsbyImageSharpFluid
-                                    }
-                                }
+                            icon {
+                                code
                             }
                             description
                         }

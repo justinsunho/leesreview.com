@@ -7,14 +7,17 @@
     position: relative;
     border-radius: 0 0 0.5rem 0.5rem;
 
-    .image {
+    .icon {
         position: absolute;
         top: -4rem;
-        height: 8rem;
-        width: 8rem;
+        height: 6rem;
+        width: 6rem;
         border-radius: 8rem;
         left: 50%;
         transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         @media (max-width: $breakpoint-medium) {
             top: 50%;
@@ -28,7 +31,7 @@
     }
 
     .container {
-        padding-top: 4rem;
+        padding-top: 2rem;
         text-align: center;
 
         .heading {
