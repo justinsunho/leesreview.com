@@ -44,13 +44,6 @@ export const pageQuery = graphql`
                             businessInfoList {
                                 title
                                 description
-                                image {
-                                    childImageSharp {
-                                        fluid(maxHeight: 240) {
-                                            ...GatsbyImageSharpFluid
-                                        }
-                                    }
-                                }
                             }
                         }
                     }

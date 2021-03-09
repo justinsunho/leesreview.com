@@ -17,10 +17,8 @@ business:
           Friday: Closed \n
           Saturday: Closed \n
           Sunday: Closed"
-          image: /images/pages/contact/dsc02671.jpg
         - title: Address and Directions
           description: "2040 S Brea Canyon Rd #240,\n
           Diamond Bar, CA 91765\n
           We’re located on the 2nd Floor"
-          image: /images/pages/contact/dsc02754.jpg
 ---
