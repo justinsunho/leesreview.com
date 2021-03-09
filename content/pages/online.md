@@ -1,31 +1,163 @@
 ---
 title: Online
 hero:
-    title: You can now join us for Online Classes!
-    description: Due to the COVID-19 pandemic, we've adjusted our workflow to allow
-        for online classes for all of our services. Be sure to check out our online
-        demo!
-    buttonText: Sign up
-    buttonLink: /contact
-    video:
-        code: <iframe class="vimeo-video-wrapper"
-            src="https://player.vimeo.com/video/419396967" width="100%" height="360"
-            frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+  title: You can now join us for Online Classes!
+  description: Due to the COVID-19 pandemic, we've adjusted our workflow to allow
+    for online classes for all of our services. Be sure to check out our online
+    demo!
+  buttonText: Sign up
+  buttonLink: /contact
+  video:
+    code: <iframe class="vimeo-video-wrapper"
+      src="https://player.vimeo.com/video/419396967" width="100%" height="360"
+      frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 servicesList:
-    - title: All of the same classes are available!
-      image: /images/pages/online/dsc02713.jpg
-      description: fdasfdasfdasfdsa
-    - title: State-of-the-art Streaming Quality
-      image: /images/pages/online/dsc02713.jpg
-      description: fdajfkdas;lfdsa
-    - title: Country-wide service
-      image: /images/pages/online/dsc02713.jpg
-      description: A unique advantage to being online is that we can now offer classes
-          to students across the country!
+  - title: All of the same classes are available!
+    image: /images/pages/online/dsc02713.jpg
+    description: fdasfdasfdasfdsa
+    icon:
+      code: >
+        <svg width="53" height="53" viewBox="0 0 53 53" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+
+        <g filter="url(#filter0_d)">
+
+        <path d="M41.75 22.25V41.75H15.75V22.25H41.75ZM45 12.5H12.5V45H45V12.5ZM40.125 6H6V40.125H9.25V9.25H40.125V6Z" fill="white"/>
+
+        </g>
+
+        <g filter="url(#filter1_d)">
+
+        <path d="M34.125 0H0V34.125H3.25V3.25H34.125V0Z" fill="white"/>
+
+        </g>
+
+        <defs>
+
+        <filter id="filter0_d" x="6" y="6" width="47" height="47" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+
+        <feOffset dx="4" dy="4"/>
+
+        <feGaussianBlur stdDeviation="2"/>
+
+        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+
+        </filter>
+
+        <filter id="filter1_d" x="0" y="0" width="42.125" height="42.125" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+
+        <feOffset dx="4" dy="4"/>
+
+        <feGaussianBlur stdDeviation="2"/>
+
+        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+
+        </filter>
+
+        </defs>
+
+        </svg>
+  - title: State-of-the-art Streaming Quality
+    image: /images/pages/online/dsc02713.jpg
+    description: fdajfkdas;lfdsa
+    icon:
+      code: >
+        <svg width="60" height="56" viewBox="0 0 60 56" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+
+        <g filter="url(#filter0_d)">
+
+        <path d="M26 20.5898C23.14 20.5898 20.8 22.9062 20.8 25.7373C20.8 28.5684 23.14 30.8847 26 30.8847C28.86 30.8847 31.2 28.5684 31.2 25.7373C31.2 22.9062 28.86 20.5898 26 20.5898ZM41.6 25.7373C41.6 17.2182 34.606 10.2949 26 10.2949C17.394 10.2949 10.4 17.2182 10.4 25.7373C10.4 31.4509 13.546 36.4182 18.2 39.0949L20.8 34.6166C17.706 32.815 15.6 29.5464 15.6 25.7373C15.6 20.0493 20.254 15.4424 26 15.4424C31.746 15.4424 36.4 20.0493 36.4 25.7373C36.4 29.5464 34.294 32.815 31.2 34.6166L33.8 39.0949C38.454 36.4182 41.6 31.4509 41.6 25.7373ZM26 0C11.648 0 0 11.5303 0 25.7373C0 35.2601 5.226 43.5475 12.974 48L15.574 43.5475C9.386 39.97 5.2 33.3555 5.2 25.7373C5.2 14.3614 14.508 5.14745 26 5.14745C37.492 5.14745 46.8 14.3614 46.8 25.7373C46.8 33.3555 42.614 39.97 36.4 43.5475L39 48C46.774 43.5475 52 35.2601 52 25.7373C52 11.5303 40.352 0 26 0Z" fill="white"/>
+
+        </g>
+
+        <defs>
+
+        <filter id="filter0_d" x="0" y="0" width="60" height="56" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+
+        <feOffset dx="4" dy="4"/>
+
+        <feGaussianBlur stdDeviation="2"/>
+
+        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+
+        </filter>
+
+        </defs>
+
+        </svg>
+  - title: Country-wide service
+    image: /images/pages/online/dsc02713.jpg
+    description: A unique advantage to being online is that we can now offer classes
+      to students across the country!
+    icon:
+      code: >
+        <svg width="56" height="58" viewBox="0 0 56 58" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+
+        <g clip-path="url(#clip0)" filter="url(#filter0_d)">
+
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.37717 31.0396C11.6542 35.25 16.6505 37.6021 22.7497 37.6021C34.1095 37.6021 43.333 28.7354 43.333 17.8104C43.333 11.4771 40.6247 6.95833 36.404 2.93542L39.4568 0C44.4532 4.37083 47.6447 10.6646 47.6663 17.6667C47.701 29.8417 38.2262 39.9354 25.9997 41.5V41.6667C25.9997 45.5729 29.306 47.9167 32.4997 47.9167H34.6663V50H10.833V47.9167H12.9997C16.2475 47.9167 19.4997 45.5188 19.4997 41.6667V41.5188C13.5305 40.7875 8.21567 38.0208 4.33301 33.9646L7.37717 31.0396ZM4.33301 17.9167C4.33301 8.13542 12.5772 0.208333 22.7497 0.208333C32.907 0.208333 41.1663 8.12292 41.1663 17.9167C41.1663 27.6979 32.92 35.6229 22.7497 35.6229C12.5772 35.6229 4.33301 27.6938 4.33301 17.9167ZM23.5795 3.2C23.2263 3.21042 22.9772 3.58958 22.7042 3.80625C22.1582 4.24167 20.7607 5.09583 19.9807 4.83542C19.1833 4.57292 17.4782 5.81042 17.2052 5.82083C17.1033 5.82292 17.2095 4.88333 17.7533 4.81458C17.5172 4.84792 19.6665 3.77083 19.608 3.54583C19.5387 3.27917 15.3137 4.75833 15.5022 5.05625C15.591 5.19167 15.9593 5.19167 15.4762 5.48958C15.201 5.65 14.9042 6.67083 14.6442 6.67083C13.8707 6.99583 13.8208 6.03125 12.9607 7.275L11.587 7.80833C9.55034 9.8875 8.13984 12.525 7.62851 15.4542C7.60901 15.5729 8.14201 15.7875 8.20917 15.8688C8.38251 16.0667 8.38251 16.9208 8.46701 17.1979C8.67934 17.9042 9.20151 18.2958 9.60234 18.9375C9.83851 19.3208 10.2307 20.2875 10.1072 20.6875C10.274 20.425 11.7517 21.8917 12.0203 22.1958C12.6552 22.9167 13.147 23.7854 12.1135 24.4958C11.7798 24.7271 12.6183 26.1625 12.1872 26.5167L11.6303 26.6521C11.0843 26.975 11.3313 27.7688 11.665 28.1021C14.4557 30.9083 18.3882 32.6562 22.7453 32.6562C31.2105 32.6562 38.0745 26.0563 38.0745 17.9167C38.0745 16.3875 37.8037 14.8458 37.5263 14.0333C37.4397 13.7771 37.236 13.5708 36.976 13.475C36.5817 13.3292 34.922 14.3542 34.6728 13.85L33.7953 13.8604C33.6112 13.7646 33.0998 13.1021 32.8658 13.1813C32.3913 13.3479 33.5938 14.6042 33.921 14.7708C34.2287 14.5458 35.2275 14.0854 35.4442 14.7146C35.8558 15.9 34.3132 17.2 33.5245 17.8875C32.3458 18.9104 32.5647 17.2229 31.763 16.6292C31.3405 16.3188 31.3448 15.6542 30.9202 15.425C30.7382 15.3271 29.9408 14.45 29.8672 14.25L29.839 14.4688C29.6938 14.5771 29.3883 14.075 29.3537 13.9958C29.3537 14.4312 30.0925 15.125 30.3352 15.4729C30.749 16.0708 30.9722 16.9417 31.4813 17.4312C31.7543 17.6937 32.8008 18.7792 33.0717 18.7563L34.4692 18.1167C35.4572 18.3417 32.1443 22.8479 31.8302 23.4042C31.5702 23.875 32.0382 25.0292 32.0035 25.5833C31.958 26.2208 31.4358 26.4292 30.9397 26.775C30.4067 27.15 30.5323 27.875 30.086 28.1396C29.293 28.6104 28.721 30.1375 27.5965 30.1292C27.2628 30.1292 25.8458 30.6604 25.6595 30.1396C25.5165 29.7625 25.3215 29.475 25.1178 29.1021C24.9207 28.7375 25.0962 28.3583 24.8535 28.0354C24.6845 27.8104 24.1255 27.3021 24.0757 27.0354C24.0713 26.8083 24.2555 26.1125 24.5047 25.9896C24.8578 25.8188 24.5718 25.3146 24.5285 25.0229C24.4548 24.5 24.119 24.0688 23.7138 23.7667C23.118 23.325 23.4278 22.975 23.5665 22.3438C23.5665 22.0438 23.3758 21.65 22.9533 21.7667C22.0888 22.0104 22.3532 21.1167 21.7227 21.1583C21.2677 21.1875 20.895 21.4667 20.4725 21.5875C19.9417 21.7417 19.3978 21.4688 18.8735 21.4042C16.7133 21.1417 16.0092 18.7688 16.5725 17.0563L16.4988 16.0396C16.7415 15.5188 17.2377 14.9375 17.6688 14.5437C17.9115 14.3208 18.2213 14.3771 18.5073 14.2063C18.9493 13.9396 18.9558 13.3896 19.3848 13.0542C20.0002 12.5729 20.8365 12.5833 21.6403 12.4812C22.065 12.425 23.69 12.0875 23.9457 12.3917C23.9457 12.4479 24.223 13.2417 23.9413 13.2396C24.6043 13.2958 25.536 14.3396 26.1578 14.0917C26.4828 13.9625 26.3637 13.0042 27.031 13.4688C27.4297 13.7458 29.2323 13.8688 29.6072 13.5708C29.839 13.3875 29.969 12.1979 29.6852 12.0646C29.8628 12.2354 28.7513 12.2479 28.6452 12.2083C28.4697 12.1458 28.3072 12.3563 28.0342 12.2625L28.006 12.2521C28.0905 12.2833 27.0267 11.7063 27.6593 11.2625L26.8317 11.4208L26.6367 11.8229C26.173 12.0521 25.822 11.05 25.6487 10.9375C25.471 10.825 24.093 9.89583 24.4678 10.5021L25.679 11.6604C25.6183 11.6979 25.3605 11.2396 25.3605 11.575C25.4407 11.3771 25.3887 12.4292 25.2002 12.0854L25.2088 11.6917C25.2088 11.5646 24.86 11.4438 24.7907 11.3583C24.6 11.1292 24.0887 10.625 23.8135 10.5042C23.7377 10.4688 22.6413 10.6313 22.5482 10.6667L22.273 11.125C22.0455 11.2063 21.8332 11.3104 21.6317 11.4396L21.3912 11.9604C21.285 12.05 20.2168 12.3896 20.2103 12.4021C20.2558 12.2917 19.4628 12.15 19.5148 11.9292C19.5733 11.6854 19.842 10.925 19.7727 10.6479C19.699 10.3562 21.4215 11.0667 21.5342 10.3C21.5775 9.96875 21.6013 9.58125 21.051 9.525C21.155 9.5375 22.117 9.1625 22.2773 8.99375C22.5005 8.74583 23.0162 8.33958 23.3888 8.33958C23.8243 8.33958 23.729 7.73125 23.9305 7.43125C24.132 7.51042 23.8222 7.9875 24.0648 8.18125C24.0475 8.02917 24.7473 8.2625 24.8145 8.22917C24.977 8.14583 25.8653 8.19583 25.7267 7.79167C25.5728 7.38333 25.8047 7.50417 26.0062 7.41875C25.9715 7.43125 26.5262 6.50625 26.6215 6.81042C26.5565 6.49792 25.9758 6.91875 25.7743 6.90417C25.3063 6.86667 25.5035 6.1375 25.6812 5.92083C25.8177 5.75208 25.3085 5.54583 25.302 5.86875C25.2933 6.35417 24.8232 6.79375 24.9315 7.43958C25.0983 8.4125 23.8027 7.20625 23.69 7.27083C23.261 7.52083 22.91 6.95625 23.131 6.61458L24.132 5.9125C24.2923 5.65 24.4765 5.34583 24.7235 5.14583C25.5447 4.48333 25.77 5.01458 26.589 5.08542C27.3885 5.15625 26.8577 5.26875 26.7493 5.56458C26.6432 5.84583 27.1892 5.94583 27.3777 5.71042C27.4838 5.575 27.7308 5.23333 27.8348 4.98125C27.9713 4.65417 29.2172 4.69167 28.3483 4.18958C27.7742 3.8625 25.2717 3.19792 23.5947 3.19792L23.5795 3.2ZM24.5047 12.2646C24.4505 12.1667 25.029 12.1167 25.1308 12.1167C25.2457 12.1292 24.834 12.7812 24.5047 12.2646ZM28.4112 9.98958C28.4047 9.77292 28.1208 9.57083 27.8262 9.94375C27.6203 10.2021 27.6572 10.5938 27.5467 10.7667C27.3842 11.025 28.4155 11.2667 28.4155 11.0229C28.4545 10.6125 29.54 10.9292 29.7523 10.9854C30.1315 11.0854 30.7382 10.6521 30.0752 10.4229C29.527 10.2312 29.241 10.0292 29.1933 9.65208C29.1933 9.65208 29.4837 9.39375 29.3558 9.40833C29.02 9.44583 28.4112 10.5667 28.4112 9.98958ZM21.2027 7.73125L21.3695 7.6875L21.2893 7.8875C21.4215 8.11667 21.324 8.25208 21.3023 8.37708L21.0748 8.5125C20.9925 8.61042 21.4692 8.625 21.4757 8.6375C21.493 8.6875 20.8993 8.76875 21.0098 8.88958C21.155 9.09167 22.273 8.60208 22.0953 8.63125C22.4398 8.46458 22.1408 8.44583 21.948 8.35C21.8808 8.03333 21.8267 7.54375 21.6208 7.34583L21.7552 7.19792C21.4388 6.75625 21.2027 7.73125 21.2027 7.73125ZM20.4118 8.53542C20.2818 8.5875 20.1518 8.50833 20.2797 8.38333L20.414 8.22708L20.401 8.15625L20.5072 8.02708L20.6177 8L20.8452 7.84792C20.9123 7.86042 21.0705 7.98542 21.0163 8.06458L20.8928 8.21042C20.8668 8.45625 20.6068 8.45417 20.4162 8.53542H20.4075H20.4118Z" fill="white"/>
+
+        </g>
+
+        <defs>
+
+        <filter id="filter0_d" x="0" y="0" width="60" height="58" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+
+        <feOffset dx="4" dy="4"/>
+
+        <feGaussianBlur stdDeviation="2"/>
+
+        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+
+        </filter>
+
+        <clipPath id="clip0">
+
+        <rect width="52" height="50" fill="white"/>
+
+        </clipPath>
+
+        </defs>
+
+        </svg>
 signUp:
-    subtitle: Sign Up Now
-    title: Sign Up for Online Classes
-    description: kldjfkawehoivwaw feaf
-    buttonText: Sign Up
-    buttonLink: /contact
+  subtitle: Sign Up Now
+  title: Sign Up for Online Classes
+  description: kldjfkawehoivwaw feaf
+  buttonText: Sign Up
+  buttonLink: /contact
 ---
