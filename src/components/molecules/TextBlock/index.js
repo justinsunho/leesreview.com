@@ -29,7 +29,9 @@ const TextBlock = ({
 
     return (
         <a.div className={`${className} ${textBlock}`}>
-            <AnimatedSmallCaps style={{ ...trail[0], color: darkMode ? "#FFF" : "" }}>{subtitle}</AnimatedSmallCaps>
+            <AnimatedSmallCaps style={{ ...trail[0] }} altColor={darkMode}>
+                {subtitle}
+            </AnimatedSmallCaps>
 
             <Heading style={{ ...trail[1], color: darkMode ? "#FFF" : "" }}>{headingText}</Heading>
             <a.p className={paragraph} style={{ ...trail[2], color: darkMode ? "#FFF" : "" }}>

@@ -1,10 +1,11 @@
 import React from "react";
+import { Img } from "gatsby-image";
 import { useInView } from "react-intersection-observer";
 import { a, useSpring } from "react-spring";
 import { Image, Ribbon } from "components/atoms";
 import { TextBlock } from "components/molecules";
 import { enterRight } from "utilities/springConfigs";
-import { mediaSection } from "./styles.module.scss";
+import { mediaSection, mediaSectionTextWrapper } from "./styles.module.scss";
 
 const MediaSection = ({ image, subtitle, headingText, description, linkText, linkHref, ribbon }) => {
     const { ref, inView } = useInView({
@@ -20,10 +21,10 @@ const MediaSection = ({ image, subtitle, headingText, description, linkText, lin
 
     return (
         <div className={`section ${mediaSection}`}>
-            {ribbon && <Ribbon inView={inView} />}
-            <div className={`row align-items-center`} ref={ref}>
+            {ribbon && <Ribbon inView={inView} image={image} />}
+            <div className={`row align-items-center ${mediaSectionTextWrapper}`} ref={ref}>
                 <div className={`col-md-6`}>
-                    <AnimatedImg image={image} style={imageSpring} color={"#3b7fa8"} />
+                    {/* <AnimatedImg image={image} style={imageSpring} color={"#3b7fa8"} /> */}
                 </div>
                 <div className={`col-md-6`}>
                     <TextBlock
