@@ -1,7 +1,7 @@
 @import "theme/variables";
 
 .button {
-    background-color: $primary-1;
+    background-color: $accent-2;
     border-radius: 8px;
     box-shadow: $elevation1;
     color: #fff;
@@ -11,7 +11,7 @@
     transition: all 0.2s ease-in-out;
 
     &:hover {
-        background-color: $primary-2;
+        background-color: $accent-1;
         box-shadow: $elevation3;
         color: #fff;
         transform: translateY(-$translateY);
