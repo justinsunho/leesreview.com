@@ -1,31 +1,34 @@
 import React from "react";
 import { Link } from "gatsby";
-import styles from "./styles.module.scss";
+import {
+    classCardContainer,
+    classCardWrapper,
+    heading,
+    dateContainer,
+    descriptionStyle,
+    teacher,
+    priceStyle,
+} from "./styles.module.scss";
 
-const ClassCard = ({ title, date, time, description, price, tag, teacherName, teacherLink, backgroundColor }) => {
+const ClassCard = ({ title, date, time, description, price, teacherName, teacherLink, backgroundColor }) => {
     return (
-        <div className={`${styles.classCardContainer}`}>
-            <div className={`${styles.classCardWrapper}`}>
-                <h4 className={`${styles.heading}`}>{title}</h4>
-                {/* {tag && (
-                    <div className={`${styles.tag}`} style={{ backgroundColor: backgroundColor }}>
-                        {tag}
-                    </div>
-                )} */}
+        <div className={`${classCardContainer}`}>
+            <div className={`${classCardWrapper}`}>
+                <h4 className={`${heading}`}>{title}</h4>
                 {date && (
-                    <div className={`${styles.dateContainer}`}>
+                    <div className={`${dateContainer}`}>
                         <div>{date}</div>
                         <div>{time}</div>
                     </div>
                 )}
-                <p className={styles.description} dangerouslySetInnerHTML={{ __html: description }} />
+                <p className={descriptionStyle} dangerouslySetInnerHTML={{ __html: description }} />
                 {teacherName && (
-                    <Link className={`${styles.teacher}`} to={teacherLink}>
+                    <Link className={`${teacher}`} to={teacherLink}>
                         Taught by: {teacherName}
                     </Link>
                 )}
             </div>
-            <div className={`${styles.price}`} style={{ backgroundColor: backgroundColor }}>
+            <div className={`${priceStyle}`} style={{ backgroundColor: backgroundColor }}>
                 {price}
             </div>
         </div>

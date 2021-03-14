@@ -3,7 +3,6 @@ import { useInView } from "react-intersection-observer";
 import { a, useTrail, useChain } from "react-spring";
 import { SectionWrapper, ClassCard } from "components/molecules";
 import { enterAbove } from "utilities/springConfigs";
-import styles from "./styles.module.scss";
 
 const PriceCardContainer = ({ backgroundClassName, items, title }) => {
     const { ref, inView } = useInView({

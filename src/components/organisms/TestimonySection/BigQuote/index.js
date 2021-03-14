@@ -1,8 +1,8 @@
 import React from "react";
-import styles from "./styles.module.scss";
+import { quoteStyle } from "./styles.module.scss";
 
 const BigQuote = ({ quote }) => {
-    return <p className={`${styles.quote} ${styles.second}`}>{quote}</p>;
+    return <p className={`${quoteStyle}`}>{quote}</p>;
 };
 
 export default BigQuote;

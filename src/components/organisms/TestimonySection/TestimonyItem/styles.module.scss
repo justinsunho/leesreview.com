@@ -1,6 +1,6 @@
 @import "theme/variables";
 
-.image {
+.imageStyle {
     width: 100%;
     max-width: 15rem;
     max-height: 15rem;
@@ -20,7 +20,7 @@
     .tagContainer {
         padding-bottom: 0.5rem;
 
-        .tag {
+        .tagStyle {
             padding: 0 0.5rem;
         }
     }

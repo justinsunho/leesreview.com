@@ -4,7 +4,6 @@ import { a, useSpring } from "react-spring";
 import { Image } from "components/atoms";
 import { TextBlock } from "components/molecules";
 import { enterLeft } from "utilities/springConfigs";
-import styles from "./styles.module.scss";
 
 const Hero = ({ headingText, description, linkText, linkHref, button, image, className }) => {
     const { ref, inView } = useInView({
@@ -20,7 +19,7 @@ const Hero = ({ headingText, description, linkText, linkHref, button, image, cla
 
     return (
         <div className={`section`} ref={ref}>
-            <div className={`${styles.hero} row align-items-center flex-md-row flex-column-reverse  ${className}`}>
+            <div className={` row align-items-center flex-md-row flex-column-reverse  ${className}`}>
                 <TextBlock
                     className="col-md-6 col-lg-4 align-items-start"
                     headingTag={"h1"}

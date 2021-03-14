@@ -1,6 +1,6 @@
 import React from "react";
 import { a, useSpring } from "react-spring";
-import styles from "./styles.module.scss";
+import { selectItemWrapper, selectItem } from "./styles.module.scss";
 
 const SelectItem = ({ children, onClick, className, color, current }) => {
     const clickSpring = useSpring({
@@ -17,12 +17,8 @@ const SelectItem = ({ children, onClick, className, color, current }) => {
     });
 
     return (
-        <a.div
-            className={`${styles.selectItemWrapper}`}
-            style={{ background: clickSpring.background }}
-            onClick={onClick}
-        >
-            <a.h4 className={`${styles.selectItem} ${className}`} style={{ paddingLeft: clickSpring.paddingLeft }}>
+        <a.div className={`${selectItemWrapper}`} style={{ background: clickSpring.background }} onClick={onClick}>
+            <a.h4 className={`${selectItem} ${className}`} style={{ paddingLeft: clickSpring.paddingLeft }}>
                 {children}
             </a.h4>
         </a.div>

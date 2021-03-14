@@ -5,7 +5,7 @@ import { SmallCaps, CTALink } from "components/atoms";
 import BigQuote from "./BigQuote";
 import CarouselContainer from "./CarouselContainer";
 import TestimonyItem from "./TestimonyItem";
-import styles from "./styles.module.scss";
+import { container, curve } from "./styles.module.scss";
 
 const TestimonySection = ({ subtitle, linkText, linkHref, testimonyList, curve }) => {
     const [testimonyIndex, setTestimonyIndex] = useState(0);
@@ -42,7 +42,7 @@ const TestimonySection = ({ subtitle, linkText, linkHref, testimonyList, curve }
     const AnimatedCurve = animated(Curve);
 
     return (
-        <div className={` ${styles.container}`} ref={ref}>
+        <div className={` ${container}`} ref={ref}>
             {curve && <AnimatedCurve viewBoxHeight={curveSpring.x} />}
             <div className={`section`}>
                 <div className={`row align-items-start flex-column-reverse flex-md-row`}>
@@ -90,7 +90,7 @@ const TestimonySection = ({ subtitle, linkText, linkHref, testimonyList, curve }
 export default TestimonySection;
 
 const Curve = ({ viewBoxHeight }) => (
-    <div className={styles.curve}>
+    <div className={curve}>
         <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox={`0 0 ${viewBoxHeight} 270`}>
             <path opacity="0.1" d="M1211 205.999C938 -319.001 389 348 0.5 174.5V303.5H1211V205.999Z" fill="#265674" />
         </svg>

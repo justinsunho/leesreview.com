@@ -12,12 +12,12 @@
     background-color: #fff;
     max-width: 32rem;
 
-    &:not(.clicked) {
+    &:not(.clickedStyle) {
         transition: 0.3s ease-in-out;
         transform: translateY(0px);
     }
 
-    &.clicked {
+    &.clickedStyle {
         position: fixed;
         z-index: 100;
         top: 15rem;
@@ -39,7 +39,7 @@
         box-shadow: $elevation3;
         cursor: pointer;
 
-        &:not(.clicked) {
+        &:not(.clickedStyle) {
             transform: translateY(-10px);
             transition: 0.3s ease-in-out;
         }
@@ -68,7 +68,7 @@
         overflow: hidden;
         border-radius: 24rem;
 
-        .college {
+        .collegeStyle {
             bottom: 1rem;
             color: #fff;
             left: 0rem;
@@ -79,7 +79,7 @@
             width: 100%;
         }
 
-        .image {
+        .imageStyle {
             height: 12rem;
             width: 12rem;
             border-radius: 24rem;
@@ -97,12 +97,12 @@
             display: flex;
             align-items: center;
 
-            .tag {
+            .tagStyle {
                 padding: 0 0.25rem;
             }
         }
 
-        .title {
+        .titleStyle {
             margin-bottom: 0;
         }
 

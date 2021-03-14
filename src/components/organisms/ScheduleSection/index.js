@@ -1,7 +1,6 @@
 import React from "react";
 import { SectionWrapper } from "components/molecules";
-import styles from "./styles.module.scss";
-import "./style.scss";
+import { tableContainer } from "./styles.module.scss";
 
 const ScheduleSection = ({ title, subtitle, description, linkText, linkHref, table }) => {
     return (
@@ -14,7 +13,7 @@ const ScheduleSection = ({ title, subtitle, description, linkText, linkHref, tab
             left={true}
             id={title}
         >
-            <div className={styles.tableContainer} dangerouslySetInnerHTML={{ __html: table }} />
+            <div className={tableContainer} dangerouslySetInnerHTML={{ __html: table }} />
         </SectionWrapper>
     );
 };

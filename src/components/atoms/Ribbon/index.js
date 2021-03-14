@@ -1,6 +1,6 @@
 import React from "react";
 import { a, useSpring } from "react-spring";
-import styles from "./styles.module.scss";
+import { ribbonContainer, ribbon } from "./styles.module.scss";
 
 const Ribbon = ({ inView, className }) => {
     const ribbonSpring = useSpring({
@@ -15,8 +15,8 @@ const Ribbon = ({ inView, className }) => {
     });
 
     return (
-        <a.div className={`${styles.ribbonContainer} ${className}`}>
-            <a.div className={styles.ribbon} style={ribbonSpring} />
+        <a.div className={`${ribbonContainer} ${className}`}>
+            <a.div className={ribbon} style={ribbonSpring} />
         </a.div>
     );
 };

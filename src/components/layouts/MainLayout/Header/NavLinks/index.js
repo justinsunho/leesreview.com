@@ -1,7 +1,14 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
 import { Button } from "components/atoms";
-import styles from "./styles.module.scss";
+import {
+    menuButtonContainer,
+    openStyle,
+    navLinkWrapper,
+    navLink,
+    activeLink,
+    contactButton,
+} from "./styles.module.scss";
 
 const NavLinks = () => {
     const [open, setOpen] = useState(0);
@@ -9,7 +16,7 @@ const NavLinks = () => {
     return (
         <>
             <div
-                className={`${styles.menuButtonContainer} ${open && styles.open}`}
+                className={`${menuButtonContainer} ${open && openStyle}`}
                 onClick={() => setOpen(!open)}
                 role={`button`}
             >
@@ -25,33 +32,33 @@ const NavLinks = () => {
                     <Button>menu</Button>
                 )}
             </div>
-            <ul className={`${styles.navLinkWrapper} ${open && styles.open}`}>
-                <li className={styles.navLink}>
-                    <Link activeClassName={styles.activeLink} to="/SAT">
+            <ul className={`${navLinkWrapper} ${open && openStyle}`}>
+                <li className={navLink}>
+                    <Link activeClassName={activeLink} to="/SAT">
                         SAT
                     </Link>
                 </li>
-                <li className={styles.navLink}>
-                    <Link activeClassName={styles.activeLink} to="/college-consulting">
+                <li className={navLink}>
+                    <Link activeClassName={activeLink} to="/college-consulting">
                         College Consulting
                     </Link>
                 </li>
-                <li className={styles.navLink}>
-                    <Link activeClassName={styles.activeLink} to="/classroom-prep">
+                <li className={navLink}>
+                    <Link activeClassName={activeLink} to="/classroom-prep">
                         Classroom Prep
                     </Link>
                 </li>
-                <li className={styles.navLink}>
-                    <Link activeClassName={styles.activeLink} to="/about">
+                <li className={navLink}>
+                    <Link activeClassName={activeLink} to="/about">
                         About Us
                     </Link>
                 </li>
-                <li className={styles.navLink}>
-                    <Link activeClassName={styles.activeLink} to="/schedule">
+                <li className={navLink}>
+                    <Link activeClassName={activeLink} to="/schedule">
                         Schedule
                     </Link>
                 </li>
-                <li className={styles.contactButton}>
+                <li className={contactButton}>
                     <Button linkHref="/contact">Contact</Button>
                 </li>
             </ul>

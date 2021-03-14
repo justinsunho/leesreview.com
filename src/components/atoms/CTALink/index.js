@@ -1,14 +1,14 @@
 import React from "react";
-import styles from "./styles.module.scss";
+import { arrow } from "./styles.module.scss";
 
 const CTALink = ({ children, className, linkHref, style }) => {
     const Tag = linkHref ? "a" : "div";
 
     return (
-        <Tag href={linkHref} className={`${className} ${styles.link}`} style={style}>
+        <Tag href={linkHref} className={`${className}`} style={style}>
             {children}
             <svg
-                className={styles.arrow}
+                className={arrow}
                 width="16"
                 height="10"
                 viewBox="0 0 8 12"

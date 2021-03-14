@@ -1,13 +1,13 @@
 import React from "react";
 import { Info } from "components/molecules";
 import SocialLinks from "./SocialLinks";
-import styles from "./styles.module.scss";
+import { footer, footerContent, smallCaps } from "./styles.module.scss";
 
 const Footer = () => {
     return (
-        <footer className={`${styles.footer}`}>
-            <div className={`${styles.footerContent} container`}>
-                <Info address={true} className={styles.info} smallCapsClass={styles.smallCaps} />
+        <footer className={`${footer}`}>
+            <div className={`${footerContent} container`}>
+                <Info address={true} smallCapsClass={smallCaps} />
                 <SocialLinks />
             </div>
         </footer>

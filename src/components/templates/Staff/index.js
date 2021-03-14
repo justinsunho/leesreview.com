@@ -3,8 +3,16 @@ import { SmallCaps } from "components/atoms";
 import { MainLayout } from "components/layouts";
 import Img from "gatsby-image";
 import { graphql } from "gatsby";
-import utilities from "theme/utilities.module.scss";
-import styles from "./styles.module.scss";
+import {
+    infoWrapper,
+    imageWrapper,
+    imageStyle,
+    titleWrapper,
+    smallCaps,
+    titleStyle,
+    contentContainer,
+    marginAutoCenter,
+} from "./styles.module.scss";
 
 const Staff = ({ data }) => {
     const {
@@ -16,25 +24,25 @@ const Staff = ({ data }) => {
 
     return (
         <MainLayout>
-            <div className={`section ${styles.infoWrapper}`}>
-                <div className={`row ${styles.imageWrapper}`}>
+            <div className={`section ${infoWrapper}`}>
+                <div className={`row ${imageWrapper}`}>
                     <div className={`col`}>
-                        <Img alt="test" className={styles.image} fluid={image.childImageSharp.fluid} />
+                        <Img alt="test" className={imageStyle} fluid={image.childImageSharp.fluid} />
                     </div>
                 </div>
-                <div className={`${styles.titleWrapper} row`}>
-                    <div className={`col-md-10 ${utilities.marginAutoCenter}`}>
-                        <SmallCaps className={styles.smallCaps}>{subtitle}</SmallCaps>
-                        <h1 className={styles.title}>{title}</h1>
+                <div className={`${titleWrapper} row`}>
+                    <div className={`col-md-10 ${marginAutoCenter}`}>
+                        <SmallCaps className={smallCaps}>{subtitle}</SmallCaps>
+                        <h1 className={titleStyle}>{title}</h1>
                         <div>{tags.map((tag) => tag + ", ")}</div>
                     </div>
                 </div>
             </div>
 
-            <div className={`section ${styles.contentContainer}`}>
+            <div className={`section ${contentContainer}`}>
                 <div className={`row`}>
                     <div
-                        className={`longform col-md-8 ${styles.content} ${utilities.marginAutoCenter}`}
+                        className={`longform col-md-8 ${marginAutoCenter}`}
                         dangerouslySetInnerHTML={{ __html: html }}
                     />
                 </div>

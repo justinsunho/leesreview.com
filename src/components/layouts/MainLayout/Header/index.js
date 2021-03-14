@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import { Logo } from "components/atoms";
 import { Info } from "components/molecules";
 import NavLinks from "./NavLinks";
-import styles from "./styles.module.scss";
+import { headerContainer, sticky, header, logo, infoContainer } from "./styles.module.scss";
 
 const Header = () => {
     const [isSticky, setSticky] = useState(1);
@@ -25,13 +25,13 @@ const Header = () => {
     }, []);
 
     return (
-        <header className={`${styles.headerContainer} ${!isSticky ? styles.sticky : ""}`} ref={ref}>
-            <div className={`${styles.header} container`}>
-                <Link to="/" className={styles.logo}>
+        <header className={`${headerContainer} ${!isSticky ? sticky : ""}`} ref={ref}>
+            <div className={`${header} container`}>
+                <Link to="/" className={logo}>
                     <Logo />
                 </Link>
                 <NavLinks />
-                <div className={styles.infoContainer}>
+                <div className={infoContainer}>
                     <Info address={false} />
                 </div>
             </div>

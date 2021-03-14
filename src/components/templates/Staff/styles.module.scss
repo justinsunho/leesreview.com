@@ -1,5 +1,9 @@
 @import "theme/variables";
 
+.marginAutoCenter {
+    marign: 0 auto;
+}
+
 .infoWrapper {
     position: relative;
     margin-bottom: -4rem;
@@ -24,7 +28,7 @@
             left: 0;
         }
 
-        .image {
+        .imageStyle {
             margin: 0 auto;
             max-width: 900px;
         }
@@ -39,7 +43,7 @@
             color: $white;
         }
 
-        .title {
+        .titleStyle {
             color: $white;
         }
     }

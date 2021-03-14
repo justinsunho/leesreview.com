@@ -2,7 +2,7 @@ import React from "react";
 import Img from "gatsby-image";
 import { a, useTrail } from "react-spring";
 import { SmallCaps } from "components/atoms";
-import styles from "./styles.module.scss";
+import { testimonyItem, imageStyle, content, tagContainer, tagStyle } from "./styles.module.scss";
 import { enterAbove } from "utilities/springConfigs";
 
 const TestimonyItem = ({ image, college, tags, title, inView }) => {
@@ -14,25 +14,23 @@ const TestimonyItem = ({ image, college, tags, title, inView }) => {
     });
 
     return (
-        <div className={styles.testimonyItem}>
+        <div className={testimonyItem}>
             <AnimatedImg
-                className={`${styles.image}`}
+                className={`${imageStyle}`}
                 fluid={{ ...image.childImageSharp.fluid, aspectRatio: 1 }}
                 style={{ position: "absolute", ...trail[0] }}
             />
-            <div className={styles.content}>
-                <a.div className={styles.tagContainer} style={trail[1]}>
+            <div className={content}>
+                <a.div className={tagContainer} style={trail[1]}>
                     {tags.map((tag) => (
-                        <SmallCaps className={styles.tag} key={tag}>
+                        <SmallCaps className={tagStyle} key={tag}>
                             {tag}
                         </SmallCaps>
                     ))}
                 </a.div>
-                <a.h4 className={styles.heading} style={trail[2]}>
-                    {title}
-                </a.h4>
+                <a.h4 style={trail[2]}>{title}</a.h4>
 
-                <a.p className={styles.description} style={trail[3]}>
+                <a.p style={trail[3]}>
                     {college}
                 </a.p>
             </div>

@@ -1,13 +1,13 @@
 import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
-import styles from "./styles.module.scss";
+import { layout, contentWrapper } from "./styles.module.scss";
 
 const MainLayout = ({ children, className }) => {
     return (
-        <div className={`${styles.layout} ${className}`}>
+        <div className={`${layout} ${className}`}>
             <Header />
-            <div className={`${styles.contentWrapper}`}>
+            <div className={`${contentWrapper}`}>
                 <main>{children}</main>
             </div>
             <Footer />

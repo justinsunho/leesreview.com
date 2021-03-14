@@ -2,7 +2,7 @@ import React from "react";
 import { useInView } from "react-intersection-observer";
 import { Ribbon } from "components/atoms";
 import { TextBlock, Info } from "components/molecules";
-import styles from "./styles.module.scss";
+import { heroContainer, ribbonStyle, textBlock, info, rightSection } from "./styles.module.scss";
 
 const MediaHero = ({ headingText, description, subtitle, ribbon, children }) => {
     const { ref, inView } = useInView({
@@ -11,11 +11,11 @@ const MediaHero = ({ headingText, description, subtitle, ribbon, children }) => 
     });
 
     return (
-        <div className={`section ${styles.heroContainer}`} ref={ref}>
-            {ribbon && <Ribbon inView={inView} className={styles.ribbon} />}
+        <div className={`section ${heroContainer}`} ref={ref}>
+            {ribbon && <Ribbon inView={inView} className={ribbonStyle} />}
             <div className={` row align-items-start`}>
                 <TextBlock
-                    className={`col-md-6 ${styles.textBlock}`}
+                    className={`col-md-6 ${textBlock}`}
                     subtitle={subtitle}
                     headingTag={"h1"}
                     headingText={headingText}
@@ -23,9 +23,9 @@ const MediaHero = ({ headingText, description, subtitle, ribbon, children }) => 
                     inView={inView}
                     darkMode={ribbon && true}
                 >
-                    <Info smallCapsClass={styles.info} />
+                    <Info smallCapsClass={info} />
                 </TextBlock>
-                <div className={`col-md-6 ${styles.rightSection}`}>{children}</div>
+                <div className={`col-md-6 ${rightSection}`}>{children}</div>
             </div>
         </div>
     );

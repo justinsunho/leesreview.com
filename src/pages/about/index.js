@@ -10,7 +10,7 @@ const About = ({ data }) => {
 
     const {
         node: {
-            frontmatter: { hero, reason, students, staff, history },
+            frontmatter: { hero, reason, students, staff },
         },
     } = edges[0];
 
@@ -35,7 +35,6 @@ const About = ({ data }) => {
                 ribbon
             />
             <LinkCardContainer title={staff.title} items={staff.staffList} />
-            {/* <div>{history.title}</div> */}
         </MainLayout>
     );
 };
@@ -107,9 +106,6 @@ export const pageQuery = graphql`
                                     }
                                 }
                             }
-                        }
-                        history {
-                            title
                         }
                     }
                 }

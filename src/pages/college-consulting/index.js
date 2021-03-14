@@ -10,7 +10,7 @@ import {
     BottomSection,
 } from "components/organisms";
 import { MainLayout } from "components/layouts";
-import styles from "./styles.module.scss";
+import { methodBackgroundClassName, priceCardBackgroundClassName } from "./styles.module.scss";
 
 const CollegeConsulting = ({ data }) => {
     const {
@@ -44,7 +44,7 @@ const CollegeConsulting = ({ data }) => {
                 ribbon={true}
             />
             <MethodsContainer
-                backgroundClassName={styles.methodBackgroundClassName}
+                backgroundClassName={methodBackgroundClassName}
                 title={`Our Methods`}
                 items={methodsList}
             />
@@ -56,7 +56,7 @@ const CollegeConsulting = ({ data }) => {
                 curve
             />
             <PriceCardContainer
-                backgroundClassName={styles.priceCardBackgroundClassName}
+                backgroundClassName={priceCardBackgroundClassName}
                 title={`Our Prices`}
                 items={priceList}
             />

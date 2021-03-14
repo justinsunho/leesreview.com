@@ -1,7 +1,6 @@
 import React from "react";
 import Img from "gatsby-image";
 import { StaticQuery, graphql } from "gatsby";
-import styles from "./styles.module.scss";
 
 const Logo = () => {
     return (
@@ -17,7 +16,7 @@ const Logo = () => {
                     }
                 }
             `}
-            render={(data) => <Img fixed={data.file.childImageSharp.fixed} />}
+            render={(data) => <Img fixed={data.file.childImageSharp.fixed} imgStyle={{ mixBlendMode: "multiply" }} />}
         />
         // <svg
         //     className={styles.logo}

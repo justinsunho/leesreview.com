@@ -10,7 +10,11 @@ import {
     BottomSection,
 } from "components/organisms";
 import { MainLayout } from "components/layouts";
-import styles from "./styles.module.scss";
+import {
+    pageGradient,
+    methodBackgroundClassName,
+    priceCardBackgroundClassName,
+} from "./styles.module.scss";
 
 const SAT = ({ data }) => {
     const {
@@ -25,7 +29,7 @@ const SAT = ({ data }) => {
     } = pageEdges[0];
 
     return (
-        <MainLayout className={styles.pageGradient}>
+        <MainLayout className={pageGradient}>
             <Hero
                 headingText={hero.title}
                 description={hero.description}
@@ -34,7 +38,6 @@ const SAT = ({ data }) => {
                 image={hero.image.childImageSharp.fluid}
             />
             <TileContainer
-                backgroundClassName={styles.tileContainerBackground}
                 title={`Our SAT Services`}
                 items={servicesList}
             />
@@ -48,7 +51,7 @@ const SAT = ({ data }) => {
                 ribbon={true}
             />
             <MethodsContainer
-                backgroundClassName={styles.methodBackgroundClassName}
+                backgroundClassName={methodBackgroundClassName}
                 title={`Our Methods`}
                 items={methodsList}
             />
@@ -60,7 +63,7 @@ const SAT = ({ data }) => {
                 curve
             />
             <PriceCardContainer
-                backgroundClassName={styles.priceCardBackgroundClassName}
+                backgroundClassName={priceCardBackgroundClassName}
                 title={`Our Prices`}
                 items={priceList}
             />

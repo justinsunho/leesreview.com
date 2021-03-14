@@ -2,7 +2,7 @@ import React from "react";
 import { a, useTrail } from "react-spring";
 import { Button, CTALink, SmallCaps } from "components/atoms";
 import { enterAbove } from "utilities/springConfigs";
-import styles from "./styles.module.scss";
+import { textBlock, paragraph } from "./styles.module.scss";
 
 const TextBlock = ({
     subtitle,
@@ -28,13 +28,11 @@ const TextBlock = ({
     });
 
     return (
-        <a.div className={`${className} ${styles.textBlock}`}>
+        <a.div className={`${className} ${textBlock}`}>
             <AnimatedSmallCaps style={{ ...trail[0], color: darkMode ? "#FFF" : "" }}>{subtitle}</AnimatedSmallCaps>
 
-            <Heading className={styles.heading} style={{ ...trail[1], color: darkMode ? "#FFF" : "" }}>
-                {headingText}
-            </Heading>
-            <a.p className={styles.paragraph} style={{ ...trail[2], color: darkMode ? "#FFF" : "" }}>
+            <Heading style={{ ...trail[1], color: darkMode ? "#FFF" : "" }}>{headingText}</Heading>
+            <a.p className={paragraph} style={{ ...trail[2], color: darkMode ? "#FFF" : "" }}>
                 {description}
             </a.p>
             {linkHref && linkText ? (

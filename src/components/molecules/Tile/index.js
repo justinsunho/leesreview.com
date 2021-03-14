@@ -1,20 +1,19 @@
 import React from "react";
-import Img from "gatsby-image";
-import styles from "./styles.module.scss";
+import { tileContainer, iconStyle, container, heading, descriptionStyle } from "./styles.module.scss";
 
 const Tile = ({ icon, title, description, style, className, color }) => {
     return (
-        <div className={`${className} ${styles.tileContainer}`} style={{ ...style, borderLeft: `8px solid ${color}` }}>
+        <div className={`${className} ${tileContainer}`} style={{ ...style, borderLeft: `8px solid ${color}` }}>
             {icon && (
                 <div
-                    className={styles.icon}
+                    className={iconStyle}
                     dangerouslySetInnerHTML={{ __html: icon }}
                     style={{ backgroundColor: `${color}` }}
                 />
             )}
-            <div className={styles.container}>
-                <h4 className={styles.heading}>{title}</h4>
-                <p className={styles.description}>{description}</p>
+            <div className={container}>
+                <h4 className={heading}>{title}</h4>
+                <p className={descriptionStyle}>{description}</p>
             </div>
         </div>
     );

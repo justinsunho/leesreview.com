@@ -1,6 +1,6 @@
 import React from "react";
 import { a, useSpring } from "react-spring";
-import styles from "./styles.module.scss";
+import { titleStyle } from "./styles.module.scss";
 
 const TitleSelector = ({ title, className, onClick, color, index, currentTag }) => {
     const spring = useSpring({
@@ -12,7 +12,7 @@ const TitleSelector = ({ title, className, onClick, color, index, currentTag }) 
             onClick={() => {
                 onClick(index);
             }}
-            className={`${className} ${styles.title}`}
+            className={`${className} ${titleStyle}`}
             style={spring}
         >
             <a.h4>{title}</a.h4>

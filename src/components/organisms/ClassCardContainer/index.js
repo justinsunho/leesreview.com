@@ -1,22 +1,15 @@
 import React, { useState } from "react";
-import { useInView } from "react-intersection-observer";
 import { a, useTransition } from "react-spring";
 import TitleSelector from "./TitleSelector";
 import { ClassCard, SectionWrapper } from "components/molecules";
 import { colorArray } from "utilities/colorArray";
-import utilities from "theme/utilities.module.scss";
-import styles from "./styles.module.scss";
+import { expandedStyle, collapsed, expandButton } from "./styles.module.scss";
 
 const ClassCardContainer = ({ items, title, subtitle, backgroundClassName }) => {
     const tags = [...new Set(items.map((item) => item.node.frontmatter.tag)), "All"];
 
     const [currentTag, setTag] = useState(tags.length - 1);
     const [expanded, setExpanded] = useState(0);
-
-    const { ref, inView } = useInView({
-        threshold: 0,
-        triggerOnce: true,
-    });
 
     const transitions = useTransition(
         items.filter((item) => (tags[currentTag] === "All" ? true : item.node.frontmatter.tag === tags[currentTag])),
@@ -37,7 +30,7 @@ const ClassCardContainer = ({ items, title, subtitle, backgroundClassName }) => 
                 {tags.map((tag, i) => (
                     <TitleSelector
                         key={i}
-                        className={`col ${utilities.textCenter}`}
+                        className={`col text-center`}
                         title={tag}
                         color={colorArray[i]}
                         onClick={setTag}
@@ -58,11 +51,7 @@ const ClassCardContainer = ({ items, title, subtitle, backgroundClassName }) => 
                     </b>
                 </div>
             </div>
-            <div
-                className={`row align-content-stretch ${styles.cardContainer} ${
-                    expanded ? styles.expanded : styles.collapsed
-                }`}
-            >
+            <div className={`row align-content-stretch ${expanded ? expandedStyle : collapsed}`}>
                 {transitions.map(({ item, key, props }) => (
                     <a.div className={`col-lg-3 col-md-6 col-sm-12 pb-md-5`} key={key} style={props}>
                         <ClassCard
@@ -82,9 +71,8 @@ const ClassCardContainer = ({ items, title, subtitle, backgroundClassName }) => 
             <div className={`row d-md-none d-flex`}>
                 <div className={`col`}>
                     <div
-                        className={`${styles.expandButton}`}
+                        className={`${expandButton}`}
                         onClick={() => {
-                            console.log(expanded);
                             setExpanded(!expanded);
                         }}
                     >
