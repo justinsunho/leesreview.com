@@ -6,7 +6,7 @@ import { imageStyle } from "./styles.module.scss";
 const Image = ({ image, className, color }) => {
     return (
         <ImageBackground color={color}>
-            <Img alt="test" className={`${className} ${image}`} fluid={image} style={imageStyle} />
+            <Img alt="test" className={`${className} ${imageStyle}`} fluid={image} />
         </ImageBackground>
     );
 };
