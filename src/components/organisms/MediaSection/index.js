@@ -36,6 +36,7 @@ const MediaSection = ({ image, subtitle, headingText, description, linkText, lin
                         linkHref={linkHref}
                         inView={inView}
                         darkMode={ribbon && true}
+                        primary
                     />
                 </div>
             </div>

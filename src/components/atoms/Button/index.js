@@ -1,14 +1,19 @@
 import React from "react";
 import { Link } from "gatsby";
-import { button } from "./styles.module.scss";
+import { button, secondaryStyle } from "./styles.module.scss";
 
-const Button = ({ className, children, linkHref, onClick, style }) => {
+const Button = ({ className, children, linkHref, onClick, style, secondary }) => {
     return linkHref ? (
-        <Link className={`${button} ${className}`} to={linkHref} style={style} onClick={onClick}>
+        <Link
+            className={`${button} ${className} ${secondary && secondaryStyle}`}
+            to={linkHref}
+            style={style}
+            onClick={onClick}
+        >
             {children}
         </Link>
     ) : (
-        <div className={`${button} ${className}`} style={style} onClick={onClick}>
+        <div className={`${button} ${className}  ${secondary && secondaryStyle}`} style={style} onClick={onClick}>
             {children}
         </div>
     );

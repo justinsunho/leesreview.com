@@ -59,7 +59,9 @@ const NavLinks = () => {
                     </Link>
                 </li>
                 <li className={contactButton}>
-                    <Button linkHref="/contact">Contact</Button>
+                    <Button linkHref="/contact" secondary={true}>
+                        Contact
+                    </Button>
                 </li>
             </ul>
         </>

@@ -16,6 +16,7 @@ const TextBlock = ({
     inView,
     darkMode,
     children,
+    primary,
 }) => {
     const Heading = a(headingTag);
     const AnimatedSmallCaps = a(SmallCaps);
@@ -43,7 +44,7 @@ const TextBlock = ({
                         {linkText}
                     </AnimatedButton>
                 ) : (
-                    <AnimatedCTALink linkHref={linkHref} style={{ ...trail[3], color: darkMode ? "#FFF" : "" }}>
+                    <AnimatedCTALink linkHref={linkHref} style={{ ...trail[3] }} primary={primary}>
                         {linkText}
                     </AnimatedCTALink>
                 )

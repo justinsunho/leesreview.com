@@ -10,4 +10,60 @@ a {
         transform: translateX(7px);
         transition: 0.2s ease-in-out;
     }
+
+    &.primaryStyle {
+        background: linear-gradient(90deg, $accent-1 33%, $accent-2);
+        padding: 0.5rem;
+        color: $neutral-900;
+        font-size: 1.11rem;
+        font-weight: 600;
+        font-family: 'Merriweather';
+        max-width: 40%;
+        text-shadow: 4px 4px 8px rgba($black, 0.4);
+        position: relative;
+    
+        &:after {
+            content: "";
+            display: inline-block;
+            background-color: $accent-2;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            right: -15px;
+            top: 6px;
+            transform: rotate(45deg);
+        }
+
+        .primarySvg {
+            position: absolute;
+            right: -80px;
+            top: 0px;
+
+            path:nth-child(1),
+            path:nth-child(2) {
+                transform: translateX(0px);
+                transition: transform 0.2s ease-in-out;
+            }
+
+            path:nth-child(3) {
+                transform: translateX(0px);
+                transition: transform 0.2s ease-in-out;
+            }
+        }
+
+        &:hover {
+            .primarySvg {
+                path:nth-child(1),
+                path:nth-child(2) {
+                    transform: translateX(4px);
+                    transition: transform 0.2s ease-in-out;
+                }
+
+                path:nth-child(3) {
+                    transform: translateX(8px);
+                    transition: transform 0.2s ease-in-out;
+                }
+            }
+        }
+    }
 }
