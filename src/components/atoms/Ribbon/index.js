@@ -1,7 +1,7 @@
 import React from "react";
 import { a, useSpring } from "react-spring";
 import Img from "gatsby-image";
-import { ribbonContainer, ribbon, imageStyle } from "./styles.module.scss";
+import { ribbonContainer, ribbon, ribbonImage, imageStyle } from "./styles.module.scss";
 
 const Ribbon = ({ inView, className, image }) => {
     const ribbonSpring = useSpring({
@@ -17,9 +17,13 @@ const Ribbon = ({ inView, className, image }) => {
 
     return (
         <a.div className={`${ribbonContainer} ${className}`}>
-            <a.div className={ribbon}>
-                <Img alt="test" className={imageStyle} fluid={image} style={{ position: "absolute" }} />
-            </a.div>
+            {image ? (
+                <a.div className={`${ribbonImage}`}>
+                    <Img alt="test" className={imageStyle} fluid={image} style={{ position: "absolute" }} />
+                </a.div>
+            ) : (
+                <a.div className={`${ribbon}`} style={ribbonSpring} />
+            )}
         </a.div>
     );
 };

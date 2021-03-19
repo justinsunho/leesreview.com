@@ -9,12 +9,18 @@
     z-index: 0;
 }
 
-.ribbon {
+.ribbonImage {
     height: 80%;
     overflow: hidden;
     position: relative;
     width: 110vw;
     left: -5vw;
+}
+
+.ribbon {
+    background: linear-gradient(345deg, $primary-1, $primary-3);
+    height: 75%;
+    margin: 0 -100rem;
 }
 
 .imageStyle {
