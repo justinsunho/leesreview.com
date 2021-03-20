@@ -26,6 +26,7 @@ const Index = ({ data }) => {
                 image={hero.image.childImageSharp.fluid}
                 button
             />
+            {"Christine"}
             <LinkCardContainer
                 title={classes.title}
                 items={classes.classList}
