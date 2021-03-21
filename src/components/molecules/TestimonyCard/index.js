@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { a, useSpring } from "react-spring";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 import { SmallCaps } from "components/atoms";
 import {
     container,
@@ -45,7 +45,7 @@ const TestimonyCard = ({ title, college, tags, body, image, className, color, ye
     return (
         <div className={`${className} ${container} ${clicked && clickedStyle}`} ref={node}>
             <div className={`${imageContainer}`}>
-                <Img className={`${imageStyle}`} fluid={image} />
+                <GatsbyImage image={image} className={`${imageStyle}`} />
                 <h5 className={`${collegeStyle}`} style={{ backgroundColor: `${color}` }}>
                     {college}
                 </h5>

@@ -1,5 +1,5 @@
 import React from "react";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 import { a, useSpring } from "react-spring";
 import { CTALink, SmallCaps } from "components/atoms";
 import { card, imageStyle, content, heading, descriptionStyle, ctaLink } from "./styles.module.scss";
@@ -28,7 +28,7 @@ const LinkCard = ({ title, className, image, subtitle, description, linkText, li
                 set({ transform: "translateY(0px)" });
             }}
         >
-            {image && <Img className={`${imageStyle}`} fluid={{ ...image, aspectRatio: 1 }} />}
+            {image && <GatsbyImage image={{ ...image, aspectRatio: 1 }} className={`${imageStyle}`} />}
 
             <div className={content}>
                 <h3 className={heading}>{title}</h3>

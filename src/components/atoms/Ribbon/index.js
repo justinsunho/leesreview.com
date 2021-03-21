@@ -1,6 +1,6 @@
 import React from "react";
 import { a, useSpring } from "react-spring";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 import { ribbonContainer, ribbon, ribbonImage, imageStyle } from "./styles.module.scss";
 
 const Ribbon = ({ inView, className, image }) => {
@@ -19,7 +19,11 @@ const Ribbon = ({ inView, className, image }) => {
         <a.div className={`${ribbonContainer} ${className}`}>
             {image ? (
                 <a.div className={`${ribbonImage}`}>
-                    <Img alt="test" className={imageStyle} fluid={image} style={{ position: "absolute" }} />
+                    <GatsbyImage
+                        image={image}
+                        alt="test"
+                        className={imageStyle}
+                        style={{ position: "absolute" }} />
                 </a.div>
             ) : (
                 <a.div className={`${ribbon}`} style={ribbonSpring} />

@@ -10,7 +10,7 @@ const MethodsContainer = ({ backgroundClassName, items, title }) => {
                 <MethodItem
                     title={item.title}
                     index={i + 1}
-                    image={item.image.childImageSharp.fluid}
+                    image={item.image.childImageSharp.gatsbyImageData}
                     description={item.description}
                     itemLength={items.length}
                     color={colorArray[i]}

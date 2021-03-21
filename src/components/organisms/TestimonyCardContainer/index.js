@@ -13,7 +13,7 @@ const TestimonyCardContainer = ({ items }) => {
                             college={item.college}
                             tags={item.tags}
                             body={item.body}
-                            image={item.image.childImageSharp.fluid}
+                            image={item.image.childImageSharp.gatsbyImageData}
                             color={colorArray[i % 5]}
                             year={item.year}
                         />

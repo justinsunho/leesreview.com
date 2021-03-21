@@ -1,5 +1,5 @@
 import React from "react";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 import { a, useTrail, useSpring } from "react-spring";
 import { ImageBackground } from "components/atoms";
 import { enterRight } from "utilities/springConfigs";
@@ -46,7 +46,7 @@ const MethodItem = ({ index, description, title, image, itemLength, color }) => 
         config: { mass: 50, tension: 2000, friction: 200 },
     });
 
-    const AnimatedImg = a(Img);
+    const AnimatedImg = a(GatsbyImage);
     const AnimatedDashedRight = a(DashedRight);
     const AnimatedDashedLeft = a(DashedLeft);
 
@@ -63,7 +63,7 @@ const MethodItem = ({ index, description, title, image, itemLength, color }) => 
             </div>
             <div className={`col-md-5 ${inView && inView} ${imageContainer} ${(index + 1) % 2 === 1 && marginLeft}`}>
                 <ImageBackground color={color}>
-                    <AnimatedImg className={`${imageStyle}`} fluid={image} style={imageSpring} />
+                    <AnimatedImg className={`${imageStyle}`} image={image} style={imageSpring} />
                     {itemLength !== index &&
                         ((index + 1) % 2 === 1 ? (
                             <AnimatedDashedRight className={dottedLine} fill={"#2f80ed"} style={pathSpring} />

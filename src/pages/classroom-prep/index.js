@@ -23,11 +23,11 @@ const ClassroomPrep = ({ data }) => {
                 description={hero.description}
                 linkHref={hero.buttonLink}
                 linkText={hero.buttonText}
-                image={hero.image.childImageSharp.fluid}
+                image={hero.image.childImageSharp.gatsbyImageData}
             />
             <TileContainer title={`services`} items={servicesList} />
             <MediaSection
-                image={mediaSection.image.childImageSharp.fluid}
+                image={mediaSection.image.childImageSharp.gatsbyImageData}
                 subtitle={mediaSection.subtitle}
                 headingText={mediaSection.title}
                 description={mediaSection.description}
@@ -53,76 +53,71 @@ const ClassroomPrep = ({ data }) => {
 
 export default ClassroomPrep;
 
-export const pageQuery = graphql`
-    query {
-        page: allMarkdownRemark(filter: { frontmatter: { title: { eq: "Classroom Prep" } } }) {
-            edges {
-                node {
-                    frontmatter {
-                        title
-                        hero {
-                            title
-                            description
-                            buttonText
-                            buttonLink
-                            image {
-                                childImageSharp {
-                                    fluid {
-                                        ...GatsbyImageSharpFluid
-                                    }
-                                }
-                            }
-                        }
-                        servicesList {
-                            title
-                            body
-                            icon {
-                                code
-                            }
-                        }
-                        mediaSection {
-                            title
-                            subtitle
-                            description
-                            linkText
-                            linkHref
-                            image {
-                                childImageSharp {
-                                    fluid {
-                                        ...GatsbyImageSharpFluid
-                                    }
-                                }
-                            }
-                        }
-                        signUp {
-                            subtitle
-                            title
-                            description
-                            buttonText
-                            buttonLink
-                        }
-                    }
-                }
+export const pageQuery = graphql`{
+  page: allMarkdownRemark(filter: {frontmatter: {title: {eq: "Classroom Prep"}}}) {
+    edges {
+      node {
+        frontmatter {
+          title
+          hero {
+            title
+            description
+            buttonText
+            buttonLink
+            image {
+              childImageSharp {
+                gatsbyImageData(layout: FULL_WIDTH)
+              }
             }
-        }
-        classes: allMarkdownRemark(
-            filter: { fileAbsolutePath: { regex: "/content/classes/" }, frontmatter: { tag: { ne: "SAT" } } }
-        ) {
-            edges {
-                node {
-                    id
-                    frontmatter {
-                        title
-                        date
-                        time
-                        price
-                        tag
-                        teacherName
-                        teacherLink
-                    }
-                    html
-                }
+          }
+          servicesList {
+            title
+            body
+            icon {
+              code
             }
+          }
+          mediaSection {
+            title
+            subtitle
+            description
+            linkText
+            linkHref
+            image {
+              childImageSharp {
+                gatsbyImageData(layout: FULL_WIDTH)
+              }
+            }
+          }
+          signUp {
+            subtitle
+            title
+            description
+            buttonText
+            buttonLink
+          }
         }
+      }
     }
+  }
+  classes: allMarkdownRemark(
+    filter: {fileAbsolutePath: {regex: "/content/classes/"}, frontmatter: {tag: {ne: "SAT"}}}
+  ) {
+    edges {
+      node {
+        id
+        frontmatter {
+          title
+          date
+          time
+          price
+          tag
+          teacherName
+          teacherLink
+        }
+        html
+      }
+    }
+  }
+}
 `;

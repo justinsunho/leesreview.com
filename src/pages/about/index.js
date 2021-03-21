@@ -22,11 +22,11 @@ const About = ({ data }) => {
                 linkText={hero.buttonText}
                 linkHref={hero.buttonLink}
                 button
-                image={hero.image.childImageSharp.fluid}
+                image={hero.image.childImageSharp.gatsbyImageData}
             />
             <MediaSelectSection title={reason.title} items={reason.reasonsList} />
             <MediaSection
-                image={students.image.childImageSharp.fluid}
+                image={students.image.childImageSharp.gatsbyImageData}
                 subtitle={students.subtitle}
                 headingText={students.title}
                 description={students.description}
@@ -41,75 +41,66 @@ const About = ({ data }) => {
 
 export default About;
 
-export const pageQuery = graphql`
-    query {
-        allMarkdownRemark(filter: { frontmatter: { title: { eq: "About Us" } } }) {
-            edges {
-                node {
-                    frontmatter {
-                        hero {
-                            title
-                            description
-                            buttonText
-                            buttonLink
-                            subtitle
-                            image {
-                                childImageSharp {
-                                    fluid {
-                                        ...GatsbyImageSharpFluid
-                                    }
-                                }
-                            }
-                        }
-                        reason {
-                            title
-                            reasonsList {
-                                title
-                                description
-                                image {
-                                    childImageSharp {
-                                        fluid {
-                                            ...GatsbyImageSharpFluid
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        students {
-                            image {
-                                childImageSharp {
-                                    fluid {
-                                        ...GatsbyImageSharpFluid
-                                    }
-                                }
-                            }
-                            title
-                            description
-                            subtitle
-                            linkText
-                            linkHref
-                        }
-                        staff {
-                            title
-                            staffList {
-                                title
-                                subtitle
-                                tags
-                                description
-                                linkText
-                                linkHref
-                                image {
-                                    childImageSharp {
-                                        fluid {
-                                            ...GatsbyImageSharpFluid
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+export const pageQuery = graphql`{
+  allMarkdownRemark(filter: {frontmatter: {title: {eq: "About Us"}}}) {
+    edges {
+      node {
+        frontmatter {
+          hero {
+            title
+            description
+            buttonText
+            buttonLink
+            subtitle
+            image {
+              childImageSharp {
+                gatsbyImageData(layout: FULL_WIDTH)
+              }
             }
+          }
+          reason {
+            title
+            reasonsList {
+              title
+              description
+              image {
+                childImageSharp {
+                  gatsbyImageData(layout: FULL_WIDTH)
+                }
+              }
+            }
+          }
+          students {
+            image {
+              childImageSharp {
+                gatsbyImageData(layout: FULL_WIDTH)
+              }
+            }
+            title
+            description
+            subtitle
+            linkText
+            linkHref
+          }
+          staff {
+            title
+            staffList {
+              title
+              subtitle
+              tags
+              description
+              linkText
+              linkHref
+              image {
+                childImageSharp {
+                  gatsbyImageData(layout: FULL_WIDTH)
+                }
+              }
+            }
+          }
         }
+      }
     }
+  }
+}
 `;

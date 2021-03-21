@@ -35,14 +35,14 @@ const SAT = ({ data }) => {
                 description={hero.description}
                 linkText={hero.buttonText}
                 linkHref={hero.buttonLink}
-                image={hero.image.childImageSharp.fluid}
+                image={hero.image.childImageSharp.gatsbyImageData}
             />
             <TileContainer
                 title={`Our SAT Services`}
                 items={servicesList}
             />
             <MediaSection
-                image={mediaSection.image.childImageSharp.fluid}
+                image={mediaSection.image.childImageSharp.gatsbyImageData}
                 subtitle={mediaSection.subtitle}
                 headingText={mediaSection.title}
                 description={mediaSection.description}
@@ -80,93 +80,84 @@ const SAT = ({ data }) => {
 
 export default SAT;
 
-export const pageQuery = graphql`
-    query {
-        page: allMarkdownRemark(filter: { frontmatter: { title: { eq: "SAT" } } }) {
-            edges {
-                node {
-                    frontmatter {
-                        title
-                        hero {
-                            title
-                            description
-                            buttonText
-                            buttonLink
-                            image {
-                                childImageSharp {
-                                    fluid {
-                                        ...GatsbyImageSharpFluid
-                                    }
-                                }
-                            }
-                        }
-                        servicesList {
-                            title
-                            description
-                            icon {
-                                code
-                            }
-                        }
-                        mediaSection {
-                            subtitle
-                            title
-                            description
-                            linkText
-                            linkHref
-                            image {
-                                childImageSharp {
-                                    fluid {
-                                        ...GatsbyImageSharpFluid
-                                    }
-                                }
-                            }
-                        }
-                        methodsList {
-                            title
-                            description
-                            image {
-                                childImageSharp {
-                                    fluid {
-                                        ...GatsbyImageSharpFluid
-                                    }
-                                }
-                            }
-                        }
-                        priceList {
-                            title
-                            price
-                            description
-                        }
-                        signUp {
-                            subtitle
-                            title
-                            description
-                            buttonText
-                            buttonLink
-                        }
-                    }
-                }
+export const pageQuery = graphql`{
+  page: allMarkdownRemark(filter: {frontmatter: {title: {eq: "SAT"}}}) {
+    edges {
+      node {
+        frontmatter {
+          title
+          hero {
+            title
+            description
+            buttonText
+            buttonLink
+            image {
+              childImageSharp {
+                gatsbyImageData(layout: FULL_WIDTH)
+              }
             }
-        }
-        testimonies: allMarkdownRemark(filter: { frontmatter: { featured: { eq: "SAT" } } }) {
-            edges {
-                node {
-                    id
-                    frontmatter {
-                        title
-                        college
-                        tags
-                        image {
-                            childImageSharp {
-                                fluid {
-                                    ...GatsbyImageSharpFluid
-                                }
-                            }
-                        }
-                    }
-                    rawMarkdownBody
-                }
+          }
+          servicesList {
+            title
+            description
+            icon {
+              code
             }
+          }
+          mediaSection {
+            subtitle
+            title
+            description
+            linkText
+            linkHref
+            image {
+              childImageSharp {
+                gatsbyImageData(layout: FULL_WIDTH)
+              }
+            }
+          }
+          methodsList {
+            title
+            description
+            image {
+              childImageSharp {
+                gatsbyImageData(layout: FULL_WIDTH)
+              }
+            }
+          }
+          priceList {
+            title
+            price
+            description
+          }
+          signUp {
+            subtitle
+            title
+            description
+            buttonText
+            buttonLink
+          }
         }
+      }
     }
+  }
+  testimonies: allMarkdownRemark(filter: {frontmatter: {featured: {eq: "SAT"}}}) {
+    edges {
+      node {
+        id
+        frontmatter {
+          title
+          college
+          tags
+          image {
+            childImageSharp {
+              gatsbyImageData(layout: FULL_WIDTH)
+            }
+          }
+        }
+        rawMarkdownBody
+      }
+    }
+  }
+}
 `;

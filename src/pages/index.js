@@ -23,7 +23,7 @@ const Index = ({ data }) => {
                 description={hero.description}
                 linkText={hero.buttonText}
                 linkHref={hero.buttonLink}
-                image={hero.image.childImageSharp.fluid}
+                image={hero.image.childImageSharp.gatsbyImageData}
                 button
             />
             <LinkCardContainer
@@ -34,7 +34,7 @@ const Index = ({ data }) => {
                 backgroundClassName={linkCardBackground}
             />
             <MediaSection
-                image={about.image.childImageSharp.fluid}
+                image={about.image.childImageSharp.gatsbyImageData}
                 subtitle={about.subtitle}
                 headingText={about.title}
                 description={about.description}
@@ -55,103 +55,92 @@ const Index = ({ data }) => {
 
 export default Index;
 
-export const pageQuery = graphql`
-    query {
-        page: allMarkdownRemark(filter: { frontmatter: { title: { eq: "Home" } } }) {
-            edges {
-                node {
-                    frontmatter {
-                        hero {
-                            title
-                            description
-                            buttonText
-                            buttonLink
-                            staff
-                            image {
-                                childImageSharp {
-                                    fluid {
-                                        ...GatsbyImageSharpFluid
-                                    }
-                                }
-                            }
-                        }
-                        classes {
-                            title
-                            linkText
-                            linkHref
-                            classList {
-                                title
-                                image {
-                                    childImageSharp {
-                                        fluid {
-                                            ...GatsbyImageSharpFluid
-                                        }
-                                    }
-                                }
-                                description
-                                linkText
-                                linkHref
-                            }
-                        }
-                        about {
-                            image {
-                                childImageSharp {
-                                    fluid {
-                                        ...GatsbyImageSharpFluid
-                                    }
-                                }
-                            }
-                            subtitle
-                            title
-                            description
-                            linkText
-                            linkHref
-                        }
-                        testimonies {
-                            subtitle
-                            linkText
-                            linkHref
-                        }
-                        location {
-                            subtitle
-                            title
-                            locationList {
-                                title
-                                description
-                                linkText
-                                linkHref
-                                image {
-                                    childImageSharp {
-                                        fluid {
-                                            ...GatsbyImageSharpFluid
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+export const pageQuery = graphql`{
+  page: allMarkdownRemark(filter: {frontmatter: {title: {eq: "Home"}}}) {
+    edges {
+      node {
+        frontmatter {
+          hero {
+            title
+            description
+            buttonText
+            buttonLink
+            staff
+            image {
+              childImageSharp {
+                gatsbyImageData(layout: FULL_WIDTH)
+              }
             }
-        }
-        testimonies: allMarkdownRemark(filter: { frontmatter: { featured: { eq: "Home" } } }) {
-            edges {
-                node {
-                    id
-                    frontmatter {
-                        title
-                        college
-                        tags
-                        image {
-                            childImageSharp {
-                                fluid {
-                                    ...GatsbyImageSharpFluid
-                                }
-                            }
-                        }
-                    }
-                    rawMarkdownBody
+          }
+          classes {
+            title
+            linkText
+            linkHref
+            classList {
+              title
+              image {
+                childImageSharp {
+                  gatsbyImageData(layout: FULL_WIDTH)
                 }
+              }
+              description
+              linkText
+              linkHref
             }
+          }
+          about {
+            image {
+              childImageSharp {
+                gatsbyImageData(layout: FULL_WIDTH)
+              }
+            }
+            subtitle
+            title
+            description
+            linkText
+            linkHref
+          }
+          testimonies {
+            subtitle
+            linkText
+            linkHref
+          }
+          location {
+            subtitle
+            title
+            locationList {
+              title
+              description
+              linkText
+              linkHref
+              image {
+                childImageSharp {
+                  gatsbyImageData(layout: FULL_WIDTH)
+                }
+              }
+            }
+          }
         }
+      }
     }
+  }
+  testimonies: allMarkdownRemark(filter: {frontmatter: {featured: {eq: "Home"}}}) {
+    edges {
+      node {
+        id
+        frontmatter {
+          title
+          college
+          tags
+          image {
+            childImageSharp {
+              gatsbyImageData(layout: FULL_WIDTH)
+            }
+          }
+        }
+        rawMarkdownBody
+      }
+    }
+  }
+}
 `;

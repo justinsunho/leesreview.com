@@ -57,61 +57,62 @@ const Schedule = ({ data }) => {
 
 export default Schedule;
 
-export const pageQuery = graphql`
-    query {
-        page: allMarkdownRemark(filter: { frontmatter: { title: { eq: "Schedule" } } }) {
-            edges {
-                node {
-                    frontmatter {
-                        title
-                        hero {
-                            title
-                            description
-                            buttonLink
-                            buttonText
-                            image {
-                                childImageSharp {
-                                    fluid {
-                                        ...GatsbyImageSharpFluid
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+export const pageQuery = graphql`{
+  page: allMarkdownRemark(filter: {frontmatter: {title: {eq: "Schedule"}}}) {
+    edges {
+      node {
+        frontmatter {
+          title
+          hero {
+            title
+            description
+            buttonLink
+            buttonText
+            image {
+              childImageSharp {
+                gatsbyImageData(layout: FULL_WIDTH)
+              }
             }
+          }
         }
-        schedules: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/content/schedules/" } }) {
-            edges {
-                node {
-                    id
-                    frontmatter {
-                        title
-                        subtitle
-                        description
-                        linkText
-                        linkHref
-                    }
-                    html
-                }
-            }
-        }
-        classes: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/content/classes/" } }) {
-            edges {
-                node {
-                    id
-                    frontmatter {
-                        title
-                        date
-                        time
-                        price
-                        tag
-                        teacherName
-                        teacherLink
-                    }
-                    html
-                }
-            }
-        }
+      }
     }
+  }
+  schedules: allMarkdownRemark(
+    filter: {fileAbsolutePath: {regex: "/content/schedules/"}}
+  ) {
+    edges {
+      node {
+        id
+        frontmatter {
+          title
+          subtitle
+          description
+          linkText
+          linkHref
+        }
+        html
+      }
+    }
+  }
+  classes: allMarkdownRemark(
+    filter: {fileAbsolutePath: {regex: "/content/classes/"}}
+  ) {
+    edges {
+      node {
+        id
+        frontmatter {
+          title
+          date
+          time
+          price
+          tag
+          teacherName
+          teacherLink
+        }
+        html
+      }
+    }
+  }
+}
 `;

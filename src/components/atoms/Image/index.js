@@ -1,12 +1,12 @@
 import React from "react";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 import { ImageBackground } from "components/atoms";
 import { imageStyle } from "./styles.module.scss";
 
 const Image = ({ image, className, color }) => {
     return (
         <ImageBackground color={color}>
-            <Img alt="test" className={`${className} ${imageStyle}`} fluid={image} />
+            <GatsbyImage image={image} alt="test" className={`${className} ${imageStyle}`} />
         </ImageBackground>
     );
 };

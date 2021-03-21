@@ -1,5 +1,5 @@
 import React from "react";
-import { Img } from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 import { useInView } from "react-intersection-observer";
 import { a, useSpring } from "react-spring";
 import { Image, Ribbon } from "components/atoms";

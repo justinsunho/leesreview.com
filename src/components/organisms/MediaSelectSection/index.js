@@ -22,7 +22,7 @@ const MediaSelectSection = ({ title, items }) => {
                     {transitions.map(({ item, key, props }) => {
                         return (
                             <a.div className={mediaContainer} style={props} key={key}>
-                                <Image color={colorArray[currentIndex]} image={item.image.childImageSharp.fluid} />
+                                <Image color={colorArray[currentIndex]} image={item.image.childImageSharp.gatsbyImageData} />
                                 <div className={content}>
                                     <h4 className={titleStyle}>{item.title}</h4>
                                     <p className={descriptionStyle}>{item.description}</p>

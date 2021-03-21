@@ -1,24 +1,8 @@
 import React from "react";
-import Img from "gatsby-image";
 import { logo } from "./styles.module.scss";
-import { StaticQuery, graphql } from "gatsby";
 
 const Logo = () => {
     return (
-        // <StaticQuery
-        //     query={graphql`
-        //         query {
-        //             file(name: { eq: "logo" }) {
-        //                 childImageSharp {
-        //                     fixed(width: 180, height: 72) {
-        //                         ...GatsbyImageSharpFixed
-        //                     }
-        //                 }
-        //             }
-        //         }
-        //     `}
-        //     render={(data) => <Img fixed={data.file.childImageSharp.fixed} imgStyle={{ mixBlendMode: "multiply" }} />}
-        // />
         <svg
             className={logo}
             width="213"

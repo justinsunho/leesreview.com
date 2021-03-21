@@ -1,7 +1,7 @@
 import React from "react";
 import { SmallCaps } from "components/atoms";
 import { MainLayout } from "components/layouts";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 import { graphql } from "gatsby";
 import {
     infoWrapper,
@@ -27,7 +27,10 @@ const Staff = ({ data }) => {
             <div className={`section ${infoWrapper}`}>
                 <div className={`row ${imageWrapper}`}>
                     <div className={`col`}>
-                        <Img alt="test" className={imageStyle} fluid={image.childImageSharp.fluid} />
+                        <GatsbyImage
+                            image={image.childImageSharp.gatsbyImageData}
+                            alt="test"
+                            className={imageStyle} />
                     </div>
                 </div>
                 <div className={`${titleWrapper} row`}>
@@ -53,23 +56,20 @@ const Staff = ({ data }) => {
 
 export default Staff;
 
-export const query = graphql`
-    query($slug: String!) {
-        markdownRemark(fields: { slug: { eq: $slug } }) {
-            html
-            frontmatter {
-                title
-                subtitle
-                description
-                tags
-                image {
-                    childImageSharp {
-                        fluid(maxWidth: 900) {
-                            ...GatsbyImageSharpFluid
-                        }
-                    }
-                }
-            }
+export const query = graphql`query ($slug: String!) {
+  markdownRemark(fields: {slug: {eq: $slug}}) {
+    html
+    frontmatter {
+      title
+      subtitle
+      description
+      tags
+      image {
+        childImageSharp {
+          gatsbyImageData(width: 900, layout: CONSTRAINED)
         }
+      }
     }
+  }
+}
 `;
