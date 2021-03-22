@@ -165,8 +165,8 @@ collections:
                 summary: '{{fields.title}}'
                 fields:
                   - {label: Title, name: title, widget: string}
-                  - { name: icon, label: icon, widget: code }
-                  - {label: Video Id, name: videoId, widget: string}
+                  - { name: icon, label: icon, widget: code, required: false }
+                  - {label: Video Id, name: videoId, widget: string, required: false}
                   - {label: Image, name: image, widget: image}
                   - {label: Description, name: description, widget: string}
        - name: about
@@ -275,8 +275,8 @@ collections:
              summary: '{{fields.name}}'
              fields:
                - { name: title, label: title, required: true }
-               - { name: icon, label: icon, widget: code }
-               - {label: Video Id, name: videoId, widget: string}
+               - { name: icon, label: icon, widget: code, required: false }
+               - {label: Video Id, name: videoId, widget: string, required: false}
                - { name: description, label: description, widget: markdown, required: true }
            - label: Media Section
              name: mediaSection
@@ -355,8 +355,8 @@ collections:
              summary: '{{fields.name}}'
              fields:
                - { name: title, label: title, required: true }
-               - { name: icon, label: icon, widget: code }
-               - {label: Video Id, name: videoId, widget: string}
+               - { name: icon, label: icon, widget: code, required: false }
+               - {label: Video Id, name: videoId, widget: string, required: false}
                - { name: body, label: body, widget: markdown, required: true }
            - label: Media Section
              name: mediaSection
@@ -436,8 +436,8 @@ collections:
              summary: '{{fields.name}}'
              fields:
                - { name: title, label: title, required: true }
-               - { name: icon, label: icon, widget: code }
-               - {label: Video Id, name: videoId, widget: string}
+               - { name: icon, label: icon, widget: code, required: false }
+               - {label: Video Id, name: videoId, widget: string, required: false}
                - { name: body, label: body, widget: markdown, required: true }
            - label: Media Section
              name: mediaSection
@@ -499,8 +499,8 @@ collections:
             summary: '{{fields.name}}'
             fields:
               - { name: title, label: title, required: true }
-              - { name: icon, label: icon, widget: code }
-              - {label: Video Id, name: videoId, widget: string}
+              - { name: icon, label: icon, widget: code, required: false }
+              - {label: Video Id, name: videoId, widget: string, required: false}
               - { name: description, label: description, widget: markdown, required: true }
           - label: Sign Up
             name: signUp
