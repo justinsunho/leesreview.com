@@ -30,6 +30,17 @@
         margin-left: 4rem;
     }
 
+    .videoContainer {
+        border-radius: 16px;
+        overflow: hidden;
+        margin-top: -5rem;
+        box-shadow: $elevation1;
+
+        &:hover {
+            box-shadow: $elevation3;
+        }
+    }
+
     .container {
         padding-top: 2rem;
         text-align: center;

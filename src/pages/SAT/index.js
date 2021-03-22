@@ -10,11 +10,7 @@ import {
     BottomSection,
 } from "components/organisms";
 import { MainLayout } from "components/layouts";
-import {
-    pageGradient,
-    methodBackgroundClassName,
-    priceCardBackgroundClassName,
-} from "./styles.module.scss";
+import { pageGradient, methodBackgroundClassName, priceCardBackgroundClassName } from "./styles.module.scss";
 
 const SAT = ({ data }) => {
     const {
@@ -37,10 +33,7 @@ const SAT = ({ data }) => {
                 linkHref={hero.buttonLink}
                 image={hero.image.childImageSharp.gatsbyImageData}
             />
-            <TileContainer
-                title={`Our SAT Services`}
-                items={servicesList}
-            />
+            <TileContainer title={`Our SAT Services`} items={servicesList} />
             <MediaSection
                 image={mediaSection.image.childImageSharp.gatsbyImageData}
                 subtitle={mediaSection.subtitle}
@@ -80,84 +73,86 @@ const SAT = ({ data }) => {
 
 export default SAT;
 
-export const pageQuery = graphql`{
-  page: allMarkdownRemark(filter: {frontmatter: {title: {eq: "SAT"}}}) {
-    edges {
-      node {
-        frontmatter {
-          title
-          hero {
-            title
-            description
-            buttonText
-            buttonLink
-            image {
-              childImageSharp {
-                gatsbyImageData(layout: FULL_WIDTH)
-              }
+export const pageQuery = graphql`
+    {
+        page: allMarkdownRemark(filter: { frontmatter: { title: { eq: "SAT" } } }) {
+            edges {
+                node {
+                    frontmatter {
+                        title
+                        hero {
+                            title
+                            description
+                            buttonText
+                            buttonLink
+                            image {
+                                childImageSharp {
+                                    gatsbyImageData(layout: FULL_WIDTH)
+                                }
+                            }
+                        }
+                        servicesList {
+                            title
+                            description
+                            videoId
+                            icon {
+                                code
+                            }
+                        }
+                        mediaSection {
+                            subtitle
+                            title
+                            description
+                            linkText
+                            linkHref
+                            image {
+                                childImageSharp {
+                                    gatsbyImageData(layout: FULL_WIDTH)
+                                }
+                            }
+                        }
+                        methodsList {
+                            title
+                            description
+                            image {
+                                childImageSharp {
+                                    gatsbyImageData(layout: FULL_WIDTH)
+                                }
+                            }
+                        }
+                        priceList {
+                            title
+                            price
+                            description
+                        }
+                        signUp {
+                            subtitle
+                            title
+                            description
+                            buttonText
+                            buttonLink
+                        }
+                    }
+                }
             }
-          }
-          servicesList {
-            title
-            description
-            icon {
-              code
-            }
-          }
-          mediaSection {
-            subtitle
-            title
-            description
-            linkText
-            linkHref
-            image {
-              childImageSharp {
-                gatsbyImageData(layout: FULL_WIDTH)
-              }
-            }
-          }
-          methodsList {
-            title
-            description
-            image {
-              childImageSharp {
-                gatsbyImageData(layout: FULL_WIDTH)
-              }
-            }
-          }
-          priceList {
-            title
-            price
-            description
-          }
-          signUp {
-            subtitle
-            title
-            description
-            buttonText
-            buttonLink
-          }
         }
-      }
-    }
-  }
-  testimonies: allMarkdownRemark(filter: {frontmatter: {featured: {eq: "SAT"}}}) {
-    edges {
-      node {
-        id
-        frontmatter {
-          title
-          college
-          tags
-          image {
-            childImageSharp {
-              gatsbyImageData(layout: FULL_WIDTH)
+        testimonies: allMarkdownRemark(filter: { frontmatter: { featured: { eq: "SAT" } } }) {
+            edges {
+                node {
+                    id
+                    frontmatter {
+                        title
+                        college
+                        tags
+                        image {
+                            childImageSharp {
+                                gatsbyImageData(layout: FULL_WIDTH)
+                            }
+                        }
+                    }
+                    rawMarkdownBody
+                }
             }
-          }
         }
-        rawMarkdownBody
-      }
     }
-  }
-}
 `;

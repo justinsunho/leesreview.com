@@ -44,6 +44,7 @@ const TileContainer = ({ backgroundClassName, className, title, items }) => {
                             icon={item.icon && item.icon.code}
                             description={item.description}
                             color={colorArray[i]}
+                            videoId={item.videoId && item.videoId}
                         />
                     </a.div>
                 ))}
