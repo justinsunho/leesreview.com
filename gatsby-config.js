@@ -6,16 +6,6 @@ module.exports = {
         siteUrl: `http://localhost:8000`,
     },
     plugins: [
-        "gatsby-plugin-image",
-        "gatsby-plugin-sharp",
-        "gatsby-transformer-sharp",
-        "gatsby-plugin-netlify-cms",
-        "gatsby-plugin-sass",
-        "gatsby-plugin-react-helmet",
-        "gatsby-plugin-sitemap",
-        "gatsby-plugin-offline",
-        `gatsby-plugin-resolve-src`,
-        "gatsby-transformer-json",
         {
             resolve: `gatsby-source-filesystem`,
             options: {
@@ -58,6 +48,8 @@ module.exports = {
                 name: `pages`,
             },
         },
+        "gatsby-plugin-sharp",
+        "gatsby-transformer-sharp",
         {
             resolve: `gatsby-transformer-remark`,
             options: {
@@ -74,5 +66,13 @@ module.exports = {
                 ],
             },
         },
+        "gatsby-plugin-image",
+        "gatsby-plugin-netlify-cms",
+        "gatsby-plugin-sass",
+        "gatsby-plugin-react-helmet",
+        "gatsby-plugin-sitemap",
+        "gatsby-plugin-offline",
+        `gatsby-plugin-resolve-src`,
+        "gatsby-transformer-json",
     ],
 };
