@@ -8,7 +8,7 @@ import { expandedStyle, collapsed, expandButton } from "./styles.module.scss";
 const ClassCardContainer = ({ items, title, subtitle, backgroundClassName }) => {
     const tags = [...new Set(items.map((item) => item.node.frontmatter.tag)), "All"];
 
-    const [currentTag, setTag] = useState(tags.length - 1);
+    const [currentTag, setTag] = useState(0);
     const [expanded, setExpanded] = useState(0);
 
     const transitions = useTransition(
@@ -26,11 +26,12 @@ const ClassCardContainer = ({ items, title, subtitle, backgroundClassName }) => 
 
     return (
         <SectionWrapper subtitle={subtitle} title={title} backgroundClassName={backgroundClassName}>
-            <div className={`row`}>
+            <div className={`row align-items-center justify-content-center`}>
+                <div>Filter: </div>
                 {tags.map((tag, i) => (
                     <TitleSelector
                         key={i}
-                        className={`col text-center`}
+                        className={`text-center`}
                         title={tag}
                         color={colorArray[i]}
                         onClick={setTag}

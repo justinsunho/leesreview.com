@@ -4,7 +4,8 @@ import { titleStyle } from "./styles.module.scss";
 
 const TitleSelector = ({ title, className, onClick, color, index, currentTag }) => {
     const spring = useSpring({
-        borderBottom: currentTag === index ? `3px solid ${color}` : `3px solid #eaeaea`,
+        backgroundColor: currentTag === index ? `${color}` : `rgba(255, 255, 255, 0)`,
+        color: currentTag === index ? `#FFF` : `#333`,
     });
 
     return (
@@ -15,7 +16,7 @@ const TitleSelector = ({ title, className, onClick, color, index, currentTag }) 
             className={`${className} ${titleStyle}`}
             style={spring}
         >
-            <a.h4>{title}</a.h4>
+            <a.h5>{title}</a.h5>
         </a.div>
     );
 };
