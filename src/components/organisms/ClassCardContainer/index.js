@@ -5,7 +5,7 @@ import { ClassCard, SectionWrapper } from "components/molecules";
 import { colorArray } from "utilities/colorArray";
 import { expandedStyle, collapsed, expandButton } from "./styles.module.scss";
 
-const ClassCardContainer = ({ items, title, subtitle, backgroundClassName }) => {
+const ClassCardContainer = ({ id, items, title, subtitle, backgroundClassName }) => {
     const tags = [...new Set(items.map((item) => item.node.frontmatter.tag)), "All"];
 
     const [currentTag, setTag] = useState(0);
@@ -25,7 +25,7 @@ const ClassCardContainer = ({ items, title, subtitle, backgroundClassName }) => 
     );
 
     return (
-        <SectionWrapper subtitle={subtitle} title={title} backgroundClassName={backgroundClassName}>
+        <SectionWrapper subtitle={subtitle} title={title} backgroundClassName={backgroundClassName} id={id && id}>
             <div className={`row align-items-center justify-content-center`}>
                 <div>Filter: </div>
                 {tags.map((tag, i) => (

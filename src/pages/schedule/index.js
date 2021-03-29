@@ -1,8 +1,9 @@
 import React from "react";
 import { graphql } from "gatsby";
+import { SmallCaps } from "components/atoms";
 import { MediaHero, ClassCardContainer, ScheduleSection } from "components/organisms";
 import { MainLayout } from "components/layouts";
-import { list, listItem } from "./styles.module.scss";
+import { list, listItem, scheduleList } from "./styles.module.scss";
 
 const Schedule = ({ data }) => {
     const {
@@ -26,20 +27,20 @@ const Schedule = ({ data }) => {
                 linkText={hero.buttonText}
             >
                 <div className={list}>
-                    <h3>Available Schedules</h3>
-                    <p>Click to navigate to these schedules</p>
-                    <ul>
+                    <SmallCaps>Click to navigate to these schedules</SmallCaps>
+                    <h3>Quick Navigation</h3>
+                    <ul className={scheduleList}>
                         {scheduleEdges.map((edge) => (
                             <li className={listItem} key={edge.node.id}>
-                                <a href={`#${edge.node.frontmatter.title}`}>
-                                    {edge.node.frontmatter.title}
-                                </a>
+                                <a href={`#${edge.node.frontmatter.title}`}>{edge.node.frontmatter.title}</a>
                             </li>
                         ))}
+                        <li className={listItem} key={"classes"}>
+                            <a href={`#classroom-prep`}>Classroom Prep</a>
+                        </li>
                     </ul>
                 </div>
             </MediaHero>
-            <ClassCardContainer title={`classes`} items={classEdges} />
             {scheduleEdges.map((edge) => (
                 <ScheduleSection
                     key={edge.node.id}
@@ -51,68 +52,66 @@ const Schedule = ({ data }) => {
                     table={edge.node.html}
                 />
             ))}
+            <ClassCardContainer id="classroom-prep" title={`classes`} items={classEdges} />
         </MainLayout>
     );
 };
 
 export default Schedule;
 
-export const pageQuery = graphql`{
-  page: allMarkdownRemark(filter: {frontmatter: {title: {eq: "Schedule"}}}) {
-    edges {
-      node {
-        frontmatter {
-          title
-          hero {
-            title
-            description
-            buttonLink
-            buttonText
-            image {
-              childImageSharp {
-                gatsbyImageData(layout: FULL_WIDTH)
-              }
+export const pageQuery = graphql`
+    {
+        page: allMarkdownRemark(filter: { frontmatter: { title: { eq: "Schedule" } } }) {
+            edges {
+                node {
+                    frontmatter {
+                        title
+                        hero {
+                            title
+                            description
+                            buttonLink
+                            buttonText
+                            image {
+                                childImageSharp {
+                                    gatsbyImageData(layout: FULL_WIDTH)
+                                }
+                            }
+                        }
+                    }
+                }
             }
-          }
         }
-      }
-    }
-  }
-  schedules: allMarkdownRemark(
-    filter: {fileAbsolutePath: {regex: "/content/schedules/"}}
-  ) {
-    edges {
-      node {
-        id
-        frontmatter {
-          title
-          subtitle
-          description
-          linkText
-          linkHref
+        schedules: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/content/schedules/" } }) {
+            edges {
+                node {
+                    id
+                    frontmatter {
+                        title
+                        subtitle
+                        description
+                        linkText
+                        linkHref
+                    }
+                    html
+                }
+            }
         }
-        html
-      }
-    }
-  }
-  classes: allMarkdownRemark(
-    filter: {fileAbsolutePath: {regex: "/content/classes/"}}
-  ) {
-    edges {
-      node {
-        id
-        frontmatter {
-          title
-          date
-          time
-          price
-          tag
-          teacherName
-          teacherLink
+        classes: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/content/classes/" } }) {
+            edges {
+                node {
+                    id
+                    frontmatter {
+                        title
+                        date
+                        time
+                        price
+                        tag
+                        teacherName
+                        teacherLink
+                    }
+                    html
+                }
+            }
         }
-        html
-      }
     }
-  }
-}
 `;

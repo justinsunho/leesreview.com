@@ -3,8 +3,13 @@
 .list {
     box-shadow: $elevation1;
     border-radius: 0.5rem;
-    padding: 1rem;
+    padding: 2rem;
     list-style: none;
+    border-bottom: 1rem solid $primary-1;
+
+    .scheduleList {
+        padding-left: 1.5rem;
+    }
 
     .listItem {
         padding-bottom: 1rem;
