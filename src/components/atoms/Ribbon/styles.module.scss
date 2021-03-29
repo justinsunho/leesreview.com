@@ -15,6 +15,11 @@
     position: relative;
     width: 110vw;
     left: -5vw;
+
+    @media (max-width: $breakpoint-medium) {
+        left: -12vw;
+        width: 120vw;
+    }
 }
 
 .ribbon {
