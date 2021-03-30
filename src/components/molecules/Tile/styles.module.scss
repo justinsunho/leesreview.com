@@ -11,6 +11,10 @@
         margin-bottom: 4rem;
     }
 
+    .videoContainer {
+        margin-top: -5rem;
+    }
+
     .iconStyle {
         position: absolute;
         top: -4rem;
@@ -24,53 +28,12 @@
         justify-content: center;
     }
 
-    .videoContainer {
-        border-radius: 16px;
-        overflow: hidden;
-        margin-top: -5rem;
-        box-shadow: $elevation1;
-        padding-top: 56.25%;
-        position: relative;
-
-        &:hover {
-            box-shadow: $elevation3;
-
-            .playButton {
-                background-color: $primary-2;
-            }
-        }
-
-        &:active {
-            background-color: $primary-3;
-        }
-
-        .youtubeFrame {
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-
-        .thumbnailContainer {
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 0;
-        }
-
-        .playButton {
-            position: absolute;
-            z-index: 1;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: $primary-1;
-            border-radius: 64px;
-        }
-    }
-
     .container {
-        padding-top: 2rem;
         text-align: center;
+
+        &.topItem {
+            padding-top: 2rem;
+        }
 
         .heading {
             margin-bottom: 0.5rem;
