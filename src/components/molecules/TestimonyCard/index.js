@@ -45,7 +45,7 @@ const TestimonyCard = ({ title, college, tags, body, image, className, color, ye
     return (
         <div className={`${className} ${container} ${clicked && clickedStyle}`} ref={node}>
             <div className={`${imageContainer}`}>
-                <GatsbyImage image={image} className={`${imageStyle}`} />
+                <GatsbyImage alt={`testimony-card-image-${title}`} image={image} className={`${imageStyle}`} />
                 <h5 className={`${collegeStyle}`} style={{ backgroundColor: `${color}` }}>
                     {college}
                 </h5>

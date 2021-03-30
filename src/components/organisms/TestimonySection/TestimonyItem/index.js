@@ -16,6 +16,7 @@ const TestimonyItem = ({ image, college, tags, title, inView }) => {
     return (
         <div className={testimonyItem}>
             <AnimatedImg
+                alt={`testimony-item-image-${title}`}
                 className={`${imageStyle}`}
                 image={{ ...image.childImageSharp.gatsbyImageData, aspectRatio: 1 }}
                 style={{ position: "absolute", ...trail[0] }}

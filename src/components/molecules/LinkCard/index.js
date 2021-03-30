@@ -28,7 +28,13 @@ const LinkCard = ({ title, className, image, subtitle, description, linkText, li
                 set({ transform: "translateY(0px)" });
             }}
         >
-            {image && <GatsbyImage image={{ ...image, aspectRatio: 1 }} className={`${imageStyle}`} />}
+            {image && (
+                <GatsbyImage
+                    alt={`card-image-${title}`}
+                    image={{ ...image, aspectRatio: 1 }}
+                    className={`${imageStyle}`}
+                />
+            )}
 
             <div className={content}>
                 <h3 className={heading}>{title}</h3>

@@ -63,7 +63,12 @@ const MethodItem = ({ index, description, title, image, itemLength, color }) => 
             </div>
             <div className={`col-md-5 ${inView && inView} ${imageContainer} ${(index + 1) % 2 === 1 && marginLeft}`}>
                 <ImageBackground color={color}>
-                    <AnimatedImg className={`${imageStyle}`} image={image} style={imageSpring} />
+                    <AnimatedImg
+                        alt={`method-image-${title}`}
+                        className={`${imageStyle}`}
+                        image={image}
+                        style={imageSpring}
+                    />
                     {itemLength !== index &&
                         ((index + 1) % 2 === 1 ? (
                             <AnimatedDashedRight className={dottedLine} fill={"#2f80ed"} style={pathSpring} />
