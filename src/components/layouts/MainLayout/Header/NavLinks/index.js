@@ -24,7 +24,7 @@ const NavLinks = () => {
                         />
                     </svg>
                 ) : (
-                    <Button>menu</Button>
+                    <Button secondary>menu</Button>
                 )}
             </div>
             <ul className={`${styles.navLinkWrapper} ${open && styles.open}`}>

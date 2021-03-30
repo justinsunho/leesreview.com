@@ -2,8 +2,9 @@ module.exports = {
     siteMetadata: {
         title: `Lees Review`,
         author: `Justin Sunho Kim`,
-        description: `Lees Review Tutoring Center`,
-        siteUrl: `http://localhost:8000`,
+        description: `Lees Review Tutoring Center. SAT Prepration and College Consulting services.`,
+        siteUrl: `http://leesreview.com`,
+        image: "/images/logo.jpg",
     },
     plugins: [
         {
