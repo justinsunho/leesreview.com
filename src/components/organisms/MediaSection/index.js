@@ -2,12 +2,12 @@ import React from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
 import { useInView } from "react-intersection-observer";
 import { a, useSpring } from "react-spring";
-import { Image, Ribbon } from "components/atoms";
+import { Image, Ribbon, EmbedVideo } from "components/atoms";
 import { TextBlock } from "components/molecules";
 import { enterRight } from "utilities/springConfigs";
 import { mediaSection, mediaSectionTextWrapper } from "./styles.module.scss";
 
-const MediaSection = ({ image, subtitle, headingText, description, linkText, linkHref, ribbon }) => {
+const MediaSection = ({ image, subtitle, headingText, description, linkText, linkHref, ribbon, videoId }) => {
     const { ref, inView } = useInView({
         threshold: 0.2,
         triggerOnce: true,
@@ -25,6 +25,7 @@ const MediaSection = ({ image, subtitle, headingText, description, linkText, lin
             <div className={`row align-items-center ${mediaSectionTextWrapper}`} ref={ref}>
                 <div className={`col-md-6`}>
                     {/* <AnimatedImg image={image} style={imageSpring} color={"#3b7fa8"} /> */}
+                    {videoId && <EmbedVideo videoId={videoId} />}
                 </div>
                 <div className={`col-md-6`}>
                     <TextBlock
