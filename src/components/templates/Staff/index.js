@@ -30,11 +30,13 @@ const Staff = ({ data }) => {
                         <GatsbyImage
                             image={image.childImageSharp.gatsbyImageData}
                             alt="test"
-                            className={imageStyle} />
+                            className={imageStyle}
+                            style={{ display: "block" }}
+                        />
                     </div>
                 </div>
                 <div className={`${titleWrapper} row`}>
-                    <div className={`col-md-10 ${marginAutoCenter}`}>
+                    <div className={`col-md-9 ${marginAutoCenter}`}>
                         <SmallCaps className={smallCaps}>{subtitle}</SmallCaps>
                         <h1 className={titleStyle}>{title}</h1>
                         <div>{tags.map((tag) => tag + ", ")}</div>
@@ -56,20 +58,21 @@ const Staff = ({ data }) => {
 
 export default Staff;
 
-export const query = graphql`query ($slug: String!) {
-  markdownRemark(fields: {slug: {eq: $slug}}) {
-    html
-    frontmatter {
-      title
-      subtitle
-      description
-      tags
-      image {
-        childImageSharp {
-          gatsbyImageData(width: 900, layout: CONSTRAINED)
+export const query = graphql`
+    query($slug: String!) {
+        markdownRemark(fields: { slug: { eq: $slug } }) {
+            html
+            frontmatter {
+                title
+                subtitle
+                description
+                tags
+                image {
+                    childImageSharp {
+                        gatsbyImageData(width: 900, layout: CONSTRAINED)
+                    }
+                }
+            }
         }
-      }
     }
-  }
-}
 `;
