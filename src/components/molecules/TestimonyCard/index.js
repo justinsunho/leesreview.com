@@ -70,7 +70,7 @@ const TestimonyCard = ({ body, className, college, color, image, tags, title, ye
                         />
                     </svg>
                 </div>
-                <h4 className={`${titleStyle}`}>{title}</h4>
+                <h4 className={`${styles.title}`}>{title}</h4>
                 <div className={`${styles.tagContainer}`}>
                     {tags.map((tag) => (
                         <div className={`${styles.tag}`} key={tag}>
