@@ -73,92 +73,90 @@ const CollegeConsulting = ({ data }) => {
 
 export default CollegeConsulting;
 
-export const pageQuery = graphql`{
-  page: allMarkdownRemark(
-    filter: {frontmatter: {title: {eq: "College Consulting"}}}
-  ) {
-    edges {
-      node {
-        frontmatter {
-          title
-          hero {
-            title
-            description
-            buttonText
-            buttonLink
-            image {
-              childImageSharp {
-                gatsbyImageData(layout: FULL_WIDTH)
-              }
+export const pageQuery = graphql`
+    {
+        page: allMarkdownRemark(filter: { frontmatter: { title: { eq: "College Consulting" } } }) {
+            edges {
+                node {
+                    frontmatter {
+                        title
+                        hero {
+                            title
+                            description
+                            buttonText
+                            buttonLink
+                            image {
+                                childImageSharp {
+                                    gatsbyImageData(layout: FULL_WIDTH)
+                                }
+                            }
+                        }
+                        servicesList {
+                            title
+                            description
+                            icon {
+                                code
+                            }
+                        }
+                        mediaSection {
+                            title
+                            subtitle
+                            description
+                            linkText
+                            linkHref
+                            videoId
+                            image {
+                                childImageSharp {
+                                    gatsbyImageData(layout: FULL_WIDTH)
+                                }
+                            }
+                        }
+                        methodsList {
+                            title
+                            description
+                            image {
+                                childImageSharp {
+                                    gatsbyImageData(layout: FULL_WIDTH)
+                                }
+                            }
+                        }
+                        testimonies {
+                            subtitle
+                            linkText
+                            linkHref
+                        }
+                        priceList {
+                            title
+                            price
+                            description
+                        }
+                        signUp {
+                            subtitle
+                            title
+                            description
+                            buttonText
+                            buttonLink
+                        }
+                    }
+                }
             }
-          }
-          servicesList {
-            title
-            description
-            icon {
-              code
-            }
-          }
-          mediaSection {
-            title
-            subtitle
-            description
-            linkText
-            linkHref
-            image {
-              childImageSharp {
-                gatsbyImageData(layout: FULL_WIDTH)
-              }
-            }
-          }
-          methodsList {
-            title
-            description
-            image {
-              childImageSharp {
-                gatsbyImageData(layout: FULL_WIDTH)
-              }
-            }
-          }
-          testimonies {
-            subtitle
-            linkText
-            linkHref
-          }
-          priceList {
-            title
-            price
-            description
-          }
-          signUp {
-            subtitle
-            title
-            description
-            buttonText
-            buttonLink
-          }
         }
-      }
-    }
-  }
-  testimonies: allMarkdownRemark(
-    filter: {frontmatter: {featured: {eq: "College Consulting"}}}
-  ) {
-    edges {
-      node {
-        frontmatter {
-          title
-          college
-          tags
-          image {
-            childImageSharp {
-              gatsbyImageData(layout: FULL_WIDTH)
+        testimonies: allMarkdownRemark(filter: { frontmatter: { featured: { eq: "College Consulting" } } }) {
+            edges {
+                node {
+                    frontmatter {
+                        title
+                        college
+                        tags
+                        image {
+                            childImageSharp {
+                                gatsbyImageData(layout: FULL_WIDTH)
+                            }
+                        }
+                    }
+                    rawMarkdownBody
+                }
             }
-          }
         }
-        rawMarkdownBody
-      }
     }
-  }
-}
 `;

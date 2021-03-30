@@ -55,92 +55,94 @@ const Index = ({ data }) => {
 
 export default Index;
 
-export const pageQuery = graphql`{
-  page: allMarkdownRemark(filter: {frontmatter: {title: {eq: "Home"}}}) {
-    edges {
-      node {
-        frontmatter {
-          hero {
-            title
-            description
-            buttonText
-            buttonLink
-            staff
-            image {
-              childImageSharp {
-                gatsbyImageData(layout: FULL_WIDTH)
-              }
-            }
-          }
-          classes {
-            title
-            linkText
-            linkHref
-            classList {
-              title
-              image {
-                childImageSharp {
-                  gatsbyImageData(layout: FULL_WIDTH)
+export const pageQuery = graphql`
+    {
+        page: allMarkdownRemark(filter: { frontmatter: { title: { eq: "Home" } } }) {
+            edges {
+                node {
+                    frontmatter {
+                        hero {
+                            title
+                            description
+                            buttonText
+                            buttonLink
+                            staff
+                            image {
+                                childImageSharp {
+                                    gatsbyImageData(layout: FULL_WIDTH)
+                                }
+                            }
+                        }
+                        classes {
+                            title
+                            linkText
+                            linkHref
+                            classList {
+                                title
+                                image {
+                                    childImageSharp {
+                                        gatsbyImageData(layout: FULL_WIDTH)
+                                    }
+                                }
+                                description
+                                linkText
+                                linkHref
+                            }
+                        }
+                        about {
+                            image {
+                                childImageSharp {
+                                    gatsbyImageData(layout: FULL_WIDTH)
+                                }
+                            }
+                            subtitle
+                            title
+                            description
+                            linkText
+                            linkHref
+                            videoId
+                        }
+                        testimonies {
+                            subtitle
+                            linkText
+                            linkHref
+                        }
+                        location {
+                            subtitle
+                            title
+                            locationList {
+                                title
+                                description
+                                linkText
+                                linkHref
+                                image {
+                                    childImageSharp {
+                                        gatsbyImageData(layout: FULL_WIDTH)
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
-              }
-              description
-              linkText
-              linkHref
             }
-          }
-          about {
-            image {
-              childImageSharp {
-                gatsbyImageData(layout: FULL_WIDTH)
-              }
-            }
-            subtitle
-            title
-            description
-            linkText
-            linkHref
-          }
-          testimonies {
-            subtitle
-            linkText
-            linkHref
-          }
-          location {
-            subtitle
-            title
-            locationList {
-              title
-              description
-              linkText
-              linkHref
-              image {
-                childImageSharp {
-                  gatsbyImageData(layout: FULL_WIDTH)
+        }
+        testimonies: allMarkdownRemark(filter: { frontmatter: { featured: { eq: "Home" } } }) {
+            edges {
+                node {
+                    id
+                    frontmatter {
+                        title
+                        college
+                        tags
+                        image {
+                            childImageSharp {
+                                gatsbyImageData(layout: FULL_WIDTH)
+                            }
+                        }
+                    }
+                    rawMarkdownBody
                 }
-              }
             }
-          }
         }
-      }
     }
-  }
-  testimonies: allMarkdownRemark(filter: {frontmatter: {featured: {eq: "Home"}}}) {
-    edges {
-      node {
-        id
-        frontmatter {
-          title
-          college
-          tags
-          image {
-            childImageSharp {
-              gatsbyImageData(layout: FULL_WIDTH)
-            }
-          }
-        }
-        rawMarkdownBody
-      }
-    }
-  }
-}
 `;

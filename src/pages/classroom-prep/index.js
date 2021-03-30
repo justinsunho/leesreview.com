@@ -53,71 +53,73 @@ const ClassroomPrep = ({ data }) => {
 
 export default ClassroomPrep;
 
-export const pageQuery = graphql`{
-  page: allMarkdownRemark(filter: {frontmatter: {title: {eq: "Classroom Prep"}}}) {
-    edges {
-      node {
-        frontmatter {
-          title
-          hero {
-            title
-            description
-            buttonText
-            buttonLink
-            image {
-              childImageSharp {
-                gatsbyImageData(layout: FULL_WIDTH)
-              }
+export const pageQuery = graphql`
+    {
+        page: allMarkdownRemark(filter: { frontmatter: { title: { eq: "Classroom Prep" } } }) {
+            edges {
+                node {
+                    frontmatter {
+                        title
+                        hero {
+                            title
+                            description
+                            buttonText
+                            buttonLink
+                            image {
+                                childImageSharp {
+                                    gatsbyImageData(layout: FULL_WIDTH)
+                                }
+                            }
+                        }
+                        servicesList {
+                            title
+                            body
+                            icon {
+                                code
+                            }
+                        }
+                        mediaSection {
+                            title
+                            subtitle
+                            description
+                            linkText
+                            linkHref
+                            videoId
+                            image {
+                                childImageSharp {
+                                    gatsbyImageData(layout: FULL_WIDTH)
+                                }
+                            }
+                        }
+                        signUp {
+                            subtitle
+                            title
+                            description
+                            buttonText
+                            buttonLink
+                        }
+                    }
+                }
             }
-          }
-          servicesList {
-            title
-            body
-            icon {
-              code
-            }
-          }
-          mediaSection {
-            title
-            subtitle
-            description
-            linkText
-            linkHref
-            image {
-              childImageSharp {
-                gatsbyImageData(layout: FULL_WIDTH)
-              }
-            }
-          }
-          signUp {
-            subtitle
-            title
-            description
-            buttonText
-            buttonLink
-          }
         }
-      }
-    }
-  }
-  classes: allMarkdownRemark(
-    filter: {fileAbsolutePath: {regex: "/content/classes/"}, frontmatter: {tag: {ne: "SAT"}}}
-  ) {
-    edges {
-      node {
-        id
-        frontmatter {
-          title
-          date
-          time
-          price
-          tag
-          teacherName
-          teacherLink
+        classes: allMarkdownRemark(
+            filter: { fileAbsolutePath: { regex: "/content/classes/" }, frontmatter: { tag: { ne: "SAT" } } }
+        ) {
+            edges {
+                node {
+                    id
+                    frontmatter {
+                        title
+                        date
+                        time
+                        price
+                        tag
+                        teacherName
+                        teacherLink
+                    }
+                    html
+                }
+            }
         }
-        html
-      }
     }
-  }
-}
 `;
