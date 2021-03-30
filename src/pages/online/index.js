@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
+import { EmbedVideo } from "components/atoms";
 import { MediaHero, TileContainer, BottomSection } from "components/organisms";
 import { MainLayout } from "components/layouts";
 
@@ -17,7 +18,7 @@ const Online = ({ data }) => {
     return (
         <MainLayout>
             <MediaHero headingText={hero.title} description={hero.description}>
-                <div dangerouslySetInnerHTML={{ __html: hero.video.code }} />
+                {hero.videoId && <EmbedVideo videoId={hero.videoId} />}
             </MediaHero>
             <TileContainer title={`Online Services`} items={servicesList} />
             <BottomSection
@@ -44,9 +45,7 @@ export const pageQuery = graphql`
                             description
                             buttonText
                             buttonLink
-                            video {
-                                code
-                            }
+                            videoId
                         }
                         servicesList {
                             title
