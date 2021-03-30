@@ -60,7 +60,7 @@ const TestimonyCard = ({ title, college, tags, body, image, className, color, ye
                         });
                     }}
                     onKeyDown={(e) => {
-                        e.key === 13 && setClick(0);
+                        e.key === "Enter" && setClick(0);
                         setMaxHeightSpring({
                             maxHeight: "25rem",
                         });

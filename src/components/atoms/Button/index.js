@@ -11,7 +11,7 @@ const Button = ({ className, children, linkHref, onClick, style, secondary }) =>
             onClick={onClick}
             role={"button"}
             tabIndex={0}
-            onKeyDown={(e) => e.key === 13 && onClick}
+            onKeyDown={(e) => e.key === "Enter" && onClick}
         >
             {children}
         </Link>
@@ -22,7 +22,7 @@ const Button = ({ className, children, linkHref, onClick, style, secondary }) =>
             onClick={onClick}
             role={"button"}
             tabIndex={0}
-            onKeyDown={(e) => e.key === 13 && onClick}
+            onKeyDown={(e) => e.key === "Enter" && onClick}
         >
             {children}
         </div>

@@ -76,7 +76,7 @@ const ClassCardContainer = ({ id, items, title, subtitle, backgroundClassName })
                         onClick={() => {
                             setExpanded(!expanded);
                         }}
-                        onKeyDown={(e) => e.key === 13 && setExpanded(!expanded)}
+                        onKeyDown={(e) => e.key === "Enter" && setExpanded(!expanded)}
                         role={"button"}
                         tabIndex={0}
                     >

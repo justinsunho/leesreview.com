@@ -19,7 +19,7 @@ const NavLinks = () => {
                 className={`${menuButtonContainer} ${open && openStyle}`}
                 onClick={() => setOpen(!open)}
                 role={`button`}
-                onKeyDown={(e) => e.key === 13 && setOpen(!open)}
+                onKeyDown={(e) => e.key === "Enter" && setOpen(!open)}
                 tabIndex={0}
             >
                 {open ? (

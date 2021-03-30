@@ -13,7 +13,7 @@ const TitleSelector = ({ title, className, onClick, color, index, currentTag }) 
             onClick={() => {
                 onClick(index);
             }}
-            onKeyDown={(e) => e.key === 13 && onClick(index)}
+            onKeyDown={(e) => e.key === "Enter" && onClick(index)}
             className={`${className} ${titleStyle}`}
             style={spring}
             tabIndex={0}

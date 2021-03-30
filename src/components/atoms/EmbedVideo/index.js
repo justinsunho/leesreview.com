@@ -10,7 +10,7 @@ const EmbedVideo = ({ videoId, className, alt }) => {
             onClick={() => setPlayVideo(1)}
             role={"button"}
             tabIndex={0}
-            onKeyDown={(e) => e.key === 13 && setPlayVideo(1)}
+            onKeyDown={(e) => e.key === "Enter" && setPlayVideo(1)}
         >
             {playVideo ? (
                 <iframe
