@@ -2,7 +2,7 @@ import React from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
 import { a, useSpring } from "react-spring";
 import { CTALink, SmallCaps } from "components/atoms";
-import { card, imageStyle, content, heading, descriptionStyle, ctaLink } from "./styles.module.scss";
+import * as styles from "./styles.module.scss";
 
 const LinkCard = ({ className, color, description, image, linkHref, linkText, style, subtitle, title }) => {
     const [spring, set] = useSpring(() => ({
@@ -18,7 +18,7 @@ const LinkCard = ({ className, color, description, image, linkHref, linkText, st
 
     return (
         <a.a
-            className={`${card} ${className}`}
+            className={`${styles.card} ${className}`}
             href={linkHref}
             onMouseEnter={() => {
                 set({ transform: "translateY(-8px)" });
@@ -31,18 +31,18 @@ const LinkCard = ({ className, color, description, image, linkHref, linkText, st
             {image && (
                 <GatsbyImage
                     alt={`card-image-${title}`}
-                    className={`${imageStyle}`}
+                    className={`${styles.image}`}
                     image={{ ...image, aspectRatio: 1 }}
                 />
             )}
 
-            <div className={content}>
-                <h3 className={heading}>{title}</h3>
+            <div className={styles.content}>
+                <h3 className={styles.heading}>{title}</h3>
                 {subtitle && <SmallCaps>{subtitle}</SmallCaps>}
-                <p className={descriptionStyle}>{description}</p>
+                <p className={styles.description}>{description}</p>
             </div>
             {linkHref && (
-                <AnimatedLink className={ctaLink} style={{ backgroundColor: color }}>
+                <AnimatedLink className={styles.ctaLink} style={{ backgroundColor: color }}>
                     {linkText}
                 </AnimatedLink>
             )}

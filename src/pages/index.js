@@ -2,7 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import { HomeHeroSection, MediaSection, TestimonySection, LinkCardContainer } from "components/organisms";
 import { MainLayout } from "components/layouts";
-import { pageGradient, linkCardBackground } from "./styles.module.scss";
+import * as styles from "./styles.module.scss";
 
 const Index = ({ data }) => {
     const {
@@ -17,7 +17,7 @@ const Index = ({ data }) => {
     } = pageEdges[0];
 
     return (
-        <MainLayout className={pageGradient}>
+        <MainLayout className={styles.pageGradient}>
             <HomeHeroSection
                 button
                 description={hero.description}
@@ -27,7 +27,7 @@ const Index = ({ data }) => {
                 linkText={hero.buttonText}
             />
             <LinkCardContainer
-                backgroundClassName={linkCardBackground}
+                backgroundClassName={styles.linkCardBackground}
                 items={classes.classList}
                 linkHref={classes.linkHref}
                 linkText={classes.linkText}

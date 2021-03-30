@@ -1,7 +1,7 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import { TextBlock } from "components/molecules";
-import { homeHeroWrapper } from "./styles.module.scss";
+import * as styles from "./styles.module.scss";
 
 const HomeHeroSection = ({ button, className, description, headingText, linkHref, linkText }) => {
     const { inView, ref } = useInView({
@@ -10,7 +10,7 @@ const HomeHeroSection = ({ button, className, description, headingText, linkHref
     });
 
     return (
-        <div className={`section ${homeHeroWrapper}`} ref={ref}>
+        <div className={`section ${styles.homeHeroWrapper}`} ref={ref}>
             <div className={` row justify-content-center ${className}`}>
                 <TextBlock
                     button={button}

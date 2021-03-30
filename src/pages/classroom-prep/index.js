@@ -2,7 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import { Hero, ClassCardContainer, MediaSection, TileContainer, BottomSection } from "components/organisms";
 import { MainLayout } from "components/layouts";
-import { backgroundClassCardContainer } from "./styles.module.scss";
+import * as styles from "./styles.module.scss";
 
 const ClassroomPrep = ({ data }) => {
     const {
@@ -36,7 +36,7 @@ const ClassroomPrep = ({ data }) => {
                 subtitle={mediaSection.subtitle}
             />
             <ClassCardContainer
-                backgroundClassName={backgroundClassCardContainer}
+                backgroundClassName={styles.backgroundClassCardContainer}
                 items={classEdges}
                 title={`classes`}
             />

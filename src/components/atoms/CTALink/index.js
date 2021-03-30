@@ -1,15 +1,15 @@
 import React from "react";
-import { arrow, primaryStyle, primarySvg } from "./styles.module.scss";
+import * as styles from "./styles.module.scss";
 
 const CTALink = ({ children, className, linkHref, primary, style }) => {
     const Tag = linkHref ? "a" : "div";
 
     return (
-        <Tag className={`${className} ${primary && primaryStyle}`} href={linkHref} style={style}>
+        <Tag className={`${className} ${primary && styles.primary}`} href={linkHref} style={style}>
             {children}
             {primary ? (
                 <svg
-                    className={primarySvg}
+                    className={styles.primarySvg}
                     fill="none"
                     height="42"
                     viewBox="0 0 76 42"
@@ -28,7 +28,7 @@ const CTALink = ({ children, className, linkHref, primary, style }) => {
                 </svg>
             ) : (
                 <svg
-                    className={arrow}
+                    className={styles.arrow}
                     fill="currentColor"
                     height="10"
                     viewBox="0 0 8 12"

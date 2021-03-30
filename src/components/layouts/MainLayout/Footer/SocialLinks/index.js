@@ -1,9 +1,9 @@
 import React from "react";
-import { socialLinks } from "./styles.module.scss";
+import * as styles from "./styles.module.scss";
 
 const SocialLinks = () => {
     return (
-        <ul className={socialLinks}>
+        <ul className={styles.socialLinks}>
             <li>
                 <a href="https://www.facebook.com/leesreview/">
                     <Facebook />

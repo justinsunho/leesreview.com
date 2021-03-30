@@ -2,7 +2,7 @@ import React from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
 import { a, useTrail } from "react-spring";
 import { SmallCaps } from "components/atoms";
-import { testimonyItem, imageStyle, content, tagContainer, tagStyle } from "./styles.module.scss";
+import * as styles from "./styles.module.scss";
 import { enterAbove } from "utilities/springConfigs";
 
 const TestimonyItem = ({ college, image, inView, tags, title }) => {
@@ -14,17 +14,17 @@ const TestimonyItem = ({ college, image, inView, tags, title }) => {
     });
 
     return (
-        <div className={testimonyItem}>
+        <div className={styles.testimonyItem}>
             <AnimatedImg
                 alt={`testimony-item-image-${title}`}
-                className={`${imageStyle}`}
+                className={`${styles.image}`}
                 image={{ ...image.childImageSharp.gatsbyImageData, aspectRatio: 1 }}
                 style={{ position: "absolute", ...trail[0] }}
             />
-            <div className={content}>
-                <a.div className={tagContainer} style={trail[1]}>
+            <div className={styles.content}>
+                <a.div className={styles.tagContainer} style={trail[1]}>
                     {tags.map((tag) => (
-                        <SmallCaps className={tagStyle} key={tag}>
+                        <SmallCaps className={styles.tag} key={tag}>
                             {tag}
                         </SmallCaps>
                     ))}

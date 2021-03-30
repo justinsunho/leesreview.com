@@ -1,10 +1,10 @@
 import React from "react";
-import { logo } from "./styles.module.scss";
+import * as styles from "./styles.module.scss";
 
 const Logo = () => {
     return (
         <svg
-            className={logo}
+            className={styles.logo}
             fill="none"
             height="32"
             viewBox="0 0 213 32"

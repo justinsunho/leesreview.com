@@ -1,7 +1,7 @@
 import React from "react";
 import { a } from "react-spring";
 import { SmallCaps, CTALink } from "components/atoms";
-import { ctaRow } from "./styles.module.scss";
+import * as styles from "./styles.module.scss";
 
 const SectionWrapper = React.forwardRef(
     (
@@ -42,7 +42,7 @@ const SectionWrapper = React.forwardRef(
                     )}
                     {children}
                     {linkText && (
-                        <a.div className={`row ${ctaRow}`} style={trailArray && trailArray[2]}>
+                        <a.div className={`row ${styles.ctaRow}`} style={trailArray && trailArray[2]}>
                             <CTALink className={`${!left && "text-center"} col`} linkHref={linkHref}>
                                 {linkText}
                             </CTALink>

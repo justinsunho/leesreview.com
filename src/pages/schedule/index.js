@@ -3,7 +3,7 @@ import { graphql } from "gatsby";
 import { SmallCaps } from "components/atoms";
 import { MediaHero, ClassCardContainer, ScheduleSection } from "components/organisms";
 import { MainLayout } from "components/layouts";
-import { list, listItem, scheduleList } from "./styles.module.scss";
+import * as styles from "./styles.module.scss";
 
 const Schedule = ({ data }) => {
     const {
@@ -26,16 +26,16 @@ const Schedule = ({ data }) => {
                 linkHref={hero.buttonLink}
                 linkText={hero.buttonText}
             >
-                <div className={list}>
+                <div className={styles.list}>
                     <SmallCaps>Click to navigate to these schedules</SmallCaps>
                     <h3>Quick Navigation</h3>
-                    <ul className={scheduleList}>
+                    <ul className={styles.scheduleList}>
                         {scheduleEdges.map((edge) => (
-                            <li className={listItem} key={edge.node.id}>
+                            <li className={styles.listItem} key={edge.node.id}>
                                 <a href={`#${edge.node.frontmatter.title}`}>{edge.node.frontmatter.title}</a>
                             </li>
                         ))}
-                        <li className={listItem} key={"classes"}>
+                        <li className={styles.listItem} key={"classes"}>
                             <a href={`#classroom-prep`}>Classroom Prep</a>
                         </li>
                     </ul>

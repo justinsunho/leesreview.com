@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import { playButton, thumbnailContainer, videoContainer, youtubeFrame } from "./styles.module.scss";
+import * as styles from "./styles.module.scss";
 
 const EmbedVideo = ({ alt, className, videoId }) => {
     const [playVideo, setPlayVideo] = useState(0);
 
     return (
         <div
-            className={`${videoContainer} ${className}`}
+            className={`${styles.videoContainer} ${className}`}
             onClick={() => setPlayVideo(1)}
             onKeyDown={(e) => e.key === "Enter" && setPlayVideo(1)}
             role={"button"}
@@ -16,7 +16,7 @@ const EmbedVideo = ({ alt, className, videoId }) => {
                 <iframe
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
-                    className={youtubeFrame}
+                    className={styles.youtubeFrame}
                     frameBorder="0"
                     height="100%"
                     src={`https://www.youtube.com/embed/${videoId}?autoplay=${playVideo}`}
@@ -24,9 +24,9 @@ const EmbedVideo = ({ alt, className, videoId }) => {
                     width="100%"
                 />
             ) : (
-                <div className={thumbnailContainer}>
+                <div className={styles.thumbnailContainer}>
                     <svg
-                        className={playButton}
+                        className={styles.playButton}
                         fill="#FFF"
                         height="64px"
                         viewBox="0 0 24 24"

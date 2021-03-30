@@ -1,10 +1,10 @@
 import React from "react";
 import { SmallCaps } from "components/atoms";
-import { wrapper } from "./styles.module.scss";
+import * as styles from "./styles.module.scss";
 
 const Info = ({ address, className, smallCapsClass }) => {
     return (
-        <div className={`${wrapper} ${className}`}>
+        <div className={`${styles.wrapper} ${className}`}>
             <SmallCaps className={smallCapsClass}>Phone: (909) 612-5700</SmallCaps>
             <SmallCaps className={smallCapsClass}>Email: info@leesreview.com</SmallCaps>
             {address && (

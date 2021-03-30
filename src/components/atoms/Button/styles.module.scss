@@ -10,7 +10,7 @@
     transform: translateY(0);
     transition: all 0.2s ease-in-out;
 
-    &.secondaryStyle {
+    &.secondary {
         background-color: $accent-1;
 
         &:hover {

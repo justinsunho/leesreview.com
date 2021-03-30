@@ -1,11 +1,11 @@
 import React from "react";
-import { background, child, container } from "./styles.module.scss";
+import * as styles from "./styles.module.scss";
 
 const ImageBackground = ({ backgroundStyle, children, className, color }) => {
     return (
-        <div className={`${container} ${className}`}>
-            <div className={background} style={{ backgroundColor: color ? color : "#3b7fa8" }} />
-            <div className={child} style={{ ...backgroundStyle }}>
+        <div className={`${styles.container} ${className}`}>
+            <div className={styles.background} style={{ backgroundColor: color ? color : "#3b7fa8" }} />
+            <div className={styles.child} style={{ ...backgroundStyle }}>
                 {children}
             </div>
         </div>

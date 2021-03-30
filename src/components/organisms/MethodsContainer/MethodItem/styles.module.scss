@@ -19,8 +19,8 @@
             line-height: 1;
         }
 
-        .titleStyle,
-        .descriptionStyle {
+        .title,
+        .description {
             z-index: 1;
         }
     }
@@ -32,7 +32,7 @@
     .imageContainer {
         position: relative;
 
-        .imageStyle {
+        .image {
             border-radius: 1rem;
         }
 

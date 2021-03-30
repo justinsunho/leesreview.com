@@ -3,17 +3,7 @@ import { GatsbyImage } from "gatsby-plugin-image";
 import { a, useTrail, useSpring } from "react-spring";
 import { ImageBackground } from "components/atoms";
 import { enterRight } from "utilities/springConfigs";
-import {
-    methodItem,
-    container,
-    indexNumber,
-    titleStyle,
-    descriptionStyle,
-    imageContainer,
-    marginLeft,
-    imageStyle,
-    dottedLine,
-} from "./styles.module.scss";
+import * as styles from "./styles.module.scss";
 import { useInView } from "react-intersection-observer";
 
 const MethodItem = ({ color, description, image, index, itemLength, title }) => {
@@ -51,29 +41,33 @@ const MethodItem = ({ color, description, image, index, itemLength, title }) => 
     const AnimatedDashedLeft = a(DashedLeft);
 
     return (
-        <div className={`${methodItem} row `} ref={ref}>
-            <div className={`${container} col-md-5`}>
-                <div className={indexNumber}>{index}</div>
-                <a.h3 className={titleStyle} style={textTrail[0]}>
+        <div className={`${styles.methodItem} row `} ref={ref}>
+            <div className={`${styles.container} col-md-5`}>
+                <div className={styles.indexNumber}>{index}</div>
+                <a.h3 className={styles.title} style={textTrail[0]}>
                     {title}
                 </a.h3>
-                <a.p className={descriptionStyle} style={textTrail[1]}>
+                <a.p className={styles.description} style={textTrail[1]}>
                     {description}
                 </a.p>
             </div>
-            <div className={`col-md-5 ${inView && inView} ${imageContainer} ${(index + 1) % 2 === 1 && marginLeft}`}>
+            <div
+                className={`col-md-5 ${inView && inView} ${styles.imageContainer} ${
+                    (index + 1) % 2 === 1 && styles.marginLeft
+                }`}
+            >
                 <ImageBackground color={color}>
                     <AnimatedImg
                         alt={`method-image-${title}`}
-                        className={`${imageStyle}`}
+                        className={`${styles.image}`}
                         image={image}
                         style={imageSpring}
                     />
                     {itemLength !== index &&
                         ((index + 1) % 2 === 1 ? (
-                            <AnimatedDashedRight className={dottedLine} fill={"#2f80ed"} style={pathSpring} />
+                            <AnimatedDashedRight className={styles.dottedLine} fill={"#2f80ed"} style={pathSpring} />
                         ) : (
-                            <AnimatedDashedLeft className={dottedLine} fill={"#2f80ed"} style={pathSpring} />
+                            <AnimatedDashedLeft className={styles.dottedLine} fill={"#2f80ed"} style={pathSpring} />
                         ))}
                 </ImageBackground>
             </div>

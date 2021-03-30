@@ -10,7 +10,7 @@ import {
     BottomSection,
 } from "components/organisms";
 import { MainLayout } from "components/layouts";
-import { methodBackgroundClassName, priceCardBackgroundClassName } from "./styles.module.scss";
+import * as styles from "./styles.module.scss";
 
 const CollegeConsulting = ({ data }) => {
     const {
@@ -44,7 +44,7 @@ const CollegeConsulting = ({ data }) => {
                 subtitle={mediaSection.subtitle}
             />
             <MethodsContainer
-                backgroundClassName={methodBackgroundClassName}
+                backgroundClassName={styles.methodBackgroundClassName}
                 items={methodsList}
                 title={`Our Methods`}
             />
@@ -56,7 +56,7 @@ const CollegeConsulting = ({ data }) => {
                 testimonyList={testimonyList}
             />
             <PriceCardContainer
-                backgroundClassName={priceCardBackgroundClassName}
+                backgroundClassName={styles.priceCardBackgroundClassName}
                 items={priceList}
                 title={`Our Prices`}
             />

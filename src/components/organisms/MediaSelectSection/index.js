@@ -4,7 +4,7 @@ import { Image } from "components/atoms";
 import { SectionWrapper } from "components/molecules";
 import { colorArray } from "utilities/colorArray";
 import SelectItem from "./SelectItem";
-import { mediaContainer, content, titleStyle, descriptionStyle } from "./styles.module.scss";
+import * as styles from "./styles.module.scss";
 
 const MediaSelectSection = ({ items, title }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -21,15 +21,15 @@ const MediaSelectSection = ({ items, title }) => {
                 <div className={`col-lg-7`}>
                     {transitions.map(({ item, key, props }) => {
                         return (
-                            <a.div className={mediaContainer} key={key} style={props}>
+                            <a.div className={styles.mediaContainer} key={key} style={props}>
                                 <Image
                                     alt={title}
                                     color={colorArray[currentIndex]}
                                     image={item.image.childImageSharp.gatsbyImageData}
                                 />
-                                <div className={content}>
-                                    <h4 className={titleStyle}>{item.title}</h4>
-                                    <p className={descriptionStyle}>{item.description}</p>
+                                <div className={styles.content}>
+                                    <h4 className={styles.title}>{item.title}</h4>
+                                    <p className={styles.description}>{item.description}</p>
                                 </div>
                             </a.div>
                         );

@@ -1,34 +1,26 @@
 import React from "react";
 import { Link } from "gatsby";
-import {
-    classCardContainer,
-    classCardWrapper,
-    heading,
-    dateContainer,
-    descriptionStyle,
-    teacher,
-    priceStyle,
-} from "./styles.module.scss";
+import * as styles from "./styles.module.scss";
 
 const ClassCard = ({ backgroundColor, date, description, price, teacherLink, teacherName, time, title }) => {
     return (
-        <div className={`${classCardContainer}`}>
-            <div className={`${classCardWrapper}`}>
-                <h4 className={`${heading}`}>{title}</h4>
+        <div className={`${styles.classCardContainer}`}>
+            <div className={`${styles.classCardWrapper}`}>
+                <h4 className={`${styles.heading}`}>{title}</h4>
                 {date && (
-                    <div className={`${dateContainer}`}>
+                    <div className={`${styles.dateContainer}`}>
                         <div>{date}</div>
                         <div>{time}</div>
                     </div>
                 )}
-                <p className={descriptionStyle} dangerouslySetInnerHTML={{ __html: description }} />
+                <p className={styles.description} dangerouslySetInnerHTML={{ __html: description }} />
                 {teacherName && (
-                    <Link className={`${teacher}`} to={teacherLink}>
+                    <Link className={`${styles.teacher}`} to={teacherLink}>
                         Taught by: {teacherName}
                     </Link>
                 )}
             </div>
-            <div className={`${priceStyle}`} style={{ backgroundColor: backgroundColor }}>
+            <div className={`${styles.price}`} style={{ backgroundColor: backgroundColor }}>
                 {price}
             </div>
         </div>

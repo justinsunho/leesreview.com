@@ -4,7 +4,7 @@ import { a, useTrail, useChain } from "react-spring";
 import { LinkCard, SectionWrapper } from "components/molecules";
 import { enterAbove } from "utilities/springConfigs";
 import { colorArray } from "utilities/colorArray";
-import { cardRow } from "./styles.module.scss";
+import * as styles from "./styles.module.scss";
 
 const LinkCardContainer = ({ backgroundClassName, items, linkHref, linkText, subtitle, title }) => {
     const { inView, ref } = useInView({
@@ -38,7 +38,7 @@ const LinkCardContainer = ({ backgroundClassName, items, linkHref, linkText, sub
             title={title}
             trailArray={textTrail}
         >
-            <div className={`row ${cardRow}`}>
+            <div className={`row ${styles.cardRow}`}>
                 {items.map((item, i) => (
                     <a.div className={`col-lg-${12 / items.length} col-md-6`} key={item.title} style={cardTrail[i]}>
                         <LinkCard

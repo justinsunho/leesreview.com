@@ -3,7 +3,7 @@ import { a, useTransition } from "react-spring";
 import TitleSelector from "./TitleSelector";
 import { ClassCard, SectionWrapper } from "components/molecules";
 import { colorArray } from "utilities/colorArray";
-import { expandedStyle, collapsed, expandButton } from "./styles.module.scss";
+import * as styles from "./styles.module.scss";
 
 const ClassCardContainer = ({ backgroundClassName, id, items, subtitle, title }) => {
     const tags = [...new Set(items.map((item) => item.node.frontmatter.tag)), "All"];
@@ -52,7 +52,7 @@ const ClassCardContainer = ({ backgroundClassName, id, items, subtitle, title })
                     </b>
                 </div>
             </div>
-            <div className={`row align-content-stretch ${expanded ? expandedStyle : collapsed}`}>
+            <div className={`row align-content-stretch ${expanded ? styles.expanded : styles.collapsed}`}>
                 {transitions.map(({ item, key, props }) => (
                     <a.div className={`col-lg-3 col-md-6 col-sm-12 pb-md-5`} key={key} style={props}>
                         <ClassCard
@@ -72,7 +72,7 @@ const ClassCardContainer = ({ backgroundClassName, id, items, subtitle, title })
             <div className={`row d-md-none d-flex`}>
                 <div className={`col`}>
                     <div
-                        className={`${expandButton}`}
+                        className={`${styles.expandButton}`}
                         onClick={() => {
                             setExpanded(!expanded);
                         }}

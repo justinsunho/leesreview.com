@@ -1,13 +1,13 @@
 import React from "react";
-import { testimonyCarousel, controls, disabled, current, dot } from "./styles.module.scss";
+import * as styles from "./styles.module.scss";
 
 const CarouselContainer = ({ children, currentIndex, itemCount, setIndex }) => {
     return (
-        <div className={testimonyCarousel}>
+        <div className={styles.testimonyCarousel}>
             {children}
-            <div className={`${controls}`}>
+            <div className={`${styles.controls}`}>
                 <svg
-                    className={` ${currentIndex === 0 && disabled}`}
+                    className={` ${currentIndex === 0 && styles.disabled}`}
                     fill="currentColor"
                     height="16"
                     onClick={() => {
@@ -21,7 +21,7 @@ const CarouselContainer = ({ children, currentIndex, itemCount, setIndex }) => {
 
                 {[...Array(itemCount)].map((x, i) => (
                     <svg
-                        className={`${i === currentIndex && current} ${dot}`}
+                        className={`${i === currentIndex && styles.current} ${styles.dot}`}
                         fill="currentColor"
                         height="8"
                         key={i}
@@ -34,7 +34,7 @@ const CarouselContainer = ({ children, currentIndex, itemCount, setIndex }) => {
                     </svg>
                 ))}
                 <svg
-                    className={`${currentIndex === itemCount - 1 && disabled}`}
+                    className={`${currentIndex === itemCount - 1 && styles.disabled}`}
                     fill="currentColor"
                     height="16"
                     onClick={() => {

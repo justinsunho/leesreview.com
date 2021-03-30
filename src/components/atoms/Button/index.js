@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "gatsby";
-import { button, secondaryStyle } from "./styles.module.scss";
+import * as styles from "./styles.module.scss";
 
 const Button = ({ children, className, linkHref, onClick, secondary, style }) => {
     return linkHref ? (
         <Link
-            className={`${button} ${className} ${secondary && secondaryStyle}`}
+            className={`${styles.button} ${className} ${secondary && styles.secondary}`}
             onClick={onClick}
             onKeyDown={(e) => e.key === "Enter" && onClick}
             role={"button"}
@@ -17,7 +17,7 @@ const Button = ({ children, className, linkHref, onClick, secondary, style }) =>
         </Link>
     ) : (
         <div
-            className={`${button} ${className}  ${secondary && secondaryStyle}`}
+            className={`${styles.button} ${className}  ${secondary && styles.secondary}`}
             onClick={onClick}
             onKeyDown={(e) => e.key === "Enter" && onClick}
             role={"button"}

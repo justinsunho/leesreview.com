@@ -10,7 +10,7 @@ import {
     BottomSection,
 } from "components/organisms";
 import { MainLayout } from "components/layouts";
-import { pageGradient, methodBackgroundClassName, priceCardBackgroundClassName } from "./styles.module.scss";
+import * as styles from "./styles.module.scss";
 
 const SAT = ({ data }) => {
     const {
@@ -25,7 +25,7 @@ const SAT = ({ data }) => {
     } = pageEdges[0];
 
     return (
-        <MainLayout className={pageGradient}>
+        <MainLayout className={styles.pageGradient}>
             <Hero
                 description={hero.description}
                 headingText={hero.title}
@@ -44,7 +44,7 @@ const SAT = ({ data }) => {
                 subtitle={mediaSection.subtitle}
             />
             <MethodsContainer
-                backgroundClassName={methodBackgroundClassName}
+                backgroundClassName={styles.methodBackgroundClassName}
                 items={methodsList}
                 title={`Our Methods`}
             />
@@ -56,7 +56,7 @@ const SAT = ({ data }) => {
                 testimonyList={testimonyList}
             />
             <PriceCardContainer
-                backgroundClassName={priceCardBackgroundClassName}
+                backgroundClassName={styles.priceCardBackgroundClassName}
                 items={priceList}
                 title={`Our Prices`}
             />

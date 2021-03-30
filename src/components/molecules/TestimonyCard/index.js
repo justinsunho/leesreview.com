@@ -2,19 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { a, useSpring } from "react-spring";
 import { GatsbyImage } from "gatsby-plugin-image";
 import { SmallCaps } from "components/atoms";
-import {
-    container,
-    imageContainer,
-    imageStyle,
-    collegeStyle,
-    content,
-    closeButton,
-    titleStyle,
-    tagContainer,
-    tagStyle,
-    quote,
-    clickedStyle,
-} from "./styles.module.scss";
+import * as styles from "./styles.module.scss";
 
 const TestimonyCard = ({ body, className, college, color, image, tags, title, year }) => {
     const node = useRef();
@@ -43,15 +31,15 @@ const TestimonyCard = ({ body, className, college, color, image, tags, title, ye
     });
 
     return (
-        <div className={`${className} ${container} ${clicked && clickedStyle}`} ref={node}>
-            <div className={`${imageContainer}`}>
-                <GatsbyImage alt={`testimony-card-image-${title}`} className={`${imageStyle}`} image={image} />
-                <h5 className={`${collegeStyle}`} style={{ backgroundColor: `${color}` }}>
+        <div className={`${className} ${styles.container} ${clicked && styles.clicked}`} ref={node}>
+            <div className={`${styles.imageContainer}`}>
+                <GatsbyImage alt={`testimony-card-image-${title}`} className={`${styles.image}`} image={image} />
+                <h5 className={`${styles.college}`} style={{ backgroundColor: `${color}` }}>
                     {college}
                 </h5>
             </div>
 
-            <a.div className={`${content}`} style={maxHeightSpring}>
+            <a.div className={`${styles.content}`} style={maxHeightSpring}>
                 <div
                     onClick={() => {
                         setClick(0);
@@ -69,7 +57,7 @@ const TestimonyCard = ({ body, className, college, color, image, tags, title, ye
                     tabIndex={0}
                 >
                     <svg
-                        className={`${closeButton}`}
+                        className={`${styles.closeButton}`}
                         fill="none"
                         height="24"
                         viewBox="0 0 24 24"
@@ -83,14 +71,14 @@ const TestimonyCard = ({ body, className, college, color, image, tags, title, ye
                     </svg>
                 </div>
                 <h4 className={`${titleStyle}`}>{title}</h4>
-                <div className={`${tagContainer}`}>
+                <div className={`${styles.tagContainer}`}>
                     {tags.map((tag) => (
-                        <div className={`${tagStyle}`}>
+                        <div className={`${styles.tag}`} key={tag}>
                             <SmallCaps>{tag}</SmallCaps>
                         </div>
                     ))}
                 </div>
-                <p className={`${quote}`}>{body}</p>
+                <p className={`${styles.quote}`}>{body}</p>
                 <div>{year}</div>
             </a.div>
         </div>

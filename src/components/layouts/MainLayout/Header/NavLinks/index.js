@@ -1,14 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
 import { Button } from "components/atoms";
-import {
-    menuButtonContainer,
-    openStyle,
-    navLinkWrapper,
-    navLink,
-    activeLink,
-    contactButton,
-} from "./styles.module.scss";
+import * as styles from "./styles.module.scss";
 
 const NavLinks = () => {
     const [open, setOpen] = useState(0);
@@ -16,7 +9,7 @@ const NavLinks = () => {
     return (
         <>
             <div
-                className={`${menuButtonContainer} ${open && openStyle}`}
+                className={`${styles.menuButtonContainer} ${open && styles.open}`}
                 onClick={() => setOpen(!open)}
                 onKeyDown={(e) => e.key === "Enter" && setOpen(!open)}
                 role={`button`}
@@ -34,33 +27,33 @@ const NavLinks = () => {
                     <Button>menu</Button>
                 )}
             </div>
-            <ul className={`${navLinkWrapper} ${open && openStyle}`}>
-                <li className={navLink}>
-                    <Link activeClassName={activeLink} tabIndex={0} to="/SAT">
+            <ul className={`${styles.navLinkWrapper} ${open && styles.open}`}>
+                <li className={styles.navLink}>
+                    <Link activeClassName={styles.activeLink} tabIndex={0} to="/SAT">
                         SAT
                     </Link>
                 </li>
-                <li className={navLink}>
-                    <Link activeClassName={activeLink} tabIndex={0} to="/college-consulting">
+                <li className={styles.navLink}>
+                    <Link activeClassName={styles.activeLink} tabIndex={0} to="/college-consulting">
                         College Consulting
                     </Link>
                 </li>
-                <li className={navLink}>
-                    <Link activeClassName={activeLink} tabIndex={0} to="/classroom-prep">
+                <li className={styles.navLink}>
+                    <Link activeClassName={styles.activeLink} tabIndex={0} to="/classroom-prep">
                         Classroom Prep
                     </Link>
                 </li>
-                <li className={navLink}>
-                    <Link activeClassName={activeLink} tabIndex={0} to="/about">
+                <li className={styles.navLink}>
+                    <Link activeClassName={styles.activeLink} tabIndex={0} to="/about">
                         About Us
                     </Link>
                 </li>
-                <li className={navLink}>
-                    <Link activeClassName={activeLink} tabIndex={0} to="/schedule">
+                <li className={styles.navLink}>
+                    <Link activeClassName={styles.activeLink} tabIndex={0} to="/schedule">
                         Schedule
                     </Link>
                 </li>
-                <li className={contactButton}>
+                <li className={styles.contactButton}>
                     <Button linkHref="/contact" secondary={true} tabIndex={0}>
                         Contact
                     </Button>
