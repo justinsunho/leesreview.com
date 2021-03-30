@@ -14,7 +14,7 @@ const Tile = ({ icon, title, description, style, className, color, videoId }) =>
     return (
         <div className={`${className} ${tileContainer}`} style={{ ...style, borderLeft: `8px solid ${color}` }}>
             {videoId ? (
-                <EmbedVideo videoId={videoId} className={videoContainer} />
+                <EmbedVideo videoId={videoId} className={videoContainer} alt={title} />
             ) : (
                 icon && (
                     <div

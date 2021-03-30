@@ -21,11 +21,11 @@ const MediaSection = ({ image, subtitle, headingText, description, linkText, lin
 
     return (
         <div className={`section ${mediaSection}`}>
-            {ribbon && <Ribbon inView={inView} image={image} />}
+            {ribbon && <Ribbon inView={inView} image={image} alt={headingText} />}
             <div className={`row align-items-center ${mediaSectionTextWrapper}`} ref={ref}>
                 <div className={`col-md-6`}>
                     {/* <AnimatedImg image={image} style={imageSpring} color={"#3b7fa8"} /> */}
-                    {videoId && <EmbedVideo videoId={videoId} />}
+                    {videoId && <EmbedVideo videoId={videoId} title={headingText} />}
                 </div>
                 <div className={`col-md-6`}>
                     <TextBlock

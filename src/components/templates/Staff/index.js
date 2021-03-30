@@ -29,7 +29,7 @@ const Staff = ({ data }) => {
                     <div className={`col`}>
                         <GatsbyImage
                             image={image.childImageSharp.gatsbyImageData}
-                            alt="test"
+                            alt={`staff-picture-${title}`}
                             className={imageStyle}
                             style={{ display: "block" }}
                         />
