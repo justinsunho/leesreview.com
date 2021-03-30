@@ -5,18 +5,18 @@ import { enterAbove } from "utilities/springConfigs";
 import { textBlock, paragraph } from "./styles.module.scss";
 
 const TextBlock = ({
-    subtitle,
+    button,
+    children,
+    className,
+    darkMode,
+    description,
     headingTag,
     headingText,
-    description,
-    linkText,
-    linkHref,
-    button,
-    className,
     inView,
-    darkMode,
-    children,
+    linkHref,
+    linkText,
     primary,
+    subtitle,
 }) => {
     const Heading = a(headingTag);
     const AnimatedSmallCaps = a(SmallCaps);
@@ -30,7 +30,7 @@ const TextBlock = ({
 
     return (
         <a.div className={`${className} ${textBlock}`}>
-            <AnimatedSmallCaps style={{ ...trail[0] }} altColor={darkMode}>
+            <AnimatedSmallCaps altColor={darkMode} style={{ ...trail[0] }}>
                 {subtitle}
             </AnimatedSmallCaps>
 
@@ -44,7 +44,7 @@ const TextBlock = ({
                         {linkText}
                     </AnimatedButton>
                 ) : (
-                    <AnimatedCTALink linkHref={linkHref} style={{ ...trail[3] }} primary={primary}>
+                    <AnimatedCTALink linkHref={linkHref} primary={primary} style={{ ...trail[3] }}>
                         {linkText}
                     </AnimatedCTALink>
                 )

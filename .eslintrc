@@ -1,0 +1,26 @@
+{
+    "parser": "babel-eslint", // uses babel-eslint transforms
+    "settings": {
+        "react": {
+            "version": "detect" // detect react version
+        }
+    },
+    "env": {
+        "node": true // defines things like process.env when generating through node
+    },
+    "extends": [
+        "eslint:recommended", // use recommended configs
+        "plugin:react/recommended"
+    ],
+    "plugins": [
+        "sort-destructure-keys"
+    ],
+    "rules": {
+        "react/prop-types": 0,
+        "react/sort-comp": 1,
+        "react/sort-prop-types": 1,
+        "react/jsx-sort-props": 1,
+        "react/display-name": 0,
+        "sort-destructure-keys/sort-destructure-keys": 2
+    }
+}

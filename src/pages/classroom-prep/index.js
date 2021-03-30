@@ -6,46 +6,46 @@ import { backgroundClassCardContainer } from "./styles.module.scss";
 
 const ClassroomPrep = ({ data }) => {
     const {
-        page: { edges: pageEdges },
         classes: { edges: classEdges },
+        page: { edges: pageEdges },
     } = data;
 
     const {
         node: {
-            frontmatter: { hero, servicesList, mediaSection, signUp },
+            frontmatter: { hero, mediaSection, servicesList, signUp },
         },
     } = pageEdges[0];
 
     return (
         <MainLayout>
             <Hero
-                headingText={hero.title}
                 description={hero.description}
+                headingText={hero.title}
+                image={hero.image.childImageSharp.gatsbyImageData}
                 linkHref={hero.buttonLink}
                 linkText={hero.buttonText}
-                image={hero.image.childImageSharp.gatsbyImageData}
             />
-            <TileContainer title={`services`} items={servicesList} />
+            <TileContainer items={servicesList} title={`services`} />
             <MediaSection
-                image={mediaSection.image.childImageSharp.gatsbyImageData}
-                subtitle={mediaSection.subtitle}
-                headingText={mediaSection.title}
                 description={mediaSection.description}
-                linkText={mediaSection.linkText}
+                headingText={mediaSection.title}
+                image={mediaSection.image.childImageSharp.gatsbyImageData}
                 linkHref={mediaSection.linkHref}
+                linkText={mediaSection.linkText}
                 ribbon={true}
+                subtitle={mediaSection.subtitle}
             />
             <ClassCardContainer
-                title={`classes`}
                 backgroundClassName={backgroundClassCardContainer}
                 items={classEdges}
+                title={`classes`}
             />
             <BottomSection
-                title={signUp.title}
-                subtitle={signUp.subtitle}
-                description={signUp.description}
-                buttonText={signUp.buttonText}
                 buttonLink={signUp.buttonLink}
+                buttonText={signUp.buttonText}
+                description={signUp.description}
+                subtitle={signUp.subtitle}
+                title={signUp.title}
             />
         </MainLayout>
     );

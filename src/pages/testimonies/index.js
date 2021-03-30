@@ -29,42 +29,43 @@ const Testimonies = ({ data }) => {
 
 export default Testimonies;
 
-export const pageQuery = graphql`{
-  page: allMarkdownRemark(filter: {frontmatter: {title: {eq: "Testimonies"}}}) {
-    edges {
-      node {
-        frontmatter {
-          title
-          hero {
-            title
-            description
-            buttonText
-            buttonLink
-          }
-        }
-      }
-    }
-  }
-  testimonies: allMarkdownRemark(
-    filter: {fileAbsolutePath: {regex: "/content/testimonies/"}}
-    sort: {fields: frontmatter___year, order: DESC}
-  ) {
-    edges {
-      node {
-        frontmatter {
-          title
-          college
-          tags
-          year
-          image {
-            childImageSharp {
-              gatsbyImageData(layout: FULL_WIDTH)
+export const pageQuery = graphql`
+    {
+        page: allMarkdownRemark(filter: { frontmatter: { title: { eq: "Testimonies" } } }) {
+            edges {
+                node {
+                    frontmatter {
+                        title
+                        hero {
+                            title
+                            description
+                            buttonText
+                            buttonLink
+                        }
+                    }
+                }
             }
-          }
         }
-        rawMarkdownBody
-      }
+        testimonies: allMarkdownRemark(
+            filter: { fileAbsolutePath: { regex: "/content/testimonies/" } }
+            sort: { fields: frontmatter___year, order: DESC }
+        ) {
+            edges {
+                node {
+                    frontmatter {
+                        title
+                        college
+                        tags
+                        year
+                        image {
+                            childImageSharp {
+                                gatsbyImageData(layout: FULL_WIDTH)
+                            }
+                        }
+                    }
+                    rawMarkdownBody
+                }
+            }
+        }
     }
-  }
-}
 `;

@@ -27,7 +27,7 @@ const Header = () => {
     return (
         <header className={`${headerContainer} ${!isSticky ? sticky : ""}`} ref={ref}>
             <div className={`${header} container`}>
-                <Link to="/" className={logo}>
+                <Link className={logo} to="/">
                     <Logo />
                 </Link>
                 <NavLinks />

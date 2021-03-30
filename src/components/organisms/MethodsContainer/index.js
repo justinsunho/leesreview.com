@@ -8,13 +8,13 @@ const MethodsContainer = ({ backgroundClassName, items, title }) => {
         <SectionWrapper backgroundClassName={backgroundClassName} title={title}>
             {items.map((item, i) => (
                 <MethodItem
-                    title={item.title}
-                    index={i + 1}
-                    image={item.image.childImageSharp.gatsbyImageData}
-                    description={item.description}
-                    itemLength={items.length}
                     color={colorArray[i]}
+                    description={item.description}
+                    image={item.image.childImageSharp.gatsbyImageData}
+                    index={i + 1}
+                    itemLength={items.length}
                     key={item.title}
+                    title={item.title}
                 />
             ))}
         </SectionWrapper>

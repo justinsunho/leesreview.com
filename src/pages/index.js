@@ -12,43 +12,43 @@ const Index = ({ data }) => {
 
     const {
         node: {
-            frontmatter: { hero, classes, about, testimonies, location },
+            frontmatter: { about, classes, hero, location, testimonies },
         },
     } = pageEdges[0];
 
     return (
         <MainLayout className={pageGradient}>
             <HomeHeroSection
-                headingText={hero.title}
-                description={hero.description}
-                linkText={hero.buttonText}
-                linkHref={hero.buttonLink}
-                image={hero.image.childImageSharp.gatsbyImageData}
                 button
+                description={hero.description}
+                headingText={hero.title}
+                image={hero.image.childImageSharp.gatsbyImageData}
+                linkHref={hero.buttonLink}
+                linkText={hero.buttonText}
             />
             <LinkCardContainer
-                title={classes.title}
-                items={classes.classList}
-                linkText={classes.linkText}
-                linkHref={classes.linkHref}
                 backgroundClassName={linkCardBackground}
+                items={classes.classList}
+                linkHref={classes.linkHref}
+                linkText={classes.linkText}
+                title={classes.title}
             />
             <MediaSection
-                image={about.image.childImageSharp.gatsbyImageData}
-                subtitle={about.subtitle}
-                headingText={about.title}
                 description={about.description}
-                linkText={about.linkText}
+                headingText={about.title}
+                image={about.image.childImageSharp.gatsbyImageData}
                 linkHref={about.linkHref}
+                linkText={about.linkText}
                 ribbon={true}
+                subtitle={about.subtitle}
             />
             <TestimonySection
-                subtitle={testimonies.subtitle}
                 linkHref={testimonies.linkHref}
                 linkText={testimonies.linkText}
+                subtitle={testimonies.subtitle}
                 testimonyList={testimonyList}
             />
-            <LinkCardContainer subtitle={location.subtitle} title={location.title} items={location.locationList} />
+            <LinkCardContainer items={location.locationList} subtitle={location.subtitle} title={location.title} />
         </MainLayout>
     );
 };

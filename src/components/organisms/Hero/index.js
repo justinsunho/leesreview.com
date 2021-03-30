@@ -5,8 +5,8 @@ import { Image } from "components/atoms";
 import { TextBlock } from "components/molecules";
 import { enterLeft } from "utilities/springConfigs";
 
-const Hero = ({ headingText, description, linkText, linkHref, button, image, className }) => {
-    const { ref, inView } = useInView({
+const Hero = ({ button, className, description, headingText, image, linkHref, linkText }) => {
+    const { inView, ref } = useInView({
         threshold: 0.2,
         triggerOnce: true,
     });
@@ -21,15 +21,15 @@ const Hero = ({ headingText, description, linkText, linkHref, button, image, cla
         <div className={`section`} ref={ref}>
             <div className={` row align-items-center flex-md-row flex-column-reverse  ${className}`}>
                 <TextBlock
-                    className="col-md-6 col-lg-4 align-items-start"
-                    headingTag={"h1"}
-                    subtitle={"hero subtitle"}
-                    headingText={headingText}
-                    description={description}
-                    linkText={linkText}
-                    linkHref={linkHref}
                     button={button}
+                    className="col-md-6 col-lg-4 align-items-start"
+                    description={description}
+                    headingTag={"h1"}
+                    headingText={headingText}
                     inView={inView}
+                    linkHref={linkHref}
+                    linkText={linkText}
+                    subtitle={"hero subtitle"}
                 />
                 <div className={"col-md-6 col-lg-8"}>
                     <AnimatedImage image={image} style={imageSpring} />

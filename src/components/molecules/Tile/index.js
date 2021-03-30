@@ -1,20 +1,20 @@
 import React from "react";
 import { EmbedVideo } from "components/atoms";
 import {
-    tileContainer,
-    iconStyle,
     container,
-    heading,
     descriptionStyle,
-    videoContainer,
+    heading,
+    iconStyle,
+    tileContainer,
     topItem,
+    videoContainer,
 } from "./styles.module.scss";
 
-const Tile = ({ icon, title, description, style, className, color, videoId }) => {
+const Tile = ({ className, color, description, icon, style, title, videoId }) => {
     return (
         <div className={`${className} ${tileContainer}`} style={{ ...style, borderLeft: `8px solid ${color}` }}>
             {videoId ? (
-                <EmbedVideo videoId={videoId} className={videoContainer} alt={title} />
+                <EmbedVideo alt={title} className={videoContainer} videoId={videoId} />
             ) : (
                 icon && (
                     <div

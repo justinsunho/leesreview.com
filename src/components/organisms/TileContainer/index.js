@@ -6,8 +6,8 @@ import { enterAbove } from "utilities/springConfigs";
 import { colorArray } from "utilities/colorArray";
 import { tileBlockSection, tileWrapper, tileContainer } from "./styles.module.scss";
 
-const TileContainer = ({ backgroundClassName, className, title, items }) => {
-    const { ref, inView } = useInView({
+const TileContainer = ({ backgroundClassName, className, items, title }) => {
+    const { inView, ref } = useInView({
         threshold: 0.2,
         triggerOnce: true,
     });
@@ -30,20 +30,20 @@ const TileContainer = ({ backgroundClassName, className, title, items }) => {
 
     return (
         <SectionWrapper
-            title={title}
-            className={` ${tileBlockSection}`}
             backgroundClassName={`${backgroundClassName} ${className}`}
-            trailArray={textTrail}
+            className={` ${tileBlockSection}`}
             ref={ref}
+            title={title}
+            trailArray={textTrail}
         >
             <div className={`row ${tileContainer}`}>
                 {items.map((item, i) => (
                     <a.div className={`col-lg col-md-6 ${tileWrapper}`} key={i} style={tileTrail[i]}>
                         <Tile
-                            title={item.title}
-                            icon={item.icon && item.icon.code}
-                            description={item.description}
                             color={colorArray[i]}
+                            description={item.description}
+                            icon={item.icon && item.icon.code}
+                            title={item.title}
                             videoId={item.videoId && item.videoId}
                         />
                     </a.div>

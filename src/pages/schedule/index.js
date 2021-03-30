@@ -7,9 +7,9 @@ import { list, listItem, scheduleList } from "./styles.module.scss";
 
 const Schedule = ({ data }) => {
     const {
+        classes: { edges: classEdges },
         page: { edges: pageEdges },
         schedules: { edges: scheduleEdges },
-        classes: { edges: classEdges },
     } = data;
 
     const {
@@ -21,8 +21,8 @@ const Schedule = ({ data }) => {
     return (
         <MainLayout>
             <MediaHero
-                headingText={hero.title}
                 description={hero.description}
+                headingText={hero.title}
                 linkHref={hero.buttonLink}
                 linkText={hero.buttonText}
             >
@@ -43,16 +43,16 @@ const Schedule = ({ data }) => {
             </MediaHero>
             {scheduleEdges.map((edge) => (
                 <ScheduleSection
-                    key={edge.node.id}
-                    title={edge.node.frontmatter.title}
-                    subtitle={edge.node.frontmatter.subtitle}
                     description={edge.node.frontmatter.description}
-                    linkText={edge.node.frontmatter.linkText}
+                    key={edge.node.id}
                     linkHref={edge.node.frontmatter.linkHref}
+                    linkText={edge.node.frontmatter.linkText}
+                    subtitle={edge.node.frontmatter.subtitle}
                     table={edge.node.html}
+                    title={edge.node.frontmatter.title}
                 />
             ))}
-            <ClassCardContainer id="classroom-prep" title={`classes`} items={classEdges} />
+            <ClassCardContainer id="classroom-prep" items={classEdges} title={`classes`} />
         </MainLayout>
     );
 };

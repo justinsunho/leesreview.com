@@ -6,7 +6,7 @@ import { colorArray } from "utilities/colorArray";
 import SelectItem from "./SelectItem";
 import { mediaContainer, content, titleStyle, descriptionStyle } from "./styles.module.scss";
 
-const MediaSelectSection = ({ title, items }) => {
+const MediaSelectSection = ({ items, title }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const transitions = useTransition(items[currentIndex], (items) => items.title, {
@@ -21,11 +21,11 @@ const MediaSelectSection = ({ title, items }) => {
                 <div className={`col-lg-7`}>
                     {transitions.map(({ item, key, props }) => {
                         return (
-                            <a.div className={mediaContainer} style={props} key={key}>
+                            <a.div className={mediaContainer} key={key} style={props}>
                                 <Image
+                                    alt={title}
                                     color={colorArray[currentIndex]}
                                     image={item.image.childImageSharp.gatsbyImageData}
-                                    alt={title}
                                 />
                                 <div className={content}>
                                     <h4 className={titleStyle}>{item.title}</h4>
@@ -38,12 +38,12 @@ const MediaSelectSection = ({ title, items }) => {
                 <div className={`col-lg-5`}>
                     {items.map((item, i) => (
                         <SelectItem
+                            color={colorArray[i]}
+                            current={currentIndex === i}
+                            key={item.title}
                             onClick={() => {
                                 setCurrentIndex(i);
                             }}
-                            current={currentIndex === i}
-                            color={colorArray[i]}
-                            key={item.title}
                         >
                             {item.title}
                         </SelectItem>

@@ -3,7 +3,7 @@ import { a, useSpring } from "react-spring";
 import { GatsbyImage } from "gatsby-plugin-image";
 import { ribbonContainer, ribbon, ribbonImage, imageStyle } from "./styles.module.scss";
 
-const Ribbon = ({ inView, className, image, alt }) => {
+const Ribbon = ({ alt, className, image, inView }) => {
     const ribbonSpring = useSpring({
         from: {
             width: "0%",
@@ -20,9 +20,9 @@ const Ribbon = ({ inView, className, image, alt }) => {
             {image ? (
                 <a.div className={`${ribbonImage}`}>
                     <GatsbyImage
-                        image={image}
                         alt={`ribbon-image-${alt}`}
                         className={imageStyle}
+                        image={image}
                         style={{ position: "absolute" }}
                     />
                 </a.div>

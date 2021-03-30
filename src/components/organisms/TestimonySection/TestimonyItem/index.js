@@ -5,7 +5,7 @@ import { SmallCaps } from "components/atoms";
 import { testimonyItem, imageStyle, content, tagContainer, tagStyle } from "./styles.module.scss";
 import { enterAbove } from "utilities/springConfigs";
 
-const TestimonyItem = ({ image, college, tags, title, inView }) => {
+const TestimonyItem = ({ college, image, inView, tags, title }) => {
     const AnimatedImg = a(GatsbyImage);
 
     const trail = useTrail(5, {

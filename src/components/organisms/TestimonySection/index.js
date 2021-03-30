@@ -7,10 +7,10 @@ import CarouselContainer from "./CarouselContainer";
 import TestimonyItem from "./TestimonyItem";
 import { container, curve } from "./styles.module.scss";
 
-const TestimonySection = ({ subtitle, linkText, linkHref, testimonyList, curve }) => {
+const TestimonySection = ({ curve, linkHref, linkText, subtitle, testimonyList }) => {
     const [testimonyIndex, setTestimonyIndex] = useState(0);
 
-    const { ref, inView } = useInView({
+    const { inView, ref } = useInView({
         threshold: 0.2,
         triggerOnce: true,
     });
@@ -38,7 +38,7 @@ const TestimonySection = ({ subtitle, linkText, linkHref, testimonyList, curve }
                     <div className={`col-md-6`}>
                         <AnimatedSmallCaps style={trail[0]}>{subtitle}</AnimatedSmallCaps>
                         {transitions.map(({ item, key, props }) => (
-                            <animated.div style={{ ...props }} key={key}>
+                            <animated.div key={key} style={{ ...props }}>
                                 <BigQuote quote={item.node.rawMarkdownBody} />
                             </animated.div>
                         ))}
@@ -48,22 +48,22 @@ const TestimonySection = ({ subtitle, linkText, linkHref, testimonyList, curve }
                     </div>
                     <div className={`col-md-6`}>
                         <CarouselContainer
-                            testimonyList={testimonyList}
-                            itemCount={testimonyList.length}
                             currentIndex={testimonyIndex}
+                            itemCount={testimonyList.length}
                             setIndex={setTestimonyIndex}
+                            testimonyList={testimonyList}
                         >
                             {transitions.map(({ item, key, props }) => {
-                                const { title, tags, college, image } = item.node.frontmatter;
+                                const { college, image, tags, title } = item.node.frontmatter;
 
                                 return (
-                                    <animated.div style={{ ...props }} key={key}>
+                                    <animated.div key={key} style={{ ...props }}>
                                         <TestimonyItem
+                                            college={college}
                                             image={image}
+                                            inView={inView}
                                             tags={tags}
                                             title={title}
-                                            college={college}
-                                            inView={inView}
                                         />
                                     </animated.div>
                                 );
@@ -80,8 +80,8 @@ export default TestimonySection;
 
 const Curve = () => (
     <div className={curve}>
-        <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox={`0 0 1200 270`}>
-            <path opacity="0.1" d="M1211 205.999C938 -319.001 389 348 0.5 174.5V303.5H1211V205.999Z" fill="#265674" />
+        <svg fill="none" viewBox={`0 0 1200 270`} xmlns="http://www.w3.org/2000/svg">
+            <path d="M1211 205.999C938 -319.001 389 348 0.5 174.5V303.5H1211V205.999Z" fill="#265674" opacity="0.1" />
         </svg>
     </div>
 );

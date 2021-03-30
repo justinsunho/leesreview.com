@@ -10,31 +10,31 @@ const About = ({ data }) => {
 
     const {
         node: {
-            frontmatter: { hero, reason, students, staff },
+            frontmatter: { hero, reason, staff, students },
         },
     } = edges[0];
 
     return (
         <MainLayout>
             <Hero
-                headingText={hero.title}
-                description={hero.description}
-                linkText={hero.buttonText}
-                linkHref={hero.buttonLink}
                 button
+                description={hero.description}
+                headingText={hero.title}
                 image={hero.image.childImageSharp.gatsbyImageData}
+                linkHref={hero.buttonLink}
+                linkText={hero.buttonText}
             />
-            <MediaSelectSection title={reason.title} items={reason.reasonsList} />
+            <MediaSelectSection items={reason.reasonsList} title={reason.title} />
             <MediaSection
-                image={students.image.childImageSharp.gatsbyImageData}
-                subtitle={students.subtitle}
-                headingText={students.title}
                 description={students.description}
-                linkText={students.linkText}
+                headingText={students.title}
+                image={students.image.childImageSharp.gatsbyImageData}
                 linkHref={students.linkHref}
+                linkText={students.linkText}
                 ribbon
+                subtitle={students.subtitle}
             />
-            <LinkCardContainer title={staff.title} items={staff.staffList} />
+            <LinkCardContainer items={staff.staffList} title={staff.title} />
         </MainLayout>
     );
 };

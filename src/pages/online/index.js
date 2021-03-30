@@ -17,16 +17,16 @@ const Online = ({ data }) => {
 
     return (
         <MainLayout>
-            <MediaHero headingText={hero.title} description={hero.description}>
+            <MediaHero description={hero.description} headingText={hero.title}>
                 {hero.videoId && <EmbedVideo videoId={hero.videoId} />}
             </MediaHero>
-            <TileContainer title={`Online Services`} items={servicesList} />
+            <TileContainer items={servicesList} title={`Online Services`} />
             <BottomSection
-                title={signUp.title}
-                subtitle={signUp.subtitle}
-                description={signUp.description}
-                buttonText={signUp.buttonText}
                 buttonLink={signUp.buttonLink}
+                buttonText={signUp.buttonText}
+                description={signUp.description}
+                subtitle={signUp.subtitle}
+                title={signUp.title}
             />
         </MainLayout>
     );

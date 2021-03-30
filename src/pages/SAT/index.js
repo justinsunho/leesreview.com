@@ -20,52 +20,52 @@ const SAT = ({ data }) => {
 
     const {
         node: {
-            frontmatter: { hero, servicesList, mediaSection, methodsList, priceList, signUp },
+            frontmatter: { hero, mediaSection, methodsList, priceList, servicesList, signUp },
         },
     } = pageEdges[0];
 
     return (
         <MainLayout className={pageGradient}>
             <Hero
-                headingText={hero.title}
                 description={hero.description}
-                linkText={hero.buttonText}
-                linkHref={hero.buttonLink}
+                headingText={hero.title}
                 image={hero.image.childImageSharp.gatsbyImageData}
+                linkHref={hero.buttonLink}
+                linkText={hero.buttonText}
             />
-            <TileContainer title={`Our SAT Services`} items={servicesList} />
+            <TileContainer items={servicesList} title={`Our SAT Services`} />
             <MediaSection
-                image={mediaSection.image.childImageSharp.gatsbyImageData}
-                subtitle={mediaSection.subtitle}
-                headingText={mediaSection.title}
                 description={mediaSection.description}
-                linkText={mediaSection.linkText}
+                headingText={mediaSection.title}
+                image={mediaSection.image.childImageSharp.gatsbyImageData}
                 linkHref={mediaSection.linkHref}
+                linkText={mediaSection.linkText}
                 ribbon={true}
+                subtitle={mediaSection.subtitle}
             />
             <MethodsContainer
                 backgroundClassName={methodBackgroundClassName}
-                title={`Our Methods`}
                 items={methodsList}
+                title={`Our Methods`}
             />
             <TestimonySection
-                subtitle={`SAT Stories`}
+                curve
                 linkHref={`/testimonies`}
                 linkText={`See more stories`}
+                subtitle={`SAT Stories`}
                 testimonyList={testimonyList}
-                curve
             />
             <PriceCardContainer
                 backgroundClassName={priceCardBackgroundClassName}
-                title={`Our Prices`}
                 items={priceList}
+                title={`Our Prices`}
             />
             <BottomSection
-                title={signUp.title}
-                subtitle={signUp.subtitle}
-                description={signUp.description}
-                buttonText={signUp.buttonText}
                 buttonLink={signUp.buttonLink}
+                buttonText={signUp.buttonText}
+                description={signUp.description}
+                subtitle={signUp.subtitle}
+                title={signUp.title}
             />
         </MainLayout>
     );

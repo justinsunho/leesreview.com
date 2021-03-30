@@ -13,29 +13,29 @@ a {
 
     &.primaryStyle {
         background: linear-gradient(90deg, $accent-1 20%, $accent-2);
-        padding: 0.5rem;
         color: $neutral-9;
+        font-family: "Merriweather";
         font-size: 1.11rem;
         font-weight: 600;
-        font-family: "Merriweather";
         max-width: 40%;
-        text-shadow: 4px 4px 8px rgba($black, 0.4);
+        padding: 0.5rem;
         position: relative;
+        text-shadow: 4px 4px 8px rgba($black, 0.4);
 
         @media (max-width: $breakpoint-medium) {
             max-width: 80%;
         }
 
         &:after {
+            background-color: $accent-2;
             content: "";
             display: inline-block;
-            background-color: $accent-2;
-            width: 30px;
             height: 30px;
             position: absolute;
             right: -15px;
             top: 6px;
             transform: rotate(45deg);
+            width: 30px;
         }
 
         .primarySvg {

@@ -2,7 +2,7 @@ import React from "react";
 import { a, useSpring } from "react-spring";
 import { selectItemWrapper, selectItem } from "./styles.module.scss";
 
-const SelectItem = ({ children, onClick, className, color, current }) => {
+const SelectItem = ({ children, className, color, current, onClick }) => {
     const clickSpring = useSpring({
         to: {
             background: current
@@ -17,7 +17,7 @@ const SelectItem = ({ children, onClick, className, color, current }) => {
     });
 
     return (
-        <a.div className={`${selectItemWrapper}`} style={{ background: clickSpring.background }} onClick={onClick}>
+        <a.div className={`${selectItemWrapper}`} onClick={onClick} style={{ background: clickSpring.background }}>
             <a.h4 className={`${selectItem} ${className}`} style={{ paddingLeft: clickSpring.paddingLeft }}>
                 {children}
             </a.h4>

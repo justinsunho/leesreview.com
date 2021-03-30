@@ -5,7 +5,7 @@ import { ClassCard, SectionWrapper } from "components/molecules";
 import { colorArray } from "utilities/colorArray";
 import { expandedStyle, collapsed, expandButton } from "./styles.module.scss";
 
-const ClassCardContainer = ({ id, items, title, subtitle, backgroundClassName }) => {
+const ClassCardContainer = ({ backgroundClassName, id, items, subtitle, title }) => {
     const tags = [...new Set(items.map((item) => item.node.frontmatter.tag)), "All"];
 
     const [currentTag, setTag] = useState(0);
@@ -25,18 +25,18 @@ const ClassCardContainer = ({ id, items, title, subtitle, backgroundClassName })
     );
 
     return (
-        <SectionWrapper subtitle={subtitle} title={title} backgroundClassName={backgroundClassName} id={id && id}>
+        <SectionWrapper backgroundClassName={backgroundClassName} id={id && id} subtitle={subtitle} title={title}>
             <div className={`row align-items-center justify-content-center`}>
                 <div>Filter: </div>
                 {tags.map((tag, i) => (
                     <TitleSelector
-                        key={i}
                         className={`text-center`}
-                        title={tag}
                         color={colorArray[i]}
-                        onClick={setTag}
-                        index={i}
                         currentTag={currentTag}
+                        index={i}
+                        key={i}
+                        onClick={setTag}
+                        title={tag}
                     />
                 ))}
             </div>
@@ -56,15 +56,15 @@ const ClassCardContainer = ({ id, items, title, subtitle, backgroundClassName })
                 {transitions.map(({ item, key, props }) => (
                     <a.div className={`col-lg-3 col-md-6 col-sm-12 pb-md-5`} key={key} style={props}>
                         <ClassCard
-                            title={item.node.frontmatter.title}
+                            backgroundColor={colorArray[tags.indexOf(item.node.frontmatter.tag)]}
                             date={item.node.frontmatter.date}
-                            time={item.node.frontmatter.time}
                             description={item.node.html}
                             price={item.node.frontmatter.price}
                             tag={item.node.frontmatter.tag}
-                            teacherName={item.node.frontmatter.teacherName}
                             teacherLink={item.node.frontmatter.teacherLink}
-                            backgroundColor={colorArray[tags.indexOf(item.node.frontmatter.tag)]}
+                            teacherName={item.node.frontmatter.teacherName}
+                            time={item.node.frontmatter.time}
+                            title={item.node.frontmatter.title}
                         />
                     </a.div>
                 ))}

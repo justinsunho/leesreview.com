@@ -2,7 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import { MediaHero, TileContainer } from "components/organisms";
 import { MainLayout } from "components/layouts";
-import {iframeContainer} from './styles.module.scss'
+import { iframeContainer } from "./styles.module.scss";
 
 const Contact = ({ data }) => {
     const {
@@ -11,16 +11,16 @@ const Contact = ({ data }) => {
 
     const {
         node: {
-            frontmatter: { hero, business },
+            frontmatter: { business, hero },
         },
     } = edges[0];
 
     return (
         <MainLayout>
-            <MediaHero headingText={hero.title} description={hero.description} ribbon>
+            <MediaHero description={hero.description} headingText={hero.title} ribbon>
                 <div className={iframeContainer} dangerouslySetInnerHTML={{ __html: hero.form.code }} />
             </MediaHero>
-            <TileContainer title={business.title} items={business.businessInfoList} />
+            <TileContainer items={business.businessInfoList} title={business.title} />
         </MainLayout>
     );
 };

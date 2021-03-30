@@ -10,7 +10,7 @@ import {
     priceStyle,
 } from "./styles.module.scss";
 
-const ClassCard = ({ title, date, time, description, price, teacherName, teacherLink, backgroundColor }) => {
+const ClassCard = ({ backgroundColor, date, description, price, teacherLink, teacherName, time, title }) => {
     return (
         <div className={`${classCardContainer}`}>
             <div className={`${classCardWrapper}`}>

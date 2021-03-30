@@ -20,52 +20,52 @@ const CollegeConsulting = ({ data }) => {
 
     const {
         node: {
-            frontmatter: { hero, servicesList, mediaSection, methodsList, priceList, testimonies, signUp },
+            frontmatter: { hero, mediaSection, methodsList, priceList, servicesList, signUp, testimonies },
         },
     } = pageEdges[0];
 
     return (
         <MainLayout>
             <Hero
-                headingText={hero.title}
                 description={hero.description}
-                linkText={hero.buttonText}
-                linkHref={hero.buttonLink}
+                headingText={hero.title}
                 image={hero.image.childImageSharp.gatsbyImageData}
+                linkHref={hero.buttonLink}
+                linkText={hero.buttonText}
             />
-            <TileContainer title={`Our College Consulting`} items={servicesList} />
+            <TileContainer items={servicesList} title={`Our College Consulting`} />
             <MediaSection
-                image={mediaSection.image.childImageSharp.gatsbyImageData}
-                subtitle={mediaSection.subtitle}
-                headingText={mediaSection.title}
                 description={mediaSection.description}
-                linkText={mediaSection.linkText}
+                headingText={mediaSection.title}
+                image={mediaSection.image.childImageSharp.gatsbyImageData}
                 linkHref={mediaSection.linkHref}
+                linkText={mediaSection.linkText}
                 ribbon={true}
+                subtitle={mediaSection.subtitle}
             />
             <MethodsContainer
                 backgroundClassName={methodBackgroundClassName}
-                title={`Our Methods`}
                 items={methodsList}
+                title={`Our Methods`}
             />
             <TestimonySection
-                subtitle={testimonies.subtitle}
+                curve
                 linkHref={testimonies.linkHref}
                 linkText={testimonies.linkText}
+                subtitle={testimonies.subtitle}
                 testimonyList={testimonyList}
-                curve
             />
             <PriceCardContainer
                 backgroundClassName={priceCardBackgroundClassName}
-                title={`Our Prices`}
                 items={priceList}
+                title={`Our Prices`}
             />
             <BottomSection
-                title={signUp.title}
-                subtitle={signUp.subtitle}
-                description={signUp.description}
-                buttonText={signUp.buttonText}
                 buttonLink={signUp.buttonLink}
+                buttonText={signUp.buttonText}
+                description={signUp.description}
+                subtitle={signUp.subtitle}
+                title={signUp.title}
             />
         </MainLayout>
     );

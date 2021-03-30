@@ -12,7 +12,7 @@ import {
     buttonWrapper,
 } from "./styles.module.scss";
 
-const BottomSection = ({ title, subtitle, description, buttonText, buttonLink }) => {
+const BottomSection = ({ buttonLink, buttonText, description, subtitle, title }) => {
     return (
         <div className={`section ${section}`}>
             <div className={`${bottomSectionWrapper}`}>

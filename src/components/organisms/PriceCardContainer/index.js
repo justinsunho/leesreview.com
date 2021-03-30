@@ -5,7 +5,7 @@ import { SectionWrapper, ClassCard } from "components/molecules";
 import { enterAbove } from "utilities/springConfigs";
 
 const PriceCardContainer = ({ backgroundClassName, items, title }) => {
-    const { ref, inView } = useInView({
+    const { inView, ref } = useInView({
         threshold: 0.2,
         triggerOnce: true,
     });
@@ -27,11 +27,11 @@ const PriceCardContainer = ({ backgroundClassName, items, title }) => {
     useChain(inView ? [textRef, cardRef] : []);
 
     return (
-        <SectionWrapper title={title} backgroundClassName={backgroundClassName} trailArray={textTrail} ref={ref}>
+        <SectionWrapper backgroundClassName={backgroundClassName} ref={ref} title={title} trailArray={textTrail}>
             <div className={`row`}>
                 {items.map((item, i) => (
-                    <a.div className={`col-md pb-5`} style={cardTrail[i]} key={item.title}>
-                        <ClassCard title={item.title} date={``} description={item.description} price={item.price} />
+                    <a.div className={`col-md pb-5`} key={item.title} style={cardTrail[i]}>
+                        <ClassCard date={``} description={item.description} price={item.price} title={item.title} />
                     </a.div>
                 ))}
             </div>

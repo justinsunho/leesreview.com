@@ -18,12 +18,12 @@ const NavLinks = () => {
             <div
                 className={`${menuButtonContainer} ${open && openStyle}`}
                 onClick={() => setOpen(!open)}
-                role={`button`}
                 onKeyDown={(e) => e.key === "Enter" && setOpen(!open)}
+                role={`button`}
                 tabIndex={0}
             >
                 {open ? (
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
                             fill="currentColor"
@@ -36,27 +36,27 @@ const NavLinks = () => {
             </div>
             <ul className={`${navLinkWrapper} ${open && openStyle}`}>
                 <li className={navLink}>
-                    <Link activeClassName={activeLink} to="/SAT" tabIndex={0}>
+                    <Link activeClassName={activeLink} tabIndex={0} to="/SAT">
                         SAT
                     </Link>
                 </li>
                 <li className={navLink}>
-                    <Link activeClassName={activeLink} to="/college-consulting" tabIndex={0}>
+                    <Link activeClassName={activeLink} tabIndex={0} to="/college-consulting">
                         College Consulting
                     </Link>
                 </li>
                 <li className={navLink}>
-                    <Link activeClassName={activeLink} to="/classroom-prep" tabIndex={0}>
+                    <Link activeClassName={activeLink} tabIndex={0} to="/classroom-prep">
                         Classroom Prep
                     </Link>
                 </li>
                 <li className={navLink}>
-                    <Link activeClassName={activeLink} to="/about" tabIndex={0}>
+                    <Link activeClassName={activeLink} tabIndex={0} to="/about">
                         About Us
                     </Link>
                 </li>
                 <li className={navLink}>
-                    <Link activeClassName={activeLink} to="/schedule" tabIndex={0}>
+                    <Link activeClassName={activeLink} tabIndex={0} to="/schedule">
                         Schedule
                     </Link>
                 </li>

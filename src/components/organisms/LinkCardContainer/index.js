@@ -6,8 +6,8 @@ import { enterAbove } from "utilities/springConfigs";
 import { colorArray } from "utilities/colorArray";
 import { cardRow } from "./styles.module.scss";
 
-const LinkCardContainer = ({ subtitle, title, items, linkText, linkHref, backgroundClassName }) => {
-    const { ref, inView } = useInView({
+const LinkCardContainer = ({ backgroundClassName, items, linkHref, linkText, subtitle, title }) => {
+    const { inView, ref } = useInView({
         threshold: 0.2,
         triggerOnce: true,
     });
@@ -30,25 +30,25 @@ const LinkCardContainer = ({ subtitle, title, items, linkText, linkHref, backgro
 
     return (
         <SectionWrapper
+            className={`${backgroundClassName}`}
+            linkHref={linkHref}
+            linkText={linkText}
+            ref={ref}
             subtitle={subtitle}
             title={title}
-            linkText={linkText}
-            linkHref={linkHref}
-            className={`${backgroundClassName}`}
             trailArray={textTrail}
-            ref={ref}
         >
             <div className={`row ${cardRow}`}>
                 {items.map((item, i) => (
                     <a.div className={`col-lg-${12 / items.length} col-md-6`} key={item.title} style={cardTrail[i]}>
                         <LinkCard
                             color={colorArray[i]}
-                            title={item.title}
-                            subtitle={item.subtitle}
-                            image={item.image && item.image.childImageSharp.gatsbyImageData}
                             description={item.description}
-                            linkText={item.linkText}
+                            image={item.image && item.image.childImageSharp.gatsbyImageData}
                             linkHref={item.linkHref}
+                            linkText={item.linkText}
+                            subtitle={item.subtitle}
+                            title={item.title}
                         />
                     </a.div>
                 ))}

@@ -2,16 +2,16 @@ import React from "react";
 import { SectionWrapper } from "components/molecules";
 import { tableContainer } from "./styles.module.scss";
 
-const ScheduleSection = ({ title, subtitle, description, linkText, linkHref, table }) => {
+const ScheduleSection = ({ description, linkHref, linkText, subtitle, table, title }) => {
     return (
         <SectionWrapper
-            title={title}
-            subtitle={subtitle}
             description={description}
-            linkText={linkText}
-            linkHref={linkHref}
-            left={true}
             id={title}
+            left={true}
+            linkHref={linkHref}
+            linkText={linkText}
+            subtitle={subtitle}
+            title={title}
         >
             <div className={tableContainer} dangerouslySetInnerHTML={{ __html: table }} />
         </SectionWrapper>

@@ -4,7 +4,7 @@ import { a, useSpring } from "react-spring";
 import { CTALink, SmallCaps } from "components/atoms";
 import { card, imageStyle, content, heading, descriptionStyle, ctaLink } from "./styles.module.scss";
 
-const LinkCard = ({ title, className, image, subtitle, description, linkText, linkHref, style, color }) => {
+const LinkCard = ({ className, color, description, image, linkHref, linkText, style, subtitle, title }) => {
     const [spring, set] = useSpring(() => ({
         transform: "translateY(0px)",
         config: {
@@ -18,21 +18,21 @@ const LinkCard = ({ title, className, image, subtitle, description, linkText, li
 
     return (
         <a.a
-            href={linkHref}
             className={`${card} ${className}`}
-            style={{ ...style, transform: spring.transform }}
+            href={linkHref}
             onMouseEnter={() => {
                 set({ transform: "translateY(-8px)" });
             }}
             onMouseLeave={() => {
                 set({ transform: "translateY(0px)" });
             }}
+            style={{ ...style, transform: spring.transform }}
         >
             {image && (
                 <GatsbyImage
                     alt={`card-image-${title}`}
-                    image={{ ...image, aspectRatio: 1 }}
                     className={`${imageStyle}`}
+                    image={{ ...image, aspectRatio: 1 }}
                 />
             )}
 

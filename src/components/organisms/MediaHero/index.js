@@ -4,24 +4,24 @@ import { Ribbon } from "components/atoms";
 import { TextBlock, Info } from "components/molecules";
 import { heroContainer, ribbonStyle, textBlock, info, rightSection } from "./styles.module.scss";
 
-const MediaHero = ({ headingText, description, subtitle, ribbon, children }) => {
-    const { ref, inView } = useInView({
+const MediaHero = ({ children, description, headingText, ribbon, subtitle }) => {
+    const { inView, ref } = useInView({
         threshold: 0,
         triggerOnce: true,
     });
 
     return (
         <div className={`section ${heroContainer}`} ref={ref}>
-            {ribbon && <Ribbon inView={inView} className={ribbonStyle} alt={headingText} />}
+            {ribbon && <Ribbon alt={headingText} className={ribbonStyle} inView={inView} />}
             <div className={` row align-items-start`}>
                 <TextBlock
                     className={`col-md-6 ${textBlock}`}
-                    subtitle={subtitle}
+                    darkMode={ribbon && true}
+                    description={description}
                     headingTag={"h1"}
                     headingText={headingText}
-                    description={description}
                     inView={inView}
-                    darkMode={ribbon && true}
+                    subtitle={subtitle}
                 >
                     <Info smallCapsClass={info} />
                 </TextBlock>

@@ -16,7 +16,7 @@ import {
     clickedStyle,
 } from "./styles.module.scss";
 
-const TestimonyCard = ({ title, college, tags, body, image, className, color, year }) => {
+const TestimonyCard = ({ body, className, college, color, image, tags, title, year }) => {
     const node = useRef();
     const [clicked, setClick] = useState(0);
 
@@ -45,7 +45,7 @@ const TestimonyCard = ({ title, college, tags, body, image, className, color, ye
     return (
         <div className={`${className} ${container} ${clicked && clickedStyle}`} ref={node}>
             <div className={`${imageContainer}`}>
-                <GatsbyImage alt={`testimony-card-image-${title}`} image={image} className={`${imageStyle}`} />
+                <GatsbyImage alt={`testimony-card-image-${title}`} className={`${imageStyle}`} image={image} />
                 <h5 className={`${collegeStyle}`} style={{ backgroundColor: `${color}` }}>
                     {college}
                 </h5>
@@ -69,12 +69,12 @@ const TestimonyCard = ({ title, college, tags, body, image, className, color, ye
                     tabIndex={0}
                 >
                     <svg
-                        width="24"
+                        className={`${closeButton}`}
+                        fill="none"
                         height="24"
                         viewBox="0 0 24 24"
-                        fill="none"
+                        width="24"
                         xmlns="http://www.w3.org/2000/svg"
-                        className={`${closeButton}`}
                     >
                         <path
                             d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"

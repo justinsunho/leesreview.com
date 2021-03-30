@@ -6,22 +6,22 @@ import { ctaRow } from "./styles.module.scss";
 const SectionWrapper = React.forwardRef(
     (
         {
-            title,
-            subtitle,
+            backgroundClassName,
             children,
             className,
-            trailArray,
-            linkText,
-            linkHref,
             description,
-            left,
-            backgroundClassName,
             id,
+            left,
+            linkHref,
+            linkText,
+            subtitle,
+            title,
+            trailArray,
         },
         ref
     ) => {
         return (
-            <div className={`section ${className}`} ref={ref} id={id}>
+            <div className={`section ${className}`} id={id} ref={ref}>
                 <div className={backgroundClassName}>
                     {subtitle && (
                         <a.div className={`row`} style={trailArray && trailArray[0]}>
@@ -43,7 +43,7 @@ const SectionWrapper = React.forwardRef(
                     {children}
                     {linkText && (
                         <a.div className={`row ${ctaRow}`} style={trailArray && trailArray[2]}>
-                            <CTALink linkHref={linkHref} className={`${!left && "text-center"} col`}>
+                            <CTALink className={`${!left && "text-center"} col`} linkHref={linkHref}>
                                 {linkText}
                             </CTALink>
                         </a.div>
