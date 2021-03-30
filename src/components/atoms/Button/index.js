@@ -9,11 +9,21 @@ const Button = ({ className, children, linkHref, onClick, style, secondary }) =>
             to={linkHref}
             style={style}
             onClick={onClick}
+            role={"button"}
+            tabIndex={0}
+            onKeyDown={(e) => e.key === 13 && onClick}
         >
             {children}
         </Link>
     ) : (
-        <div className={`${button} ${className}  ${secondary && secondaryStyle}`} style={style} onClick={onClick}>
+        <div
+            className={`${button} ${className}  ${secondary && secondaryStyle}`}
+            style={style}
+            onClick={onClick}
+            role={"button"}
+            tabIndex={0}
+            onKeyDown={(e) => e.key === 13 && onClick}
+        >
             {children}
         </div>
     );

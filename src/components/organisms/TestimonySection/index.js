@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useInView } from "react-intersection-observer";
-import { useTransition, animated, useTrail, useSpring } from "react-spring";
+import { useTransition, animated, useTrail } from "react-spring";
 import { SmallCaps, CTALink } from "components/atoms";
 import BigQuote from "./BigQuote";
 import CarouselContainer from "./CarouselContainer";

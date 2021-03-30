@@ -40,7 +40,7 @@ const TestimonyCard = ({ title, college, tags, body, image, className, color, ye
         return () => {
             document.removeEventListener("mousedown", handleClick);
         };
-    }, [handleClick]);
+    });
 
     return (
         <div className={`${className} ${container} ${clicked && clickedStyle}`} ref={node}>
@@ -59,7 +59,14 @@ const TestimonyCard = ({ title, college, tags, body, image, className, color, ye
                             maxHeight: "25rem",
                         });
                     }}
-                    role={`dialog`}
+                    onKeyDown={(e) => {
+                        e.key === 13 && setClick(0);
+                        setMaxHeightSpring({
+                            maxHeight: "25rem",
+                        });
+                    }}
+                    role={`button`}
+                    tabIndex={0}
                 >
                     <svg
                         width="24"

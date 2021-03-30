@@ -76,6 +76,9 @@ const ClassCardContainer = ({ id, items, title, subtitle, backgroundClassName })
                         onClick={() => {
                             setExpanded(!expanded);
                         }}
+                        onKeyDown={(e) => e.key === 13 && setExpanded(!expanded)}
+                        role={"button"}
+                        tabIndex={0}
                     >
                         {expanded ? "Collapse" : "Show More"}
                     </div>

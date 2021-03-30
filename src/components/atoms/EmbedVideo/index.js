@@ -5,7 +5,13 @@ const EmbedVideo = ({ videoId, className, alt }) => {
     const [playVideo, setPlayVideo] = useState(0);
 
     return (
-        <div className={`${videoContainer} ${className}`} onClick={() => setPlayVideo(1)}>
+        <div
+            className={`${videoContainer} ${className}`}
+            onClick={() => setPlayVideo(1)}
+            role={"button"}
+            tabIndex={0}
+            onKeyDown={(e) => e.key === 13 && setPlayVideo(1)}
+        >
             {playVideo ? (
                 <iframe
                     className={youtubeFrame}

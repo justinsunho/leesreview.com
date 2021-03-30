@@ -19,6 +19,8 @@ const NavLinks = () => {
                 className={`${menuButtonContainer} ${open && openStyle}`}
                 onClick={() => setOpen(!open)}
                 role={`button`}
+                onKeyDown={(e) => e.key === 13 && setOpen(!open)}
+                tabIndex={0}
             >
                 {open ? (
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -34,32 +36,32 @@ const NavLinks = () => {
             </div>
             <ul className={`${navLinkWrapper} ${open && openStyle}`}>
                 <li className={navLink}>
-                    <Link activeClassName={activeLink} to="/SAT">
+                    <Link activeClassName={activeLink} to="/SAT" tabIndex={0}>
                         SAT
                     </Link>
                 </li>
                 <li className={navLink}>
-                    <Link activeClassName={activeLink} to="/college-consulting">
+                    <Link activeClassName={activeLink} to="/college-consulting" tabIndex={0}>
                         College Consulting
                     </Link>
                 </li>
                 <li className={navLink}>
-                    <Link activeClassName={activeLink} to="/classroom-prep">
+                    <Link activeClassName={activeLink} to="/classroom-prep" tabIndex={0}>
                         Classroom Prep
                     </Link>
                 </li>
                 <li className={navLink}>
-                    <Link activeClassName={activeLink} to="/about">
+                    <Link activeClassName={activeLink} to="/about" tabIndex={0}>
                         About Us
                     </Link>
                 </li>
                 <li className={navLink}>
-                    <Link activeClassName={activeLink} to="/schedule">
+                    <Link activeClassName={activeLink} to="/schedule" tabIndex={0}>
                         Schedule
                     </Link>
                 </li>
                 <li className={contactButton}>
-                    <Button linkHref="/contact" secondary={true}>
+                    <Button linkHref="/contact" secondary={true} tabIndex={0}>
                         Contact
                     </Button>
                 </li>
