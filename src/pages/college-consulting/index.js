@@ -104,7 +104,6 @@ export const pageQuery = graphql`
                             description
                             linkText
                             linkHref
-                            videoId
                             image {
                                 childImageSharp {
                                     gatsbyImageData(layout: FULL_WIDTH)

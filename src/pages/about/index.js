@@ -82,7 +82,6 @@ export const pageQuery = graphql`
                             subtitle
                             linkText
                             linkHref
-                            videoId
                         }
                         staff {
                             title
