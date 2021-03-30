@@ -13,13 +13,13 @@
     .selectItem {
         border-radius: 8px;
         padding: 0.5rem 1rem;
-        box-shadow: $elevation1;
+        box-shadow: $elevation-1;
         margin-bottom: 1rem;
         position: relative;
         transition: 0.3s ease-in-out;
 
         &:hover {
-            box-shadow: $elevation3;
+            box-shadow: $elevation-3;
             transition: 0.3s ease-in-out;
         }
 

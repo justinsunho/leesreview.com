@@ -3,12 +3,12 @@
 .videoContainer {
     border-radius: 1rem;
     overflow: hidden;
-    box-shadow: $elevation1;
+    box-shadow: $elevation-1;
     padding-top: 56.25%;
     position: relative;
 
     &:hover {
-        box-shadow: $elevation3;
+        box-shadow: $elevation-3;
 
         .playButton {
             background-color: $primary-2;

@@ -10,13 +10,13 @@
     &.sticky {
         background-color: $white;
         position: fixed;
-        box-shadow: $elevation1;
+        box-shadow: $elevation-1;
     }
 
     @media (max-width: $breakpoint-large) {
         background-color: $white;
         position: fixed;
-        box-shadow: $elevation1;
+        box-shadow: $elevation-1;
     }
 }
 

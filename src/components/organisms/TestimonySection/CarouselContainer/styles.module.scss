@@ -3,7 +3,7 @@
 .testimonyCarousel {
     max-width: 21.75rem;
     margin: 0 auto;
-    box-shadow: $elevation1;
+    box-shadow: $elevation-1;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -11,13 +11,13 @@
     background-color: $white;
 
     &:hover {
-        box-shadow: $elevation3;
+        box-shadow: $elevation-3;
     }
 
     .controls {
         display: flex;
         align-items: center;
-        color: $neutral-600;
+        color: $neutral-6;
 
         .current {
             color: $primary-1;
@@ -29,7 +29,7 @@
             }
 
             &.disabled {
-                color: $neutral-200;
+                color: $neutral-2;
                 pointer-events: none;
             }
         }

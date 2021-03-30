@@ -5,7 +5,7 @@
 }
 
 .bottomSectionWrapper {
-    background: linear-gradient(180deg, transparent 50%, $neutral-900 50%);
+    background: linear-gradient(180deg, transparent 50%, $neutral-9 50%);
     margin: 0 -100rem;
     padding-left: 101rem;
     padding-right: 101rem;
@@ -14,7 +14,7 @@
         background: #fff;
         border-radius: 0.5rem;
         background-color: $primary-1;
-        box-shadow: $elevation3;
+        box-shadow: $elevation-3;
     }
 
     .textWrapper {

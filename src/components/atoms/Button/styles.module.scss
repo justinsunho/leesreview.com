@@ -2,14 +2,14 @@
 
 .button {
     border-radius: 8px;
-    box-shadow: $elevation1;
+    box-shadow: $elevation-1;
     color: #fff;
     display: inline-block;
     padding: 0.5rem 1rem;
     transform: translateY(0);
     transition: all 0.2s ease-in-out;
     background-color: $primary-1;
-    
+
     &.secondaryStyle {
         background-color: $accent-1;
 
@@ -17,10 +17,10 @@
             background-color: $accent-2;
         }
     }
-    
+
     &:hover {
         background-color: $primary-2;
-        box-shadow: $elevation3;
+        box-shadow: $elevation-3;
         color: #fff;
         transform: translateY(-$translateY);
         transition: all 0.2s ease-in-out;

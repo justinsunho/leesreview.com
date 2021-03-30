@@ -3,14 +3,14 @@
 .card {
     display: flex;
     flex-direction: column;
-    box-shadow: $elevation1;
+    box-shadow: $elevation-1;
     height: 100%;
     background-color: $white;
     transition: box-shadow 0.3s ease-in-out;
     border-radius: 1rem;
 
     &:hover {
-        box-shadow: $elevation3;
+        box-shadow: $elevation-3;
         transition: box-shadow 0.3s ease-in-out;
     }
 
