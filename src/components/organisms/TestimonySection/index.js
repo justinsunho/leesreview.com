@@ -27,23 +27,12 @@ const TestimonySection = ({ subtitle, linkText, linkHref, testimonyList, curve }
         config: { mass: 15, tension: 2000, friction: 200 },
     });
 
-    const curveSpring = useSpring({
-        from: {
-            x: 0,
-        },
-        to: {
-            x: inView ? 1200 : 0,
-        },
-        config: { mass: 15, tension: 2000, friction: 200 },
-    });
-
     const AnimatedCTALink = animated(CTALink);
     const AnimatedSmallCaps = animated(SmallCaps);
-    const AnimatedCurve = animated(Curve);
 
     return (
         <div className={` ${container}`} ref={ref}>
-            {curve && <AnimatedCurve viewBoxHeight={curveSpring.x} />}
+            {curve && <Curve />}
             <div className={`section`}>
                 <div className={`row align-items-start flex-column-reverse flex-md-row`}>
                     <div className={`col-md-6`}>
@@ -89,9 +78,9 @@ const TestimonySection = ({ subtitle, linkText, linkHref, testimonyList, curve }
 
 export default TestimonySection;
 
-const Curve = ({ viewBoxHeight }) => (
+const Curve = () => (
     <div className={curve}>
-        <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox={`0 0 ${viewBoxHeight} 270`}>
+        <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox={`0 0 1200 270`}>
             <path opacity="0.1" d="M1211 205.999C938 -319.001 389 348 0.5 174.5V303.5H1211V205.999Z" fill="#265674" />
         </svg>
     </div>
