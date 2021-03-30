@@ -20,8 +20,8 @@
         border-radius: 2rem;
 
         @media (max-width: $breakpoint-medium) {
-            width: calc(100% - 2rem);
-            left: 1rem;
+            width: calc(100% - 4rem);
+            left: 2rem;
         }
     }
 }

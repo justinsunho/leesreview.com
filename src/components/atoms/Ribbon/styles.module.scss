@@ -1,10 +1,12 @@
 @import "theme/variables";
 
+$rotation: 4deg;
+
 .ribbonContainer {
     height: 100%;
     position: absolute;
     top: 15%;
-    transform: rotate(-5deg);
+    transform: rotate(-$rotation);
     width: 100%;
     z-index: 0;
 }
@@ -29,7 +31,7 @@
 }
 
 .imageStyle {
-    transform: rotate(5deg);
+    transform: rotate($rotation);
     z-index: -1;
     height: 140%;
     width: 100%;

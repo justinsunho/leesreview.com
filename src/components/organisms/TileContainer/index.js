@@ -4,7 +4,7 @@ import { a, useTrail, useChain } from "react-spring";
 import { Tile, SectionWrapper } from "components/molecules";
 import { enterAbove } from "utilities/springConfigs";
 import { colorArray } from "utilities/colorArray";
-import { tileBlockSection, tileWrapper } from "./styles.module.scss";
+import { tileBlockSection, tileWrapper, tileContainer } from "./styles.module.scss";
 
 const TileContainer = ({ backgroundClassName, className, title, items }) => {
     const { ref, inView } = useInView({
@@ -36,7 +36,7 @@ const TileContainer = ({ backgroundClassName, className, title, items }) => {
             trailArray={textTrail}
             ref={ref}
         >
-            <div className={`row`}>
+            <div className={`row ${tileContainer}`}>
                 {items.map((item, i) => (
                     <a.div className={`col-lg col-md-6 ${tileWrapper}`} key={i} style={tileTrail[i]}>
                         <Tile
