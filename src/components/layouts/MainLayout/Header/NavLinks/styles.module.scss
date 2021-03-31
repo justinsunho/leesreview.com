@@ -25,6 +25,14 @@
         }
     }
 
+    @media (min-width: $breakpoint-large + 1) {
+        &.darkMode .navLink {
+            a {
+                color: #fff;
+            }
+        }
+    }
+
     @media (max-width: $breakpoint-large) {
         flex-direction: column;
         flex-basis: 100%;

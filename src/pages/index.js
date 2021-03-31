@@ -17,7 +17,7 @@ const Index = ({ data }) => {
     } = pageEdges[0];
 
     return (
-        <MainLayout className={styles.pageGradient}>
+        <MainLayout bannerDarkMode className={styles.pageGradient}>
             <HomeHeroSection
                 button
                 description={hero.description}

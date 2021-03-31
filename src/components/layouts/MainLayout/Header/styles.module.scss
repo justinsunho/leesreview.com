@@ -18,6 +18,20 @@
         position: fixed;
         box-shadow: $elevation-1;
     }
+
+    @media (min-width: $breakpoint-large + 1) {
+        &.darkMode {
+            .logo {
+                svg {
+                    color: #fff;
+                }
+            }
+
+            .infoDarkMode {
+                color: #fff;
+            }
+        }
+    }
 }
 
 .header {
@@ -26,6 +40,12 @@
     align-items: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
+
+    .logo {
+        svg {
+            color: #333;
+        }
+    }
 
     @media (max-width: $breakpoint-large) {
         flex-wrap: wrap;

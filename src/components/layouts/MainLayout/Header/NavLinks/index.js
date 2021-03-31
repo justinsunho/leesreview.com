@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import { Button } from "components/atoms";
 import * as styles from "./styles.module.scss";
 
-const NavLinks = () => {
+const NavLinks = ({ darkMode }) => {
     const [open, setOpen] = useState(0);
 
     return (
@@ -27,7 +27,7 @@ const NavLinks = () => {
                     <Button secondary>menu</Button>
                 )}
             </div>
-            <ul className={`${styles.navLinkWrapper} ${open && styles.open}`}>
+            <ul className={`${styles.navLinkWrapper} ${open && styles.open}  ${darkMode && styles.darkMode}`}>
                 <li className={styles.navLink}>
                     <Link activeClassName={styles.activeLink} tabIndex={0} to="/SAT">
                         SAT

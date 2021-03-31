@@ -4,11 +4,11 @@ import Footer from "./Footer";
 import SEO from "utilities/seo";
 import * as styles from "./styles.module.scss";
 
-const MainLayout = ({ children, className }) => {
+const MainLayout = ({ bannerDarkMode, children, className }) => {
     return (
         <div className={`${styles.layout} ${className}`}>
             <SEO />
-            <Header />
+            <Header bannerDarkMode={bannerDarkMode} />
             <div className={`${styles.contentWrapper}`}>
                 <main>{children}</main>
             </div>

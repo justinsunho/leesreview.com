@@ -5,7 +5,7 @@ import { Info } from "components/molecules";
 import NavLinks from "./NavLinks";
 import * as styles from "./styles.module.scss";
 
-const Header = () => {
+const Header = ({ bannerDarkMode }) => {
     const [isSticky, setSticky] = useState(1);
 
     const ref = useRef(null);
@@ -25,14 +25,19 @@ const Header = () => {
     }, []);
 
     return (
-        <header className={`${styles.headerContainer} ${!isSticky ? styles.sticky : ""}`} ref={ref}>
+        <header
+            className={`${styles.headerContainer} ${!isSticky ? styles.sticky : ""} ${
+                bannerDarkMode && isSticky && styles.darkMode
+            }`}
+            ref={ref}
+        >
             <div className={`${styles.header} container`}>
                 <Link className={styles.logo} to="/">
                     <Logo />
                 </Link>
-                <NavLinks />
+                <NavLinks darkMode={bannerDarkMode && isSticky} />
                 <div className={styles.infoContainer}>
-                    <Info address={false} />
+                    <Info address={false} smallCapsClass={styles.infoDarkMode} />
                 </div>
             </div>
         </header>
