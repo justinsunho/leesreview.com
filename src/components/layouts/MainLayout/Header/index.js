@@ -37,7 +37,7 @@ const Header = ({ bannerDarkMode }) => {
                 </Link>
                 <NavLinks darkMode={bannerDarkMode && isSticky} />
                 <div className={styles.infoContainer}>
-                    <Info address={false} smallCapsClass={styles.infoDarkMode} />
+                    <Info address={false} isInHeader={true} smallCapsClass={styles.infoDarkMode} darkSmallCapsClass={styles.darkSmallCaps} />
                 </div>
             </div>
         </header>

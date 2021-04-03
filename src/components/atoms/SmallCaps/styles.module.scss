@@ -1,6 +1,14 @@
 @import "theme/variables";
 
 .smallCaps {
+    color: $neutral-6;
+    font-family: Source Code Pro;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.darkSmallCaps {
     color: $neutral-8;
     font-family: Source Code Pro;
     font-size: 12px;
