@@ -17,15 +17,6 @@ const MethodItem = ({ color, description, image, index, itemLength, title }) => 
         config: { mass: 5, tension: 2000, friction: 200 },
     });
 
-    const imageSpring = useSpring({
-        from: {
-            transform: "scale(0)",
-        },
-        to: {
-            transform: inView ? "scale(1)" : "scale(0.3)",
-        },
-    });
-
     const pathSpring = useSpring({
         from: {
             opacity: 0,
@@ -36,7 +27,6 @@ const MethodItem = ({ color, description, image, index, itemLength, title }) => 
         config: { mass: 50, tension: 2000, friction: 200 },
     });
 
-    const AnimatedImg = a(GatsbyImage);
     const AnimatedDashedRight = a(DashedRight);
     const AnimatedDashedLeft = a(DashedLeft);
 
@@ -57,12 +47,7 @@ const MethodItem = ({ color, description, image, index, itemLength, title }) => 
                 }`}
             >
                 <ImageBackground color={color}>
-                    <AnimatedImg
-                        alt={`method-image-${title}`}
-                        className={`${styles.image}`}
-                        image={image}
-                        style={imageSpring}
-                    />
+                    <GatsbyImage alt={`method-image-${title}`} className={`${styles.image}`} image={image} />
                     {itemLength !== index &&
                         ((index + 1) % 2 === 1 ? (
                             <AnimatedDashedRight className={styles.dottedLine} fill={"#2f80ed"} style={pathSpring} />
