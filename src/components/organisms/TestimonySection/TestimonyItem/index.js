@@ -6,8 +6,6 @@ import * as styles from "./styles.module.scss";
 import { enterAbove } from "utilities/springConfigs";
 
 const TestimonyItem = ({ college, image, inView, tags, title }) => {
-    const AnimatedImg = a(GatsbyImage);
-
     const trail = useTrail(5, {
         ...enterAbove(inView),
         config: { mass: 15, tension: 2000, friction: 200 },
@@ -15,11 +13,11 @@ const TestimonyItem = ({ college, image, inView, tags, title }) => {
 
     return (
         <div className={styles.testimonyItem}>
-            <AnimatedImg
+            <GatsbyImage
                 alt={`testimony-item-image-${title}`}
                 className={`${styles.image}`}
                 image={{ ...image.childImageSharp.gatsbyImageData, aspectRatio: 1 }}
-                style={{ position: "absolute", ...trail[0] }}
+                style={{ position: "absolute" }}
             />
             <div className={styles.content}>
                 <a.div className={styles.tagContainer} style={trail[1]}>
