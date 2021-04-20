@@ -4,7 +4,7 @@ import { GatsbyImage } from "gatsby-plugin-image";
 import { TextBlock } from "components/molecules";
 import * as styles from "./styles.module.scss";
 
-const HomeHeroSection = ({ button, className, description, headingText, image, linkHref, linkText }) => {
+const HomeHeroSection = ({ bigButton, button, className, description, headingText, image, linkHref, linkText }) => {
     const { inView, ref } = useInView({
         threshold: 0.2,
         triggerOnce: true,
@@ -20,6 +20,7 @@ const HomeHeroSection = ({ button, className, description, headingText, image, l
                     style={{ display: "inline-block" }}
                 />
                 <TextBlock
+                    bigButton={bigButton}
                     button={button}
                     className={`col-md-7 align-items-center justify-content-center text-center ${styles.textBlock}`}
                     darkMode

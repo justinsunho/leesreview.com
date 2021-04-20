@@ -5,6 +5,7 @@ import { enterAbove } from "utilities/springConfigs";
 import * as styles from "./styles.module.scss";
 
 const TextBlock = ({
+    bigButton,
     button,
     children,
     className,
@@ -39,15 +40,16 @@ const TextBlock = ({
                 {description}
             </a.p>
             {linkHref && linkText ? (
-                button ? (
-                    <AnimatedButton linkHref={linkHref} style={trail[3]}>
+// Using a nested ternary here
+// If bigButton is true, else if button is true, else
+// var variable = (condition) ? (true block) : ((condition2) ? (true block2) : (else block2))
+                bigButton ? (<AnimatedButton linkHref={linkHref} style={trail[3]}>
+                        {<span style ={{ fontSize: '1.25rem' }}>{linkText}</span>}
+                    </AnimatedButton>) : ((button) ? (<AnimatedButton linkHref={linkHref} style={trail[3]}>
                         {linkText}
-                    </AnimatedButton>
-                ) : (
-                    <AnimatedCTALink linkHref={linkHref} primary={primary} style={{ ...trail[3] }}>
+                    </AnimatedButton>) : (<AnimatedCTALink linkHref={linkHref} primary={primary} style={{ ...trail[3] }}>
                         {linkText}
-                    </AnimatedCTALink>
-                )
+                    </AnimatedCTALink>))
             ) : (
                 ""
             )}
