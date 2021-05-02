@@ -18,7 +18,7 @@ const HomeHeroSection = ({ button, className, description, headingText, image, l
                     className={styles.image}
                     image={image}
                     style={{ display: "inline-block" }}
-                />
+                /> 
                 <TextBlock
                     button={button}
                     className={`col-md-7 align-items-center justify-content-center text-center ${styles.textBlock}`}
