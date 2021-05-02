@@ -2,7 +2,6 @@
 title: AP Chemistry
 date: 1/5 - 5/25
 time: Wednesday 4:30 - 6:30 pm
-price: $50/hr
 tag: Math/Science
 teacherName: Mr. Lee
 teacherLink: /staff/mr-lee

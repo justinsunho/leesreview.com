@@ -2,7 +2,6 @@
 title: Algebra II - H/ Trig
 date: 1/5 - 5/25 (No Class Spring Break)
 time: Monday and Wednesday 5:00 pm - 6:00 pm
-price: $50/hr
 tag: Math/Science
 teacherName: Justin Kim
 teacherLink: /staff/justin-kim

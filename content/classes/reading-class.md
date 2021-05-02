@@ -2,7 +2,6 @@
 title: Reading Class
 date: January 22 - May 22
 time: Friday 3:30 PM - 5:00 PM or Saturday 1:00 PM - 2:30 PM
-price: $50/hour
 tag: English
 teacherName: David Kong
 teacherLink: /staff/david-kong

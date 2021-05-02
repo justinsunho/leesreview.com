@@ -195,17 +195,14 @@ testimonies:
     linkHref: /testimonies
 priceList:
     - title: Base SAT Class (8 Weeks)
-      price: $1032
       description: Our most common package You receive * Intensive Math, Reading, and
           Writing courses * Weekly testing * SAT Registration help * TA office
           hourst
     - title: Base SAT Class (8 Weeks) + 2 Week Extension
-      price: $43920
       description: Our most common package You receive * Intensive Math, Reading, and
           Writing courses * Weekly testing * SAT Registration help * TA office
           hourst * **2 additional weeks of instruction during the school year**
     - title: Base SAT Class (8 Weeks) + 4 Week Extension
-      price: $12409
       description: Our most common package You receive * Intensive Math, Reading, and
           Writing courses * Weekly testing * SAT Registration help * TA office
           hourst * **4 additional weeks of instruction during the school year**

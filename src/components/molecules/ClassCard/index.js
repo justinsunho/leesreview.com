@@ -31,10 +31,6 @@ const ClassCard = ({
           </Link>
         )}
       </div>
-      <div
-        className={`${styles.price}`}
-        style={{ backgroundColor: backgroundColor }}
-      ></div>
     </div>
   );
 };
