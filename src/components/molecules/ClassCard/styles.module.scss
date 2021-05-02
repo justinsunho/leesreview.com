@@ -10,6 +10,7 @@
     align-items: stretch;
     justify-content: space-between;
     background-color: #fff;
+    border-bottom: solid 1rem #3B7FA8 ;
 
     @media (max-width: $breakpoint-medium) {
         margin-bottom: 1rem;

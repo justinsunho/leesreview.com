@@ -111,7 +111,6 @@ export const pageQuery = graphql`
                         title
                         date
                         time
-                        price
                         tag
                         teacherName
                         teacherLink

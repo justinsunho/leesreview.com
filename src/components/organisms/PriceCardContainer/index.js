@@ -31,7 +31,7 @@ const PriceCardContainer = ({ backgroundClassName, items, title }) => {
             <div className={`row`}>
                 {items.map((item, i) => (
                     <a.div className={`col-md pb-5`} key={item.title} style={cardTrail[i]}>
-                        <ClassCard date={``} description={item.description} price={item.price} title={item.title} />
+                        <ClassCard date={``} description={item.description} title={item.title} />
                     </a.div>
                 ))}
             </div>

@@ -126,7 +126,6 @@ export const pageQuery = graphql`
                         }
                         priceList {
                             title
-                            price
                             description
                         }
                         signUp {
