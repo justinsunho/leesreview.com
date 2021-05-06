@@ -33,7 +33,7 @@ const Header = ({ bannerDarkMode }) => {
         >
             <div className={`${styles.header} container`}>
                 <Link className={styles.logo} to="/">
-                    <Logo />
+                    <Logo darkMode={bannerDarkMode && isSticky} />
                 </Link>
                 <NavLinks darkMode={bannerDarkMode && isSticky} />
                 <div className={styles.infoContainer}>
