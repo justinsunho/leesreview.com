@@ -34,7 +34,7 @@ classes:
   linkText: See our Class Schedules
   linkHref: /schedule
 about:
-  image: /images/pages/home/dsc02834.jpg
+  image: /images/pages/home/books.jpg
   subtitle: About Us
   title: Lifelong Lesson's from Lee's
   description: jfkdlsa;fjkeow;ajfioewajvs;fejwaoo
