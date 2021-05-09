@@ -1,63 +1,54 @@
-@import "theme/variables";
+@import 'theme/variables';
 
 .classCardContainer {
-    box-shadow: $elevation-1;
-    position: relative;
-    border-radius: 0 0 0.5rem 0.5rem;
-    height: 100%;
+  box-shadow: $elevation-1;
+  position: relative;
+  border-radius: 0 0 0.5rem 0.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  background-color: #fff;
+  border-bottom: solid 1rem $primary-1;
+
+  @media (max-width: $breakpoint-medium) {
+    margin-bottom: 1rem;
+  }
+
+  .classCardWrapper {
+    padding: 1rem;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
-    justify-content: space-between;
-    background-color: #fff;
-    border-bottom: solid 1rem #3B7FA8 ;
+    height: 100%;
+  }
 
-    @media (max-width: $breakpoint-medium) {
-        margin-bottom: 1rem;
-    }
+  .heading {
+    margin-bottom: 0.5rem;
+  }
 
-    .classCardWrapper {
-        padding: 1rem;
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-    }
+  .description {
+    margin-bottom: 0.5rem;
+  }
 
-    .heading {
-        margin-bottom: 0.5rem;
-    }
+  .tag {
+    color: #fff;
+    background-color: $accent-1;
+    padding: 0.25rem 0.5rem;
+    font-size: 12px;
+    border-radius: 0.5rem 0 0 0.5rem;
+    position: absolute;
+    right: 0;
+    top: 1rem;
+  }
 
-    .description {
-        margin-bottom: 0.5rem;
-    }
+  .dateContainer {
+    color: $neutral-9;
+    font-style: italic;
+    font-weight: 600;
+  }
 
-    .tag {
-        color: #fff;
-        background-color: $accent-1;
-        padding: 0.25rem 0.5rem;
-        font-size: 12px;
-        border-radius: 0.5rem 0 0 0.5rem;
-        position: absolute;
-        right: 0;
-        top: 1rem;
-    }
-
-    .dateContainer {
-        color: $neutral-9;
-        font-style: italic;
-        font-weight: 600;
-    }
-
-    .teacher {
-        align-self: flex-end;
-    }
-
-    .price {
-        color: $white;
-        background-color: $accent-1;
-        text-align: center;
-        padding: 0.5rem;
-        font-weight: 600;
-        border-radius: 0 0 0.5rem 0.5rem;
-    }
+  .teacher {
+    align-self: flex-end;
+  }
 }
