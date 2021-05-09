@@ -129,7 +129,7 @@ servicesList:
         </svg>
 mediaSection:
   title: Can't find a suitable class? Sign up for individual tutoring
-  image: /images/pages/classroom-prep/dsc02834.jpg
+  image: /images/pages/classroom-prep/books.jpg
   subtitle: One on One
   description: We offer one on one tutoring for any class listed above. We
     currently have one on one studnets enrolled from Geometry to Calculus and
