@@ -131,7 +131,7 @@ servicesList:
 mediaSection:
   title: Space is extremely limited for our College Consulting services
   subtitle: First Come First Serve
-  image: /images/pages/college-consulting/dsc02671.jpg
+  image: /images/pages/college-consulting/books.jpg
   description: Be sure to sign up as soon as possible! Don't miss out on a unique
     opportunity for college application help.
   linkText: Sign up now
