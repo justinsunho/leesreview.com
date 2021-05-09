@@ -1,39 +1,48 @@
-@import "theme/variables";
+@import 'theme/variables';
 
 .homeHeroWrapper {
-    position: relative;
-    margin-bottom: 3rem;
-    height: 60vh;
+  position: relative;
+  margin-bottom: 3rem;
+  height: 60vh;
 
-    .image {
-        z-index: 0;
-        position: absolute;
-        top: -3rem;
-        width: 100vw;
-        max-height: 60vh;
+  .image {
+    z-index: 0;
+    position: absolute;
+    top: -3rem;
+    width: 100vw;
+    max-height: 60vh;
 
-        &:after {
-            z-index: 1;
-            background: linear-gradient(180deg, rgba(#333333, 0.7) 10%, transparent 60%, rgba(#333333, 0.7) 100%);
-            content: "";
-            display: block;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-        }
-
-        @media (max-width: $breakpoint-large) {
-            top: 0;
-            max-height: none;
-            height: 100%;
-        }
+    &:after {
+      z-index: 1;
+      background: linear-gradient(
+        180deg,
+        rgba(#333333, 0.7) 10%,
+        transparent 60%,
+        rgba(#333333, 0.7) 100%
+      );
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
     }
 
-    .textBlock {
-        background-color: rgba($neutral-8, 0.4);
-        padding: 1rem;
-        margin: 1rem;
+    @media (max-width: $breakpoint-large) {
+      top: 0;
+      max-height: none;
+      height: 100%;
     }
+  }
+
+  .textBlock {
+    background-color: rgba($neutral-8, 0.4);
+    padding: 1rem;
+    margin: 1rem;
+
+    a {
+      font-size: 1.25rem;
+    }
+  }
 }
