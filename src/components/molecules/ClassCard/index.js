@@ -3,7 +3,6 @@ import { Link } from 'gatsby';
 import * as styles from './styles.module.scss';
 
 const ClassCard = ({
-  backgroundColor,
   date,
   description,
   teacherLink,
