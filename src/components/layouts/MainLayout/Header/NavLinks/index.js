@@ -24,7 +24,11 @@ const NavLinks = ({ darkMode }) => {
                         />
                     </svg>
                 ) : (
-                    <Button secondary>menu</Button>
+                    <svg height="20" styles={{ padding: "0.5rem" }} viewBox="0 0 50 40" width="20">
+                        <rect height="10" width="50"></rect>
+                        <rect height="10" width="50" y="15"></rect>
+                        <rect height="10" width="50" y="30"></rect>
+                    </svg>
                 )}
             </div>
             <ul className={`${styles.navLinkWrapper} ${open && styles.open}  ${darkMode && styles.darkMode}`}>
