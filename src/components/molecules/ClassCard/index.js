@@ -3,6 +3,7 @@ import { Link } from 'gatsby';
 import * as styles from './styles.module.scss';
 
 const ClassCard = ({
+  backgroundColor,
   date,
   description,
   teacherLink,
@@ -30,6 +31,10 @@ const ClassCard = ({
           </Link>
         )}
       </div>
+      <div
+        className={`${styles.bottomTab}`}
+        style={{ backgroundColor: backgroundColor }}
+      ></div>
     </div>
   );
 };
