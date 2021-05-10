@@ -10,7 +10,6 @@
   align-items: stretch;
   justify-content: space-between;
   background-color: #fff;
-  border-bottom: solid 1rem $primary-1;
 
   @media (max-width: $breakpoint-medium) {
     margin-bottom: 1rem;
@@ -51,4 +50,13 @@
   .teacher {
     align-self: flex-end;
   }
+
+  .bottomTab {
+    color: $white;
+    background-color: $accent-1;
+    text-align: center;
+    padding: 0.5rem;
+    font-weight: 600;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
 }
