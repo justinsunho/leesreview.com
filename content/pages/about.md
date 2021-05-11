@@ -10,7 +10,7 @@ hero:
     a true appreciation of learning.
   buttonText: Sign Up
   buttonLink: /contact
-  image: /images/pages/about/dsc02834.jpg
+  image: /images/pages/about/caitlin-lee.jpg
 reason:
   title: Why Lee's Review?
   reasonsList:
@@ -19,18 +19,18 @@ reason:
       description: We have a selective interview process where we evaluate every
         student for genuine commitment.
     - title: Top Tier Instructors
-      image: /images/pages/about/dsc02713.jpg
+      image: /images/pages/about/s0120017.jpg
       description: Our instructors are hired not only for their credentials, but also
         for their abilities to connect to students.
     - title: Tailored Schedules
-      image: /images/pages/about/dsc02778.jpg
+      image: /images/pages/about/s0747103.jpg
       description: We schedule our classes at times that are convenient for our students.
     - title: Low Student Turnover
-      image: /images/pages/about/dsc02754.jpg
+      image: /images/pages/about/mr.-kong-bday2.jpg
       description: Our students are encouraged to take full advantage of our center’s
         extensive services and resources.
     - title: Extensive Resources and Services
-      image: /images/pages/about/dscf3673.jpg
+      image: /images/pages/about/roomtwo.jpg
       description: We have a very low turnover rate in students and staff due to our
         positive and encouraging environment.
 students:
