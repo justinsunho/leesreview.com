@@ -72,7 +72,7 @@ staff:
       linkText: Learn More
     - title: Justin Kim
       subtitle: AP Tutor
-      image: /images/staff/profile.jpg
+      image: /images/staff/roll-4-28.jpg
       tags:
         - AP Calc AB
         - AP Chemistry
@@ -83,6 +83,22 @@ staff:
       linkHref: /staff/justin-kim
       linkText: Learn More
       description: UCLA c/o 2017. DBHS c/o 2013
+    - title: Justin Haven
+      subtitle: Writing Teacher
+      image: /images/staff/mr.-haven-laying-down-knowledge-on-christa.jpg
+      tags:
+        - fjd
+      description: jfidoas;fjldksafdsja
+      linkHref: /staff/mr-lee
+      linkText: Learn More
+    - title: Mrs. Lee
+      subtitle: ifjoea;
+      image: /images/staff/s0370039.jpg
+      tags:
+        - fjd
+      description: ij;ofije;woafijowe
+      linkHref: /staff/mrs-lee
+      linkText: Learn More
 history:
   title: Our History
 ---
