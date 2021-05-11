@@ -6,7 +6,7 @@ hero:
     curriculum to fit our students needs and goals.
   buttonText: See all of our available classes
   buttonLink: /contact
-  image: /images/pages/classroom-prep/dsc02834.jpg
+  image: /images/pages/classroom-prep/andrew-teaching-katrine2.jpg
 servicesList:
   - title: Quiet Study rooms
     body: We provide study rooms for students to study whenever they need.
