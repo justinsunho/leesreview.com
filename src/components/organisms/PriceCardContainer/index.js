@@ -3,6 +3,7 @@ import { useInView } from "react-intersection-observer";
 import { a, useTrail, useChain } from "react-spring";
 import { SectionWrapper, ClassCard } from "components/molecules";
 import { enterAbove } from "utilities/springConfigs";
+import { colorArray } from "utilities/colorArray";
 
 const PriceCardContainer = ({ backgroundClassName, items, title }) => {
     const { inView, ref } = useInView({
@@ -31,7 +32,12 @@ const PriceCardContainer = ({ backgroundClassName, items, title }) => {
             <div className={`row`}>
                 {items.map((item, i) => (
                     <a.div className={`col-md pb-5`} key={item.title} style={cardTrail[i]}>
-                        <ClassCard date={``} description={item.description} price={item.price} title={item.title} />
+                        <ClassCard
+                            backgroundColor={colorArray[i]}
+                            date={``}
+                            description={item.description}
+                            title={item.title}
+                        />
                     </a.div>
                 ))}
             </div>

@@ -155,16 +155,12 @@ testimonies:
   linkHref: /testimonies
 priceList:
   - title: Freshman/ Sophomore Package
-    price: $342290
     body: fdasfdasfdsa
   - title: Junior Package I
-    price: $34209
     body: fdasfdsafdsa
   - title: Junior Package II
-    price: $2389450
     body: dksajfe;owiajfewavfewafewa
   - title: Senior Package
-    price: $u94032
     body: dsafdsafdsa
 signUp:
   subtitle: Reserve your spot

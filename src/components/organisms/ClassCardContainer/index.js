@@ -59,7 +59,6 @@ const ClassCardContainer = ({ backgroundClassName, id, items, subtitle, title })
                             backgroundColor={colorArray[tags.indexOf(item.node.frontmatter.tag)]}
                             date={item.node.frontmatter.date}
                             description={item.node.html}
-                            price={item.node.frontmatter.price}
                             tag={item.node.frontmatter.tag}
                             teacherLink={item.node.frontmatter.teacherLink}
                             teacherName={item.node.frontmatter.teacherName}

@@ -2,7 +2,6 @@
 title: AP Calculus BC
 date: 1/5 - 5/25
 time: Tuesday & Thursdays 7:00 pm - 8:00 pm
-price: $50/hr
 tag: Math/Science
 teacherName: Mr. Lee
 teacherLink: /staff/mr-lee

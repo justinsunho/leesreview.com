@@ -1,69 +1,69 @@
 @import "theme/variables";
 
 .headerContainer {
-  position: absolute;
-  top: 0;
-  z-index: 1000;
-  width: 100%;
-  background-color: transparent;
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: transparent;
 
-  &.sticky {
-    background-color: $white;
-    position: fixed;
-    box-shadow: $elevation-1;
-  }
-
-  @media (max-width: $breakpoint-large) {
-    background-color: $white;
-    position: fixed;
-    box-shadow: $elevation-1;
-  }
-
-  @media (min-width: $breakpoint-large + 1) {
-    &.darkMode {
-      .logo {
-        svg {
-          color: #fff;
-        }
-      }
-
-      .infoDarkMode {
-        color: #fff;
-      }
+    &.sticky {
+        background-color: $white;
+        position: fixed;
+        box-shadow: $elevation-1;
     }
-  }
+
+    @media (max-width: $breakpoint-large) {
+        background-color: $white;
+        position: fixed;
+        box-shadow: $elevation-1;
+    }
+
+    @media (min-width: $breakpoint-large + 1) {
+        &.darkMode {
+            .logo {
+                svg {
+                    color: #fff;
+                }
+            }
+
+            .infoDarkMode {
+                color: #fff;
+            }
+        }
+    }
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-
-  .logo {
-    svg {
-      color: #333;
-    }
-  }
-
-  .darkSmallCaps {
-    color: $neutral-8;
-  }
-
-  @media (max-width: $breakpoint-large) {
-    flex-wrap: wrap;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 
     .logo {
-      flex-basis: 50%;
+        svg {
+            color: #333;
+        }
     }
 
-    .infoContainer {
-      text-align: right;
-      flex-basis: 100%;
-      padding-top: 0.25rem;
+    .darkSmallCaps {
+        color: $neutral-8;
     }
-  }
+
+    @media (max-width: $breakpoint-large) {
+        flex-wrap: wrap;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+
+        .logo {
+            flex-basis: 50%;
+        }
+
+        .infoContainer {
+            text-align: right;
+            flex-basis: 100%;
+            padding-top: 0.25rem;
+        }
+    }
 }

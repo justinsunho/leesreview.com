@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "gatsby";
 import * as styles from "./styles.module.scss";
 
-const ClassCard = ({ backgroundColor, date, description, price, teacherLink, teacherName, time, title }) => {
+const ClassCard = ({ backgroundColor, date, description, teacherLink, teacherName, time, title }) => {
     return (
-        <div className={`${styles.classCardContainer}`}>
+        <div className={`${styles.classCardContainer}`} style={{ borderBottomColor: backgroundColor }}>
             <div className={`${styles.classCardWrapper}`}>
                 <h4 className={`${styles.heading}`}>{title}</h4>
                 {date && (
@@ -19,9 +19,6 @@ const ClassCard = ({ backgroundColor, date, description, price, teacherLink, tea
                         Taught by: {teacherName}
                     </Link>
                 )}
-            </div>
-            <div className={`${styles.price}`} style={{ backgroundColor: backgroundColor }}>
-                {price}
             </div>
         </div>
     );

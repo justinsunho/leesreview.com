@@ -3,7 +3,6 @@ title: "SAT I "
 date: 2/26 - 5/29 (12 Weeks)
 time: " Test: Friday 4:00 PM - 8:00 pm Math: 11:00 AM - 12:30 PM Reading: 12:30
     PM - 2:00 PM Writing: 2:30 PM - 4:00 PM"
-price: $800
 tag: SAT
 teacherName: Mr. Lee
 teacherLink: /staff/mr-lee
