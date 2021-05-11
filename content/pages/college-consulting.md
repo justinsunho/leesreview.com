@@ -6,7 +6,7 @@ hero:
     find the perfect school for them.
   buttonText: Sign up
   buttonLink: /contact
-  image: /images/pages/college-consulting/dsc02671.jpg
+  image: /images/pages/college-consulting/mr.-haven-schooling-andrew-soliman.jpg
 servicesList:
   - title: Academic Partnership
     image: /images/pages/college-consulting/dsc02671.jpg
@@ -138,16 +138,16 @@ mediaSection:
   linkHref: /test
 methodsList:
   - title: Student Meeting
-    image: /images/pages/college-consulting/dsc02671.jpg
+    image: /images/pages/college-consulting/christina-in-more-action.jpg
     body: We set up an initila meeting with students
   - title: 8 Sessions per year to figure out goals
-    image: /images/pages/college-consulting/dsc02671.jpg
+    image: /images/pages/college-consulting/mr.-lee-solving-life-itself.jpg
     body: fdafdsafdsa
   - title: College Application Guidance
-    image: /images/pages/college-consulting/dsc02671.jpg
+    image: /images/pages/college-consulting/emily-imamura.jpg
     body: Once Studnets kfkjlads;
   - title: College Appeals
-    image: /images/pages/college-consulting/dsc02671.jpg
+    image: /images/pages/college-consulting/s0100013.jpg
     body: fdafdasfdsaf
 testimonies:
   subtitle: College Consulting Stories
