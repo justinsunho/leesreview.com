@@ -25,7 +25,7 @@ classes:
       linkText: Learn More
       linkHref: /college-consulting
     - title: AP Classes
-      image: /images/pages/home/evelyn-teaching-kyle-kim2.jpg
+      image: /images/pages/home/andrew-teaching-katrine2.jpg
       description: We've been equipping our students with top-rate methods and
         studying tips to get them through their normal school classes and AP
         exams!
@@ -55,7 +55,7 @@ location:
       linkText: Learn More
       linkHref: /online
     - title: Advanced Classrooms and Supplies
-      image: /images/pages/home/mr.-lee-solving-life-itself.jpg
+      image: /images/pages/home/caitlin-lee.jpg
       description: We pride ourselves in providing the best learning environemnt for
         students.
       linkText: Learn More
