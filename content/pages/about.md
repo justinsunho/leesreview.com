@@ -10,7 +10,7 @@ hero:
     a true appreciation of learning.
   buttonText: Sign Up
   buttonLink: /contact
-  image: /images/pages/about/caitlin-lee.jpg
+  image: /images/pages/about/happiness-in-a-sea-of-chaos.jpg
 reason:
   title: Why Lee's Review?
   reasonsList:
