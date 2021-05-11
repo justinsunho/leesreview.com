@@ -18,14 +18,14 @@ classes:
       linkText: Learn More
       linkHref: /SAT
     - title: College Consulting
-      image: /images/pages/home/dsc02713.jpg
+      image: /images/pages/home/mr.-haven-laying-down-knowledge-on-christa.jpg
       description: The college application process can be extremely difficult and
         filled with a lot of noise. We provide mentorship and guidance to make
         sure our students find the perfect college fit.
       linkText: Learn More
       linkHref: /college-consulting
     - title: AP Classes
-      image: /images/pages/home/dsc02778.jpg
+      image: /images/pages/home/evelyn-teaching-kyle-kim2.jpg
       description: We've been equipping our students with top-rate methods and
         studying tips to get them through their normal school classes and AP
         exams!
@@ -55,7 +55,7 @@ location:
       linkText: Learn More
       linkHref: /online
     - title: Advanced Classrooms and Supplies
-      image: /images/pages/home/screen-shot-2020-12-28-at-7.48.47-pm.png
+      image: /images/pages/home/mr.-lee-solving-life-itself.jpg
       description: We pride ourselves in providing the best learning environemnt for
         students.
       linkText: Learn More
