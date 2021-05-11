@@ -1,18 +1,19 @@
 ---
-title: Justin Kim
-subtitle: AP Tutor
-description: UCLA c/o 2017. DBHS c/o 2013
-image: /images/staff/profile.jpg
-tags:
-    - AP Calc AB
-    - AP Chemistry
-    - AP Physics 1/2/C
-    - Trigonometry
-    - Algebra IIH
-    - Geometry
 color: red
 linkHref: /staff/justin-kim
 linkText: Learn More
+title: Justin Kim
+subtitle: AP Tutor
+description: UCLA c/o 2017. DBHS c/o 2013
+image: /images/staff/roll-4-28.jpg
+tags:
+  - AP Calc AB
+  - AP Chemistry
+  - AP Physics 1/2/C
+  - Trigonometry
+  - Algebra IIH
+  - Geometry
+link: /staff/justin-kim
 ---
 
 **How Long Have you been tutoring?**
