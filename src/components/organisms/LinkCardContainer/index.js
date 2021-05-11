@@ -40,7 +40,11 @@ const LinkCardContainer = ({ backgroundClassName, items, linkHref, linkText, sub
         >
             <div className={`row ${styles.cardRow}`}>
                 {items.map((item, i) => (
-                    <a.div className={`col-lg-${12 / items.length} col-md-6`} key={item.title} style={cardTrail[i]}>
+                    <a.div
+                        className={`col-lg-4 col-md-6 ${styles.cardContainer}`}
+                        key={item.title}
+                        style={cardTrail[i]}
+                    >
                         <LinkCard
                             color={colorArray[i]}
                             description={item.description}
