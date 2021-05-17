@@ -157,7 +157,7 @@ servicesList:
     videoId: bhfM1B-T9pI
 mediaSection:
   title: Can't wait for the Summer? Join our Spring 2021 SAT
-  image: /images/pages/SAT/books.jpg
+  image: /images/pages/SAT/alfons-morales-ylswjsy7stw-unsplash.jpg
   subtitle: Current SAT Program
   description: We are currently offering a Spring SAT preparatory course for those
     looking to get ahead or improve their scores!
