@@ -34,7 +34,7 @@ classes:
   linkText: See our Class Schedules
   linkHref: /schedule
 about:
-  image: /images/pages/home/books.jpg
+  image: /images/pages/home/emil-widlund-xrbbxixawy0-unsplash.jpg
   subtitle: About Us
   title: Lifelong Lesson's from Lee's
   description: jfkdlsa;fjkeow;ajfioewajvs;fejwaoo
