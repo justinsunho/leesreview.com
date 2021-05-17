@@ -34,7 +34,7 @@ reason:
       description: We have a very low turnover rate in students and staff due to our
         positive and encouraging environment.
 students:
-  image: /images/pages/about/books.jpg
+  image: /images/pages/about/emil-widlund-xrbbxixawy0-unsplash.jpg
   title: Building a Supportive Community
   description: Our students are constantly immersed in a supportive community that
     inspires them to be passionate and purposeful in all areas of life. We
