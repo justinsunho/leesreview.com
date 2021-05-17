@@ -1,48 +1,44 @@
 @import "theme/variables";
 
 .methodItem {
-    padding-bottom: 5rem;
     display: flex;
+    flex-direction: column;
+    box-shadow: $elevation-3;
+    height: calc(100% - 2rem);
+    position: relative;
+
+    .image {
+        max-height: 40%;
+    }
 
     .container {
+        padding: 1rem;
         position: relative;
-
-        .indexNumber {
-            font-size: 6rem;
-            position: absolute;
-            z-index: 0;
-            font-weight: 600;
-            top: -2rem;
-            left: -0.25rem;
-            color: $primary-3;
-            opacity: 0.2;
-            line-height: 1;
-        }
 
         .title,
         .description {
             z-index: 1;
         }
-    }
 
-    .marginLeft {
-        margin-left: auto;
-    }
-
-    .imageContainer {
-        position: relative;
-
-        .image {
-            border-radius: 1rem;
+        .title {
+            text-align: center;
+            padding-top: 2rem;
+            margin-bottom: 0;
         }
 
-        .dottedLine {
+        .number {
             position: absolute;
-            left: 33%;
+            left: 50%;
+            transform: translateX(-50%);
+            top: -2rem;
+        }
+    }
 
-            @media (max-width: $breakpoint-large) {
-                display: none;
-            }
+    @media (max-width: $breakpoint-large) {
+        height: auto;
+
+        .image {
+            height: 200px;
         }
     }
 }

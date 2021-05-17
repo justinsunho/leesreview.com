@@ -54,7 +54,7 @@ const ClassCardContainer = ({ backgroundClassName, id, items, subtitle, title })
             </div>
             <div className={`row align-content-stretch ${expanded ? styles.expanded : styles.collapsed}`}>
                 {transitions.map(({ item, key, props }) => (
-                    <a.div className={`col-lg-3 col-md-6 col-sm-12 pb-md-5`} key={key} style={props}>
+                    <a.div className={`col-lg-3 col-md-6 col-sm-12 pb-md-5`} key={key}>
                         <ClassCard
                             backgroundColor={colorArray[tags.indexOf(item.node.frontmatter.tag)]}
                             date={item.node.frontmatter.date}

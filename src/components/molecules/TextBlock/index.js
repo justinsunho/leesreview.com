@@ -15,7 +15,6 @@ const TextBlock = ({
     inView,
     linkHref,
     linkText,
-    primary,
     subtitle,
 }) => {
     const Heading = a(headingTag);
@@ -29,7 +28,7 @@ const TextBlock = ({
     });
 
     return (
-        <a.div className={`${className} ${styles.textBlock}`}>
+        <a.div className={`${className} ${styles.textBlock} align-items-start`}>
             <AnimatedSmallCaps altColor={darkMode} style={{ ...trail[0] }}>
                 {subtitle}
             </AnimatedSmallCaps>
@@ -40,11 +39,11 @@ const TextBlock = ({
             </a.p>
             {linkHref && linkText ? (
                 button ? (
-                    <AnimatedButton linkHref={linkHref} style={trail[3]}>
+                    <AnimatedButton className={styles.button} linkHref={linkHref} secondary style={trail[3]}>
                         {linkText}
                     </AnimatedButton>
                 ) : (
-                    <AnimatedCTALink linkHref={linkHref} primary={primary} style={{ ...trail[3] }}>
+                    <AnimatedCTALink linkHref={linkHref} style={{ ...trail[3] }}>
                         {linkText}
                     </AnimatedCTALink>
                 )

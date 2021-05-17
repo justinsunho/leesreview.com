@@ -17,6 +17,7 @@ const MediaSection = ({ description, headingText, image, linkHref, linkText, rib
                 <div className={`col-md-6`}>{videoId && <EmbedVideo title={headingText} videoId={videoId} />}</div>
                 <div className={`col-md-6`}>
                     <TextBlock
+                        button
                         darkMode={ribbon && true}
                         description={description}
                         headingTag={"h2"}
@@ -24,7 +25,6 @@ const MediaSection = ({ description, headingText, image, linkHref, linkText, rib
                         inView={inView}
                         linkHref={linkHref}
                         linkText={linkText}
-                        primary
                         subtitle={subtitle}
                     />
                 </div>

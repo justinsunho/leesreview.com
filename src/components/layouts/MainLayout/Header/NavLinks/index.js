@@ -25,9 +25,9 @@ const NavLinks = ({ darkMode }) => {
                     </svg>
                 ) : (
                     <svg height="20" styles={{ padding: "0.5rem" }} viewBox="0 0 50 40" width="20">
-                        <rect height="10" width="50"></rect>
-                        <rect height="10" width="50" y="15"></rect>
-                        <rect height="10" width="50" y="30"></rect>
+                        <rect height="4" width="50"></rect>
+                        <rect height="4" width="50" y="15"></rect>
+                        <rect height="4" width="50" y="30"></rect>
                     </svg>
                 )}
             </div>
@@ -58,7 +58,7 @@ const NavLinks = ({ darkMode }) => {
                     </Link>
                 </li>
                 <li className={styles.contactButton}>
-                    <Button linkHref="/contact" secondary={true} tabIndex={0}>
+                    <Button linkHref="/contact" tabIndex={0}>
                         Contact
                     </Button>
                 </li>
