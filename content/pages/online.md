@@ -6,7 +6,7 @@ hero:
         for online classes for all of our services. Be sure to check out our online
         demo!
     buttonText: Sign up
-    buttonLink: /contact
+    buttonLink: https://leesreview.com/contact
     videoId: QRGoswZh6fA
 servicesList:
     - title: All of the same classes are available!
@@ -124,5 +124,5 @@ signUp:
     title: Sign Up for Online Classes
     description: kldjfkawehoivwaw feaf
     buttonText: Sign Up
-    buttonLink: /contact
+    buttonLink: https://leesreview.com/contact
 ---
