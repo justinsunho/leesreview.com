@@ -3,12 +3,12 @@ title: Kevin Lee
 college: UCLA
 image: /images/testimonies/img_3058.jpeg
 tags:
-    - SAT I
-    - College Consulting
+  - SAT I
+  - College Consulting
 featured:
-    - Home
-    - About Us
-    - College Consulting
+  - Home
+  - SAT
+  - College Consulting
 year: 2015
 ---
 
