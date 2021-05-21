@@ -3,11 +3,10 @@ title: Tiffany Chiang
 college: UC Davis
 image: /images/testimonies/3.png
 tags:
-    - SAT I
-    - College Consulting
+  - SAT I
+  - College Consulting
 featured:
-    - Home
-    - SAT
+  - SAT
 year: 2014
 ---
 
