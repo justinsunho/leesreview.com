@@ -1,6 +1,6 @@
 ---
 title: Summer SAT I (Morning)
-subtitle: Plan A - June 7 - July 29 (8 Week)
+subtitle: Plan A - June 14 - August 21 (8 Week)
 description: Each class is selected based on our interview + diagnostic testing process
 linkText: Download A PDF of this schedule here
 linkHref: ./images/schedules/Summer-2021-Schedule-added-classes.pdf
