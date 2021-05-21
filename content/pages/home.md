@@ -30,7 +30,7 @@ classes:
           linkText: Learn More
           linkHref: https://leesreview.com/classroom-prep
     linkText: See our Class Schedules
-    linkHref: /schedule
+    linkHref: https://leesreview.com/schedule
 about:
     image: /images/pages/home/emil-widlund-xrbbxixawy0-unsplash.jpg
     subtitle: About Us
