@@ -35,7 +35,7 @@ const About = ({ data }) => {
                 ribbon
                 subtitle={students.subtitle}
             />
-            <LinkCardContainer items={staff.staffList} title={staff.title} />
+            {/* <LinkCardContainer items={staff.staffList} title={staff.title} /> */}
         </MainLayout>
     );
 };
