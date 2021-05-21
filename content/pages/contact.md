@@ -13,12 +13,12 @@ business:
     title: Business Hours and Address
     businessInfoList:
         - title: Business Hours
-          description: "Monday - Friday: 9 am - 5pm \n
-          Friday: Closed \n
-          Saturday: Closed \n
+          description: "Monday - Friday: 9 am - 5pm <br />
+          Friday: Closed <br />
+          Saturday: Closed <br />
           Sunday: Closed"
         - title: Address and Directions
-          description: "2040 S Brea Canyon Rd #240,\n
-          Diamond Bar, CA 91765\n
+          description: "2040 S Brea Canyon Rd #240, <br />
+          Diamond Bar, CA 91765 <br />
           We’re located on the 2nd Floor"
 ---

@@ -22,7 +22,7 @@ const Hero = ({ button, className, description, headingText, image, linkHref, li
             <div className={` row align-items-center flex-md-row flex-column-reverse  ${className}`}>
                 <TextBlock
                     button={button}
-                    className="col-md-6 col-lg-4 align-items-start"
+                    className="col-md-6 col-lg-6 align-items-start"
                     description={description}
                     headingTag={"h1"}
                     headingText={headingText}
@@ -31,7 +31,7 @@ const Hero = ({ button, className, description, headingText, image, linkHref, li
                     linkText={linkText}
                     subtitle={subtitle}
                 />
-                <div className={"col-md-6 col-lg-8"}>
+                <div className={"col-md-6 col-lg-6"}>
                     <AnimatedImage image={image} style={imageSpring} />
                 </div>
             </div>
