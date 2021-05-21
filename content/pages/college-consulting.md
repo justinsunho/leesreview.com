@@ -10,7 +10,7 @@ hero:
 servicesList:
   - title: Academic Partnership
     image: /images/pages/college-consulting/dsc02671.jpg
-    body: We help studnets manage everything throughout their high school career to
+    body: We help students manage everything throughout their high school career to
       ensure they are on the right track to a perect collge
     icon:
       code: >
@@ -135,20 +135,29 @@ mediaSection:
   description: Be sure to sign up as soon as possible! Don't miss out on a unique
     opportunity for college application help.
   linkText: Sign up now
-  linkHref: /test
+  linkHref: /contact
 methodsList:
-  - title: Student Meeting
+  - title: Getting to Know our Students
     image: /images/pages/college-consulting/christina-in-more-action.jpg
-    body: We set up an initila meeting with students
-  - title: 8 Sessions per year to figure out goals
+    body: For our prospective students, we take the time to understand their
+      strengths and weaknesses. We probe deep into how they learn, retain, and
+      apply new information. We then develop a game plan for success.
+  - title: A Winning Playbook
     image: /images/pages/college-consulting/mr.-lee-solving-life-itself.jpg
-    body: fdafdsafdsa
-  - title: College Application Guidance
+    body: At this phase, we present a game plan developed specifically for each
+      student. Each game plan has been designed to improve student skill sets
+      for test-taking, writing essays, college interviews, college applications,
+      and more.
+  - title: Progress Tracking
     image: /images/pages/college-consulting/emily-imamura.jpg
-    body: Once Studnets kfkjlads;
-  - title: College Appeals
+    body: Every student is monitored closely to track their progress. Our program is
+      designed to be agile and adaptive to student needs. Metrics are in place
+      to measure what matters and build on learning milestones.
+  - title: Trusted Partner
     image: /images/pages/college-consulting/s0100013.jpg
-    body: fdafdasfdsaf
+    body: With over 20 years of success helping students achieve their dreams, we
+      believe success is not just about a number. We believe success is building
+      a growth mindset for students.
 testimonies:
   subtitle: College Consulting Stories
   linkText: See more stories
