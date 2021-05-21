@@ -4,7 +4,7 @@ hero:
   title: Summer SAT Enrollment is now open!
   description: Maximize your SAT score and learn from our expert tutors!
   buttonText: Sign up now
-  buttonLink: "#"
+  buttonLink: /contact
   image: /images/pages/SAT/s0020119.jpg
 servicesList:
   - title: "Math "
@@ -162,7 +162,7 @@ mediaSection:
   description: We are currently offering a Spring SAT preparatory course for those
     looking to get ahead or improve their scores!
   linkText: Sign up
-  linkHref: /test
+  linkHref: /contact
 methodsList:
   - title: Placement Test
     image: /images/pages/SAT/attila-bionki-studying.jpg
@@ -172,23 +172,24 @@ methodsList:
   - title: Personal Meetings
     image: /images/pages/SAT/mr.-haven-schooling-andrew-soliman.jpg
     description: After our students take their diagnostic tests, we schedule a 20
-      minute meeitng with students and parents to make sure there is a good fit.
-      We then place our studnets into an afternoon or morning class based
-      onthier schedules.
-  - title: June 7 - July 29 (8 Weeks)
+      minute meeting with students and parents to make sure there is a good fit.
+      We then place our students into an afternoon or morning class based on
+      their schedules.
+  - title: June 14th - August 5th (8 Weeks)
     image: /images/pages/home/dsc02754.jpg
     description: Our students then go through an intesive 8 week course taht covers
       all SAT material, and requires weekly testing to ensure familiarity with
       the test and proper trajectory.
   - title: 2 or 4-week extensions (Optional)
     image: /images/pages/SAT/stephen-lee.jpg
-    description: We also provide 2 - 4 week extensions for studnets that need the
-      extra boost for their teseting needs. August 13 - 21 September 3 - 25
+    description: We also provide 2 - 4 week extensions for students that need the
+      extra boost for their testing needs, starting August 13th - 21st for the
+      two week extension and September 3rd - 25th for the four week extension.
   - title: Register and Take the SAT!
     image: /images/pages/SAT/s0110015.jpg
-    description: At Lee's review, our studnets are never alone in the test taking
-      process. We help them register for their SAT tests and celebrate aftter
-      the test dates.
+    description: At Lee's review, our students are never alone in the test taking
+      process. Once they're ready to take the test full-on, we help guide them
+      through the registration and test-taking process.
 testimonies:
   subtitle: Testimonies
   linkText: See more Testimonies
@@ -209,7 +210,8 @@ priceList:
 signUp:
   subtitle: Enroll in SAT
   title: Enroll in Summer or Spring SAT!
-  description: WE're still taking spots for our SAT classes for the coming year.
+  description: We still have in-person and online spots available for our Summer
+    SAT courses. Sign up today!
   buttonText: Sign up
   buttonLink: /contact
 ---
