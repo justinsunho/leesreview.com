@@ -1,20 +1,19 @@
 ---
+color: orange
+linkHref: /staff/mr-lee
+linkText: Learn More
 title: Mr. Lee
 subtitle: Owner/Founder
 description: UCI c/o ___
 image: /images/staff/mrlee.jpg
 tags:
-    - SAT Math
-    - College Consulting
-    - AP Bio
-    - AP Chem
-color: orange
-linkHref: /staff/mr-lee
-linkText: Learn More
+  - Math
+  - Chemistry
+  - Physics
+link: /staff/mr-lee
 ---
-
 **How Long Have you been tutoring?**
-_50 years!_
+29 years
 
 **What was your favorite subject in high school?**
-_I loved \_\_\_\_ in high school_
+Math, Chemistry, and Physics.
