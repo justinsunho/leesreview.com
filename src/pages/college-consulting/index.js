@@ -59,7 +59,7 @@ const CollegeConsulting = ({ data }) => {
             <PriceCardContainer
                 backgroundClassName={styles.priceCardBackgroundClassName}
                 items={priceList}
-                title={`Our Prices`}
+                title={`Our Packages`}
             />
             <BottomSection
                 buttonLink={signUp.buttonLink}

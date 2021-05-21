@@ -406,7 +406,7 @@ collections:
              summary: '{{fields.name}}'
              fields:
                - { name: title, label: title, required: true }
-               - { name: body, label: body, widget: markdown, required: true }
+               - { name: description, label: description, widget: markdown, required: true }
            - label: Sign Up
              name: signUp
              widget: object

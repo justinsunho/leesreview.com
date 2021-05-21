@@ -165,13 +165,13 @@ testimonies:
     linkHref: https://leesreview.com/testimonies
 priceList:
     - title: Freshman/ Sophomore Package
-      body: fdasfdasfdsa
+      description: You receive<ul><li>Everything in the Base Package</li><li>2 Extra weeks of instruction and help</li></ul>
     - title: Junior Package I
-      body: fdasfdsafdsa
+      description: You receive<ul><li>Everything in the Base Package</li><li>2 Extra weeks of instruction and help</li></ul>
     - title: Junior Package II
-      body: dksajfe;owiajfewavfewafewa
+      description: You receive<ul><li>Everything in the Base Package</li><li>2 Extra weeks of instruction and help</li></ul>
     - title: Senior Package
-      body: dsafdsafdsa
+      description: You receive<ul><li>Everything in the Base Package</li><li>2 Extra weeks of instruction and help</li></ul>
 signUp:
     subtitle: Reserve your spot
     title: Reserve your spot for college consulting now!
