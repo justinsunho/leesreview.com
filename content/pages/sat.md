@@ -210,5 +210,5 @@ signUp:
     description: We still have in-person and online spots available for our Summer
         SAT courses. Sign up today!
     buttonText: Sign up
-    buttonLink: /contact
+    buttonLink: https://leesreview.com/contact
 ---
