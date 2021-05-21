@@ -2,8 +2,9 @@
 title: Classroom Prep
 hero:
   title: AP and Classroom Prep
-  description: We offer tutoring for any and all school subjects, building our
-    curriculum to fit our students needs and goals.
+  description: If your student is struggling in an honors class or wants to get
+    ahead of their AP tests, we can help through our highly experienced
+    classroom prep pages.
   buttonText: See all of our available classes
   buttonLink: /contact
   image: /images/pages/classroom-prep/andrew-teaching-katrine2.jpg
@@ -131,15 +132,14 @@ mediaSection:
   title: Can't find a suitable class? Sign up for individual tutoring
   image: /images/pages/classroom-prep/books.jpg
   subtitle: One on One
-  description: We offer one on one tutoring for any class listed above. We
-    currently have one on one studnets enrolled from Geometry to Calculus and
-    English to Physics.
+  description: We offer individual classes for a wide array of subjects, tailored
+    to students’ schools, teachers, and learning styles.
   linkText: Sign up
-  linkHref: /tests
+  linkHref: /contact
 signUp:
   subtitle: Sign Up now
   title: Sign up for Class tutoring
-  description: jfkdl
+  description: Sign up for a tutoring today!
   buttonText: Sign Up
-  buttonLink: /fdjklas;d
+  buttonLink: /contact
 ---
