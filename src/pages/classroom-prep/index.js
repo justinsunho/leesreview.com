@@ -24,6 +24,7 @@ const ClassroomPrep = ({ data }) => {
                 image={hero.image.childImageSharp.gatsbyImageData}
                 linkHref={hero.buttonLink}
                 linkText={hero.buttonText}
+                subtitle={hero.subtitle}
             />
             <TileContainer items={servicesList} title={`services`} />
             <MediaSection
@@ -62,6 +63,7 @@ export const pageQuery = graphql`
                         title
                         hero {
                             title
+                            subtitle
                             description
                             buttonText
                             buttonLink

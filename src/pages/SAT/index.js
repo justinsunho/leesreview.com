@@ -32,6 +32,7 @@ const SAT = ({ data }) => {
                 image={hero.image.childImageSharp.gatsbyImageData}
                 linkHref={hero.buttonLink}
                 linkText={hero.buttonText}
+                subtitle={hero.subtitle}
             />
             <TileContainer items={servicesList} title={`Our SAT Services`} />
             <MediaSection
@@ -82,6 +83,7 @@ export const pageQuery = graphql`
                         title
                         hero {
                             title
+                            subtitle
                             description
                             buttonText
                             buttonLink

@@ -5,7 +5,7 @@ import { Image } from "components/atoms";
 import { TextBlock } from "components/molecules";
 import { enterLeft } from "utilities/springConfigs";
 
-const Hero = ({ button, className, description, headingText, image, linkHref, linkText }) => {
+const Hero = ({ button, className, description, headingText, image, linkHref, linkText, subtitle }) => {
     const { inView, ref } = useInView({
         threshold: 0.2,
         triggerOnce: true,
@@ -29,7 +29,7 @@ const Hero = ({ button, className, description, headingText, image, linkHref, li
                     inView={inView}
                     linkHref={linkHref}
                     linkText={linkText}
-                    subtitle={"hero subtitle"}
+                    subtitle={subtitle}
                 />
                 <div className={"col-md-6 col-lg-8"}>
                     <AnimatedImage image={image} style={imageSpring} />

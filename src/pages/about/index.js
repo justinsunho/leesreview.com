@@ -23,6 +23,7 @@ const About = ({ data }) => {
                 image={hero.image.childImageSharp.gatsbyImageData}
                 linkHref={hero.buttonLink}
                 linkText={hero.buttonText}
+                subtitle={hero.subtitle}
             />
             <MediaSelectSection items={reason.reasonsList} title={reason.title} />
             <MediaSection
