@@ -443,7 +443,7 @@ collections:
                - { name: title, label: title, required: true }
                - { name: icon, label: icon, widget: code, required: false }
                - {label: Video Id, name: videoId, widget: string, required: false}
-               - { name: body, label: body, widget: markdown, required: true }
+               - { name: description, label: description, widget: markdown, required: true }
            - label: Media Section
              name: mediaSection
              widget: object

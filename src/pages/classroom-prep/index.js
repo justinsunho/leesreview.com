@@ -75,7 +75,7 @@ export const pageQuery = graphql`
                         }
                         servicesList {
                             title
-                            body
+                            description
                             icon {
                                 code
                             }
