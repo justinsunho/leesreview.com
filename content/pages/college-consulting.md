@@ -59,11 +59,12 @@ servicesList:
         </svg>
   - title: College Collaboration
     image: /images/pages/college-consulting/dsc02671.jpg
-    body: "We know how overwhelming it is to choose which colleges to apply to and
+    body: We know how overwhelming it is to choose which colleges to apply to and
       how much harder it seems to figure out how to apply to them. We use our
       years of experience in shaping application essays, figuring out school
       fit, and application guidance to remove those stresses from our students'
-      lives. "
+      lives. We offer advice for test taking, essay editing, and even financial
+      aid guidance.
     icon:
       code: >
         <svg width="77" height="67" viewBox="0 0 77 67" fill="none"
@@ -175,17 +176,23 @@ testimonies:
   linkHref: https://leesreview.com/testimonies
 priceList:
   - title: Freshman/ Sophomore Package
-    description: You receive<ul><li>Everything in the Base Package</li><li>2 Extra
-      weeks of instruction and help</li></ul>
+    description: You receive Academic Partnership<ul><li>8 sessions/year of direct
+      consultation</li><li>Class, Stress, and GPA Management</li><li>Discounted
+      Courses</li><li>Testing and Extracurricular Advisement</li></ul><br />
+      College Collaboration (Starting Jr. Year)<ul><li>Application
+      Advice</li><li>Summer Success Plan</li><li>Essay Editing</li><li>Custom
+      College List</li><li>Financial Aid Advice</li></ul>
   - title: Junior Package I
-    description: You receive<ul><li>Everything in the Base Package</li><li>2 Extra
-      weeks of instruction and help</li></ul>
+    description: You receive everything from the Freshman/ Sophomore Package,
+      starting in your first semester of Junior year.
   - title: Junior Package II
-    description: You receive<ul><li>Everything in the Base Package</li><li>2 Extra
-      weeks of instruction and help</li></ul>
+    description: You receive everything from the Freshman/ Sophomore Package,
+      starting in your second semester of Junior year.
   - title: Senior Package
-    description: You receive<ul><li>Everything in the Base Package</li><li>2 Extra
-      weeks of instruction and help</li></ul>
+    description: This is our specialized package for Seniors wanting to only apply
+      to California public schools. This program begins at the start of 2nd
+      semester of Junior year. You receive everything from the
+      Freshman/Sophomore package, tailored for the UC and CSU systems.
 signUp:
   subtitle: Reserve your spot
   title: Reserve your spot for college consulting now!
