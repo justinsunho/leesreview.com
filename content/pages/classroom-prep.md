@@ -48,8 +48,7 @@ servicesList:
 
         </svg>
   - title: One on One Sessions
-    body: We cater to our students' needs by providing expert one-on-one tutoring if
-      needed.
+    body: We cater to our students' needs by providing expert one-on-one tutoring.
     image: /images/pages/classroom-prep/dsc02834.jpg
     icon:
       code: >
