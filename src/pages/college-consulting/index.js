@@ -24,8 +24,6 @@ const CollegeConsulting = ({ data }) => {
         },
     } = pageEdges[0];
 
-    console.log(servicesList);
-
     return (
         <MainLayout>
             <Hero

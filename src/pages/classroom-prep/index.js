@@ -26,7 +26,7 @@ const ClassroomPrep = ({ data }) => {
                 linkText={hero.buttonText}
                 subtitle={hero.subtitle}
             />
-            <TileContainer items={servicesList} title={`services`} />
+            <TileContainer items={servicesList} title={`Services`} />
             <MediaSection
                 description={mediaSection.description}
                 headingText={mediaSection.title}
@@ -39,7 +39,7 @@ const ClassroomPrep = ({ data }) => {
             <ClassCardContainer
                 backgroundClassName={styles.backgroundClassCardContainer}
                 items={classEdges}
-                title={`classes`}
+                title={`Classes`}
             />
             <BottomSection
                 buttonLink={signUp.buttonLink}
