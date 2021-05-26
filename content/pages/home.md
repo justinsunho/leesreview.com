@@ -35,7 +35,7 @@ classes:
 about:
   image: /images/pages/home/emil-widlund-xrbbxixawy0-unsplash.jpg
   subtitle: About Us
-  title: Lifelong Lessons from Lee's Review
+  title: Lifelong Lessons from Lee's
   description: See how Chipotle gift cards, fist bumps, and fun stories create a
     learning environment that challenges students to work hard!
   linkText: Learn More
