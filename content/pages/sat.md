@@ -165,7 +165,7 @@ mediaSection:
     January 2020 (pre-Covid). Once Covid hit and we went in lockdown, Lee's gave
     two options, a refund on our deposit or continue with the course but
     virtually. My daughter wanted to continue with the course.  My daughter
-    loved the course and gitso much out of it. She said the instructors were
+    loved the course and got so much out of it. She said the instructors were
     great and helpful, even on Zoom. You get what you put in, which is what they
     explained when we first met with Lee's.  After my daughter's test dates
     cancelled three times due to Covid, she finally got a test date in November.
