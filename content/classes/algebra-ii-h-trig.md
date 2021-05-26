@@ -1,7 +1,7 @@
 ---
-title: Algebra II - H/ Trig
-date: 1/5 - 5/25 (No Class Spring Break)
-time: Monday and Wednesday 5:00 pm - 6:00 pm
+title: Algebra II
+date: 6/14 - 8/5
+time: Monday and Wednesday 11:30 am - 1:00 pm
 tag: Math/Science
 teacherName: Justin Kim
 teacherLink: /staff/justin-kim
