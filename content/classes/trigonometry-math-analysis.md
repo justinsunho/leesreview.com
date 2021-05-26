@@ -1,7 +1,7 @@
 ---
 title: Trigonometry / Math Analysis
-date: 1/5 - 5/25 (No Class Spring Break)
-time: Tuesday & Thursday 5:20 - 6:20 PM
+date: 6/14 - 8/5
+time: Monday & Wednesday 5:00 - 6:30 PM
 tag: Math/Science
 teacherName: Justin Kim
 teacherLink: /staff/justin-kim
