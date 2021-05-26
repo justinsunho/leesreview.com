@@ -160,11 +160,23 @@ servicesList:
 mediaSection:
   title: It's Not Too Late!
   image: /images/pages/SAT/alfons-morales-ylswjsy7stw-unsplash.jpg
-  subtitle: Summer SAT
-  description: "Sign up for our renowned Summer SAT and choose between online or
-    in-person classes. "
-  linkText: Sign up
-  linkHref: https://leesreview.com/contact
+  subtitle: Yelp Review
+  description: "\"We signed up my daughter for the SAT prep summer course in
+    January 2020 (pre-Covid). Once Covid hit and we went in lockdown, Lee's gave
+    two options, a refund on our deposit or continue with the course but
+    virtually. My daughter wanted to continue with the course.  My daughter
+    loved the course and gitso much out of it. She said the instructors were
+    great and helpful, even on Zoom. You get what you put in, which is what they
+    explained when we first met with Lee's.  After my daughter's test dates
+    cancelled three times due to Covid, she finally got a test date in November.
+    When she first took the practice test at Lee's, she scored an 1180. After
+    taking the course and studying based on what Me. Lee and the other
+    instructors told her to study, my daughter scored a 1540. It was mind
+    blowing how much higher she scored from her first practice test.  If you're
+    hesitant about signing your child up or virtual learning, do it!!  We are
+    happy we did. It was worth it!\" 5/19/2021, Shani A G"
+  linkText: Our Yelp Page
+  linkHref: https://www.yelp.com/biz/DdV-z75eL6H-X_QU4tXsSQ?sort_by=date_desc
 methodsList:
   - title: Placement Test
     image: /images/pages/SAT/attila-bionki-studying.jpg
