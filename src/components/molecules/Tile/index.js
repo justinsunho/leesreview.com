@@ -18,7 +18,7 @@ const Tile = ({ className, color, description, icon, style, title, videoId }) =>
             )}
             <div className={`${styles.container} ${(icon || videoId) && styles.topItem}`}>
                 <h4 className={styles.heading}>{title}</h4>
-                <p className={styles.description}>{description}</p>
+                <p className={styles.description} dangerouslySetInnerHTML={{ __html: description }} />
             </div>
         </div>
     );

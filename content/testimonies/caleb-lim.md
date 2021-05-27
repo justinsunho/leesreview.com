@@ -1,6 +1,6 @@
 ---
 title: Caleb Lim
-college: US Military Academy at West Point
+college: West Point
 image: /images/testimonies/16.png
 tags:
     - SAT I
