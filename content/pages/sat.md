@@ -220,10 +220,10 @@ priceList:
     description: You receive<ul><li>Everything in the Base Package</li><li>2 Extra
       weeks of instruction and help</li></ul>
 signUp:
-  subtitle: Enroll in SAT
-  title: Enroll in Summer or Spring SAT!
+  subtitle: Reminder
+  title: Sign up for our Summer SAT program!
   description: We still have in-person and online spots available for our Summer
     SAT courses. Sign up today!
-  buttonText: Sign up
+  buttonText: Sign Up
   buttonLink: https://leesreview.com/contact
 ---
