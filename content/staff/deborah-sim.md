@@ -1,6 +1,6 @@
 ---
 title: Deborah Sim
-subtitle: AP Biology
+subtitle: Biology Teacher
 description: AP Biology
 image: /images/staff/blue-logo.png
 tags:
