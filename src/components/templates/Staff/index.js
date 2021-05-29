@@ -31,7 +31,7 @@ const Staff = ({ data }) => {
                     <div className={`col-md-9 ${marginAutoCenter}`}>
                         <SmallCaps className={styles.smallCaps}>{subtitle}</SmallCaps>
                         <h1 className={styles.title}>{title}</h1>
-                        <div>{tags.map((tag) => tag + ", ")}</div>
+                        {tags && <div>{tags.map((tag) => tag + ", ")}</div>}
                     </div>
                 </div>
             </div>
