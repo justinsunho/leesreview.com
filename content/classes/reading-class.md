@@ -3,9 +3,7 @@ title: Reading Class
 date: January 22 - May 22
 time: Friday 3:30 PM - 5:00 PM or Saturday 1:00 PM - 2:30 PM
 tag: English
-teacherName: David Kong
-teacherLink: /staff/david-kong
+teacherName: Paul Lee
+teacherLink: /staff/justin-kim
 ---
-
-Two available classes. The class is split into 2 parts (Jan 22 -
-Mar 20, Mar 26 - May 22).
+Mon 5:15 PM - 6:45 PM and Fri 12:00 PM - 1:30 PM(Twice a Week, 8 Weeks)
