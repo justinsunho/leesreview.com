@@ -1,11 +1,9 @@
 ---
 title: Paul Lee
-subtitle: Reading Teacher
-description: Reading Teacher
-image: /images/staff/blue-logo.png
-tags:
-  - Reading
-color: orange
-link: staff/Paul
+subtitle: asdf
+description: asdf
+image: /images/staff/screen-shot-2021-05-29-at-2.03.08-pm.png
+color: blue
+link: asdf
 ---
-Reading Class Teacher
+asdf
