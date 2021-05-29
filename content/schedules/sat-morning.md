@@ -3,7 +3,7 @@ title: Summer SAT 2021 (Morning)
 subtitle: Plan A - June 14 - August 21 (8 Week)
 description: Each class is selected based on our interview + diagnostic testing process.
 linkText: Download a PDF of this schedule here
-linkHref: static/images/lr-summer-2021-schedule.pdf
+linkHref: /images/lr-summer-2021-schedule.pdf
 ---
 | In-Person Class 1                                                           | In-Person Class 2                                                            | Online Class                                                               |
 | --------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
