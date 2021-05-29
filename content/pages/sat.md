@@ -209,14 +209,14 @@ testimonies:
   linkText: See more Testimonies
   linkHref: https://leesreview.com/testimonies
 priceList:
-  - title: Base SAT Class (8 Weeks)
-    description: Our most common package You receive<ul><li>Intensive Math, Reading,
-      and Writing courses</li><li>Weekly testing</li><li>SAT Registration help *
-      TA office hours</li></ul>
-  - title: Base SAT Class (8 Weeks) + 2 Week Extension
+  - title: SAT Program (8 Weeks)
+    description: You receive<ul><li>Math, Reading, and Writing
+      courses</li><li>Weekly testing</li><li>SAT Registration help and
+      more</li></ul>
+  - title: SAT Program (8 Weeks) + 2 Week Extension
     description: You receive<ul><li>Everything in the Base Package</li><li>2 Extra
       weeks of instruction and help</li></ul>
-  - title: Base SAT Class (8 Weeks) + 4 Week Extension
+  - title: SAT Program (8 Weeks) + 4 Week Extension
     description: You receive<ul><li>Everything in the Base Package</li><li>2 Extra
       weeks of instruction and help</li></ul>
 signUp:
