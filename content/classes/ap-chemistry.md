@@ -6,4 +6,4 @@ tag: Math/Science
 teacherName: Mr. Lee
 teacherLink: /staff/mr-lee
 ---
-We also have office hours available
+AP Chemistry preparation course.
