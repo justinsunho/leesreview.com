@@ -6,4 +6,4 @@ tag: Math/Science
 teacherName: Justin Kim
 teacherLink: /staff/justin-kim
 ---
-Geometry preparation course for DBHS
+Geometry preparation course for DBHS.
