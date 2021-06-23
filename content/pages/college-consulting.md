@@ -155,7 +155,7 @@ servicesList:
       reflect on their academic careers so far, and we use it as an opportunity
       to allow them to develop in their everyday lives.
 mediaSection:
-  title: Sign up for our College Consulting Services
+  title: Sign Up for Our College Consulting Services
   subtitle: First Come, First Serve!
   image: /images/pages/college-consulting/inaki-del-olmo-nijueqw0rkg-unsplash.jpg
   description: We dedicate as much time as possible to our students, and due to
@@ -191,13 +191,12 @@ testimonies:
   linkHref: https://leesreview.com/testimonies
 priceList:
   - title: Freshman/ Sophomore Package
-    description: "You receive our Academic Partnership: <ul><li>8 Sessions Per Year
-      of Direct Consultation</li><li>Class, Stress, and GPA
-      Management</li><li>Discounted Courses</li><li>Testing and Extracurricular
-      Advisement</li></ul><br /> College Collaboration (Starting Jr.
-      Year)<ul><li>Application Advice</li><li>Summer Success Plan</li><li>Essay
-      Editing</li><li>Custom College List</li><li>Financial Aid
-      Advice</li></ul>"
+    description: "You receive the following: <ul><li>8 Sessions Per Year of Direct
+      Consultation</li><li>Class, Stress, and GPA Management</li><li>Discounted
+      Courses</li><li>Testing and Extracurricular Advisement</li></ul><br />
+      College Collaboration (Starting Jr. Year)<ul><li>Application
+      Advice</li><li>Summer Success Plan</li><li>Essay Editing</li><li>Custom
+      College List</li><li>Financial Aid Advice</li></ul>"
   - title: Junior Package I
     description: You receive everything from the Freshman/ Sophomore Package,
       starting in your first semester of Junior year.
