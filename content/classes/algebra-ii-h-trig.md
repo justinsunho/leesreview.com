@@ -1,7 +1,7 @@
 ---
 title: Algebra II
-date: 6/14 - 8/5
-time: Monday and Wednesday 11:30 am - 1:00 pm
+date: 8/16 - 12/16
+time: Tuesday and Thursday 4:30 pm - 5:30 pm
 tag: Math/Science
 teacherName: Justin Kim
 teacherLink: /staff/justin-kim
