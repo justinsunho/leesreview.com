@@ -214,6 +214,12 @@ priceList:
       The program begins at the start of 2nd semester
       of junior year or the start of senior year.
     title: UC & Cal State Package
+  - description: |-
+      This is our specialized package for seniors only
+      needing help on California public schools’ essays.
+      The program begins at the start of 2nd semester
+      of junior year or the start of senior year.
+    title: UC Essay Assistance
 signUp:
   subtitle: Reserve your spot
   title: Reserve your spot for college consulting now!
