@@ -1,7 +1,7 @@
 ---
 title: Trigonometry / Math Analysis
-date: 6/14 - 8/5
-time: Wednesday 3:30 PM - 5:00 PM and Thursday 2:00 PM - 3:30 PM
+date: 8/16 - 12/16
+time: Monday and Wednesday 4:30 pm - 5:30 pm
 tag: Math/Science
 teacherName: Justin Kim
 teacherLink: /staff/justin-kim
