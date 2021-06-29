@@ -1,6 +1,6 @@
 ---
 title: Algebra II - H
-date: August 16 - December 16
+date: 8/16 - 12/16
 time: Monday and Wednesday 3:30 pm - 4:30 pm
 tag: Math/Science
 teacherName: Justin Kim
