@@ -6,5 +6,4 @@ tag: Math/Science
 teacherName: Justin Kim
 teacherLink: /staff/justin-kim
 ---
-
-Algebra II H/ Trigonometry preparation course for DBHS.
+Algebra II preparation course for DBHS.
