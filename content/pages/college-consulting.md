@@ -208,6 +208,12 @@ priceList:
       to California public schools. This program begins at the start of 2nd
       semester of Junior year. You receive everything from the
       Freshman/Sophomore package, tailored for the UC and CSU systems.
+  - description: |-
+      This is our specialized package for seniors
+      wanting to apply only to California public schools.
+      The program begins at the start of 2nd semester
+      of junior year or the start of senior year.
+    title: UC & Cal State Package
 signUp:
   subtitle: Reserve your spot
   title: Reserve your spot for college consulting now!
