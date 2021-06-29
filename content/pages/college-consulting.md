@@ -231,6 +231,11 @@ priceList:
       This is our base packages offering freshmen and
       sophomore students our expert professional help
       with their high school studies.
+  - title: Freshmen/Sophomore Package III
+    description: |-
+      This is our more in-depth base packages offering
+      freshmen and sophomore students our expert
+      professional help with their high school studies.
 signUp:
   subtitle: Reserve your spot
   title: Reserve your spot for college consulting now!
