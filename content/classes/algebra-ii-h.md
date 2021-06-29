@@ -6,4 +6,4 @@ tag: Math/Science
 teacherName: Justin Kim
 teacherLink: /staff/justin-kim
 ---
-Follow school curriculum and lectures
+Algebra II - H preparation course for DBHS.
