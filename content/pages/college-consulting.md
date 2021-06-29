@@ -226,6 +226,11 @@ priceList:
       for help on private school essays. This program
       begins at the start of 2nd semester of junior year
       or the start of senior year.
+  - title: Freshman/ Sophomore Package II
+    description: |-
+      This is our base packages offering freshmen and
+      sophomore students our expert professional help
+      with their high school studies.
 signUp:
   subtitle: Reserve your spot
   title: Reserve your spot for college consulting now!
