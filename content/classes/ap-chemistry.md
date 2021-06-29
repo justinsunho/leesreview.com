@@ -1,7 +1,7 @@
 ---
 title: AP Chemistry
-date: 6/14 - 8/5
-time: Monday and Wednesday 2:00 PM - 3:30 PM
+date: 8/16 - 12/16
+time: Tuesday and Thursday 4:30 PM - 5:30 PM
 tag: Math/Science
 teacherName: Mr. Lee
 teacherLink: /staff/mr-lee
