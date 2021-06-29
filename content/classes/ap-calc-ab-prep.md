@@ -1,7 +1,7 @@
 ---
 title: AP Calculus AB
-date: 6/14 - 8/5 (8 Weeks)
-time: Monday and Thursday 5:00 PM - 6:30 PM
+date: 8/16 - 12/16
+time: Monday and Wednesday 6:45 PM - 7:45 PM
 tag: Math/Science
 teacherName: Justin Kim
 teacherLink: /staff/justin-kim
