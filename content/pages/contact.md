@@ -17,7 +17,7 @@ business:
         />           Sunday: Closed"
       image: /images/pages/contact/dsc02671.jpg
     - title: Address and Directions
-      description: "2040 S Brea Canyon Rd Suite #240, <br />           Diamond Bar, CA
-        91765 <br />           We’re located on the 2nd Floor"
+      description: 2040 S Brea Canyon Rd Suite 240, <br />           Diamond Bar, CA
+        91765 <br />           We’re located on the 2nd Floor
       image: /images/pages/contact/dsc02754.jpg
 ---
