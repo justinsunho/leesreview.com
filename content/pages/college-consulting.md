@@ -220,6 +220,12 @@ priceList:
       The program begins at the start of 2nd semester
       of junior year or the start of senior year.
     title: UC Essay Assistance
+  - title: Private School Essay Assistance
+    description: |-
+      This is our alternative package for those looking
+      for help on private school essays. This program
+      begins at the start of 2nd semester of junior year
+      or the start of senior year.
 signUp:
   subtitle: Reserve your spot
   title: Reserve your spot for college consulting now!
