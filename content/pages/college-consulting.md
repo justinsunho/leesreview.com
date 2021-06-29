@@ -197,17 +197,22 @@ priceList:
       College Collaboration (Starting Jr. Year)<ul><li>Application
       Advice</li><li>Summer Success Plan</li><li>Essay Editing</li><li>Custom
       College List</li><li>Financial Aid Advice</li></ul>"
+  - title: Freshman/ Sophomore Package II
+    description: |-
+      This is our base packages offering freshmen and
+      sophomore students our expert professional help
+      with their high school studies.
+  - title: Freshmen/Sophomore Package III
+    description: |-
+      This is our more in-depth base packages offering
+      freshmen and sophomore students our expert
+      professional help with their high school studies.
   - title: Junior Package I
     description: You receive everything from the Freshman/ Sophomore Package,
       starting in your first semester of Junior year.
   - title: Junior Package II
     description: You receive everything from the Freshman/ Sophomore Package,
       starting in your second semester of Junior year.
-  - title: Senior Package
-    description: This is our specialized package for Seniors wanting to only apply
-      to California public schools. This program begins at the start of 2nd
-      semester of Junior year. You receive everything from the
-      Freshman/Sophomore package, tailored for the UC and CSU systems.
   - description: |-
       This is our specialized package for seniors
       wanting to apply only to California public schools.
@@ -226,16 +231,6 @@ priceList:
       for help on private school essays. This program
       begins at the start of 2nd semester of junior year
       or the start of senior year.
-  - title: Freshman/ Sophomore Package II
-    description: |-
-      This is our base packages offering freshmen and
-      sophomore students our expert professional help
-      with their high school studies.
-  - title: Freshmen/Sophomore Package III
-    description: |-
-      This is our more in-depth base packages offering
-      freshmen and sophomore students our expert
-      professional help with their high school studies.
 signUp:
   subtitle: Reserve your spot
   title: Reserve your spot for college consulting now!
