@@ -9,7 +9,9 @@ const Info = ({ address, className, smallCapsClass }) => {
             <SmallCaps className={smallCapsClass}>Email: info@leesreview.com</SmallCaps>
 
             {address && (
-                <SmallCaps className={smallCapsClass}>Address: 2040 Brea Canyon Road, Diamond Bar, CA.</SmallCaps>
+                <SmallCaps className={smallCapsClass}>
+                    Address: 2040 Brea Canyon Road Suite 240, Diamond Bar, CA.
+                </SmallCaps>
             )}
         </div>
     );
