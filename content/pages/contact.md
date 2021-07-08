@@ -13,7 +13,7 @@ business:
   title: Business Hours and Address
   businessInfoList:
     - title: Business Hours and Address
-      description: "Monday - Thursday: 9:30 am - 5:30pm <br /> Friday: 10 am - 5 pm
+      description: "Monday - Thursday: 9:30 am - 5:30 pm <br /> Friday: 10 am - 5 pm
         <br />           Saturday & Sunday: Closed"
       image: /images/pages/contact/dsc02671.jpg
     - title: Address and Directions
