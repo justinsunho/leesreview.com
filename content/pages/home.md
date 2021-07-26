@@ -30,8 +30,8 @@ classes:
         tutor prep for your classes.
       linkText: Learn More
       linkHref: https://leesreview.com/classroom-prep
-  linkText: See Our Class Schedules
-  linkHref: https://leesreview.com/schedule
+  linkText: Click Here To See The Schedule
+  linkHref: https://www.leesreview.com/schedule
 about:
   image: /images/pages/home/emil-widlund-xrbbxixawy0-unsplash.jpg
   subtitle: About Us
