@@ -29,7 +29,7 @@ classes:
       description: Whether you're struggling or want to get ahead, we can tailor our
         tutor prep for your classes.
       linkText: Learn More
-      linkHref: https://leesreview.com/classroom-prep
+      linkHref: classroom-prep
   linkText: Click Here To See The Schedule
   linkHref: https://www.leesreview.com/schedule
 about:
