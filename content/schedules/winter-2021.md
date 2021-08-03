@@ -2,7 +2,7 @@
 title: Winter 2021
 subtitle: "December 20 – December 30 (2-week) *SAT-Optional Extension: January 7
   – March 5 (8-week)"
-description: SAT Prep for March SAT Test
+description: Registration begins in September
 linkText: Download a PDF of this schedule here
 linkHref: https://docs.google.com/document/d/e/2PACX-1vSUFRXuYJzJ0sm_JQw9Tt_GIqp1D6PCmeFgvrfZpvWwzpZG3eKv6cnc78ABU1N8cg/pub
 ---
