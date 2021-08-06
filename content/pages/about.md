@@ -8,7 +8,7 @@ hero:
     that our students can be in an environment that fosters a true appreciation
     of learning.
   buttonText: Sign Up
-  buttonLink: https://leesreview.com/contact
+  buttonLink: https://www.leesreview.com/contact
   image: /images/pages/about/happiness-in-a-sea-of-chaos.jpg
   subtitle: About Us
 reason:
