@@ -4,7 +4,7 @@ hero:
   image: /images/pages/home/center.jpg
   title: Summer SAT 2021 Enrollment
   description: Register now for our expert SAT program. Now offering Online and
-    In-Person classes!
+    In-Person classes
   buttonText: Enroll Now!
   buttonLink: https://www.leesreview.com/contact
   staff: A Dodgers Playoff Primer
