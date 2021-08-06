@@ -6,8 +6,8 @@ hero:
     college application process so that you can have more time to grow into your
     potential. We love engaging with our students through the application
     process in order to help them gain new insights into who they are.
-  buttonText: Sign up
-  buttonLink: https://leesreview.com/contact
+  buttonText: Sign up Here
+  buttonLink: https://www.leesreview.com/contact
   image: /images/pages/college-consulting/mr.-haven-schooling-andrew-soliman.jpg
   subtitle: College Consulting
 servicesList:
@@ -162,7 +162,7 @@ mediaSection:
     the nature of our program, space and time are extremely limited. Sign up now
     to ensure a spot!
   linkText: Sign up now
-  linkHref: https://leesreview.com/contact
+  linkHref: https://www.leesreview.com/contact
 methodsList:
   - title: Getting to Know our Students
     image: /images/pages/college-consulting/christina-in-more-action.jpg
@@ -236,5 +236,5 @@ signUp:
   title: Reserve your spot for college consulting now!
   description: Space is limited, make sure to sign up as soon as possible.
   buttonText: Reserve
-  buttonLink: https://leesreview.com/contact
+  buttonLink: https://www.leesreview.com/contact
 ---
