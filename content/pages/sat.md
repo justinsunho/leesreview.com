@@ -3,7 +3,7 @@ title: SAT
 hero:
   title: Summer SAT Enrollment is now open!
   description: Maximize your SAT score and learn from our expert tutors!
-  buttonText: Sign up now
+  buttonText: Sign up now!
   buttonLink: https://www.leesreview.com/contact
   image: /images/pages/SAT/s0020119.jpg
   subtitle: SAT Prep
