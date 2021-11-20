@@ -13,11 +13,63 @@ business:
   title: Business Hours and Address
   businessInfoList:
     - title: Business Hours and Address
-      description: "Labor Day: Closed <br /> Monday - Friday: 2:00 pm - 7:00 pm <br />
-        Saturday: 11:00 am - 4:00 pm <br /> Sunday: Closed"
+      description: "Thanksgiving: Closed <br /> Monday - Tuesday: 2:00 pm - 7:00 pm
+        <br /> Wednesday - Sunday: Closed"
       image: /images/pages/contact/dsc02671.jpg
     - title: Address and Directions
       description: 2040 S Brea Canyon Rd Suite 240, <br />           Diamond Bar, CA
         91765 <br />           We’re located on the 2nd Floor
       image: /images/pages/contact/dsc02754.jpg
+staff:
+  title: Our Staff
+  staffList:
+    - title: Mr. Lee
+      subtitle: Owner/Founder
+      image: /images/staff/mrlee.jpg
+      tags:
+        - SAT Math
+        - College Consulting
+        - AP Bio
+        - AP Chem
+      description: UCI c/o ___
+      linkHref: https://leesreview.com/staff/mr-lee
+      linkText: Learn More
+    - title: David Kong
+      subtitle: Tutor, College Consulting
+      image: /images/staff/david.jpg
+      tags:
+        - College Consulting
+        - SAT
+      description: jfidoas;fjldksafdsja
+      linkHref: https://leesreview.com/staff/david-kong
+      linkText: Learn More
+    - title: Justin Kim
+      subtitle: AP Tutor
+      image: /images/staff/roll-4-28.jpg
+      tags:
+        - AP Calc AB
+        - AP Chemistry
+        - AP Physics 1/2/C
+        - Trigonometry
+        - Algebra IIH
+        - Geometry
+      linkHref: https://leesreview.com/staff/justin-kim
+      linkText: Learn More
+      description: UCLA c/o 2017. DBHS c/o 2013
+    - title: Justin Haven
+      subtitle: Writing Teacher
+      image: /images/staff/mr.-haven-laying-down-knowledge-on-christa.jpg
+      tags:
+        - fjd
+      description: jfidoas;fjldksafdsja
+      linkHref: https://leesreview.com/staff/mr-lee
+      linkText: Learn More
+    - title: Mrs. Lee
+      subtitle: ifjoea;
+      image: /images/staff/s0370039.jpg
+      tags:
+        - fjd
+      description: ij;ofije;woafijowe
+      linkHref: https://leesreview.com/staff/mrs-lee
+      linkText: Learn More
 ---
