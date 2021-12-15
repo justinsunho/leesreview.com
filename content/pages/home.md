@@ -2,13 +2,13 @@
 title: Home
 hero:
   image: /images/pages/home/center.jpg
-  title: Winter SAT 2021 Enrollment
-  description: Register now for our expert SAT program. Now offering Online and
-    In-Person classes
+  title: Spring SAT 2021 Enrollment
+  description: Register now for our expert SAT program. Now offering online and
+    in-person classes!
   buttonText: Enroll Now
   buttonLink: https://www.leesreview.com/contact
   staff: A Dodgers Playoff Primer
-  subtitle: For Winter 2021
+  subtitle: For Spring
 classes:
   title: Programs and Classes
   classList:
