@@ -2,7 +2,7 @@
 title: Home
 hero:
   image: /images/pages/home/center.jpg
-  title: Spring SAT 2021 Enrollment
+  title: Spring SAT 2022 Enrollment
   description: Register now for our expert SAT program. Now offering online and
     in-person classes!
   buttonText: Enroll Now
