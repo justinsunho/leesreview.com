@@ -181,8 +181,8 @@ methodsList:
   - title: Placement Test
     image: /images/pages/SAT/attila-bionki-studying.jpg
     description: Before our students can sign up, we require a placement test to
-      place them into one of our 4 SAT classrooms. Each teachers the same
-      material, but we ensure proper pacing for each sets of students.
+      place them into one of our 4 SAT classes. The classes teach the same
+      materials but at a different pace fit for each class.
   - title: Personal Meetings
     image: /images/pages/SAT/mr.-haven-schooling-andrew-soliman.jpg
     description: After our students take their diagnostic tests, we schedule a 20
@@ -191,8 +191,8 @@ methodsList:
       their schedules.
   - title: June 14th - August 5th (8 Weeks)
     image: /images/pages/home/dsc02754.jpg
-    description: Our students then go through an intesive 8 week course taht covers
-      all SAT material, and requires weekly testing to ensure familiarity with
+    description: Our students then go through an intesive 8 week course that covers
+      all SAT material and requires weekly testing to ensure familiarity with
       the test and proper trajectory.
   - title: 2 or 4-week extensions (Optional)
     image: /images/pages/SAT/stephen-lee.jpg
