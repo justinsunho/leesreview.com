@@ -2,7 +2,7 @@
 title: Classroom Prep
 hero:
   title: Ace your Class Exams
-  description: If your student is struggling in an honors class or wants to get
+  description: If your student is struggling in an honors class or want to get
     ahead of their AP tests, we can help through our highly experienced
     classroom prep pages.
   buttonText: See all of our available classes
