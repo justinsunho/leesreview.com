@@ -189,12 +189,12 @@ methodsList:
       minute meeting with students and parents to make sure there is a good fit.
       We then place our students into an afternoon or morning class based on
       their schedules.
-  - title: June 14th - August 5th (8 Weeks)
+  - title: Regular Program
     image: /images/pages/home/dsc02754.jpg
     description: Our students then go through an intesive 8 week course that covers
       all SAT material and requires weekly testing to ensure familiarity with
       the test and proper trajectory.
-  - title: 2 or 4-week extensions (Optional)
+  - title: Extension Programs
     image: /images/pages/SAT/stephen-lee.jpg
     description: We also provide 2 - 4 week extensions for students that need the
       extra boost for their testing needs, starting August 13th - 21st for the
