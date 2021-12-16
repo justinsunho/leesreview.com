@@ -191,7 +191,7 @@ methodsList:
       their schedules.
   - title: Regular Program
     image: /images/pages/home/dsc02754.jpg
-    description: Our students then go through an intesive 8 week course that covers
+    description: Our students then go through an intensive 8-week course that covers
       all SAT material and requires weekly testing to ensure familiarity with
       the test and proper trajectory.
   - title: Extension Programs
