@@ -197,8 +197,8 @@ methodsList:
   - title: Extension Programs
     image: /images/pages/SAT/stephen-lee.jpg
     description: We also provide 2 - 4 week extensions for students that need the
-      extra boost for their testing needs, starting August 13th - 21st for the
-      two week extension and September 3rd - 25th for the four week extension.
+      extra boost for their testing needs. Please check our schedule for more
+      information.
   - title: Register and Take the SAT!
     image: /images/pages/SAT/s0110015.jpg
     description: At Lee's review, our students are never alone in the test taking
