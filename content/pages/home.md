@@ -40,7 +40,7 @@ about:
     learning environment that challenges students to work hard!
   linkText: Learn More
   linkHref: https://leesreview.com/about
-  videoId: QRGoswZh6fA
+  videoId: ff3KU8uKJiw
 testimonies:
   subtitle: Testimonies
   linkText: See More Testimonies
