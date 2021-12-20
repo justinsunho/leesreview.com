@@ -62,6 +62,7 @@ collections:
         - { name: body, label: body, widget: markdown, required: true }
         - { name: featured, label: featured pages, widget: select, multiple: true, options: ["Home", "SAT", "College Consulting"], required: false }
         - { name: year, label: year, widget: name}
+        - { name: videoId, label: videoId}
     - name: pages
       label: Pages
       files:
