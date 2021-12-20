@@ -1,14 +1,15 @@
 ---
+color: orange
+linkHref: /staff/david-kong
+linkText: Learn More
 title: David Kong
 subtitle: Tutor, College Consulting
 description: jfidoas;fjldksafdsja
 image: /images/staff/david.jpg
 tags:
-    - College Consulting
-    - SAT
-color: orange
-linkHref: /staff/david-kong
-linkText: Learn More
+  - College Consulting
+  - SAT
+link: /staff/david-kong
 ---
 
 **How Long Have you been tutoring?**
