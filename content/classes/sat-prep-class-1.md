@@ -8,4 +8,4 @@ tag: SAT
 teacherName: Mr. Lee
 teacherLink: /staff/mr-lee
 ---
-Preparing for SAT
+Preparing for the March 12 SAT Test
