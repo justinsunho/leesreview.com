@@ -6,7 +6,6 @@ tags:
   - SAT I
   - College Consulting
 featured:
-  - Home
   - SAT
   - College Consulting
 year: 2015
