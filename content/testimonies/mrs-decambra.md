@@ -3,10 +3,9 @@ title: Mrs. Decambra
 college: DBHS Teacher
 image: /images/testimonies/6.png
 tags:
-    - SAT I
-    - College Consulting
-featured:
-    - Home
+  - SAT I
+  - College Consulting
+featured: null
 year: 2015
 ---
 
