@@ -177,6 +177,7 @@ mediaSection:
     happy we did. It was worth it!\" 5/19/2021, Shani A G"
   linkText: Our Yelp Page
   linkHref: https://www.yelp.com/biz/DdV-z75eL6H-X_QU4tXsSQ?sort_by=date_desc
+  videoId: Kp_tP6U4SUA
 methodsList:
   - title: Placement Test
     image: /images/pages/SAT/attila-bionki-studying.jpg
