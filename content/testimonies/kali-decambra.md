@@ -5,6 +5,9 @@ image: /images/testimonies/7.jpg
 tags:
   - SAT I
   - College Consulting
+featured:
+  - Home
+  - College Consulting
 year: 2016
 videoId: _3YTFUgY6HU
 ---
