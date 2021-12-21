@@ -5,7 +5,8 @@ image: /images/testimonies/1.png
 tags:
   - SAT I
   - College Consulting
-featured: null
+featured:
+  - Home
 year: 2013
 ---
 
