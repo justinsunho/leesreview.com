@@ -60,7 +60,6 @@ const CollegeConsulting = ({ data }) => {
         linkText={`Check out our detailed brochure`}
       />
       <TestimonySection
-        curve
         linkHref={testimonies.linkHref}
         linkText={testimonies.linkText}
         subtitle={testimonies.subtitle}

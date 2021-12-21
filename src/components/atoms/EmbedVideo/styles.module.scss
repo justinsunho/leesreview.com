@@ -1,44 +1,43 @@
 @import "theme/variables";
 
 .videoContainer {
-    border-radius: 1rem;
-    box-shadow: $elevation-1;
-    overflow: hidden;
-    padding-top: 56.25%;
-    position: relative;
+  border-radius: 1rem;
+  box-shadow: $elevation-1;
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
 
-    &:hover {
-        box-shadow: $elevation-3;
-
-        .playButton {
-            background-color: $primary-2;
-        }
-    }
-
-    &:active {
-        background-color: $primary-3;
-    }
-
-    .youtubeFrame {
-        left: 0;
-        position: absolute;
-        top: 0;
-    }
-
-    .thumbnailContainer {
-        left: 0;
-        position: absolute;
-        top: 0;
-        z-index: 0;
-    }
+  &:hover {
+    box-shadow: $elevation-3;
 
     .playButton {
-        background-color: $primary-1;
-        border-radius: 64px;
-        left: 50%;
-        position: absolute;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 1;
+      background-color: $primary-2;
     }
+  }
+
+  &:active {
+    background-color: $primary-3;
+  }
+
+  .youtubeFrame {
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+
+  .thumbnailContainer {
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+  }
+
+  .playButton {
+    background-color: $primary-1;
+    border-radius: 64px;
+    left: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    z-index: 1;
+  }
 }

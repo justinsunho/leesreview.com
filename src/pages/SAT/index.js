@@ -57,7 +57,6 @@ const SAT = ({ data }) => {
         title={`Our Methods`}
       />
       <TestimonySection
-        curve
         linkHref={`/testimonies`}
         linkText={`See more stories`}
         subtitle={`SAT Stories`}

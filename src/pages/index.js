@@ -45,7 +45,7 @@ const Index = ({ data }) => {
         linkText={about.linkText}
         ribbon={true}
         subtitle={about.subtitle}
-        videoId={"QRGoswZh6fA"}
+        videoId={about.videoId}
       />
       <TestimonySection
         linkHref={testimonies.linkHref}
@@ -106,6 +106,7 @@ export const pageQuery = graphql`
                   gatsbyImageData(layout: FULL_WIDTH)
                 }
               }
+              videoId
               subtitle
               title
               description
@@ -146,6 +147,7 @@ export const pageQuery = graphql`
             title
             college
             tags
+            videoId
             image {
               childImageSharp {
                 gatsbyImageData(layout: FULL_WIDTH)

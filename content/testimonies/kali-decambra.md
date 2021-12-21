@@ -3,9 +3,10 @@ title: Kali Decambra
 college: USC
 image: /images/testimonies/7.jpg
 tags:
-    - SAT I
-    - College Consulting
+  - SAT I
+  - College Consulting
 year: 2016
+videoId: _3YTFUgY6HU
 ---
 
 “Lee’s Review will always mean so much more to me than where I practiced
