@@ -19,7 +19,7 @@ const TestimonyItem = ({ college, image, inView, tags, title, videoId }) => {
         className={`${styles.thumbnailContainer} ${
           videoId && styles.videoContainer
         }`}
-        onClick={() => setPlayVideo(1)}
+        onClick={() => videoId && setPlayVideo(1)}
       >
         {playVideo ? (
           <iframe
