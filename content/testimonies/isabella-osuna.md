@@ -11,7 +11,7 @@ featured:
   - SAT
   - College Consulting
 year: 2012
-videoId: QRGoswZh6fA
+videoId: C7qZygGWEmA
 ---
 
 “At Lee’s Review I not only raised my SAT scores by 500 points but also
