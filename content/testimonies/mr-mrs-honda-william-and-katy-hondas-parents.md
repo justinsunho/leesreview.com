@@ -3,11 +3,9 @@ title: Mr. & Mrs. Honda (William and Katy Honda's Parents)
 college: Stanford & USC
 image: /images/testimonies/1.png
 tags:
-    - SAT I
-    - College Consulting
-featured:
-    - Home
-    - College Consulting
+  - SAT I
+  - College Consulting
+featured: null
 year: 2013
 ---
 
