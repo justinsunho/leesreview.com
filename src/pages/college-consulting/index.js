@@ -51,6 +51,7 @@ const CollegeConsulting = ({ data }) => {
         linkText={mediaSection.linkText}
         ribbon={true}
         subtitle={mediaSection.subtitle}
+        videoId={mediaSection.videoId}
       />
       <MethodsContainer
         backgroundClassName={styles.methodBackgroundClassName}
@@ -117,6 +118,7 @@ export const pageQuery = graphql`
               description
               linkText
               linkHref
+              videoId
               image {
                 childImageSharp {
                   gatsbyImageData(layout: FULL_WIDTH)

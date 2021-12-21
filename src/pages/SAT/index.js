@@ -49,6 +49,7 @@ const SAT = ({ data }) => {
         linkHref={mediaSection.linkHref}
         linkText={mediaSection.linkText}
         ribbon={true}
+        videoId={mediaSection.videoId}
         subtitle={mediaSection.subtitle}
       />
       <MethodsContainer
@@ -113,6 +114,7 @@ export const pageQuery = graphql`
               description
               linkText
               linkHref
+              videoId
               image {
                 childImageSharp {
                   gatsbyImageData(layout: FULL_WIDTH)
