@@ -153,6 +153,7 @@ export const pageQuery = graphql`
           id
           frontmatter {
             title
+            videoId
             college
             tags
             image {

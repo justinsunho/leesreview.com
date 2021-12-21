@@ -163,6 +163,7 @@ export const pageQuery = graphql`
             title
             college
             tags
+            videoId
             image {
               childImageSharp {
                 gatsbyImageData(layout: FULL_WIDTH)
