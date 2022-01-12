@@ -160,7 +160,7 @@ servicesList:
 mediaSection:
   title: Hear from one of our teachers!
   image: /images/pages/SAT/alfons-morales-ylswjsy7stw-unsplash.jpg
-  subtitle: Video Interview
+  subtitle: About Us
   description: Mr. Kong, our SAT Reading Teacher, shares his experience with Lee's Review.
   linkText: See what others have to say
   linkHref: https://www.yelp.com/biz/DdV-z75eL6H-X_QU4tXsSQ?sort_by=date_desc
