@@ -1,7 +1,7 @@
 ---
 title: SAT
 hero:
-  title: Spring SAT Enrollment is now open!
+  title: Summer SAT Enrollment is now open!
   description: Maximize your SAT score and learn from our expert tutors!
   buttonText: Sign up now!
   buttonLink: https://www.leesreview.com/contact
@@ -158,24 +158,11 @@ servicesList:
         </svg>
     videoId: bhfM1B-T9pI
 mediaSection:
-  title: It's Not Too Late!
+  title: Hear from one of our teachers!
   image: /images/pages/SAT/alfons-morales-ylswjsy7stw-unsplash.jpg
-  subtitle: Yelp Review
-  description: "\"We signed up my daughter for the SAT prep summer course in
-    January 2020 (pre-Covid). Once Covid hit and we went in lockdown, Lee's gave
-    two options, a refund on our deposit or continue with the course but
-    virtually. My daughter wanted to continue with the course.  My daughter
-    loved the course and got so much out of it. She said the instructors were
-    great and helpful, even on Zoom. You get what you put in, which is what they
-    explained when we first met with Lee's.  After my daughter's test dates
-    cancelled three times due to Covid, she finally got a test date in November.
-    When she first took the practice test at Lee's, she scored an 1180. After
-    taking the course and studying based on what Me. Lee and the other
-    instructors told her to study, my daughter scored a 1540. It was mind
-    blowing how much higher she scored from her first practice test.  If you're
-    hesitant about signing your child up or virtual learning, do it!!  We are
-    happy we did. It was worth it!\" 5/19/2021, Shani A G"
-  linkText: Our Yelp Page
+  subtitle: Mr. Kong, our SAT Reading Teacher
+  description: Mr. Kong, our SAT Reading Teacher, shares his experience with Lee's Review.
+  linkText: See what others have to say!
   linkHref: https://www.yelp.com/biz/DdV-z75eL6H-X_QU4tXsSQ?sort_by=date_desc
   videoId: Kp_tP6U4SUA
 methodsList:
