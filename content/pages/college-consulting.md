@@ -189,7 +189,7 @@ methodsList:
   - title: College Consulting Brochure
     description: <iframe
       src="https://docs.google.com/presentation/d/e/2PACX-1vRC_9YGKav77IkkeEJtCdxICj1_MpsdFxz9bomJ_Zd11KDxuug6_HW_jwmRGavX-g/embed?start=true&loop=true&delayms=5000"
-      frameborder="0" width="200%" height="200%" allowfullscreen="true"
+      frameborder="0" width="640" height="375" allowfullscreen="true"
       mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
     image: /images/pages/college-consulting/books.jpg
 testimonies:
