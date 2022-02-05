@@ -4,7 +4,7 @@ module.exports = {
     author: `Justin Sunho Kim`,
     description: `Lee's Review Tutoring Center. SAT Prepration and College Consulting services.`,
     siteUrl: `http://leesreview.com`,
-    image: '/images/logo.jpg'
+    image: "/images/logo.jpg"
   },
   plugins: [
     {
@@ -49,8 +49,8 @@ module.exports = {
         name: `pages`
       }
     },
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -58,7 +58,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-relative-images`,
             options: {
-              name: 'images'
+              name: "images"
             }
           },
           {
@@ -67,13 +67,13 @@ module.exports = {
         ]
       }
     },
-    'gatsby-plugin-image',
-    'gatsby-plugin-netlify-cms',
-    'gatsby-plugin-sass',
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sitemap',
-    'gatsby-plugin-offline',
+    "gatsby-plugin-image",
+    "gatsby-plugin-netlify-cms",
+    "gatsby-plugin-sass",
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sitemap",
+    "gatsby-plugin-offline",
     `gatsby-plugin-resolve-src`,
-    'gatsby-transformer-json'
+    "gatsby-transformer-json"
   ]
 };

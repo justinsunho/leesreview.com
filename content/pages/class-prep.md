@@ -4,15 +4,15 @@ hero:
   title: Ace your Class Exams
   description: If your student is struggling in an honors class or want to get
     ahead of their AP tests, we can help through our highly experienced
-    classroom prep pages.
+    class prep pages.
   buttonText: See all of our available classes
   buttonLink: https://www.leesreview.com/schedule
-  image: /images/pages/classroom-prep/andrew-teaching-katrine2.jpg
-  subtitle: Classroom Prep
+  image: /images/pages/class-prep/andrew-teaching-katrine2.jpg
+  subtitle: class prep
 servicesList:
   - title: Quiet Study rooms
     description: We provide study rooms for students to study whenever they need.
-    image: /images/pages/classroom-prep/dsc02834.jpg
+    image: /images/pages/class-prep/dsc02834.jpg
     icon:
       code: >
         <svg width="40" height="53" viewBox="0 0 40 53" fill="none"
@@ -49,7 +49,7 @@ servicesList:
         </svg>
   - title: One on One Sessions
     description: We cater to our students' needs by providing expert one-on-one tutoring.
-    image: /images/pages/classroom-prep/dsc02834.jpg
+    image: /images/pages/class-prep/dsc02834.jpg
     icon:
       code: >
         <svg width="47" height="30" viewBox="0 0 47 30" fill="none"
@@ -87,7 +87,7 @@ servicesList:
   - title: Engaged Staff
     description: We provide office hours, tutoring, and quick answers outside of
       study sessions.
-    image: /images/pages/classroom-prep/dsc02834.jpg
+    image: /images/pages/class-prep/dsc02834.jpg
     icon:
       code: >
         <svg width="51" height="52" viewBox="0 0 51 52" fill="none"
@@ -130,9 +130,10 @@ servicesList:
         </svg>
 mediaSection:
   title: Can't find a suitable class? Sign up for individual tutoring
-  image: /images/pages/classroom-prep/books.jpg
+  image: /images/pages/class-prep/books.jpg
   subtitle: One on One
-  description: We offer individual classes for a wide array of subjects, tailored
+  description:
+    We offer individual classes for a wide array of subjects, tailored
     to students’ schools, teachers, and learning styles.
   linkText: Sign up
   linkHref: https://leesreview.com/contact

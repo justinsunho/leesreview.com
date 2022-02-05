@@ -58,7 +58,7 @@ collections:
         - { name: title, label: title, required: true }
         - { name: college, label: college, required: false }
         - { name: image, label: img, widget: image, required: true }
-        - { name: tags, label: classes, widget: select, multiple: true, options: ["SAT I", "SAT II", "College Consulting", "Classroom Prep", "ACT"], required: true }
+        - { name: tags, label: classes, widget: select, multiple: true, options: ["SAT I", "SAT II", "College Consulting", "Class Prep", "ACT"], required: true }
         - { name: body, label: body, widget: markdown, required: true }
         - { name: featured, label: featured pages, widget: select, multiple: true, options: ["Home", "SAT", "College Consulting"], required: false }
         - { name: year, label: year, widget: name}
@@ -418,11 +418,11 @@ collections:
              - {label: "Description", name: description, widget: string}
              - {label: "Button Text", name: buttonText, widget: string}               
              - {label: "Button Link", name: buttonLink, widget: string}
-       - name: classroomPrep
-         label: Classroom Prep
-         file: /content/pages/classroom-prep.md
-         media_folder: '/static/images/pages/classroom-prep'
-         public_folder: '/images/pages/classroom-prep'
+       - name: classPrep
+         label: Class Prep
+         file: /content/pages/class-prep.md
+         media_folder: '/static/images/pages/class-prep'
+         public_folder: '/images/pages/class-prep'
          fields:
            - {label: Title, name: title, widget: string}
            - label: Hero
