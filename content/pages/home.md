@@ -2,9 +2,8 @@
 title: Home
 hero:
   image: /images/pages/home/center.jpg
-  title: Summer SAT 2022 Enrollment
-  description: Register now for our expert SAT program. Now offering online and
-    in-person classes!
+  title: Now We Are Accepting Middle And High School Students
+  description: Register now for more details. Now offering online and in-person classes!
   buttonText: Enroll Now
   buttonLink: https://www.leesreview.com/contact
   staff: A Dodgers Playoff Primer
@@ -24,12 +23,17 @@ classes:
         maximize your potential school choices.
       linkText: Learn More
       linkHref: https://leesreview.com/college-consulting
-    - title: AP and Classroom Prep
+    - title: AP and Class Prep
       image: /images/pages/home/andrew-teaching-katrine2.jpg
       description: Whether you're struggling or want to get ahead, we can tailor our
         tutor prep for your classes.
       linkText: Learn More
       linkHref: classroom-prep
+    - title: Middle School
+      linkText: Learn More
+      linkHref: middle-school
+      description: Programs for middle school students
+      image: static/images/pages/home/DSC02671.JPG
   linkText: Click Here To See The Schedule
   linkHref: https://www.leesreview.com/schedule
 about:
