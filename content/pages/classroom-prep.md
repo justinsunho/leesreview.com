@@ -1,5 +1,5 @@
 ---
-title: Classroom Prep
+title: Class Prep
 hero:
   title: Ace your Class Exams
   description: If your student is struggling in an honors class or want to get
