@@ -164,7 +164,7 @@ mediaSection:
   description: Mr. Kong, our SAT Reading Teacher, shares his experience with Lee's Review.
   linkText: See what others have to say
   linkHref: https://www.yelp.com/biz/DdV-z75eL6H-X_QU4tXsSQ?sort_by=date_desc
-  videoId: Kp_tP6U4SUA
+  videoId: KA_9B5zOmNs
 methodsList:
   - title: Placement Test
     image: /images/pages/SAT/attila-bionki-studying.jpg
