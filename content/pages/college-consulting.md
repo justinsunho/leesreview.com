@@ -163,7 +163,7 @@ mediaSection:
     to ensure a spot!
   linkText: Sign up now
   linkHref: https://www.leesreview.com/contact
-  videoId: emYOyGCgWY8
+  videoId: hXdWNlHudrM
 methodsList:
   - title: Getting to Know our Students
     image: /images/pages/college-consulting/christina-in-more-action.jpg
