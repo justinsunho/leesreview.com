@@ -18,7 +18,7 @@ classes:
       linkText: Learn More
       linkHref: https://leesreview.com/SAT
     - title: College Consulting
-      image: /images/pages/home/mr.-haven-laying-down-knowledge-on-christa.jpg
+      image: /images/pages/home/evelyn-teaching-kyle-kim2.jpg
       description: We know how intimidating applying to college can be. See how we can
         maximize your potential school choices.
       linkText: Learn More
