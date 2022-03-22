@@ -4,8 +4,8 @@ subtitle: Writing Teacher
 description: ij;ofije;woafijowe
 image: /images/staff/mr.-haven-laying-down-knowledge-on-christa.jpg
 tags:
-  - fjd
+  - Creative Writing
 color: orange
 link: /staff/justin-haven
 ---
-fdasfdsa
+Creative Writing Class Teacher
