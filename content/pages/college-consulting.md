@@ -186,9 +186,6 @@ methodsList:
     description: With over 20 years of success helping students achieve their
       dreams, we believe success is not just about a number. We believe success
       is building a growth mindset for students.
-  - title: College Consulting Brochure
-    description: <https://docs.google.com/presentation/d/e/2PACX-1vRC_9YGKav77IkkeEJtCdxICj1_MpsdFxz9bomJ_Zd11KDxuug6_HW_jwmRGavX-g/pub?start=false&loop=false&delayms=3000>
-    image: /images/pages/college-consulting/books.jpg
 testimonies:
   subtitle: College Consulting Stories
   linkText: See more stories
