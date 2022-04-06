@@ -9,7 +9,7 @@ hero:
     of learning.
   buttonText: Sign Up
   buttonLink: https://www.leesreview.com/contact
-  image: /images/pages/about/happiness-in-a-sea-of-chaos.jpg
+  image: /images/pages/about/mr.-lee-solving-life-itself.jpg
   subtitle: About Us
 reason:
   title: Why Lee's Review?
