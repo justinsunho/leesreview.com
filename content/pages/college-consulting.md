@@ -8,7 +8,7 @@ hero:
     process in order to help them gain new insights into who they are.
   buttonText: Sign up Here
   buttonLink: https://www.leesreview.com/contact
-  image: /images/pages/college-consulting/mr.-lee-solving-life-itself.jpg
+  image: /images/pages/college-consulting/screenshot-13-.png
   subtitle: College Consulting
 servicesList:
   - title: Academic Partnership
