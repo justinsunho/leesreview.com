@@ -156,7 +156,7 @@ servicesList:
         </defs>
 
         </svg>
-    videoId: bhfM1B-T9pI
+    videoId: ""
 mediaSection:
   title: Hear from one of our teachers!
   image: /images/pages/SAT/alfons-morales-ylswjsy7stw-unsplash.jpg
