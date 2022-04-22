@@ -2,7 +2,7 @@
 title: Home
 hero:
   image: /images/pages/home/center.jpg
-  title: We Are Now Accepting Middle And High School Students!
+  title: Now Accepting Middle And High School Students!
   description: Register now for more details. Now offering online and in-person classes!
   buttonText: Enroll Now
   buttonLink: https://www.leesreview.com/contact
