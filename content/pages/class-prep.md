@@ -1,10 +1,10 @@
 ---
 title: Class Prep
 hero:
-  title: Ace your Class Exams
-  description: If your student is struggling in an honors class or want to get
-    ahead of their AP tests, we can help through our highly experienced
-    class prep pages.
+  title: Ace your classes!
+  description: If your student is struggling in any classes or want to get ahead
+    of their AP tests, we can help through our highly experienced class prep
+    programs.
   buttonText: See all of our available classes
   buttonLink: https://www.leesreview.com/schedule
   image: /images/pages/class-prep/andrew-teaching-katrine2.jpg
@@ -47,7 +47,7 @@ servicesList:
         </defs>
 
         </svg>
-  - title: One on One Sessions
+  - title: One-on-One Sessions
     description: We cater to our students' needs by providing expert one-on-one tutoring.
     image: /images/pages/class-prep/dsc02834.jpg
     icon:
@@ -132,8 +132,7 @@ mediaSection:
   title: Can't find a suitable class? Sign up for individual tutoring
   image: /images/pages/class-prep/books.jpg
   subtitle: One on One
-  description:
-    We offer individual classes for a wide array of subjects, tailored
+  description: We offer individual classes for a wide array of subjects, tailored
     to students’ schools, teachers, and learning styles.
   linkText: Sign up
   linkHref: https://leesreview.com/contact
