@@ -2,8 +2,8 @@
 title: Home
 hero:
   image: /images/pages/home/center.jpg
-  title: Now Accepting Middle And High School Students!
-  description: Register now for more details. Now offering online and in-person classes!
+  title: Now Offering In-Person, Online, And Hybrid Classes!
+  description: "Register now for more details. "
   buttonText: Enroll Now
   buttonLink: https://www.leesreview.com/contact
   staff: A Dodgers Playoff Primer
