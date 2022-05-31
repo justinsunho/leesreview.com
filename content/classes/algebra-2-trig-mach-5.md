@@ -1,6 +1,6 @@
 ---
-title: Algebra 2 / Trig / MACH 5
-date: 1/3 - 5/24
+title: Algebra 2 / Trig / MACH 5 / AP Calculus
+date: TBA
 time: Individual Tutoring/Flexible
 tag: Individual Tutor
 teacherName: Justin Kim
