@@ -1,6 +1,6 @@
 ---
 title: AP Physics
-date: 1/3 - 5/12
+date: 6/13 - 8/5
 time: Individual Tutoring/Flexible
 tag: Individual Tutor
 teacherName: Justin Kim
