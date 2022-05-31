@@ -1,5 +1,5 @@
 ---
-title: ALGEBRA 2/TRIG/MACH 5
+title: Algebra 2 / Trig / MACH 5
 date: 1/3 - 5/24
 time: Individual Tutoring/Flexible
 tag: Individual Tutor
