@@ -6,4 +6,4 @@ tag: Math/Science
 teacherName: Justin Kim
 teacherLink: /staff/justin-kim
 ---
-Trig / Math A preparation
+Trig / Math A preview class.
