@@ -1,7 +1,7 @@
 ---
 title: AP Calculus AB
-date: 1/3 - 5/24
-time: Wednesday 4:30 pm - 6:30 pm
+date: 6/13 - 8/5
+time: Tuesday and Thursday 3:30 pm - 5:00 pm
 tag: Math/Science
 teacherName: Justin Kim
 teacherLink: /staff/justin-kim
