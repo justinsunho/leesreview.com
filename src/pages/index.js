@@ -91,7 +91,9 @@ export const pageQuery = graphql`
               businessInfoList {
                 title
                 description
-                map
+                map {
+                  code
+                }
                 image {
                   childImageSharp {
                     gatsbyImageData(layout: FULL_WIDTH)
