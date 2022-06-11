@@ -39,7 +39,6 @@ const Index = ({ data }) => {
         items={classes.classList}
         title={classes.title}
       />
-      test
       <MediaSection
         description={about.description}
         headingText={about.title}
@@ -92,6 +91,7 @@ export const pageQuery = graphql`
               businessInfoList {
                 title
                 description
+                map
               }
             }
             classes {

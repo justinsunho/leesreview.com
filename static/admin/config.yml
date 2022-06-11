@@ -96,7 +96,7 @@ collections:
                 summary: '{{fields.title}}'
                 fields:
                   - {label: Title, name: title, widget: string}
-                  - { name: icon, label: icon, widget: code, required: false }
+                  - { name: map, label: map, widget: code, required: false }
                   - {label: Video Id, name: videoId, widget: string, required: false}
                   - {label: Image, name: image, widget: image, required: false}
                   - {label: Description, name: description, widget: string}
@@ -183,7 +183,7 @@ collections:
                 summary: '{{fields.title}}'
                 fields:
                   - {label: Title, name: title, widget: string}
-                  - { name: icon, label: icon, widget: code, required: false }
+                  - {name: icon, label: icon, widget: code, required: false }
                   - {label: Video Id, name: videoId, widget: string, required: false}
                   - {label: Image, name: image, widget: image, required: false}
                   - {label: Description, name: description, widget: string}
