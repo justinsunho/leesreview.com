@@ -47,7 +47,7 @@ const TileContainer = ({ backgroundClassName, className, items, title }) => {
               color={colorArray[i]}
               description={item.description}
               icon={item.icon && item.icon.code}
-              map={item.map && item.map}
+              map={item.map && item.map.code}
               title={item.title}
               videoId={item.videoId && item.videoId}
               image={item.image && item.image.childImageSharp.gatsbyImageData}
