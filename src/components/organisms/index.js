@@ -14,18 +14,18 @@ import ScheduleSection from "./ScheduleSection";
 import BottomSection from "./BottomSection";
 
 export {
-    BottomSection,
-    PriceCardContainer,
-    ScheduleSection,
-    ClassCardContainer,
-    Hero,
-    HomeHeroSection,
-    MethodsContainer,
-    MediaHero,
-    MediaSection,
-    TestimonySection,
-    LinkCardContainer,
-    TileContainer,
-    MediaSelectSection,
-    TestimonyCardContainer,
+  BottomSection,
+  PriceCardContainer,
+  ScheduleSection,
+  ClassCardContainer,
+  Hero,
+  HomeHeroSection,
+  MethodsContainer,
+  MediaHero,
+  MediaSection,
+  TestimonySection,
+  LinkCardContainer,
+  TileContainer,
+  MediaSelectSection,
+  TestimonyCardContainer
 };

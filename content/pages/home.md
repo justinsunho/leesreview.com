@@ -31,24 +31,36 @@ business:
           width='100%' height='200' style='border:0;' allowfullscreen=''
           loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>
   title: Business Hours and Address
+  businessInfoList:
+    - title: Business Hours
+      description:
+        "Monday - Thursday: 10:00 am - 5:30 pm <br /> Friday: 1:00 pm- 6:00
+        pm <br /> Saturday: 10:00 am - 3:00 pm <br /> Sunday: Closed"
+    - title: Address and Directions
+      description:
+        2040 S Brea Canyon Rd Suite 240, <br />           Diamond Bar, CA
+        91765 <br />           We’re located on the 2nd Floor
 classes:
   title: Programs and Classes
   classList:
     - title: SAT I
       image: /images/pages/home/dscf3673.jpg
-      description: Experience an SAT program shaped by years of SAT mentorship for
+      description:
+        Experience an SAT program shaped by years of SAT mentorship for
         hundreds of students.
       linkText: Learn More
       linkHref: https://leesreview.com/SAT
     - title: College Consulting
       image: /images/pages/home/evelyn-teaching-kyle-kim2.jpg
-      description: We know how intimidating applying to college can be. See how we can
+      description:
+        We know how intimidating applying to college can be. See how we can
         maximize your potential school choices.
       linkText: Learn More
       linkHref: https://leesreview.com/college-consulting
     - title: AP and Class Prep
       image: /images/pages/home/andrew-teaching-katrine2.jpg
-      description: Whether you're struggling or want to get ahead, we can tailor our
+      description:
+        Whether you're struggling or want to get ahead, we can tailor our
         tutor prep for your classes.
       linkText: Learn More
       linkHref: class-prep
@@ -78,13 +90,15 @@ location:
   locationList:
     - title: Check out our Online Class Demo
       image: /images/pages/home/screen-shot-2020-12-28-at-7.48.47-pm.png
-      description: See how we've been able to provide amazing instruction for kids in
+      description:
+        See how we've been able to provide amazing instruction for kids in
         LA county and Florida.
       linkText: Learn More
       linkHref: https://leesreview.com/online
     - title: Advanced Classrooms and Supplies
       image: /images/pages/home/caitlin-lee.jpg
-      description: Our top-of-the-line equipment enables us to teach our students in
+      description:
+        Our top-of-the-line equipment enables us to teach our students in
         fun and engaging ways.
       linkText: Learn More
       linkHref: https://leesreview.com/about
