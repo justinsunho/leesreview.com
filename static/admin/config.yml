@@ -84,6 +84,22 @@ collections:
                - {label: "Button Text", name: buttonText, widget: string}
                - {label: "Button Link", name: buttonLink, widget: string}
                - {label: "Image", name: image, widget: image}
+          - label: Business Info
+            name: business
+            widget: object
+            summary: '{{fields.name}}'
+            fields:
+              - {label: "Title", name: title, widget: string}
+              - label: Business Information
+                name: businessInfoList
+                widget: list
+                summary: '{{fields.title}}'
+                fields:
+                  - {label: Title, name: title, widget: string}
+                  - { name: icon, label: icon, widget: code, required: false }
+                  - {label: Video Id, name: videoId, widget: string, required: false}
+                  - {label: Image, name: image, widget: image, required: false}
+                  - {label: Description, name: description, widget: string}
           - label: Programs & classes
             name: classes
             widget: object

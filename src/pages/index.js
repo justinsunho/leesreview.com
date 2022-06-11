@@ -4,7 +4,8 @@ import {
   HomeHeroSection,
   MediaSection,
   TestimonySection,
-  LinkCardContainer
+  LinkCardContainer,
+  TileContainer
 } from "components/organisms";
 import { MainLayout } from "components/layouts";
 import * as styles from "./styles.module.scss";
@@ -17,7 +18,7 @@ const Index = ({ data }) => {
 
   const {
     node: {
-      frontmatter: { about, classes, hero, location, testimonies }
+      frontmatter: { about, classes, hero, location, testimonies, business }
     }
   } = pageEdges[0];
 
@@ -32,6 +33,7 @@ const Index = ({ data }) => {
         linkHref={hero.buttonLink}
         linkText={hero.buttonText}
       />
+      <TileContainer items={business.businessInfoList} title={business.title} />
       <LinkCardContainer
         backgroundClassName={styles.linkCardBackground}
         items={classes.classList}
@@ -82,6 +84,13 @@ export const pageQuery = graphql`
                 childImageSharp {
                   gatsbyImageData(layout: FULL_WIDTH)
                 }
+              }
+            }
+            business {
+              title
+              businessInfoList {
+                title
+                description
               }
             }
             classes {
