@@ -50,6 +50,7 @@ const TileContainer = ({ backgroundClassName, className, items, title }) => {
               map={item.map && item.map}
               title={item.title}
               videoId={item.videoId && item.videoId}
+              image={item.image && item.image.childImageSharp.gatsbyImageData}
             />
           </a.div>
         ))}
