@@ -1,4 +1,5 @@
 import React from "react";
+import { GatsbyImage } from "gatsby-plugin-image";
 import { EmbedVideo } from "components/atoms";
 import * as styles from "./styles.module.scss";
 
@@ -10,7 +11,8 @@ const Tile = ({
   style,
   title,
   videoId,
-  map
+  map,
+  image
 }) => {
   return (
     <div
@@ -34,6 +36,13 @@ const Tile = ({
       )}
       {map && (
         <div className={styles.map} dangerouslySetInnerHTML={{ __html: map }} />
+      )}
+      {image && (
+        <GatsbyImage
+          alt={`card-image-${title}`}
+          className={`${styles.image}`}
+          image={{ ...image, aspectRatio: 1 }}
+        />
       )}
       <div
         className={`${styles.container} ${(icon || videoId) && styles.topItem}`}

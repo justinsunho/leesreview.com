@@ -92,6 +92,11 @@ export const pageQuery = graphql`
                 title
                 description
                 map
+                image {
+                  childImageSharp {
+                    gatsbyImageData(layout: FULL_WIDTH)
+                  }
+                }
               }
             }
             classes {

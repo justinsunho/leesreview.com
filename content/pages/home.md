@@ -36,6 +36,7 @@ business:
       description:
         "Monday - Thursday: 10:00 am - 5:30 pm <br /> Friday: 1:00 pm- 6:00
         pm <br /> Saturday: 10:00 am - 3:00 pm <br /> Sunday: Closed"
+      image: /images/page/home/businesshours.jpg
     - title: Address and Directions
       map: "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.308765501388!2d-117.8464438845414!3d33.98460208062452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c32b68f58efbfd%3A0xf5eeea6af447cb88!2sLee&#39;s%20Review!5e0!3m2!1sen!2sus!4v1654975865070!5m2!1sen!2sus' width='100%' height='200' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
       description:
