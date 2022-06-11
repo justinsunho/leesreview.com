@@ -39,6 +39,7 @@ const Index = ({ data }) => {
         items={classes.classList}
         title={classes.title}
       />
+      test
       <MediaSection
         description={about.description}
         headingText={about.title}
