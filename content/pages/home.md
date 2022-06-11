@@ -8,6 +8,16 @@ hero:
   buttonLink: https://www.leesreview.com/contact
   staff: A Dodgers Playoff Primer
   subtitle: For Summer
+business:
+  businessInfoList:
+    - title: Hours
+      description: "Monday - Thursday: 10:00 am - 5:30 pm <br /> Friday: 1:00 pm-
+        6:00         pm <br /> Saturday: 10:00 am - 3:00 pm <br /> Sunday:
+        Closed"
+    - title: Address and Directions
+      description: 2040 S Brea Canyon Rd Suite 240, <br />           Diamond Bar,
+        CA         91765 <br />           We’re located on the 2nd Floor
+  title: Business Hours and Address
 classes:
   title: Programs and Classes
   classList:
