@@ -2,12 +2,12 @@
 title: Home
 hero:
   image: /images/pages/home/center.jpg
-  title: Now Offering In-Person, Online, And Hybrid Classes!
+  title: 2022 Fall Schedule Is Here!
   description: "Register now for more details. "
   buttonText: Enroll Now
   buttonLink: https://www.leesreview.com/contact
   staff: A Dodgers Playoff Primer
-  subtitle: For Summer
+  subtitle: For 2022 Fall
 business:
   businessInfoList:
     - title: Hours
