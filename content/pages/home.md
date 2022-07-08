@@ -46,11 +46,6 @@ classes:
         tutor prep for your classes.
       linkText: Learn More
       linkHref: class-prep
-    - title: Middle School
-      linkText: Learn More
-      linkHref: https://leesreview.com/class-prep
-      description: Programs for middle school students
-      image: /images/pages/home/dsc02671.jpg
   linkText: Click Here To See The Schedule
   linkHref: https://www.leesreview.com/schedule
 about:
