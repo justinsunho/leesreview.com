@@ -5,9 +5,7 @@ image: /images/testimonies/img_3058.jpeg
 tags:
   - SAT I
   - College Consulting
-featured:
-  - SAT
-  - College Consulting
+featured: null
 year: 2015
 ---
 
