@@ -18,7 +18,7 @@ const Index = ({ data }) => {
 
   const {
     node: {
-      frontmatter: { about, classes, hero, location, testimonies, business }
+      frontmatter: { about, classes, hero, location, testimonies }
     }
   } = pageEdges[0];
 
@@ -33,7 +33,7 @@ const Index = ({ data }) => {
         linkHref={hero.buttonLink}
         linkText={hero.buttonText}
       />
-      <TileContainer items={business.businessInfoList} title={business.title} />
+      {/* <TileContainer items={business.businessInfoList} title={business.title} /> */}
       <LinkCardContainer
         backgroundClassName={styles.linkCardBackground}
         items={classes.classList}
@@ -86,21 +86,21 @@ export const pageQuery = graphql`
                 }
               }
             }
-            business {
-              title
-              businessInfoList {
-                title
-                description
-                map {
-                  code
-                }
-                image {
-                  childImageSharp {
-                    gatsbyImageData(layout: FULL_WIDTH)
-                  }
-                }
-              }
-            }
+            # business {
+            #   title
+            #   businessInfoList {
+            #     title
+            #     description
+            #     map {
+            #       code
+            #     }
+            #     image {
+            #       childImageSharp {
+            #         gatsbyImageData(layout: FULL_WIDTH)
+            #       }
+            #     }
+            #   }
+            # }
             classes {
               title
               linkText
