@@ -3,7 +3,7 @@ title: Winter 2022
 subtitle: December 19 - March 4
 description: SAT Preparation Course For March SAT Test
 linkText: Download a 2022 Winter Schedule Here
-linkHref: https://docs.google.com/document/d/1w9EfGNnKL40vXjhS3rX2rDS6gBfqj60n/edit?usp=sharing&ouid=101406846051497054129&rtpof=true&sd=true
+linkHref: https://drive.google.com/file/d/1U-mLRkV3dFsBoPaQYumBrQUiVRWCB7Wr/view?usp=sharing
 ---
 
 
