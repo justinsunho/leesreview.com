@@ -209,8 +209,8 @@ priceList:
       weeks of instruction and help</li></ul>
 signUp:
   subtitle: Reminder
-  title: Sign up for our Summer SAT program!
-  description: We still have in-person and online spots available for our Spring
+  title: Sign up for our Winter SAT program!
+  description: We have in-person and online spots available for our Winter
     courses. Sign up today!
   buttonText: Sign Up
   buttonLink: https://leesreview.com/contact
