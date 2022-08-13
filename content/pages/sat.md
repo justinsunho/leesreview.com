@@ -1,7 +1,7 @@
 ---
 title: SAT
 hero:
-  title: Summer SAT Enrollment is now open!
+  title: Winter SAT Enrollment is now open!
   description: Maximize your SAT score and learn from our expert tutors!
   buttonText: Sign up now!
   buttonLink: https://www.leesreview.com/contact
