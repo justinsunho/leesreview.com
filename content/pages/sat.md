@@ -172,7 +172,7 @@ methodsList:
       place them into one of our 4 SAT classes. The classes teach the same
       materials but at a different pace fit for each class.
   - title: Personal Meetings
-    image: /images/pages/SAT/mr.-haven-schooling-andrew-soliman.jpg
+    image: /images/pages/SAT/s0110015.jpg
     description: After our students take their diagnostic tests, we schedule a 20
       minute meeting with students and parents to make sure there is a good fit.
       We then place our students into an afternoon or morning class based on
