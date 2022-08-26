@@ -19,7 +19,7 @@ reason:
       description: We interview every prospective student to ensure their commitment,
         creating a student body that pushes each other to grow.
     - title: Top Tier Teachers
-      image: /images/pages/about/s0120017.jpg
+      image: /images/pages/about/dscf3673.jpg
       description: Our teachers aren’t just subject-matter experts. They know how to
         engage with and nurture relationships with our students.
     - title: Flexible Schedules
