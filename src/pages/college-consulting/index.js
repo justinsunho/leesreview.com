@@ -57,8 +57,6 @@ const CollegeConsulting = ({ data }) => {
         backgroundClassName={styles.methodBackgroundClassName}
         items={methodsList}
         title={`Our Methods`}
-        linkHref={`https://drive.google.com/file/d/1vZUdoaUrO01Dbrd5iz8bH-b6Ix58m7pY/view`}
-        linkText={`Check out our detailed brochure`}
       />
       <TestimonySection
         linkHref={testimonies.linkHref}
