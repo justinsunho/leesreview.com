@@ -1,7 +1,7 @@
 ---
 title: Tiffany Kim
 college: USC
-image: /images/testimonies/transparent-blue-logo-only.png
+image: /images/testimonies/tiffany-kim.png
 tags:
   - College Consulting
   - SAT II
