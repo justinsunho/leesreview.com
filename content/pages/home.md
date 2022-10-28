@@ -2,12 +2,12 @@
 title: Home
 hero:
   image: /images/pages/home/center.jpg
-  title: 2022 Fall Schedule Is Here!
+  title: 2022 Winter Schedule Is Here!
   description: "Register now for more details. "
   buttonText: Enroll Now
   buttonLink: https://www.leesreview.com/contact
   staff: A Dodgers Playoff Primer
-  subtitle: For 2022 Fall
+  subtitle: For 2022 Winter
 business:
   businessInfoList:
     - title: Hours
