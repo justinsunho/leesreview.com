@@ -2,12 +2,12 @@
 title: Home
 hero:
   image: /images/pages/home/center.jpg
-  title: 2022 Winter Schedule Is Here!
+  title: 7 Week SAT Review Class 2023 Is Here!
   description: "Register now for more details. "
   buttonText: Enroll Now
   buttonLink: https://www.leesreview.com/contact
   staff: A Dodgers Playoff Primer
-  subtitle: For 2022 Winter
+  subtitle: For 2023 March SAT
 business:
   businessInfoList:
     - title: Hours
