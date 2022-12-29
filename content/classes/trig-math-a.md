@@ -1,9 +1,9 @@
 ---
-title: Trig / Math A
-date: 6/13 - 8/5
-time: Monday and Wednesday 2:00 pm - 3:30 pm
+title: Math Homework Help
+date: Starting 1/10/2023
+time: Tuesday and Wednesday 4:30 pm - 5:30 pm
 tag: Math/Science
 teacherName: Justin Kim
 teacherLink: /staff/justin-kim
 ---
-Trig / Math A preview class.
+M﻿ath Homework Help Class
