@@ -1,9 +1,9 @@
 ---
-title: Reading Class 1
-date: 6/13 - 7/26 (6 Weeks)
-time: Monday and Thursday 10:00 am - 11:30 am
+title: Writing Grammar (9th & 10th grade)
+date: 1/25 - 3/29 (10 Weeks)
+time: Wednesday 4:30 pm - 6:00 pm
 tag: English
 teacherName: Paul Lee
 teacherLink: /staff/paul-lee
 ---
-Reading Class
+Grammar class for 9th & 10th grade students
