@@ -1,7 +1,7 @@
 ---
 title: MACH 5
-date: 6/13 - 8/5
-time: Monday and Wednesday 3:30 pm - 5:00 pm
+date: Starting 1/9/2023
+time: Monday 5:30 pm - 7:30 pm
 tag: Math/Science
 teacherName: Justin Kim
 teacherLink: /staff/justin-kim
