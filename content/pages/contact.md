@@ -13,7 +13,9 @@ business:
   title: Business Hours and Address
   businessInfoList:
     - title: Business Hours
-      description: " Monday - Friday: 2:30 pm- 6:30 pm <br /> Saturday: 10:00 am -
+      description: "Lee's Review will be closed on Monday, May 29th & Tuesday, May
+        30th. We will return on Wednesday, May 31st to answer your questions.
+        <br /> Monday - Friday: 2:30 pm- 6:30 pm <br /> Saturday: 10:00 am -
         3:00 pm <br /> Sunday: Closed <br /> "
       image: /images/pages/contact/dsc02671.jpg
     - title: Address and Directions
