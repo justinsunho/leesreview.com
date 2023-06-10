@@ -13,10 +13,8 @@ business:
   title: Business Hours and Address
   businessInfoList:
     - title: Business Hours
-      description: "Lee's Review will be closed on Monday, May 29th & Tuesday, May
-        30th. We will return on Wednesday, May 31st to answer your questions.
-        <br /> Monday - Friday: 2:30 pm- 6:30 pm <br /> Saturday: 10:00 am -
-        3:00 pm <br /> Sunday: Closed <br /> "
+      description: "Monday - Thursday 9:30 am- 5:30 pm <br /> Friday: 10:30 am- 3:30
+        pm <br /> Saturday: 10:30 am - 2:30 pm <br /> Sunday: Closed <br /> "
       image: /images/pages/contact/dsc02671.jpg
     - title: Address and Directions
       description: 2040 S Brea Canyon Rd Suite 240, <br />           Diamond Bar, CA
