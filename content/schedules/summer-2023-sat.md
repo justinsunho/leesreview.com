@@ -1,5 +1,5 @@
 ---
-title: Summer 2023 SAT
+title: 2023 Summer SAT
 subtitle: June 12 – August 3
 description: SAT Preparation Course For August SAT Test
 linkText: Download a 2023 Summer Schedule Here
