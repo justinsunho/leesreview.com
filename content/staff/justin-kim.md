@@ -15,12 +15,11 @@ tags:
   - Geometry
 link: /staff/justin-kim
 ---
-
 **How Long Have you been tutoring?**
-_This will have been my 3rd school year tutoring_
+*This will have been my 5th school year tutoring.*
 
 **What was your favorite subject in High School?**
-_Definitely Math! I ended up majoring in Math in College_
+*Definitely Math! I ended up majoring in Math in College.*
 
 **Did you go to Lee's in High School?**
-_I went in the Summer of 2011 for the SAT classes. I had many terrible experiences with tutors, but Lee's always stuck out as the best place._
+*I went in the Summer of 2011 for the SAT classes. I had many terrible experiences with tutors, but Lee's always stuck out as the best place.*
