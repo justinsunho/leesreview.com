@@ -2,12 +2,12 @@
 title: Home
 hero:
   image: /images/pages/home/center.jpg
-  title: Summer SAT Class 2023 Is Here!
+  title: 2023 Fall Schedule Is Here!
   description: "Register now for more details. "
   buttonText: Enroll Now
   buttonLink: https://www.leesreview.com/contact
   staff: A Dodgers Playoff Primer
-  subtitle: For 2023 August SAT
+  subtitle: For 2023 August & October SAT
 business:
   businessInfoList:
     - title: Hours
