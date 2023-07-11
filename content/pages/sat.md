@@ -53,7 +53,7 @@ staff:
       linkText: Learn More
 title: SAT
 hero:
-  title: Summer SAT Class Enrollment is now open!
+  title: SAT Class Enrollment is now open!
   description: Maximize your SAT score and learn from our expert tutors!
   buttonText: Sign up now!
   buttonLink: https://www.leesreview.com/contact
