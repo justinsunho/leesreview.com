@@ -1,6 +1,6 @@
 ---
 title: Geometry / Algebra 2 / Trig / MACH 5 / AP Calculus
-date: Please call
+date: Please Call
 time: Individual Tutoring/Flexible
 tag: Individual Tutor
 teacherName: Justin Kim
