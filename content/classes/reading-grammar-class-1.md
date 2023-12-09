@@ -1,7 +1,7 @@
 ---
-title: Writing Grammar (9th & 10th grade)
-date: 1/25 - 3/29 (10 Weeks)
-time: Wednesday 4:30 pm - 6:00 pm
+title: Writing Grammar
+date: Please Call
+time: Flexible
 tag: English
 teacherName: Paul Lee
 teacherLink: /staff/paul-lee
