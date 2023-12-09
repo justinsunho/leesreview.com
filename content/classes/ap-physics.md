@@ -1,7 +1,7 @@
 ---
 title: AP Physics
 date: "Please call "
-time: Flexible
+time: Individual Tutoring/Flexible
 tag: Math/Science
 teacherName: Justin Kim
 teacherLink: /staff/justin-kim
