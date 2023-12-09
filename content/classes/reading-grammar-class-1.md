@@ -1,7 +1,7 @@
 ---
 title: Writing Grammar
 date: Please Call
-time: Flexible
+time: Individual Tutoring/Flexible
 tag: English
 teacherName: Paul Lee
 teacherLink: /staff/paul-lee
