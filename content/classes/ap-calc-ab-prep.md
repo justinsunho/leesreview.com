@@ -1,7 +1,7 @@
 ---
 title: AP Calculus AB
-date: Starting 1/9/2023
-time: Monday 5:30 pm - 7:30 pm
+date: Please Call
+time: Flexible
 tag: Math/Science
 teacherName: Justin Kim
 teacherLink: /staff/justin-kim
