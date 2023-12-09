@@ -2,7 +2,7 @@
 title: Schedule
 hero:
   title: Our Current Schedule
-  description: Check out our schedules for the upcoming Fall.
+  description: Check out our schedules for the upcoming Spring.
   buttonText: See all Schedules
   buttonLink: "#"
   image: /images/pages/schedule/dsc02834.jpg
