@@ -13,9 +13,8 @@ business:
   title: Business Hours and Address
   businessInfoList:
     - title: Business Hours
-      description: "Monday - Friday: 2:30 pm- 6:30 pm <br /> Saturday: 10:00 am - 2:30
-        pm <br /> Sunday: Closed <br />  December 23 - December 26: Closed <br
-        />  December 30 - January 2: Closed <br />"
+      description: "Monday - Friday: 2:30 pm- 7:00 pm <br /> Saturday: 10:00 am - 3:30
+        pm <br /> Sunday: Closed"
       image: /images/pages/contact/dsc02671.jpg
     - title: Address and Directions
       description: 2040 S Brea Canyon Rd Suite 240, <br />           Diamond Bar, CA
