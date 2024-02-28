@@ -2,12 +2,12 @@
 title: Home
 hero:
   image: /images/pages/home/center.jpg
-  title: 2024 Digital SAT Spring Schedule Is Here!
+  title: 2024 Digital SAT Summer Schedule Is Here!
   description: "Register now for more details. "
   buttonText: Enroll Now
   buttonLink: https://www.leesreview.com/contact
   staff: A Dodgers Playoff Primer
-  subtitle: For 2024 March DSAT
+  subtitle: For 2024 August DSAT
 business:
   businessInfoList:
     - title: Hours
