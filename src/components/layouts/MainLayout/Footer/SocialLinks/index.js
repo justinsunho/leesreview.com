@@ -15,7 +15,7 @@ const SocialLinks = () => {
                 </a>
             </li>
             <li>
-                <a href="www.instagram.com/leesreviewlearning">
+                <a href="https://www.instagram.com/leesreviewlearning">
                     <Instagram />
                 </a>
             </li>
