@@ -121,13 +121,10 @@ export const pageQuery = graphql`
                         }
                         brochure {
                             title
-                            brochure {
-                                title
-                                description
-                                buttonText
-                                buttonLink
-                                iframe
-                            }
+                            description
+                            buttonText
+                            buttonLink
+                            iframe
                         }
                         servicesList {
                             title
