@@ -25,6 +25,7 @@ const CollegeConsulting = ({ data }) => {
                 mediaSection,
                 methodsList,
                 priceList,
+                brochure,
                 servicesList,
                 signUp,
                 testimonies
@@ -45,28 +46,13 @@ const CollegeConsulting = ({ data }) => {
             <ScheduleSection
                 description={
                     <>
-                        "Our College Consulting helps guide you through the
-                        logistics of the college application process so that you
-                        can have more time to grow into your potential. We love
-                        engaging with our students through the application
-                        process in order to help them gain new insights into who
-                        they are."
-                        <iframe
-                            src="https://docs.google.com/presentation/d/e/2PACX-1vQGRr6eJPVt1DpJft-BnCh2XDqomi3C1MjhxYLlOTiZ5lf2TwZF4SbR9DquCRZeymgzh7Ka5XBIrwSP/embed?start=false&amp;loop=false&amp;delayms=5000"
-                            frameborder="0"
-                            width="960"
-                            height="569"
-                            allowfullscreen="true"
-                            mozallowfullscreen="true"
-                            webkitallowfullscreen="true"
-                        ></iframe>
+                        {brochure.description}
+                        {brochure.iframe}
                     </>
                 }
-                linkHref="https://drive.google.com/file/d/1SFkYTOzu0_n3Nsi0b3IOgVzzIwnxThZ5/view?usp=sharing"
-                linkText={
-                    "Click here to see our College Consulting program brochure"
-                }
-                title={"College Consulting Program"}
+                linkHref={brochure.buttonLink}
+                linkText={brochure.buttonText}
+                title={brochure.title}
             />
             <TileContainer
                 items={servicesList}
@@ -131,6 +117,16 @@ export const pageQuery = graphql`
                                 childImageSharp {
                                     gatsbyImageData(layout: FULL_WIDTH)
                                 }
+                            }
+                        }
+                        brochure {
+                            title
+                            brochure {
+                                title
+                                description
+                                buttonText
+                                buttonLink
+                                iframe
                             }
                         }
                         servicesList {
