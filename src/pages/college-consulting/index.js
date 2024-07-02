@@ -47,7 +47,16 @@ const CollegeConsulting = ({ data }) => {
                 description={
                     <>
                         {brochure.description}
-                        {brochure.iframe}
+                        {/* {brochure.iframe} */}
+                        <iframe
+                            src="https://docs.google.com/presentation/d/e/2PACX-1vQGRr6eJPVt1DpJft-BnCh2XDqomi3C1MjhxYLlOTiZ5lf2TwZF4SbR9DquCRZeymgzh7Ka5XBIrwSP/embed?start=false&amp;loop=false&amp;delayms=5000"
+                            frameborder="0"
+                            width="960"
+                            height="569"
+                            allowfullscreen="true"
+                            mozallowfullscreen="true"
+                            webkitallowfullscreen="true"
+                        ></iframe>
                     </>
                 }
                 linkHref={brochure.buttonLink}
