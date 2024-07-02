@@ -371,6 +371,16 @@ collections:
                - {label: "Button Text", name: buttonText, widget: string}
                - {label: "Button Link", name: buttonLink, widget: string}
                - {label: "Image", name: image, widget: image}
+           - label: Brochure
+             name: brochure
+             widget: object
+             summary: '{{fields.name}}'
+             fields:
+              - {label: "Title", name: title, widget: string}
+              - {label: "Description", name: description, widget: string}
+              - {label: "Button Text", name: buttonText, widget: string}
+              - {label: "Button Link", name: buttonLink, widget: string}
+              - {label: "iframe", name: iframe, widget: string}
            - label: services
              name: servicesList
              widget: list
