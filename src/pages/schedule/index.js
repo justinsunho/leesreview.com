@@ -12,8 +12,7 @@ import * as styles from "./styles.module.scss";
 const Schedule = ({ data }) => {
     const {
         classes: { edges: classEdges },
-        page: { edges: pageEdges },
-        schedules: { edges: scheduleEdges }
+        page: { edges: pageEdges }
     } = data;
 
     const {
