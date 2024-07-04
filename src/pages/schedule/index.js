@@ -11,8 +11,8 @@ import * as styles from "./styles.module.scss";
 
 const Schedule = ({ data }) => {
     const {
-        classes: { edges: classEdges },
-        page: { edges: pageEdges }
+        page: { edges: pageEdges },
+        schedules: { edges: scheduleEdges }
     } = data;
 
     const {
@@ -40,9 +40,6 @@ const Schedule = ({ data }) => {
                                 </a>
                             </li>
                         ))}
-                        <li className={styles.listItem} key={"classes"}>
-                            <a href={`#class-prep`}>Class Prep</a>
-                        </li>
                     </ul>
                 </div>
             </MediaHero>
