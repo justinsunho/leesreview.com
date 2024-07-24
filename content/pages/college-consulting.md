@@ -17,7 +17,7 @@ brochure:
     potential. We love engaging with our students through the application
     process in order to help them gain new insights into who they are.
   buttonText: Click here to see our College Consulting program brochure
-  buttonLink: https://docs.google.com/presentation/u/0/?usp=slides_web
+  buttonLink: https://docs.google.com/presentation/d/1HfNmsAmymvFdgMNyKX9V_lmstuGOws1VM1WtsLWt99w/edit?usp=sharing
   iframe: <iframe
     src="https://docs.google.com/presentation/d/e/2PACX-1vQGRr6eJPVt1DpJft-BnCh2XDqomi3C1MjhxYLlOTiZ5lf2TwZF4SbR9DquCRZeymgzh7Ka5XBIrwSP/embed?start=false&amp;loop=false&amp;delayms=5000"
     frameborder="0" width="960" height="569" allowfullscreen="true"
