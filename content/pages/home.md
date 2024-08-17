@@ -64,7 +64,7 @@ testimonies:
   linkHref: https://leesreview.com/testimonies
 location:
   subtitle: Location
-  title: Online or Diamond Bar
+  title: Online or In-Person
   locationList:
     - title: Check out our Online Class Demo
       image: /images/pages/home/screen-shot-2020-12-28-at-7.48.47-pm.png
