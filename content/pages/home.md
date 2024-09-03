@@ -3,7 +3,7 @@ title: Home
 hero:
   image: /images/pages/home/center.jpg
   title: Lee’s Review will be moving to a new location, starting mid-September!
-  description: Lee’s Review will be moving to a new location in Walnut.
+  description: Lee’s Review will be moving to a new location in Walnut, CA.
   buttonText: Click to see the Google map location!
   buttonLink: https://maps.app.goo.gl/8RPwA3p1P2FR4pze8
   staff: A Dodgers Playoff Primer
