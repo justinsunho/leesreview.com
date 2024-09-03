@@ -2,12 +2,12 @@
 title: Home
 hero:
   image: /images/pages/home/center.jpg
-  title: 2024 Fall Schedule Is Here!
-  description: "Register now for more details. "
-  buttonText: Enroll Now
-  buttonLink: https://www.leesreview.com/contact
+  title: Lee’s Review will be moving to a new location, starting mid-September!
+  description: Lee’s Review will be moving to a new location in Walnut.
+  buttonText: Click to see the Google map location!
+  buttonLink: https://maps.app.goo.gl/8RPwA3p1P2FR4pze8
   staff: A Dodgers Playoff Primer
-  subtitle: Starts August 19th
+  subtitle: Lee’s Review will be moving to a new location, starting mid-September!
 business:
   businessInfoList:
     - title: Hours
