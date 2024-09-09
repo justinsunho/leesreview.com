@@ -5,12 +5,19 @@ import * as styles from "./styles.module.scss";
 const Info = ({ address, className, smallCapsClass }) => {
     return (
         <div className={`${styles.wrapper} ${className}`}>
-            <SmallCaps className={smallCapsClass}>Phone: (909) 612-5700</SmallCaps>
-            <SmallCaps className={smallCapsClass}>Email: info@leesreview.com</SmallCaps>
+            <SmallCaps className={smallCapsClass}>
+                Phone: (909) 612-5700
+            </SmallCaps>
+            <SmallCaps className={smallCapsClass}>
+                Phone: (909) 612-5701
+            </SmallCaps>
+            <SmallCaps className={smallCapsClass}>
+                Email: info@leesreview.com
+            </SmallCaps>
 
             {address && (
                 <SmallCaps className={smallCapsClass}>
-                    Address: 2040 Brea Canyon Road Suite 240, Diamond Bar, CA.
+                    New Address: 19811 Colima Rd. #320 Walnut, CA 91789
                 </SmallCaps>
             )}
         </div>
