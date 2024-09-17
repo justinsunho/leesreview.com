@@ -2,12 +2,12 @@
 title: Home
 hero:
   image: /images/pages/home/center.jpg
-  title: Lee’s Review have moved to a new location in Walnut, CA!
-  description: Lee’s Review have moved to a new location in Walnut, CA.
+  title: We have moved to a new location!
+  description: "Our new address is 19811 Colima Rd. #320 Walnut, CA 91789"
   buttonText: Click to see the Google map location!
   buttonLink: https://maps.app.goo.gl/8RPwA3p1P2FR4pze8
   staff: A Dodgers Playoff Primer
-  subtitle: Lee’s Review have moved to a new location in Walnut, CA!
+  subtitle: "Our new address is 19811 Colima Rd. #320 Walnut, CA 91789"
 business:
   businessInfoList:
     - title: Hours
