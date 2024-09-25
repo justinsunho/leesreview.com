@@ -37,7 +37,7 @@
     "gatsby-transformer-remark": "^3.0.0",
     "gatsby-transformer-sharp": "^3.2.0",
     "netlify-cms-app": "^2.14.29",
-    "node-sass": "^5.0.0",
+    "node-sass": "^9.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
@@ -45,6 +45,7 @@
     "react-spring": "^8.0.27",
     "resize-observer-polyfill": "^1.5.1",
     "rfs": "^9.0.3",
+    "sass": "^1.79.3",
     "typography": "^0.16.19"
   },
   "devDependencies": {

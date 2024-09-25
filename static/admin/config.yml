@@ -48,11 +48,11 @@ collections:
         - {label: "Teacher Name", name: teacherName, widget: relation, collection: staff, value_field: title, search_fields: [title]}
         - {label: "Teacher Link", name: teacherLink, widget: relation, collection: staff, value_field: link, search_fields: [title]}
         - {label: "Description", name: body, widget: markdown}
-    - name: testimony
-      label: Testimony
-      folder: /content/testimonies
-      media_folder: '/static/images/testimonies'
-      public_folder: '/images/testimonies'
+    - name: testimonial
+      label: Testimonial
+      folder: /content/testimonials
+      media_folder: '/static/images/testimonials'
+      public_folder: '/images/testimonials'
       create: true
       fields:
         - { name: title, label: title, required: true }
@@ -130,14 +130,14 @@ collections:
               - {label: "Link Text", name: linkText, widget: string}
               - {label: "Link Href", name: linkHref, widget: string}
               - {label: Video Id, name: videoId, widget: string, required: false}
-          - label: Testimonies
-            name: testimonies
+          - label: Testimonials
+            name: testimonials
             widget: object
             summary: '{{fields.name}}'
             fields:
               - {label: "subtitle", name: subtitle, widget: string}
-              - {label: "Testimony Link Text", name: linkText, widget: string}
-              - {label: "Testimony Link Href", name: linkHref, widget: string}
+              - {label: "Testimonial Link Text", name: linkText, widget: string}
+              - {label: "Testimonial Link Href", name: linkHref, widget: string}
           - label: Location
             name: location
             widget: object
@@ -255,11 +255,11 @@ collections:
             summary: '{{fields.name}}'
             fields:
               - {label: "Title", name: title, widget: string}
-       - name: testimonies
-         label: Testimonies
-         file: /content/pages/testimonies.md
-         media_folder: /static/images/pages/testimonies
-         public_folder: '/images/pages/testimonies'
+       - name: testimonials
+         label: Testimonials
+         file: /content/pages/testimonials.md
+         media_folder: /static/images/pages/testimonials
+         public_folder: '/images/pages/testimonials'
          fields:
           - {label: Title, name: title, widget: string}
           - label: Hero
@@ -320,16 +320,16 @@ collections:
                - { name: title, label: title, required: true }
                - { name: image, label: img, widget: image, required: true }
                - { name: description, label: description, widget: markdown, required: true }
-           - label: Testimonies
-             name: testimonies
+           - label: Testimonials
+             name: testimonials
              widget: object
              summary: '{{fields.name}}'
              fields:
                - {label: "subtitle", name: subtitle, widget: string}
-               - {label: "Testimony Link Text", name: linkText, widget: string}
-               - {label: "Testimony Link Href", name: linkHref, widget: string}
-               - label: Testimony List
-                 name: testimonyList
+               - {label: "Testimonial Link Text", name: linkText, widget: string}
+               - {label: "Testimonial Link Href", name: linkHref, widget: string}
+               - label: Testimonial List
+                 name: testimonialList
                  widget: list
                  summary: '{{fields.title}}'
                  fields:
@@ -410,16 +410,16 @@ collections:
                - { name: title, label: title, required: true }
                - { name: image, label: img, widget: image, required: true }
                - { name: description, label: description, widget: markdown, required: true }
-           - label: Testimonies
-             name: testimonies
+           - label: Testimonials
+             name: testimonials
              widget: object
              summary: '{{fields.name}}'
              fields:
                - {label: "subtitle", name: subtitle, widget: string}
-               - {label: "Testimony Link Text", name: linkText, widget: string}
-               - {label: "Testimony Link Href", name: linkHref, widget: string}
-               - label: Testimony List
-                 name: testimonyList
+               - {label: "Testimonial Link Text", name: linkText, widget: string}
+               - {label: "Testimonial Link Href", name: linkHref, widget: string}
+               - label: Testimonial List
+                 name: testimonialList
                  widget: list
                  summary: '{{fields.title}}'
                  fields:

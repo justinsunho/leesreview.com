@@ -5,7 +5,7 @@ import {
     TileContainer,
     MediaSection,
     MethodsContainer,
-    TestimonySection,
+    TestimonialSection,
     ScheduleSection,
     BottomSection
 } from "components/organisms";
@@ -15,7 +15,7 @@ import * as styles from "./styles.module.scss";
 const CollegeConsulting = ({ data }) => {
     const {
         page: { edges: pageEdges },
-        testimonies: { edges: testimonyList }
+        testimonials: { edges: testimonialList }
     } = data;
 
     const {
@@ -28,7 +28,7 @@ const CollegeConsulting = ({ data }) => {
                 brochure,
                 servicesList,
                 signUp,
-                testimonies
+                testimonials
             }
         }
     } = pageEdges[0];
@@ -78,11 +78,11 @@ const CollegeConsulting = ({ data }) => {
                 items={methodsList}
                 title={`Our Methods`}
             />
-            <TestimonySection
-                linkHref={testimonies.linkHref}
-                linkText={testimonies.linkText}
-                subtitle={testimonies.subtitle}
-                testimonyList={testimonyList}
+            <TestimonialSection
+                linkHref={testimonials.linkHref}
+                linkText={testimonials.linkText}
+                subtitle={testimonials.subtitle}
+                testimonialList={testimonialList}
             />
             {/* <PriceCardContainer
                 backgroundClassName={styles.priceCardBackgroundClassName}
@@ -159,7 +159,7 @@ export const pageQuery = graphql`
                                 }
                             }
                         }
-                        testimonies {
+                        testimonials {
                             subtitle
                             linkText
                             linkHref
@@ -179,7 +179,7 @@ export const pageQuery = graphql`
                 }
             }
         }
-        testimonies: allMarkdownRemark(
+        testimonials: allMarkdownRemark(
             filter: { frontmatter: { featured: { eq: "College Consulting" } } }
         ) {
             edges {
