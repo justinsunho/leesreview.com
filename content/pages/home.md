@@ -3,11 +3,11 @@ title: Home
 hero:
   image: /images/pages/home/center.jpg
   title: Our SAT Class Schedule Is Here!
-  description: SAT Preparation Class For March Test
+  description: SAT Preparation Class For March 8th Test
   buttonText: Click to See the Schedule
   buttonLink: https://docs.google.com/document/d/1AxDIOsk7QoV9hViApE9VJnhDHN5bmrDL/edit?usp=sharing&ouid=101406846051497054129&rtpof=true&sd=true
   staff: A Dodgers Playoff Primer
-  subtitle: SAT Preparation Class For March Test
+  subtitle: SAT Preparation Class For March 8th Test
 business:
   businessInfoList:
     - title: Hours
