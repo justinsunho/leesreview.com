@@ -2,12 +2,14 @@
 title: Home
 hero:
   image: /images/pages/home/center.jpg
-  title: Our January SAT Saturday Class Schedule Is Here!
-  description: SAT Preparation Class For March 8th Test
+  title: Our Summer SAT & Class Schedule Is Here!
+  description: SAT Preparation Class For Aug 23rd, Oct 4th, Nov 1st, Dec 6th Test
+    & AP Classes
   buttonText: Click to See the Schedule
-  buttonLink: https://docs.google.com/document/d/1AxDIOsk7QoV9hViApE9VJnhDHN5bmrDL/edit?usp=sharing&ouid=101406846051497054129&rtpof=true&sd=true
+  buttonLink: https://docs.google.com/document/d/1gE5LaUlgEk5w0Fqq7LwZ6sVFvIdbh0qWA5KkMmDlsw0/edit?usp=sharing
   staff: A Dodgers Playoff Primer
-  subtitle: SAT Preparation Class For March 8th Test
+  subtitle: SAT Preparation Class For Aug 23rd, Oct 4th, Nov 1st, Dec 6th Test &
+    AP Classes
 business:
   businessInfoList:
     - title: Hours
