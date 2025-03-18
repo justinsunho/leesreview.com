@@ -2,7 +2,7 @@
 title: Home
 hero:
   image: /images/pages/home/center.jpg
-  title: Our Summer SAT & Class Schedule Is Here!
+  title: Our Summer SAT & Classes Schedule Is Here!
   description: SAT Preparation Class For Aug 23rd, Oct 4th, Nov 1st, Dec 6th Test
     & AP Classes
   buttonText: Click to See the Schedule
