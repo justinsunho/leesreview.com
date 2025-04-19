@@ -18,7 +18,7 @@ business:
         Sunday: Closed"
       image: /images/pages/contact/dsc02671.jpg
     - title: Address and Directions
-      description: 19811 Colima Rd. 320, <br /> Walnut, CA 91789 <br />
+      description: 19811 Colima Rd. 320 (1st floor), <br /> Walnut, CA 91789 <br />
       image: /images/pages/contact/dsc02754.jpg
 staff:
   title: Our Staff
