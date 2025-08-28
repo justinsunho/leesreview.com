@@ -6,7 +6,7 @@ hero:
   description: SAT Preparation Class For Aug 23rd, Oct 4th, Nov 1st, Dec 6th Test
     & AP Classes
   buttonText: Click to See the Schedule
-  buttonLink: https://docs.google.com/document/d/1gE5LaUlgEk5w0Fqq7LwZ6sVFvIdbh0qWA5KkMmDlsw0/edit?usp=sharing
+  buttonLink: https://docs.google.com/document/d/e/2PACX-1vT8uT-z00plOlj4cs-qVjrv3ilYMpWCmAeOWSxG5INQGsJCJ8wqC_dW80b45OimTiE7V7HQs0inDRG1/pub
   staff: A Dodgers Playoff Primer
   subtitle: SAT Preparation Class For Aug 23rd, Oct 4th, Nov 1st, Dec 6th Test &
     AP Classes
