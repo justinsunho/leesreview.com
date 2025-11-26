@@ -13,8 +13,9 @@ business:
   title: Business Hours and Address
   businessInfoList:
     - title: Business Hours
-      description: "Mon-Wed: 2:30 PM - 7:00 PM <br /> Thu & Fri: 2:30 PM - 6:30 PM <br
-        /> Sat: 11:00 AM - 3:00 PM <br /> Sun: Closed <br />"
+      description: "November 27-30 (Thanksgiving): Closed <br /> Mon-Wed: 2:30 PM -
+        7:00 PM <br /> Thu & Fri: 2:30 PM - 6:30 PM <br /> Sat: 11:00 AM - 3:00
+        PM <br /> Sun: Closed <br />"
       image: /images/pages/contact/dsc02671.jpg
     - title: Address and Directions
       description: 19811 Colima Rd. 320 (1st floor), <br /> Walnut, CA 91789 <br />
