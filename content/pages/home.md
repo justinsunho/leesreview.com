@@ -13,8 +13,8 @@ hero:
 business:
   businessInfoList:
     - title: Hours
-      description: "Monday - Thursday: 2:30 pm - 6:00 pm <br /> Friday: 2:30 pm- 6:00
-        pm <br /> Saturday: 11:00 am - 3:00 pm <br /> Sunday: Closed <br />"
+      description: "Mon-Wed: 2:30 PM - 7:00 PM <br /> Thu & Fri: 2:30 PM - 6:30 PM <br
+        /> Sat: 11:00 AM - 3:00 PM <br /> Sun: Closed <br />"
       icon:
         code: ""
       image: /images/pages/home/businesshours.jpg
