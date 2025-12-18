@@ -4,6 +4,10 @@ image: /images/testimonials/15.png
 tags:
   - SAT I
   - College Consulting
+featured:
+  - College Consulting
+  - SAT
+  - Home
 ---
 Choosing Lee's Review for my daughter, E. Liu's, college consultant was one of the best decisions we've ever made, and I can't express enough how grateful we are for the experience. From the very beginning, it was clear that Mr. Lee and his team weren't just about getting students into college -- they genuinely cared about our daughter, E. Liu, and her future.\
 \
