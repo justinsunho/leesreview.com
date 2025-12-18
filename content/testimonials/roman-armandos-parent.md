@@ -4,6 +4,10 @@ image: /images/testimonials/15.png
 tags:
   - College Consulting
   - SAT I
+featured:
+  - Home
+  - SAT
+  - College Consulting
 ---
 Rarely do you find a group of people that care more for the students, than at Lee's Review. Specially Mr. Lee. He goes out of his way to encourage the students to do better in everything. Down to their sleep habits. These affect their academic development.\
 They assist students with everything from helping them choose the best classes during high school, help choose a career, AP tests, SAT tests, choosing and applying to colleges. Including the essay writing. ‼\
