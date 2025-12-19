@@ -2,14 +2,12 @@
 title: Home
 hero:
   image: /images/pages/home/center.jpg
-  title: Our Fall Classes Schedule Is Here!
-  description: SAT Preparation Class For Aug 23rd, Oct 4th, Nov 1st, Dec 6th Test
-    & AP Classes
-  buttonText: Click to See the Fall Schedule
-  buttonLink: https://docs.google.com/document/d/e/2PACX-1vT8uT-z00plOlj4cs-qVjrv3ilYMpWCmAeOWSxG5INQGsJCJ8wqC_dW80b45OimTiE7V7HQs0inDRG1/pub
+  title: Our Spring SAT & Classes Schedule Is Here!
+  description: SAT Preparation Class For March 14th, May 2nd, June 6th Test & AP Classes
+  buttonText: Click to See the Spring Schedule
+  buttonLink: https://docs.google.com/document/d/1WvrE1ERLCOFJ89F3Kev1hp6fjVxow5jq/edit?usp=sharing&ouid=101406846051497054129&rtpof=true&sd=true
   staff: A Dodgers Playoff Primer
-  subtitle: SAT Preparation Class For Aug 23rd, Oct 4th, Nov 1st, Dec 6th Test &
-    AP Classes
+  subtitle: SAT Preparation Class For March 14th, May 2nd, June 6th Test & AP Classes
 business:
   businessInfoList:
     - title: Hours
