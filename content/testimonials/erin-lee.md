@@ -1,5 +1,6 @@
 ---
 title: Erin Lee
+college: UCLA
 image: /images/testimonials/15.png
 tags:
   - College Consulting
