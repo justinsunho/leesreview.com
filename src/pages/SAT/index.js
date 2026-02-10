@@ -36,7 +36,7 @@ const SAT = ({ data }) => {
             <Hero
                 description={hero.description}
                 headingText={hero.title}
-                image={hero.image.childImageSharp.gatsbyImageData}
+                image={hero.image?.childImageSharp.gatsbyImageData}
                 linkHref={hero.buttonLink}
                 linkText={hero.buttonText}
                 subtitle={hero.subtitle}
@@ -45,7 +45,7 @@ const SAT = ({ data }) => {
             <MediaSection
                 description={mediaSection.description}
                 headingText={mediaSection.title}
-                image={mediaSection.image.childImageSharp.gatsbyImageData}
+                image={mediaSection.image?.childImageSharp.gatsbyImageData}
                 linkHref={mediaSection.linkHref}
                 linkText={mediaSection.linkText}
                 ribbon={true}

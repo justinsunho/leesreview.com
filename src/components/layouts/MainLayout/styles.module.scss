@@ -4,6 +4,28 @@
     margin: 0;
     min-height: 100vh;
     position: relative;
+
+    .adBanner {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+
+        .button {
+            position: absolute;
+            top: -12px;
+            right: -8px;
+            background: $action-default;
+            border-radius: 100000px;
+            padding: 4px;
+            color: white;
+            border: 0;
+            height: 24px;
+            width: 24px;
+            line-height: 16px;
+            box-shadow: $elevation-2;
+        }
+    }
 }
 
 .contentWrapper {

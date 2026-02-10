@@ -12,7 +12,7 @@ const TestimonialCardContainer = ({ items }) => {
                             body={item.body}
                             college={item.college}
                             color={colorArray[i % 5]}
-                            image={item.image.childImageSharp.gatsbyImageData}
+                            image={item.image?.childImageSharp.gatsbyImageData}
                             tags={item.tags}
                             title={item.title}
                             year={item.year}

@@ -1,17 +1,22 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { Hero, MediaSelectSection, MediaSection, LinkCardContainer } from "components/organisms";
+import {
+    Hero,
+    MediaSelectSection,
+    MediaSection,
+    LinkCardContainer
+} from "components/organisms";
 import { MainLayout } from "components/layouts";
 
 const About = ({ data }) => {
     const {
-        allMarkdownRemark: { edges },
+        allMarkdownRemark: { edges }
     } = data;
 
     const {
         node: {
-            frontmatter: { hero, reason, staff, students },
-        },
+            frontmatter: { hero, reason, staff, students }
+        }
     } = edges[0];
 
     return (
@@ -20,16 +25,19 @@ const About = ({ data }) => {
                 button
                 description={hero.description}
                 headingText={hero.title}
-                image={hero.image.childImageSharp.gatsbyImageData}
+                image={hero.image?.childImageSharp.gatsbyImageData}
                 linkHref={hero.buttonLink}
                 linkText={hero.buttonText}
                 subtitle={hero.subtitle}
             />
-            <MediaSelectSection items={reason.reasonsList} title={reason.title} />
+            <MediaSelectSection
+                items={reason.reasonsList}
+                title={reason.title}
+            />
             <MediaSection
                 description={students.description}
                 headingText={students.title}
-                image={students.image.childImageSharp.gatsbyImageData}
+                image={students.image?.childImageSharp.gatsbyImageData}
                 linkHref={students.linkHref}
                 linkText={students.linkText}
                 ribbon
@@ -44,7 +52,9 @@ export default About;
 
 export const pageQuery = graphql`
     {
-        allMarkdownRemark(filter: { frontmatter: { title: { eq: "About Us" } } }) {
+        allMarkdownRemark(
+            filter: { frontmatter: { title: { eq: "About Us" } } }
+        ) {
             edges {
                 node {
                     frontmatter {

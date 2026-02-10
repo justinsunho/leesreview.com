@@ -29,7 +29,7 @@ const Index = ({ data }) => {
                 button
                 description={hero.description}
                 headingText={hero.title}
-                image={hero.image.childImageSharp.gatsbyImageData}
+                image={hero.image?.childImageSharp.gatsbyImageData}
                 linkHref={hero.buttonLink}
                 linkText={hero.buttonText}
             />
@@ -42,7 +42,7 @@ const Index = ({ data }) => {
             <MediaSection
                 description={about.description}
                 headingText={about.title}
-                image={about.image.childImageSharp.gatsbyImageData}
+                image={about.image?.childImageSharp.gatsbyImageData}
                 linkHref={about.linkHref}
                 linkText={about.linkText}
                 ribbon={true}

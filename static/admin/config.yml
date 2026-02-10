@@ -16,7 +16,7 @@ collections:
           - { name: title, label: title, required: true }
           - { name: subtitle, label: subtitle, required: true }
           - { name: description, label: Description, required: true }
-          - { name: image, label: img, widget: image, required: true }
+          # - { name: image, label: img, widget: image, required: true }
           - { name: tags, label: classes, widget: list, required: true }
           - { name: color, label: color, widget: select, options: ["red", "orange", "green", "blue"], required: false }
           - { name: link, label: link, widget: string, required: false }

@@ -39,7 +39,7 @@ const TestimonialItem = ({ college, image, inView, tags, title, videoId }) => {
                             className={`${styles.image}`}
                             style={{ position: "absolute" }}
                             image={{
-                                ...image.childImageSharp.gatsbyImageData,
+                                ...image?.childImageSharp.gatsbyImageData,
                                 aspectRatio: 1
                             }}
                         />

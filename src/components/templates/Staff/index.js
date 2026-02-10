@@ -10,8 +10,8 @@ const Staff = ({ data }) => {
     const {
         markdownRemark: {
             frontmatter: { image, subtitle, tags, title },
-            html,
-        },
+            html
+        }
     } = data;
 
     return (
@@ -22,16 +22,18 @@ const Staff = ({ data }) => {
                         <GatsbyImage
                             alt={`staff-picture-${title}`}
                             className={styles.image}
-                            image={image.childImageSharp.gatsbyImageData}
+                            image={image?.childImageSharp.gatsbyImageData}
                             style={{ display: "block" }}
                         />
                     </div>
                 </div>
                 <div className={`${styles.titleWrapper} row`}>
                     <div className={`col-md-9 ${marginAutoCenter}`}>
-                        <SmallCaps className={styles.smallCaps}>{subtitle}</SmallCaps>
+                        <SmallCaps className={styles.smallCaps}>
+                            {subtitle}
+                        </SmallCaps>
                         <h1 className={styles.title}>{title}</h1>
-                        {tags && <div>{tags.map((tag) => tag + ", ")}</div>}
+                        {tags && <div>{tags.map(tag => tag + ", ")}</div>}
                     </div>
                 </div>
             </div>
@@ -51,7 +53,7 @@ const Staff = ({ data }) => {
 export default Staff;
 
 export const query = graphql`
-    query($slug: String!) {
+    query ($slug: String!) {
         markdownRemark(fields: { slug: { eq: $slug } }) {
             html
             frontmatter {
