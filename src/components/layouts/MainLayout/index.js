@@ -18,14 +18,14 @@ const MainLayout = ({ bannerDarkMode, children, className }) => {
             <div className={`${styles.adBanner}`}>
                 {bannerShow && (
                     <a
-                        href="https://breakmyscore.com?utm_source=yoursite&utm_medium=banner&utm_campaign=partner"
+                        href="https://breakmyscore.com?utm_source=wwwleesreviewcom&utm_medium=banner&utm_campaign=partner-sites"
                         target="_blank"
                     >
                         <img
                             src="https://www.breakmyscore.com/ads/BreakMyScore-200x356-01.gif"
                             alt="BreakMyScore"
-                            width="150"
-                            height="267"
+                            width="200"
+                            height="200"
                         />
                     </a>
                 )}
