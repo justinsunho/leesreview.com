@@ -2,11 +2,11 @@
 title: Home
 hero:
   image: /images/pages/home/center.jpg
-  title: Our Summer SAT & Classes Schedule Is Here!
+  title: Our Fall SAT & Classes Schedule Is Here!
   description: SAT Preparation Class For August, September, October, November &
     December Test & AP Classes
-  buttonText: Click to See the Summer Schedule
-  buttonLink: https://docs.google.com/document/d/1yHz_HqOgM-CCA6JdljKGHfvOcunB095Z62IfAOJ1nWI/edit?usp=sharing
+  buttonText: Click to See the Fall Schedule
+  buttonLink: https://docs.google.com/document/d/e/2PACX-1vQKhrhDzCwoNaKBj7AJAbp7gAdZX5kLEUuJMIfn-gQ4sfUEXI2sVF9_e46uoNrPMyRWL9i50AsdWh7A/pub
   staff: A Dodgers Playoff Primer
   subtitle: SAT Preparation Class For August, September, October, November &
     December Test & AP Classes
