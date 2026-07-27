@@ -2,14 +2,12 @@
 title: Home
 hero:
   image: /images/pages/home/center.jpg
-  title: Our Fall SAT & Classes Schedule Is Here!
-  description: SAT Preparation Class For August, September, October, November &
-    December Test & AP Classes
-  buttonText: Click to See the Fall Schedule
-  buttonLink: https://docs.google.com/document/d/e/2PACX-1vQKhrhDzCwoNaKBj7AJAbp7gAdZX5kLEUuJMIfn-gQ4sfUEXI2sVF9_e46uoNrPMyRWL9i50AsdWh7A/pub
+  title: College Consulting Brochure
+  description: From 9th - 12th Grades
+  buttonText: Click to see our College Consulting Brochrue
+  buttonLink: https://docs.google.com/presentation/d/1HfNmsAmymvFdgMNyKX9V_lmstuGOws1VM1WtsLWt99w/edit?usp=sharing
   staff: A Dodgers Playoff Primer
-  subtitle: SAT Preparation Class For August, September, October, November &
-    December Test & AP Classes
+  subtitle: From 9th - 12th Grades
 business:
   businessInfoList:
     - title: Hours
