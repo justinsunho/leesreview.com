@@ -2,7 +2,7 @@
 title: Home
 hero:
   image: /images/pages/home/center.jpg
-  title: College Consulting Brochure
+  title: College Consulting Program
   description: From 9th - 12th Grades
   buttonText: Click to see our College Consulting Brochrue
   buttonLink: https://docs.google.com/presentation/d/1HfNmsAmymvFdgMNyKX9V_lmstuGOws1VM1WtsLWt99w/edit?usp=sharing
