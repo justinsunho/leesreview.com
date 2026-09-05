@@ -12,7 +12,9 @@ business:
   businessInfoList:
     - title: Hours
       description: "Mon-Wed: 2:30 PM - 7:00 PM <br /> Thu & Fri: 2:30 PM - 6:00 PM <br
-        /> Sat: 10:00 AM - 3:00 PM <br /> Sun: Closed <br />"
+        /> Sat: 10:00 AM - 3:00 PM <br /> Sun: Closed <br /> Lee’s Review will
+        be closed on Monday, September 7, in observance of Labor Day. We will
+        resume our regular business hours on Tuesday, September 8. "
       icon:
         code: ""
       image: /images/pages/home/businesshours.jpg
