@@ -1,8 +1,7 @@
 ---
 title: AP Chemistry
 date: Please Call
-time: Class schedule varies. Please contact us for current days and times or
-  check our schedules page.
+time: Class day and time vary. Please see our Schedules tab for the current schedule.
 tag: Math/Science
 teacherName: Mr. Lee
 teacherLink: /staff/mr-lee
