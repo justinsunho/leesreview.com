@@ -6,4 +6,4 @@ tag: SAT
 teacherName: Mr. Lee
 teacherLink: /staff/mr-lee
 ---
-S﻿AT preparatory course for the March 6, 2027 exam
+S﻿AT preparatory course for the March 6, 2027 exam. See our Schedules tab for more information.
