@@ -1,7 +1,8 @@
 ---
 title: AP Chemistry
 date: Please Call
-time: Wednesday 5:00 pm - 7:00 pm
+time: Class schedule varies. Please contact us for current days and times or
+  check our schedules page.
 tag: Math/Science
 teacherName: Mr. Lee
 teacherLink: /staff/mr-lee
