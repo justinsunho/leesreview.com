@@ -10,17 +10,18 @@ hero:
   image: /images/pages/class-prep/andrew-teaching-katrine2.jpg
   subtitle: class prep
 servicesList:
-  - title: Instructor-Led Classes
-    description: We provide instructor-led classes in a focused, engaging classroom setting.
+  - title: Course Preparation
+    description: Our teachers explain key concepts, answer questions, and provide
+      homework support.
     image: /images/pages/class-prep/dsc02834.jpg
     icon:
-      code: >
+      code: >-
         <svg width="40" height="53" viewBox="0 0 40 53" fill="none"
         xmlns="http://www.w3.org/2000/svg">
 
         <g filter="url(#filter0_d)">
 
-        <path d="M13.1625 0L9.405 5.625L11.97 7.3125L4.815 18H4.5C3.30653 18 2.16193 18.4741 1.31802 19.318C0.474106 20.1619 0 21.3065 0 22.5C0.00277582 23.5273 0.356933 24.5226 1.00363 25.3208C1.65034 26.1189 2.55065 26.6718 3.555 26.8875L12.645 40.5H4.5V45H27V40.5H18L7.9425 25.38C8.62148 24.5735 8.99574 23.5542 9 22.5C9 21.825 8.8425 21.15 8.55 20.5425L15.75 9.8325C15.255 13.6125 17.4375 17.7525 21.2625 20.25L31.2525 5.3325C27.45 2.79 22.77 2.34 19.4625 4.2075L13.1625 0ZM29.9925 11.25L26.2575 16.875C27.7875 17.8875 29.9025 17.4825 30.9375 15.93C31.9725 14.3775 31.5 12.285 29.9925 11.25Z" fill="white"/>
+        <path d="M9 4H27C30.3137 4 33 6.68629 33 10V41H12C9.79086 41 8 39.2091 8 37V5C8 4.44772 8.44772 4 9 4Z M13 8V37 M18 15H28 M18 21H28 M18 27H28 M18 33H26" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
 
         </g>
 
