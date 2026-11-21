@@ -10,8 +10,10 @@ hero:
   image: /images/pages/class-prep/andrew-teaching-katrine2.jpg
   subtitle: class prep
 servicesList:
-  - title: Quiet Study rooms
-    description: We provide study rooms for students to study whenever they need.
+  - title: Instructor-Led Classes
+    description: Our classes provide structured instruction in a focused classroom
+      setting, where students can ask questions and learn concepts alongside
+      their peers.
     image: /images/pages/class-prep/dsc02834.jpg
     icon:
       code: >
@@ -129,11 +131,11 @@ servicesList:
 
         </svg>
 mediaSection:
-  title: Can't find a suitable class? Sign up for individual tutoring
+  title: Do our class times not work for you? Sign up for individual tutoring!
   image: /images/pages/class-prep/books.jpg
   subtitle: One on One
-  description: We offer individual classes for a wide array of subjects, tailored
-    to students’ schools, teachers, and learning styles.
+  description: Individual tutoring may be available depending on the subject and
+    instructor availability. Contact us to ask about options.
   linkText: Sign up
   linkHref: https://leesreview.com/contact
 signUp:
