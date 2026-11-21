@@ -11,7 +11,7 @@ hero:
   subtitle: class prep
 servicesList:
   - title: Instructor-Led Classes
-    description: Focused, instructor-led classes in a classroom setting.
+    description: We provide instructor-led classes in a focused, engaging classroom setting.
     image: /images/pages/class-prep/dsc02834.jpg
     icon:
       code: >
